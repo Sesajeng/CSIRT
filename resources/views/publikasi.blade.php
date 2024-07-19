@@ -53,12 +53,17 @@
             outline: none;
             font-size: 16px;
         }
+.header{
+    background-color: orange;
+     color: white;
+}
 </style>
 </head>
 
 <body class=" text-black">
 
     <!-- Header -->
+    <div class="header">
     <header class="bg-orange-800 py-4">
         <div class="container mx-auto flex justify-between items-center">
             <img src="/img/Logo.png" alt="Logo" class="h-10">
