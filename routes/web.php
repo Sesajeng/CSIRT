@@ -16,5 +16,5 @@ Route::get('welcome', [HomeController::class, 'index'])->name('welcome');
 Route::get('profil', [ProfilController::class, 'index'])->name('profil');
 Route::get('event',[EventController::class, 'index'])->name('event');
 Route::get('publikasi',[PublikasiController::class, 'index'])->name('publikasi');
-Route::get('kontak_kami',[KontakKamiController::class, 'index'])->name('kontak_kami');
 Route::get('lapor_insiden_siber', [LaporInsidenSiberController::class, 'index'])->name('lapor_insiden_siber');
+Route::get('kontak_kami',[KontakKamiController::class, 'index'])->name('kontak_kami');
