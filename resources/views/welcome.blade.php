@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Berita Siber</title>
+    <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 <style >
     /* styles.css */
@@ -43,10 +43,16 @@
         box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); /* shadow ringan */
     }
 
-    .search-input:focus {
-        border-color: #007bff; /* warna border saat focus */
-        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* shadow lebih kuat saat focus */
-    }
+   
+        .search-box {
+            width: 200px;
+            height: 30px;
+            padding: 10px 20px;
+            border: 2px solid #ccc;
+            border-radius: 20px; /* Membuat ujung kotak pencarian berbentuk oval */
+            outline: none;
+            font-size: 16px;
+        }
 </style>
 </head>
 
@@ -64,7 +70,9 @@
                 <a href="{{ route('lapor_insiden_siber') }}" class="hover:underline">Lapor Insiden Siber</a>
                 <a href="{{ route('kontak_kami')  }}" class="hover:underline">Kontak Kami</a>
             </nav>
-            <input type="text" placeholder="Search" class="search-input">
+            <div class="search-container">
+                <input type="text" class="search-box" placeholder="Search...">
+            </div>
 
         </div>
     </header>
