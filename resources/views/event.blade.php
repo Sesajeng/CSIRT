@@ -225,27 +225,43 @@
             padding: 10px;
             /* Menambahkan padding di dalam tubuh kartu untuk spasi yang lebih baik */
         }
+        
+.btn:hover {
+    background-color: #e57800; /* Warna tombol saat dihover */
+    border :2px  solid white;
+    padding: 2px 11px;
+}
+.btn.active {
+    background-color: #e57800; /* Warna tombol saat diaktifkan */
+    border-color: white; /* Border putih untuk tombol aktif */
+}
     </style>
 </head>
 
 <body class=" text-black">
 
-    <!-- Header -->
     <div class="header">
         <header class="bg-orange-800 py-4">
             <div class="container mx-auto flex justify-between items-center">
                 <img src="/img/Logo.png" alt="Logo" class="h-10">
                 <nav class="space-x-4">
-                    <a href="{{ route('welcome') }}" class="hover:underline" button
+                    <nav class="space-x-4 ml-auto">
+                    <button class="btn" >
+                    <a href="{{ route('welcome') }}" button
                         onclick="responsiveVoice.speak('Home');" type="button" value="Play">Home</a>
-                    <a href="{{ route('profil') }}" class="hover:underline">Profil</a>
-                    <a href="{{ route('event') }}" class="hover:underline">Event</a>
-                    <a href="{{ route('publikasi') }}" class="hover:underline">Publikasi</a>
-                    <a href="{{ route('lapor_insiden_siber') }}" class="hover:underline">Lapor Insiden Siber</a>
-                    <a href="{{ route('kontak_kami') }}" class="hover:underline">Kontak Kami</a>
-                </nav>
-                <div class="search-container">
+                    <button class="btn" >
+                          <a href="{{ route('profil') }}">Profil</button>
+                    <button class="btn" >
+                        <a href="{{ route('event') }}">Event</button>
+                    <button class="btn">
+                    <a href="{{ route('publikasi') }}" >Publikasi</a>
+                   <button class="btn">
+                    <a href="{{ route('lapor_insiden_siber') }}" >Lapor Insiden Siber</a>
+                    <button class="btn">
+                    <a href="{{ route('kontak_kami') }}" >Kontak Kami</a> </button>
                     <input type="text" class="search-box" placeholder="Search...">
+                    </nav>
+                </nav>
                 </div>
 
             </div>
@@ -298,6 +314,7 @@
         </div>
     </footer>
 
+   
     <button id="playButton" class="btn btn-primary side-button">Play</button>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -306,28 +323,19 @@
     <script src="https://code.responsivevoice.org/responsivevoice.js?key=N13Zi1Bw"></script>
     <script>
         let isPlaying = false;
-        let isHovering = false;
-
-        const button = document.getElementById('playButton');
-
-        button.addEventListener('click', () => {
-            isPlaying = !isPlaying;
-            if (isPlaying && isHovering) {
-                responsiveVoice.speak('Mode Suara', 'Indonesian Female');
-            }
-        });
-
-        button.addEventListener('mouseover', () => {
-            isHovering = true;
-            if (isPlaying) {
-                responsiveVoice.speak('Mode Non Suara', 'Indonesian Female');
-            }
-        });
-
-        button.addEventListener('mouseout', () => {
-            isHovering = false;
-        });
+        const playButton = document.getElementById('playButton');
+        const navButtons = document.querySelectorAll('nav .btn');
+        playButton.addEventListener('click', () => {
+        isPlaying = !isPlaying;
+        if (isPlaying) {
+            playButton.textContent = 'Mute';
+        } else {
+            playButton.textContent = 'Play';
+        }
+    });
+    
     </script>
+
 
     <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
 </body>

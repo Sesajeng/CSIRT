@@ -174,6 +174,16 @@
             top: 50%;
             transform: translateY(-50%);
         }
+        
+.btn:hover {
+    background-color: #e57800; /* Warna tombol saat dihover */
+    border :2px  solid white;
+    padding: 2px 11px;
+}
+.btn.active {
+    background-color: #e57800; /* Warna tombol saat diaktifkan */
+    border-color: white; /* Border putih untuk tombol aktif */
+}
     </style>
 </head>
 
@@ -185,36 +195,25 @@
             <div class="container mx-auto flex justify-between items-center">
                 <img src="/img/Logo.png" alt="Logo" class="h-10">
                 <nav class="space-x-4">
-                    <a href="{{ route('welcome') }}" class="hover:underline" button
+                    <nav class="space-x-4 ml-auto">
+                    <button class="btn" >
+                    <a href="{{ route('welcome') }}" button
                         onclick="responsiveVoice.speak('Home');" type="button" value="Play">Home</a>
-                    {{-- <script> 
-                    function getSelectionText() {
-                        var text = "";
-                        if (window.getSelection) {
-                            text = window.getSelection().toString();
-                        // for Internet Explorer 8 and below. For Blogger, you should use &amp;&amp; instead of &&.
-                        } else if (document.selection && document.selection.type != "Control") { 
-                            text = document.selection.createRange().text;
-                        }
-                        return text;
-                    }
-                    $(document).ready(function (){ // when the document has completed loading
-                       $(document).mouseup(function (e){ // attach the mouseup event for all div and pre tags
-                          setTimeout(function() { // When clicking on a highlighted area, the value stays highlighted until after the mouseup event, and would therefore stil be captured by getSelection. This micro-timeout solves the issue. 
-                             responsiveVoice.cancel(); // stop anything currently being spoken
-                             responsiveVoice.speak(getSelectionText()); //speak the text as returned by getSelectionText
-                          }, 1);
-                       });
-                    });
-                    </script> --}}
-                    <a href="{{ route('profil') }}" class="hover:underline">Profil</a>
-                    <a href="{{ route('event') }}" class="hover:underline">Event</a>
-                    <a href="{{ route('publikasi') }}" class="hover:underline">Publikasi</a>
-                    <a href="{{ route('lapor_insiden_siber') }}" class="hover:underline">Lapor Insiden Siber</a>
-                    <a href="{{ route('kontak_kami') }}" class="hover:underline">Kontak Kami</a>
-                </nav>
-                <div class="search-container">
+                    <button class="btn" >
+                          <a href="{{ route('profil') }}">Profil</button>
+                    <button class="btn" >
+                        <a href="{{ route('event') }}">Event</button>
+                    <button class="btn">
+                    <a href="{{ route('publikasi') }}" >Publikasi</a>
+                   <button class="btn">
+                    <a href="{{ route('lapor_insiden_siber') }}" >Lapor Insiden Siber</a>
+                    <button class="btn">
+                    <a href="{{ route('kontak_kami') }}" >Kontak Kami</a> </button>
+                {{-- </nav>
+                <div class="search-container"> --}}
                     <input type="text" class="search-box" placeholder="Search...">
+                </nav>
+            </div>
                 </div>
 
             </div>
@@ -233,6 +232,7 @@
         </div>
     </footer>
 
+   
     <button id="playButton" class="btn btn-primary side-button">Play</button>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -241,27 +241,17 @@
     <script src="https://code.responsivevoice.org/responsivevoice.js?key=N13Zi1Bw"></script>
     <script>
         let isPlaying = false;
-        let isHovering = false;
-
-        const button = document.getElementById('playButton');
-
-        button.addEventListener('click', () => {
-            isPlaying = !isPlaying;
-            if (isPlaying && isHovering) {
-                responsiveVoice.speak('Mode Suara', 'Indonesian Female');
-            }
-        });
-
-        button.addEventListener('mouseover', () => {
-            isHovering = true;
-            if (isPlaying) {
-                responsiveVoice.speak('Mode Non Suara', 'Indonesian Female');
-            }
-        });
-
-        button.addEventListener('mouseout', () => {
-            isHovering = false;
-        });
+        const playButton = document.getElementById('playButton');
+        const navButtons = document.querySelectorAll('nav .btn');
+        playButton.addEventListener('click', () => {
+        isPlaying = !isPlaying;
+        if (isPlaying) {
+            playButton.textContent = 'Mute';
+        } else {
+            playButton.textContent = 'Play';
+        }
+    });
+    
     </script>
 
     <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
