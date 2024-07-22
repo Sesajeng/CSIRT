@@ -200,9 +200,9 @@
                 <a href="{{ route('welcome') }}" button
                     onclick="responsiveVoice.speak('Home');" type="button" value="Play">Home</a>
                 <button class="btn" >
-                      <a href="{{ route('profil') }}">Profil</button>
+                      <a href="{{ route('profil') }}">Profil</a>
                 <button class="btn" >
-                    <a href="{{ route('event') }}">Event</button>
+                    <a href="{{ route('event') }}">Event</a>
                 <button class="btn">
                 <a href="{{ route('publikasi') }}" >Publikasi</a>
                <button class="btn">
@@ -221,11 +221,28 @@
     <div class="carousel-item active">
         <img src="/img/19.png" class="d-block w-100" alt="gambar 1">
     </div>
-    <div class="search-container">
-        <input type="text" class="search-box" placeholder="Search...">
-    </div>
-
-
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+          <div class="col"> <img src="/img/Logo.png"> </div>
+          <div class="col">
+            <p> Tim Tanggap Insiden Siber (Computer Security Incident Response Team) Pemerintah Provinsi DKI Jakarta yang selanjutnya disebut dengan JakartaProv-CSIRT merupakan CSIRT Pemprov DKI Jakarta.</p>
+          
+            <p> Tim JakartaProv- CSIRT ditetapkan oleh Sekretaris Daerah Provinsi DKI Jakarta dalam Keputusan Penjabat Sekretaris Daerah DKI Jakarta Nomor: 41 Tahun 2020 Tentang Computer Security Incident Response Team </p>
+           
+            <p> Kepala Dinas Komunikasi Informatika dan Statistik Provinsi DKI Jakarta ditunjuk sebagai Ketua CSIRT Propinsi DKI Jakarta dan ditugaskan untuk melaksanakan memimpin, mengkoordinasikan, memfasilitasi pengembangan kemampuan SDM, pengalokasian sumber daya, memantau, serta melaporkan pelaksanaan terkait JakartaProv-CSIRT. </p>
+        
+            <p> Dalam pembentukannya, JakartaProv-CSIRT memiliki tujuan yaitu: </p>
+       
+            <p> - Membangun mengkoordinasikan, mengkolaborasikan dan mengoperasionalkan sistem mitigasi, manajemen krisis, penanggulangan dan pemulihan terhadap insiden keamanan siber pada sektor Pemerintah Daerah Provinsi DKI Jakarta.
+                - Membangun kapasitas sumber daya penanggulangan dan pemulihan insiden keamanan siber pada sektor Pemerintah Daerah Provinsi DKI Jakarta </p>
+           <p> </p>
+                <p> CSIRT Propinsi DKI Jakarta melaksanakan layanan tanggap insiden siber, berupa:
+                - Layanan reaktif, yaitu layanan yang terkait dengan kebutuhan melakukan respon terhadap insiden siber termasuk penangkalan, penindakan dan pemulihan siber.
+                - Layanan proaktif, yaitu layanan yang mendeteksi dan mencegah serangan siber sebelum ada dampak nyata. </p>
+            <p> CSIRT Propinsi DKI Jakarta secara resmi di-launching pada 23 Desember 2020. Konstituen JakartaProv-CSIRT meliputi Perangkat Daerah (OPD) di lingkungan Pemerintah Daerah Provinsi DKI Jakarta.  </p>
+          </div>
+        </div>
+      </div>
     <footer class="footer">
         <div class="container">
         </div>

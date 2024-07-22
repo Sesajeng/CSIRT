@@ -250,9 +250,9 @@
                     <a href="{{ route('welcome') }}" button
                         onclick="responsiveVoice.speak('Home');" type="button" value="Play">Home</a>
                     <button class="btn" >
-                          <a href="{{ route('profil') }}">Profil</button>
+                          <a href="{{ route('profil') }}">Profil</a>
                     <button class="btn" >
-                        <a href="{{ route('event') }}">Event</button>
+                        <a href="{{ route('event') }}">Event</a>
                     <button class="btn">
                     <a href="{{ route('publikasi') }}" >Publikasi</a>
                    <button class="btn">
