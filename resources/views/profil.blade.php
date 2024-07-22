@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=N13Zi1Bw"></script>
     <style>
         .btn-primary {
             background-color: orange;
@@ -218,23 +223,15 @@
                 <img src="/img/Logo.png" alt="Logo" class="h-10">
                 <nav class="space-x-4">
                     <nav class="space-x-4 ml-auto">
-                        <button class="btn">
-                            <a href="{{ route('welcome') }}" button onclick="responsiveVoice.speak('Home');"
-                                type="button" value="Play">Home</a>
-                            <button class="btn">
-                                <a href="{{ route('profil') }}">Profil</a>
-                                <button class="btn">
-                                    <a href="{{ route('event') }}">Event</a>
-                                    <button class="btn">
-                                        <a href="{{ route('publikasi') }}">Publikasi</a>
-
-                                        <button class="btn">
-                                            <a href="{{ route('lapor_insiden_siber') }}">Lapor Insiden Siber</a>
-                                            <button class="btn">
-                                                <a href="{{ route('kontak_kami') }}">Kontak Kami</a> </button>
-
-                                            <input type="text" class="search-box" placeholder="Search...">
-                    </nav>
+                        <nav class="space-x-4 ml-auto">
+                            <div class="btn nav-item" data-text="Home" a href="{{ route('welcome') }}"> Home  </div>
+                            <div class="btn nav-item" data-text="Profil" a href="{{ route('profil') }}">Profil </div>
+                            <div class="btn nav-item" data-text="Event" a href="{{ route('event') }}">Event</div>
+                            <div class="btn nav-item" data-text="Publikasi" a href="{{ route('publikasi')}}">Publikasi </div>
+                            <div class="btn nav-item" data-text="Lapor Insiden Siber" a href="{{ route('lapor_insiden_siber') }}">Lapor Insiden Siber</div>
+                            <div class="btn nav-item" data-text="Kontak Kami" a href="{{ route('kontak_kami') }}">Kontak Kami</div>
+                            <input type="text" class="search-box" placeholder="Search..."> </input>
+                        </nav>
                 </nav>
             </div>
     </div>
@@ -243,6 +240,38 @@
     <div class="carousel-item active">
         <img src="/img/19.png" class="d-block w-100" alt="gambar 1">
     </div>
+
+    <button id="audioButton" class="btn btn-primary side-button">Play</button>
+    <script>
+        let isPlaying = false;
+        let navItems = document.querySelectorAll('.nav-item');
+
+
+        function speakText(text) {
+            if (isPlaying) {
+                responsiveVoice.speak(text, 'Indonesian Female');
+            }
+        }
+
+        document.getElementById('audioButton').addEventListener('click', function() {
+            const button = this;
+            if (isPlaying) {
+                responsiveVoice.cancel();
+                button.textContent = 'Play';
+                isPlaying = false;
+            } else {
+                button.textContent = 'Mute';
+                isPlaying = true;
+            }
+        });
+
+
+        navItems.forEach(item => {
+            item.addEventListener('mouseover', function() {
+                speakText(this.getAttribute('data-text'));
+            });
+        });
+    </script>
     &nbsp;
     <div class="container">
         <div class="row">
@@ -284,25 +313,6 @@
         </div>
         <footer class="footer">
         </footer>
-        <button id="playButton" class="btn btn-primary side-button">Play</button>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        <script src="https://code.responsivevoice.org/responsivevoice.js?key=N13Zi1Bw"></script>
-        <script>
-            let isPlaying = false;
-            const playButton = document.getElementById('playButton');
-            const navButtons = document.querySelectorAll('nav .btn');
-            playButton.addEventListener('click', () => {
-                isPlaying = !isPlaying;
-                if (isPlaying) {
-                    playButton.textContent = 'Mute';
-                } else {
-                    playButton.textContent = 'Play';
-                    responsiveVoice.cancel();
-                }
-            });
-        </script>
         <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
 </body>
 

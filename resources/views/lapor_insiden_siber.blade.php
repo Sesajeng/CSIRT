@@ -43,7 +43,6 @@
             box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
         }
 
-
         .search-box {
             width: 200px;
             height: 30px;
@@ -183,7 +182,6 @@
         }
     </style>
 </head>
-
 <body class=" text-black">
     <div class="header">
         <header class="bg-orange-800 py-4">
