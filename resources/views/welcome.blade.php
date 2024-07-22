@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=N13Zi1Bw"></script>
+
     <style>
-        /* styles.css */
         .btn-primary {
             background-color: orange;
             color: white;
@@ -41,9 +45,7 @@
             font-size: 16px;
             background-color: #f5f5f5;
             outline: none;
-            /* menghilangkan garis highlight saat focus */
             box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
-            /* shadow ringan */
         }
 
 
@@ -53,7 +55,6 @@
             padding: 10px 20px;
             border: 2px solid #ccc;
             border-radius: 20px;
-            /* Membuat ujung kotak pencarian berbentuk oval */
             outline: none;
             font-size: 16px;
         }
@@ -175,50 +176,46 @@
             transform: translateY(-50%);
         }
 
-.btn:hover {
-    background-color: #e57800; /* Warna tombol saat dihover */
-    border :2px  solid white;
-    padding: 2px 11px;
-}
-.btn.active {
-    background-color: #e57800; /* Warna tombol saat diaktifkan */
-    border-color: white; /* Border putih untuk tombol aktif */
-}
+        .btn:hover {
+            background-color: #e57800;
+            border: 2px solid white;
+            padding: 2px 11px;
+        }
 
-
+        .btn.active {
+            background-color: #e57800;
+            border-color: white;
+        }
     </style>
 </head>
 
 <body class=" text-black">
 
-    <!-- Header -->
     <div class="header">
         <header class="bg-orange-800 py-4">
             <div class="container mx-auto flex justify-between items-center">
                 <img src="/img/Logo.png" alt="Logo" class="h-10">
                 <nav class="space-x-4">
                     <nav class="space-x-4 ml-auto">
-                    <button class="btn" >
-                    <a href="{{ route('welcome') }}" button
-                        onclick="responsiveVoice.speak('Home');" type="button" value="Play">Home</a>
-                    <button class="btn" >
-                          <a href="{{ route('profil') }}">Profil </a></button>
-                    <button class="btn" >
-                        <a href="{{ route('event') }}">Event</a> </button>
-                    <button class="btn">
-                    <a href="{{ route('publikasi') }}" >Publikasi</a> </button>
-                   <button class="btn">
-                    <a href="{{ route('lapor_insiden_siber') }}" >Lapor Insiden Siber</a>
-                    <button class="btn">
-                    <a href="{{ route('kontak_kami') }}" >Kontak Kami</a> </button>
-              
-                    <input type="text" class="search-box" placeholder="Search...">
-                </div>
-                </nav>
-                </nav>
-
+                        <button class="btn">
+                            <a href="{{ route('welcome') }}">Home</a>
+                            <button class="btn">
+                                <a href="{{ route('profil') }}">Profil </a></button>
+                            <button class="btn">
+                                <a href="{{ route('event') }}">Event</a> </button>
+                            <button class="btn">
+                                <a href="{{ route('publikasi') }}">Publikasi</a> </button>
+                            <button class="btn">
+                                <a href="{{ route('lapor_insiden_siber') }}">Lapor Insiden Siber</a>
+                                <button class="btn">
+                                    <a href="{{ route('kontak_kami') }}">Kontak Kami</a> </button>
+                                <input type="text" class="search-box" placeholder="Search...">
             </div>
-        </header>
+            </nav>
+            </nav>
+
+    </div>
+    </header>
     </div>
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-header">
@@ -286,7 +283,6 @@
                 <div class="carousel-item">
                     <img src="/img/15.png" class="d-block w-100" alt="Infografis 3">
                 </div>
-                <!-- Tambahkan item carousel lainnya di sini -->
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#infografisCarousel"
                 data-bs-slide="prev">
@@ -334,32 +330,28 @@
         </footer>
 
         <button id="playButton" class="btn btn-primary side-button">Play</button>
-
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        <script src="https://code.responsivevoice.org/responsivevoice.js?key=N13Zi1Bw"></script>
         <script>
             let isPlaying = false;
             const playButton = document.getElementById('playButton');
             const navButtons = document.querySelectorAll('nav .btn');
+
             playButton.addEventListener('click', () => {
-            isPlaying = !isPlaying;
-            if (isPlaying) {
-                playButton.textContent = 'Mute';
-            } else {
-                playButton.textContent = 'Play';
-            }
-        });
-        navButtons.forEach(button => {
-            button.addEventListener('mouseover', () => {
+                isPlaying = !isPlaying;
                 if (isPlaying) {
-                    responsiveVoice.speak(button.textContent.trim(), 'Indonesian Female');
+                    playButton.textContent = 'Mute';
+                } else {
+                    playButton.textContent = 'Play';
+                    responsiveVoice.cancel();
                 }
             });
-        });
+            navButtons.forEach(button => {
+                button.addEventListener('mouseover', () => {
+                    if (isPlaying) {
+                        responsiveVoice.speak(button.textContent.trim(), 'Indonesian Female');
+                    }
+                });
+            });
         </script>
-
         <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
 </body>
 

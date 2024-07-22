@@ -7,7 +7,6 @@
     <title>Kontak Kami</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        /* styles.css */
         .btn-primary {
             background-color: orange;
             color: white;
@@ -41,9 +40,7 @@
             font-size: 16px;
             background-color: #f5f5f5;
             outline: none;
-            /* menghilangkan garis highlight saat focus */
             box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
-            /* shadow ringan */
         }
 
 
@@ -53,7 +50,6 @@
             padding: 10px 20px;
             border: 2px solid #ccc;
             border-radius: 20px;
-            /* Membuat ujung kotak pencarian berbentuk oval */
             outline: none;
             font-size: 16px;
         }
@@ -174,54 +170,52 @@
             top: 50%;
             transform: translateY(-50%);
         }
+
         .th {
-            text-align: left; /* Menyelaraskan teks dalam th ke kiri */
-            vertical-align: top; /* Mengatur vertikal align ke atas */
+            text-align: left;
+            vertical-align: top;
         }
-        
-.btn:hover {
-    background-color: #e57800; /* Warna tombol saat dihover */
-    border :2px  solid white;
-    padding: 2px 11px;
-}
-.btn.active {
-    background-color: #e57800; /* Warna tombol saat diaktifkan */
-    border-color: white; /* Border putih untuk tombol aktif */
-}
+
+        .btn:hover {
+            background-color: #e57800;
+            border: 2px solid white;
+            padding: 2px 11px;
+        }
+
+        .btn.active {
+            background-color: #e57800;
+            border-color: white;
+        }
     </style>
 </head>
 
 <body class=" text-black">
-
-    <!-- Header -->
     <div class="header">
         <header class="bg-orange-800 py-4">
             <div class="container mx-auto flex justify-between items-center">
                 <img src="/img/Logo.png" alt="Logo" class="h-10">
                 <nav class="space-x-4">
                     <nav class="space-x-4 ml-auto">
-                    <button class="btn" >
-                    <a href="{{ route('welcome') }}" button
-                        onclick="responsiveVoice.speak('Home');" type="button" value="Play">Home</a>
-                    <button class="btn" >
-                          <a href="{{ route('profil') }}">Profil</a>
-                    <button class="btn" >
-                        <a href="{{ route('event') }}">Event</a>
-                    <button class="btn">
-                    <a href="{{ route('publikasi') }}" >Publikasi</a>
-                   <button class="btn">
-                    <a href="{{ route('lapor_insiden_siber') }}" >Lapor Insiden Siber</a>
-                    <button class="btn">
-                    <a href="{{ route('kontak_kami') }}" >Kontak Kami</a></button>
-                    <input type="text" class="search-box" placeholder="Search...">
+                        <button class="btn">
+                            <a href="{{ route('welcome') }}" button onclick="responsiveVoice.speak('Home');"
+                                type="button" value="Play">Home</a>
+                            <button class="btn">
+                                <a href="{{ route('profil') }}">Profil</a>
+                                <button class="btn">
+                                    <a href="{{ route('event') }}">Event</a>
+                                    <button class="btn">
+                                        <a href="{{ route('publikasi') }}">Publikasi</a>
+                                        <button class="btn">
+                                            <a href="{{ route('lapor_insiden_siber') }}">Lapor Insiden Siber</a>
+                                            <button class="btn">
+                                                <a href="{{ route('kontak_kami') }}">Kontak Kami</a></button>
+                                            <input type="text" class="search-box" placeholder="Search...">
                     </nav>
                 </nav>
-                </div>
-
             </div>
-        </header>
     </div>
-    
+    </header>
+    </div>
     <div class="carousel-item active">
         <img src="/img/18.png" class="d-block w-100" alt="gambar 1">
     </div>
@@ -233,8 +227,9 @@
                     <p> <b> Bidang Siber, Sandi dan Aplikasi Diskominfotik Provinsi DKI Jakarta.</b></p>
                     <p> Balaikota Blok H Lantai 13 Jl. Medan Merdeka Selatan
                         8-9, Jakarta Pusat 10110 </p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.620215706114!2d106.82587777453058!3d-6.18155836056839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f42c1857be71%3A0xe2e79a83d2cb3c4c!2sDinas%20Komunikasi%2C%20Informatika%20dan%20Statistik%20Provinsi%20DKI%20Jakarta!5e0!3m2!1sen!2sid!4v1721622987186!5m2!1sen!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </th>
-                <th>
+                    <th>
                     <div class="form-container">
                         <form action="/submit-form" method="POST">
                             <div class="form-group">
@@ -260,30 +255,17 @@
                             <input type="submit" value="Kirim">
                         </form>
                     </div>
-                
+
 
                 </th>
             </tr>
         </thead>
-        {{-- <tbody>
-            <tr>
-                <td>Andi</td>
-                <td>25</td>
-             
-            </tr>
-        </tbody> --}}
     </table>
-    
-
-
     <footer class="footer">
         <div class="container">
         </div>
     </footer>
-
-    
     <button id="playButton" class="btn btn-primary side-button">Play</button>
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -293,16 +275,15 @@
         const playButton = document.getElementById('playButton');
         const navButtons = document.querySelectorAll('nav .btn');
         playButton.addEventListener('click', () => {
-        isPlaying = !isPlaying;
-        if (isPlaying) {
-            playButton.textContent = 'Mute';
-        } else {
-            playButton.textContent = 'Play';
-        }
-    });
-    
+            isPlaying = !isPlaying;
+            if (isPlaying) {
+                playButton.textContent = 'Mute';
+            } else {
+                playButton.textContent = 'Play';
+                responsiveVoice.cancel();
+            }
+        });
     </script>
-
     <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
 </body>
 

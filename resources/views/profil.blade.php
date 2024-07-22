@@ -7,7 +7,6 @@
     <title>Profil</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        /* styles.css */
         .btn-primary {
             background-color: orange;
             color: white;
@@ -41,9 +40,7 @@
             font-size: 16px;
             background-color: #f5f5f5;
             outline: none;
-            /* menghilangkan garis highlight saat focus */
             box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
-            /* shadow ringan */
         }
 
 
@@ -53,7 +50,6 @@
             padding: 10px 20px;
             border: 2px solid #ccc;
             border-radius: 20px;
-            /* Membuat ujung kotak pencarian berbentuk oval */
             outline: none;
             font-size: 16px;
         }
@@ -174,103 +170,140 @@
             top: 50%;
             transform: translateY(-50%);
         }
-        
-.btn:hover {
-    background-color: #e57800; /* Warna tombol saat dihover */
-    border :2px  solid white;
-    padding: 2px 11px;
-}
-.btn.active {
-    background-color: #e57800; /* Warna tombol saat diaktifkan */
-    border-color: white; /* Border putih untuk tombol aktif */
-}
+
+        .btn:hover {
+            background-color: #e57800;
+            border: 2px solid white;
+            padding: 2px 11px;
+        }
+
+        .btn.active {
+            background-color: #e57800;
+            border-color: white;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 20px;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 100px;
+            font-size: 13px;
+        }
+
+        .flex-container img {
+            max-width: 250px;
+            height: auto;
+            max-width: 350px;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 20px;
+
+            margin: 50 auto;
+            padding: 0 15px;
+        }
+
+        .flex-container .text-content {
+            flex: 1;
+        }
     </style>
 </head>
 
 <body class=" text-black">
+    <div class="header">
+        <header class="bg-orange-800 py-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <img src="/img/Logo.png" alt="Logo" class="h-10">
+                <nav class="space-x-4">
+                    <nav class="space-x-4 ml-auto">
+                        <button class="btn">
+                            <a href="{{ route('welcome') }}" button onclick="responsiveVoice.speak('Home');"
+                                type="button" value="Play">Home</a>
+                            <button class="btn">
+                                <a href="{{ route('profil') }}">Profil</a>
+                                <button class="btn">
+                                    <a href="{{ route('event') }}">Event</a>
+                                    <button class="btn">
+                                        <a href="{{ route('publikasi') }}">Publikasi</a>
 
-   <!-- Header -->
-   <div class="header">
-    <header class="bg-orange-800 py-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <img src="/img/Logo.png" alt="Logo" class="h-10">
-            <nav class="space-x-4">
-                <nav class="space-x-4 ml-auto">
-                <button class="btn" >
-                <a href="{{ route('welcome') }}" button
-                    onclick="responsiveVoice.speak('Home');" type="button" value="Play">Home</a>
-                <button class="btn" >
-                      <a href="{{ route('profil') }}">Profil</a>
-                <button class="btn" >
-                    <a href="{{ route('event') }}">Event</a>
-                <button class="btn">
-                <a href="{{ route('publikasi') }}" >Publikasi</a>
-               <button class="btn">
-                <a href="{{ route('lapor_insiden_siber') }}" >Lapor Insiden Siber</a>
-                <button class="btn">
-                <a href="{{ route('kontak_kami') }}" >Kontak Kami</a> </button>
-           
-                <input type="text" class="search-box" placeholder="Search...">
+                                        <button class="btn">
+                                            <a href="{{ route('lapor_insiden_siber') }}">Lapor Insiden Siber</a>
+                                            <button class="btn">
+                                                <a href="{{ route('kontak_kami') }}">Kontak Kami</a> </button>
+
+                                            <input type="text" class="search-box" placeholder="Search...">
+                    </nav>
                 </nav>
-            </nav>
             </div>
-
-        </div>
+    </div>
     </header>
-</div>
+    </div>
     <div class="carousel-item active">
         <img src="/img/19.png" class="d-block w-100" alt="gambar 1">
     </div>
+    &nbsp;
     <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-          <div class="col"> <img src="/img/Logo.png"> </div>
-          <div class="col">
-            <p> Tim Tanggap Insiden Siber (Computer Security Incident Response Team) Pemerintah Provinsi DKI Jakarta yang selanjutnya disebut dengan JakartaProv-CSIRT merupakan CSIRT Pemprov DKI Jakarta.</p>
-          
-            <p> Tim JakartaProv- CSIRT ditetapkan oleh Sekretaris Daerah Provinsi DKI Jakarta dalam Keputusan Penjabat Sekretaris Daerah DKI Jakarta Nomor: 41 Tahun 2020 Tentang Computer Security Incident Response Team </p>
-           
-            <p> Kepala Dinas Komunikasi Informatika dan Statistik Provinsi DKI Jakarta ditunjuk sebagai Ketua CSIRT Propinsi DKI Jakarta dan ditugaskan untuk melaksanakan memimpin, mengkoordinasikan, memfasilitasi pengembangan kemampuan SDM, pengalokasian sumber daya, memantau, serta melaporkan pelaksanaan terkait JakartaProv-CSIRT. </p>
-        
-            <p> Dalam pembentukannya, JakartaProv-CSIRT memiliki tujuan yaitu: </p>
-       
-            <p> - Membangun mengkoordinasikan, mengkolaborasikan dan mengoperasionalkan sistem mitigasi, manajemen krisis, penanggulangan dan pemulihan terhadap insiden keamanan siber pada sektor Pemerintah Daerah Provinsi DKI Jakarta.
-                - Membangun kapasitas sumber daya penanggulangan dan pemulihan insiden keamanan siber pada sektor Pemerintah Daerah Provinsi DKI Jakarta </p>
-           <p> </p>
-                <p> CSIRT Propinsi DKI Jakarta melaksanakan layanan tanggap insiden siber, berupa:
-                - Layanan reaktif, yaitu layanan yang terkait dengan kebutuhan melakukan respon terhadap insiden siber termasuk penangkalan, penindakan dan pemulihan siber.
-                - Layanan proaktif, yaitu layanan yang mendeteksi dan mencegah serangan siber sebelum ada dampak nyata. </p>
-            <p> CSIRT Propinsi DKI Jakarta secara resmi di-launching pada 23 Desember 2020. Konstituen JakartaProv-CSIRT meliputi Perangkat Daerah (OPD) di lingkungan Pemerintah Daerah Provinsi DKI Jakarta.  </p>
-          </div>
+        <div class="row">
+            <div class="col-12 flex-container">
+                <img src="/img/Logo.png" alt="Logo">
+                <div class="text-content">
+                    <p> Tim Tanggap Insiden Siber (Computer Security Incident Response Team) Pemerintah Provinsi DKI
+                        Jakarta yang selanjutnya disebut dengan <b> JakartaProv-CSIRT</b> merupakan CSIRT Pemprov DKI
+                        Jakarta.</p>
+                    &nbsp;
+                    <p> Tim <b> JakartaProv- CSIRT </b> ditetapkan oleh Sekretaris Daerah Provinsi DKI Jakarta dalam
+                        Keputusan Penjabat Sekretaris Daerah DKI Jakarta Nomor: 41 Tahun 2020 Tentang Computer Security
+                        Incident Response Team </p>
+                    &nbsp;
+                    <p> Kepala Dinas Komunikasi Informatika dan Statistik Provinsi DKI Jakarta ditunjuk sebagai Ketua
+                        CSIRT Propinsi DKI Jakarta dan ditugaskan untuk melaksanakan memimpin, mengkoordinasikan,
+                        memfasilitasi pengembangan kemampuan SDM, pengalokasian sumber daya, memantau, serta melaporkan
+                        pelaksanaan terkait JakartaProv-CSIRT. </p>
+                    &nbsp;
+                    <p> Dalam pembentukannya, JakartaProv-CSIRT memiliki tujuan yaitu: </p>
+                    &nbsp;
+                    <p> - Membangun mengkoordinasikan, mengkolaborasikan dan mengoperasionalkan sistem mitigasi,
+                        manajemen krisis, penanggulangan dan pemulihan terhadap insiden keamanan siber pada sektor
+                        Pemerintah Daerah Provinsi DKI Jakarta.
+                    <p> - Membangun kapasitas sumber daya penanggulangan dan pemulihan insiden keamanan siber pada
+                        sektor Pemerintah Daerah Provinsi DKI Jakarta </p>
+                    &nbsp;
+                    <p> CSIRT Propinsi DKI Jakarta melaksanakan layanan tanggap insiden siber, berupa:
+                    <p> - Layanan reaktif, yaitu layanan yang terkait dengan kebutuhan melakukan respon terhadap insiden
+                        siber termasuk penangkalan, penindakan dan pemulihan siber.
+                    <p>- Layanan proaktif, yaitu layanan yang mendeteksi dan mencegah serangan siber sebelum ada dampak
+                        nyata. </p>
+                    &nbsp;
+                    <p> CSIRT Propinsi DKI Jakarta secara resmi di-launching pada 23 Desember 2020. Konstituen
+                        JakartaProv-CSIRT meliputi Perangkat Daerah (OPD) di lingkungan Pemerintah Daerah Provinsi DKI
+                        Jakarta. </p>
+                </div>
+            </div>
         </div>
-      </div>
-    <footer class="footer">
-        <div class="container">
-        </div>
-    </footer>
-
-   
-    <button id="playButton" class="btn btn-primary side-button">Play</button>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://code.responsivevoice.org/responsivevoice.js?key=N13Zi1Bw"></script>
-    <script>
-        let isPlaying = false;
-        const playButton = document.getElementById('playButton');
-        const navButtons = document.querySelectorAll('nav .btn');
-        playButton.addEventListener('click', () => {
-        isPlaying = !isPlaying;
-        if (isPlaying) {
-            playButton.textContent = 'Mute';
-        } else {
-            playButton.textContent = 'Play';
-        }
-    });
-    
-    </script>
-
-    <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
+        <footer class="footer">
+        </footer>
+        <button id="playButton" class="btn btn-primary side-button">Play</button>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://code.responsivevoice.org/responsivevoice.js?key=N13Zi1Bw"></script>
+        <script>
+            let isPlaying = false;
+            const playButton = document.getElementById('playButton');
+            const navButtons = document.querySelectorAll('nav .btn');
+            playButton.addEventListener('click', () => {
+                isPlaying = !isPlaying;
+                if (isPlaying) {
+                    playButton.textContent = 'Mute';
+                } else {
+                    playButton.textContent = 'Play';
+                    responsiveVoice.cancel();
+                }
+            });
+        </script>
+        <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
 </body>
 
 </html>

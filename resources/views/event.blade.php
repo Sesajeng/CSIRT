@@ -7,7 +7,6 @@
     <title>Event</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        /* styles.css */
         .btn-primary {
             background-color: orange;
             color: white;
@@ -41,9 +40,7 @@
             font-size: 16px;
             background-color: #f5f5f5;
             outline: none;
-            /* menghilangkan garis highlight saat focus */
             box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
-            /* shadow ringan */
         }
 
 
@@ -53,7 +50,6 @@
             padding: 10px 20px;
             border: 2px solid #ccc;
             border-radius: 20px;
-            /* Membuat ujung kotak pencarian berbentuk oval */
             outline: none;
             font-size: 16px;
 
@@ -179,62 +175,52 @@
         .parent-container {
             display: flex;
             justify-content: center;
-            /* Horizontally centers the search container */
             align-items: center;
-            /* Vertically centers the search container, if needed */
             height: 9vh;
-            /* Sets the height of the parent container */
         }
 
         .card-container1 {
             display: flex;
-            /* Adjust the spacing between cards */
             flex-wrap: wrap;
-            /* Allow cards to wrap to the next line if necessary */
+
         }
 
         .card2 {
             border: 1px solid orange;
-            /* Adds a light gray border to each card */
             border-radius: 5px;
-            /* Optional: Rounds the corners of the border */
             margin: 2px;
-            /* Adds some space around each card */
             box-shadow: 10 20px 1px rgba(0, 0, 0, 0.1);
-            /* Optional: Adds a subtle shadow for better visual separation */
             padding: 5px
         }
 
         .card-body {
             padding: 15px;
-            /* Adds some padding inside the card body for better spacing */
+
         }
 
         .line {
             width: 100%;
-            /* Menyesuaikan lebar garis agar sama dengan lebar kartu */
             height: 1px;
-            /* Ketebalan garis */
             background-color: orange;
-            /* Warna garis */
             margin-top: 5px;
-            /* Menyesuaikan margin agar garis menempel pada gambar */
         }
 
         .card-body {
             padding: 10px;
-            /* Menambahkan padding di dalam tubuh kartu untuk spasi yang lebih baik */
+
         }
-        
-.btn:hover {
-    background-color: #e57800; /* Warna tombol saat dihover */
-    border :2px  solid white;
-    padding: 2px 11px;
-}
-.btn.active {
-    background-color: #e57800; /* Warna tombol saat diaktifkan */
-    border-color: white; /* Border putih untuk tombol aktif */
-}
+
+        .btn:hover {
+            background-color: #e57800;
+            border: 2px solid white;
+            padding: 2px 11px;
+        }
+
+        .btn.active {
+            background-color: #e57800;
+            border-color: white;
+
+        }
     </style>
 </head>
 
@@ -246,29 +232,28 @@
                 <img src="/img/Logo.png" alt="Logo" class="h-10">
                 <nav class="space-x-4">
                     <nav class="space-x-4 ml-auto">
-                    <button class="btn" >
-                    <a href="{{ route('welcome') }}" button
-                        onclick="responsiveVoice.speak('Home');" type="button" value="Play">Home</a>
-                    <button class="btn" >
-                          <a href="{{ route('profil') }}">Profil</a>
-                    <button class="btn" >
-                        <a href="{{ route('event') }}">Event</a>
-                    <button class="btn">
-                    <a href="{{ route('publikasi') }}" >Publikasi</a>
-                   <button class="btn">
-                    <a href="{{ route('lapor_insiden_siber') }}" >Lapor Insiden Siber</a>
-                    <button class="btn">
-                    <a href="{{ route('kontak_kami') }}" >Kontak Kami</a> </button>
-                    <input type="text" class="search-box" placeholder="Search...">
+                        <button class="btn">
+                            <a href="{{ route('welcome') }}" button onclick="responsiveVoice.speak('Home');"
+                                type="button" value="Play">Home</a>
+                            <button class="btn">
+                                <a href="{{ route('profil') }}">Profil</a>
+                                <button class="btn">
+                                    <a href="{{ route('event') }}">Event</a>
+                                    <button class="btn">
+                                        <a href="{{ route('publikasi') }}">Publikasi</a>
+                                        <button class="btn">
+                                            <a href="{{ route('lapor_insiden_siber') }}">Lapor Insiden Siber</a>
+                                            <button class="btn">
+                                                <a href="{{ route('kontak_kami') }}">Kontak Kami</a> </button>
+                                            <input type="text" class="search-box" placeholder="Search...">
                     </nav>
                 </nav>
-                </div>
-
             </div>
-        </header>
+    </div>
+    </header>
     </div>
     <div class="carousel-item active">
-        <img src="/img/5.png" class="d-block w-100" alt="gambar 1">
+        <img src="/img/5.png" class="d-block w-100" alt="gambar tampilan event">
     </div>
     <div class="parent-container">
         <div class="search-container">
@@ -277,8 +262,7 @@
     </div>
 
     <div class="menu">
-        <div class="menu-item active">Berita Terkini
-        </div>
+        <div class="menu-item active">Berita Terkini</div>
         <div class="menu-item">Index Berita ></div>
     </div>
     <div class="card-container1">
@@ -313,10 +297,7 @@
         <div class="container">
         </div>
     </footer>
-
-   
     <button id="playButton" class="btn btn-primary side-button">Play</button>
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -326,17 +307,15 @@
         const playButton = document.getElementById('playButton');
         const navButtons = document.querySelectorAll('nav .btn');
         playButton.addEventListener('click', () => {
-        isPlaying = !isPlaying;
-        if (isPlaying) {
-            playButton.textContent = 'Mute';
-        } else {
-            playButton.textContent = 'Play';
-        }
-    });
-    
+            isPlaying = !isPlaying;
+            if (isPlaying) {
+                playButton.textContent = 'Mute';
+            } else {
+                playButton.textContent = 'Play';
+                responsiveVoice.cancel();
+            }
+        });
     </script>
-
-
     <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
 </body>
 
