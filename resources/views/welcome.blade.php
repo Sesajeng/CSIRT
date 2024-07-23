@@ -11,6 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://code.responsivevoice.org/responsivevoice.js?key=N13Zi1Bw"></script>
+
     <style>
         .btn-primary {
             background-color: orange;
@@ -99,10 +100,13 @@
             border: none;
             border-radius: 0px;
             overflow: hidden;
+            width: 50rem;
         }
 
         .card-body {
-            padding: 5px;
+            font-size: 13px;
+            width: 98%;
+            height: 90%;
         }
 
         .header {
@@ -115,12 +119,6 @@
             height: auto;
         }
 
-        /* .carousel {
-            border: 2px solid orange;
-            border-radius: 10px;
-            padding: 20px;
-        } */
-
         .carousel-inner {
             display: flex;
             justify-content: center;
@@ -130,25 +128,7 @@
             gap: 20px;
         }
 
-        .card-container1 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-            gap: 20px;
-            border: 2px;
-            border-radius;
-            2px;
-        }
-
-        .card2 {
-            box-shadow: 5 5px 4px rgba(0, 0, 0, 1);
-            border: 2px;
-            border-radius: 2px;
-            overflow: hidden;
-
-        }
+     
 
         .card-body {
             padding: 5px;
@@ -184,6 +164,125 @@
             background-color: #e57800;
             border-color: white;
         }
+        .box-title1 {
+    width: 200px;
+    float: left;
+    background: #de8300;
+    color: #fff;
+    padding: 5px;
+    font-size: 18px;
+    padding-left: 15px;
+        }
+        .box-title2 {
+    float: right;
+    padding: 5px;
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+.divider-custom .divider-custom-line {
+    width: 100%;
+    /* max-width: 7rem; */
+    height: 0.25rem;
+    background-color: #de8300;
+    border-color: #de8300;
+    }
+    .container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+.divider-custom .divider-custom-line:first-child {
+    margin-right: 0px;
+}
+/* .div{
+    display: block;
+    unicode-bidi: isolate;
+}
+.divider-custom {
+    margin: 1.25rem 0 1.5rem;
+    width: 100%;
+    display: flex;
+}
+.divider-custom .divider-custom-line:last-child {
+    margin-left: 0px;
+}
+.page-section {
+    margin-top: -125px;
+} */
+.infografis {
+    border: solid 2px #fd8e09;
+    border-radius: 20px;
+    width: 87%;
+    padding: 25px;
+}
+.#slider1 .buttons {
+    /* background: #C01313; */
+    /* border-radius: 35px; */
+    display: block;
+    position: absolute;
+    top: 38%;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    color: #fd8e09;
+    font-weight: bold;
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+    font-size: 55px;
+}
+
+.#slider1 .overview {
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 240px;
+    left: 0;
+    top: 0;
+}
+#slider1 .viewport {
+    height: 293px;
+    overflow: hidden;
+    position: relative;
+}
+#slider1 .overview {
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 240px;
+    left: 0;
+    top: 0;
+}
+#slider1 {
+    height: 1%;
+    margin: 30px 0 0;
+    overflow: hidden;
+    position: relative;
+    padding: 0 50px 10px;
+}
+.element.style {
+    width: 2214px;
+    left: 0px;
+}
+.divider-custom .divider-custom-line:last-child {
+    margin-left: 0px;
+}
+
+.divider-custom .divider-custom-line:first-child {
+    margin-right: 0px;
+}
+.divider-custom .divider-custom-line {
+    width: 100%;
+    /* max-width: 7rem; */
+    height: 0.25rem;
+    background-color: #de8300;
+    border-color: #de8300;
+}
     </style>
 </head>
 
@@ -194,20 +293,26 @@
             <div class="container mx-auto flex justify-between items-center">
                 <img src="/img/Logo.png" alt="Logo" class="h-10">
                 <nav class="space-x-4">
-                    <nav class="space-x-4 ml-auto">
-                        <div class="btn nav-item" data-text="Home">Home 
-                                 </div>
-                        <div class="btn nav-item" data-text="Profil">
+                    <ul>
+                        <li class="btn nav-item" data-text="Home" >Home 
+                                 </li>
+                        <li class="btn nav-item" data-text="Profil">
                            Profil 
-                            </div>
+                            </li>
                         <div class="btn nav-item" data-text="Event">
                             Event
                             </div>
-                        <div class="btn nav-item" data-text="Publikasi" a href="{{ route('publikasi')}}">Publikasi </div>
-                        <div class="btn nav-item" data-text="Lapor Insiden Siber" a href="{{ route('lapor_insiden_siber') }}">Lapor Insiden Siber</div>
-                        <div class="btn nav-item" data-text="Kontak Kami" a href="{{ route('kontak_kami') }}">Kontak Kami</div>
+                        <li class="btn nav-item" data-text="Publikasi">
+                            <a href="{{ route('publikasi') }} " class="nav-link">Publikasi  </a>
+                        </li>
+                        <li class="btn nav-item" data-text="Lapor Insiden Siber">  
+                            <a href="{{ route('lapor_insiden_siber') }}" class="nav-link">Lapor Insiden Siber </a> 
+                        </li>
+                        <li class="btn nav-item" data-text="Kontak Kami"> 
+                            <a href="{{ route('kontak_kami') }}" class="nav-link">Kontak Kami </a> 
+                        </li>
                         <input type="text" class="search-box" placeholder="Search..."> </input>
-                    </nav>
+                    </ul>
                 </nav>
             </div>
         </header>
@@ -219,62 +324,134 @@
                 <img src="/img/1.png" class="d-block w-100" alt="gambar 1">
             </div>
         </div>
-
         <button id="audioButton" class="btn btn-primary side-button">Play</button>
         <script>
-            let isPlaying = false;
-            let navItems = document.querySelectorAll('.nav-item');
-
-
-            function speakText(text) {
-                if (isPlaying) {
-                    responsiveVoice.speak(text, 'Indonesian Female');
+            // let isPlaying = false;
+            // let navItems = document.querySelectorAll('.nav-item');
+            // let links = document.querySelectorAll('.nav-link');
+            
+            // // Pengaturan paramSpeak untuk responsiveVoice
+            // var paramSpeak = {
+            //     onstart: function(text) {
+            //         // Callback ketika mulai berbicara
+            //         console.log("Mulai berbicara:", text);
+            //     },
+            //     onend: function() {
+            //         // Callback ketika selesai berbicara
+            //         console.log("Selesai berbicara.");
+            //     },
+            //     pitch: 1
+            // };
+            
+            // // Fungsi untuk berbicara dengan pengaturan paramSpeak
+            // function speakText(text) {
+            //     if (isPlaying) {
+            //         responsiveVoice.speak(text, 'Indonesian Female', paramSpeak);
+            //     }
+            // }
+            
+            // // Event listener untuk tombol audio
+            // document.getElementById('audioButton').addEventListener('click', function() {
+            //     const button = this;
+            //     if (isPlaying) {
+            //         responsiveVoice.cancel(); // Membatalkan semua pemutaran suara
+            //         button.textContent = 'Play';
+            //         isPlaying = false;
+            //     } else {
+            //         responsiveVoice.speak('Selamat Datang di Jakarta Prov CSIRT', 'Indonesian Female', paramSpeak);
+            //         button.textContent = 'Mute';
+            //         isPlaying = true;
+            //     }
+            // });
+            
+            // // Event listener untuk item navigasi
+            // navItems.forEach(item => {
+            //     item.addEventListener('mouseover', function() {
+            //         // Periksa apakah item memiliki link dan status isPlaying adalah true
+            //         if (isPlaying && this.querySelector('.nav-link')) {
+            //             speakText(this.getAttribute('data-text'));
+            //         }
+            //     });
+            // });
+            
+            // // Event listener untuk tautan
+            // links.forEach(link => {
+            //     link.addEventListener('mouseover', function() {
+            //         if (isPlaying) {
+            //             responsiveVoice.cancel(); // Membatalkan suara yang ada sebelum memulai yang baru
+            //             responsiveVoice.speak(this.textContent, 'Indonesian Female', paramSpeak);
+            //         }
+            //     });
+            // });
+            
+            // // Menghindari suara dari link jika audio dimatikan
+            // document.addEventListener('mouseover', function(event) {
+            //     if (!isPlaying) {
+            //         responsiveVoice.cancel(); // Membatalkan suara jika audio dimatikan
+            //     }
+            // });
+            // </script>
+             <script>
+                let isPlaying = false;
+                let navItems = document.querySelectorAll('.nav-item');
+        
+                
+                function speakText(text) {
+                    if (isPlaying) {
+                        responsiveVoice.speak(text, 'Indonesian Female');
+                    }
                 }
-            }
-
-            document.getElementById('audioButton').addEventListener('click', function() {
-                const button = this;
-                if (isPlaying) {
-                    responsiveVoice.cancel();
-                    button.textContent = 'Play';
-                    isPlaying = false;
-                } else {
-                    responsiveVoice.speak('Selamat Datang di Jakarta Prov CSIRT', 'Indonesian Female');
-                    button.textContent = 'Mute';
-                    isPlaying = true;
-                }
-            });
-
-
-            navItems.forEach(item => {
-                item.addEventListener('mouseover', function() {
-                    speakText(this.getAttribute('data-text'));
+        
+                document.getElementById('audioButton').addEventListener('click', function() {
+                    const button = this;
+                    if (isPlaying) {
+                        responsiveVoice.cancel(); 
+                        button.textContent = 'Play';
+                        isPlaying = false;
+                    } else {
+                        button.textContent = 'Mute', 'Selamat Datang di Jakarta Prov CSIRT';
+                        isPlaying = true;
+                    }
                 });
-            });
-        </script>
 
-        <div class="menu">
-            <div class="menu-item active">Berita Terkini
-            </div>
-            <div class="menu-item">Index Berita ></div>
+                navItems.forEach(item => {
+                    item.addEventListener('mouseover', function() {
+                        speakText(this.getAttribute('data-text'));
+                    });
+                });
+            </script>
+        &nbsp;
+<section class="page-section portofolio">
+    <div class="container conten">
+        <div class="box-title1">Berita Tekrini </div>
+        <div class="box-title2">
+            <a href=" " style="color: black;"> Index Berita </a>
         </div>
+    </div>
+    <div class="container content">
+        <diiv classs="divider-custom">
+            <div class="divider-custom-line"></div>
+        </diiv>
+    </div>
+</section>
+&nbsp;
         <div class="card-container">
             <div class="card" style="width: 18rem;">
                 <img src="/img/3.png" class="card-img-top" alt="Berita 1">
                 <div class="card-body">
-                    <h5 class="card-title">Carbanak Malware Kembali Beroperasi Dalam Serangan Ransomware</h5>
+                    <h6 class="card-title">Carbanak Malware Kembali Beroperasi Dalam Serangan Ransomware</h6>
                     <p class="card-text">2024-01-10 13:50:20 |
                         https://securityaffairs.com/156410/malware/carbanak-malware-ransomware-attacks.html</p>
                     <p class="card-text">Peneliti dari NCC Group melaporkan adanya aktivitas malware carbanak dalam
                         sebuah serangan ransomware. Kelompok kejahatan siber Carbanak pertama kali diidentifikasi oleh
                         Kaspersky Lab pada tahun 2015, dan telah berhasil mencuri setidaknya 300 juta</p>
-                    <a href="#" class="btn nav-item" data-text="Selengkapnya">SELENGKAPNYA</a>
+                <div class="btn nav-item" data-text="Selengkapnya">SELENGKAPNYA</div>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <img src="/img/11.jpg" class="card-img-top" alt="Berita 2">
                 <div class="card-body">
-                    <h5 class="card-title">Peningkatan Aktivitas Rugmi Malware Loader</h5>
+                    <h6 class="card-title">Peningkatan Aktivitas Rugmi Malware Loader</h6>
                     <p class="card-text"> 2024-01-10 13:49:27 |
                         https://thehackernews.com/2023/12/new-rugmi-malware-loader-surges-with.html</p>
                     <p class="card-text"> Malware loader baru bernama Rugmi digunakan oleh pelaku ancaman untuk
@@ -286,8 +463,8 @@
             <div class="card" style="width: 18rem;">
                 <img src="/img/12.jpg" class="card-img-top" alt="Berita 3">
                 <div class="card-body">
-                    <h5 class="card-title"> Barracuda Memperbaiki Kerentanan Baru ESG Zero-Day yang Dieksploitasi Oleh
-                        Kelompok Peretas UNC4841</h5>
+                    <h6 class="card-title"> Barracuda Memperbaiki Kerentanan Baru ESG Zero-Day yang Dieksploitasi Oleh
+                        Kelompok Peretas UNC4841</h6>
                     <p class="card-text"> 2024-01-10 13:48:18 | idsirtii.or.id</p>
                     <p class="card-text"> Email Security Gateways (ESG) pada Barracuda Networks kembali menjadi korban
                         eksploitasi para peretas yang menyalahgunakan kerentanan zero-day pada open-source library untuk
@@ -296,39 +473,27 @@
                 </div>
             </div>
         </div>
-        {{-- <div id="infografisCarousel" class="carousel slide" data-bs-ride="carousel">
-            <h2>Infografis Terkini Keamanan Siber</h2>
-            <div class="carousel-inner">
-                <div class="carousel-item">
-                    <img src="/img/12.png" class="d-block w-100" alt="Infografis 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="/img/13.png" class="d-block w-100" alt="Infografis 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="/img/14.png" class="d-block w-100" alt="Infografis 3">
-                </div>
-                <div class="carousel-item">
-                    <img src="/img/15.png" class="d-block w-100" alt="Infografis 3">
-                </div>
+        {{-- <section class="page-section portfolio" id="portfolio">
+            <div class="container infografis" style="margin-top: -145px;">
+                <h6>Infografis Terkini<br>Keamanan Siber</h6>
+                <div id="slider1">  --}}
+                    {{-- <a class="buttons prev" href="#">&lt;</a>
+                    <div class="viewport">
+                        <ul class="overview" style="width: 2214px; left: 0px;">
+                            <li><a data-fancybox="img" data-src="/img/12.png">
+                                    <img src="/img/12.png" style="width:100%;border:1px solid #000;"></a></li><li><a data-fancybox="img" data-src="/img/12.png">
+                                    <img src="/img/8.jpg" style="width:100%;border:1px solid #000;"></a></li><li><a data-fancybox="img" data-src="/img/12.png">
+                                    <img src= " /img/12.png" style="width:100%;border:1px solid #000;"></a></li><li><a data-fancybox="img" data-src="/img.12.png"> --}}
+                                    {{-- <img src="images/gallery/Apa yang harus dilakukan pengelola server jika mengalami insiden siber_20230605075944.jpg" style="width:100%;border:1px solid #000;"></a></li><li><a data-fancybox="gallery" data-src="/images/gallery/WhatsApp Image 2023-05-23 at 11.22.14_20230523042511.jpeg">
+                                    <img src="images/gallery/WhatsApp Image 2023-05-23 at 11.22.14_20230523042511.jpeg" style="width:100%;border:1px solid #000;"></a></li><li><a data-fancybox="gallery" data-src="/images/gallery/Tips agar terhindar dari serangan backdoor_20230523042411.jpeg">
+                                    <img src="images/gallery/Tips agar terhindar dari serangan backdoor_20230523042411.jpeg" style="width:100%;border:1px solid #000;"></a></li>                </ul>  --}}
+                    {{-- </div>
+                    <a class="buttons next" href="#">&gt;</a>
+                </div> 
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#infografisCarousel"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#infografisCarousel"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div> --}}
-        {{-- <div class="menu">
-            <div class="btn nav-item" data-text=" Berita Terkini">Berita Terkini
-            </div>
-            <div class="btn nav-item" data-text=" Index Berita">Index Berita ></div>
-        </div>
-        <div class="card-container1">
+        </section> --}}
+        
+        {{-- <div class="card-container1">
             <div class="card2" style="width: 18rem;">
                 <img src="/img/16.png" class="card-img-top" alt="Berita 1">
                 <div class="card-body">
@@ -351,7 +516,7 @@
                     <p class="card-text"> 20-Oct-2022</p>
                 </div>
             </div>
-        </div> --}}
+        </div>  --}}
         <footer class="footer">
             <div class="container">
             </div>
