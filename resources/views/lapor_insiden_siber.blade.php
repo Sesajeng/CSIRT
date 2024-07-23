@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lapor Insiden Siber</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=N13Zi1Bw"></script>
+
     <style>
         .btn-primary {
             background-color: orange;
@@ -188,21 +194,22 @@
             <div class="container mx-auto flex justify-between items-center">
                 <img src="/img/Logo.png" alt="Logo" class="h-10">
                 <nav class="space-x-4">
-                    <nav class="space-x-4 ml-auto">
-                        <button class="btn">
-                            <a href="{{ route('welcome') }}" button onclick="responsiveVoice.speak('Home');"
-                                type="button" value="Play">Home</a>
-                            <button class="btn">
-                                <a href="{{ route('profil') }}">Profil</a>
-                                <button class="btn">
-                                    <a href="{{ route('event') }}">Event</a>
-                                    <button class="btn">
-                                        <a href="{{ route('publikasi') }}">Publikasi</a>
-                                        <button class="btn">
-                                            <a href="{{ route('lapor_insiden_siber') }}">Lapor Insiden Siber</a>
-                                            <button class="btn">
-                                                <a href="{{ route('kontak_kami') }}">Kontak Kami</a> </button>
-                                            <input type="text" class="search-box" placeholder="Search...">
+                    <nav class="space-x-4">
+                        <ul>
+                            <li class="btn nav-item" onclick="Home()" data-text="Home">Home
+                            </li>
+                            <li class="btn nav-item" onclick="Profil()" data-text="Profil">Profil
+                            </li>
+                            <li class="btn nav-item" onclick="Event()" data-text="Event">Event
+                            </li>
+                            <li class="btn nav-item" onclick="Publikasi()" data-text="Publikasi">Publikasi
+                            </li>
+                            <li class="btn nav-item" onclick="Lapor()" data-text="Lapor Insiden Siber">Lapor Insiden Siber
+                            </li>
+                            <li class="btn nav-item" onclick="Kontak()" data-text="Kontak Kami">Kontak Kami
+                            </li>
+                            <input type="text" class="search-box" placeholder="Search..."> </input>
+                        </ul>
                     </nav>
                 </nav>
             </div>
@@ -213,25 +220,69 @@
         <div class="container">
         </div>
     </footer>
-    <button id="playButton" class="btn btn-primary side-button">Play</button>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://code.responsivevoice.org/responsivevoice.js?key=N13Zi1Bw"></script>
-    <script>
-        let isPlaying = false;
-        const playButton = document.getElementById('playButton');
-        const navButtons = document.querySelectorAll('nav .btn');
-        playButton.addEventListener('click', () => {
-            isPlaying = !isPlaying;
-            if (isPlaying) {
-                playButton.textContent = 'Mute';
-            } else {
-                playButton.textContent = 'Play';
-                responsiveVoice.cancel();
+    <button id="audioButton" class="btn btn-primary side-button">Play</button>
+        <script>
+            let isPlaying = false;
+            const navItems = document.querySelectorAll('.nav-item');
+
+            function speakText(text) {
+                if (isPlaying) {
+                    responsiveVoice.speak(text, 'Indonesian Female');
+                }
             }
-        });
-    </script>
+
+            document.getElementById('audioButton').addEventListener('click', function() {
+                const button = this;
+                if (isPlaying) {
+                    responsiveVoice.cancel();
+                    button.textContent = 'Play';
+                    isPlaying = false;
+                } else {
+                    button.textContent = 'Mute', 'Selamat Datang di Jakarta Prov CSIRT';
+                    isPlaying = true;
+                }
+            });
+
+            navItems.forEach(item => {
+                item.addEventListener('mouseover', function(event) {
+
+                    const text = item.getAttribute('data-text') || event.target.getAttribute('data-text');
+                    if (isPlaying) {
+                        speakText(text);
+                    }
+                });
+            });
+        </script>
+        <script>
+            function Home() {
+                window.location.href = '{{ route('welcome') }}';;
+            }
+
+            function Profil() {
+                window.location.href = '{{ route('profil') }}';;
+            }
+
+            function Event() {
+                window.location.href = '{{ route('event') }}';;
+            }
+
+            function Publikasi() {
+                window.location.href = '{{ route('publikasi') }}';;
+            }
+
+            function Lapor() {
+                window.location.href = '{{ route('lapor_insiden_siber') }}';
+            }
+
+            function Kontak() {
+                window.location.href = '{{ route('kontak_kami') }}';
+            }
+
+            function IndexBerita() {
+                window.location.href = '{{ route('index_berita') }}';;
+            }
+        </script>
+
     <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
 </body>
 

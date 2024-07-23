@@ -11,6 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://code.responsivevoice.org/responsivevoice.js?key=N13Zi1Bw"></script>
+
     <style>
         .btn-primary {
             background-color: orange;
@@ -201,14 +202,22 @@
                 <img src="/img/Logo.png" alt="Logo" class="h-10">
                 <nav class="space-x-4">
                     <nav class="space-x-4 ml-auto">
-                        <nav class="space-x-4 ml-auto">
-                            <div class="btn nav-item" data-text="Home" a href="{{ route('welcome') }}"> Home  </div>
-                            <div class="btn nav-item" data-text="Profil" a href="{{ route('profil') }}">Profil </div>
-                            <div class="btn nav-item" data-text="Event" a href="{{ route('event') }}">Event</div>
-                            <div class="btn nav-item" data-text="Publikasi" a href="{{ route('publikasi')}}">Publikasi </div>
-                            <div class="btn nav-item" data-text="Lapor Insiden Siber" a href="{{ route('lapor_insiden_siber') }}">Lapor Insiden Siber</div>
-                            <div class="btn nav-item" data-text="Kontak Kami" a href="{{ route('kontak_kami') }}">Kontak Kami</div>
-                            <input type="text" class="search-box" placeholder="Search..."> </input>
+                        <nav class="space-x-4">
+                            <ul>
+                                <li class="btn nav-item" onclick="Home()" data-text="Home">Home
+                                </li>
+                                <li class="btn nav-item" onclick="Profil()" data-text="Profil">Profil
+                                </li>
+                                <li class="btn nav-item" onclick="Event()" data-text="Event">Event
+                                </li>
+                                <li class="btn nav-item" onclick="Publikasi()" data-text="Publikasi">Publikasi
+                                </li>
+                                <li class="btn nav-item" onclick="Lapor()" data-text="Lapor Insiden Siber">Lapor Insiden Siber
+                                </li>
+                                <li class="btn nav-item" onclick="Kontak()" data-text="Kontak Kami">Kontak Kami
+                                </li>
+                                <input type="text" class="search-box" placeholder="Search..."> </input>
+                            </ul>
                         </nav>
                 </nav>
             </div>
@@ -218,12 +227,10 @@
     <div class="carousel-item active">
         <img src="/img/18.png" class="d-block w-100" alt="gambar 1">
     </div>
-
     <button id="audioButton" class="btn btn-primary side-button">Play</button>
     <script>
         let isPlaying = false;
-        let navItems = document.querySelectorAll('.nav-item');
-
+        const navItems = document.querySelectorAll('.nav-item');
 
         function speakText(text) {
             if (isPlaying) {
@@ -238,19 +245,51 @@
                 button.textContent = 'Play';
                 isPlaying = false;
             } else {
-                button.textContent = 'Mute';
+                button.textContent = 'Mute', 'Selamat Datang di Jakarta Prov CSIRT';
                 isPlaying = true;
             }
         });
 
-
         navItems.forEach(item => {
-            item.addEventListener('mouseover', function() {
-                speakText(this.getAttribute('data-text'));
+            item.addEventListener('mouseover', function(event) {
+
+                const text = item.getAttribute('data-text') || event.target.getAttribute('data-text');
+                if (isPlaying) {
+                    speakText(text);
+                }
             });
         });
     </script>
+    <script>
+        function Home() {
+            window.location.href = '{{ route('welcome') }}';;
+        }
 
+        function Profil() {
+            window.location.href = '{{ route('profil') }}';;
+        }
+
+        function Event() {
+            window.location.href = '{{ route('event') }}';;
+        }
+
+        function Publikasi() {
+            window.location.href = '{{ route('publikasi') }}';;
+        }
+
+        function Lapor() {
+            window.location.href = '{{ route('lapor_insiden_siber') }}';
+        }
+
+        function Kontak() {
+            window.location.href = '{{ route('kontak_kami') }}';
+        }
+
+        function IndexBerita() {
+            window.location.href = '{{ route('index_berita') }}';;
+        }
+    </script>
+   
 
     <table>
         <thead>

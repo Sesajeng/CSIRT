@@ -128,7 +128,7 @@
             gap: 20px;
         }
 
-     
+
 
         .card-body {
             padding: 5px;
@@ -164,125 +164,127 @@
             background-color: #e57800;
             border-color: white;
         }
+
         .box-title1 {
-    width: 200px;
-    float: left;
-    background: #de8300;
-    color: #fff;
-    padding: 5px;
-    font-size: 18px;
-    padding-left: 15px;
+            width: 200px;
+            float: left;
+            background: #de8300;
+            color: #fff;
+            padding: 5px;
+            font-size: 18px;
+            padding-left: 15px;
         }
+
         .box-title2 {
-    float: right;
-    padding: 5px;
-    font-size: 18px;
-    padding-left: 15px;
-}
+            float: right;
+            padding: 5px;
+            font-size: 18px;
+            padding-left: 15px;
+        }
 
-.divider-custom .divider-custom-line {
-    width: 100%;
-    /* max-width: 7rem; */
-    height: 0.25rem;
-    background-color: #de8300;
-    border-color: #de8300;
-    }
-    .container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
-    width: 100%;
-    padding-right: var(--bs-gutter-x, 0.75rem);
-    padding-left: var(--bs-gutter-x, 0.75rem);
-    margin-right: auto;
-    margin-left: auto;
-}
-.divider-custom .divider-custom-line:first-child {
-    margin-right: 0px;
-}
-/* .div{
-    display: block;
-    unicode-bidi: isolate;
-}
-.divider-custom {
-    margin: 1.25rem 0 1.5rem;
-    width: 100%;
-    display: flex;
-}
-.divider-custom .divider-custom-line:last-child {
-    margin-left: 0px;
-}
-.page-section {
-    margin-top: -125px;
-} */
-.infografis {
-    border: solid 2px #fd8e09;
-    border-radius: 20px;
-    width: 87%;
-    padding: 25px;
-}
-.#slider1 .buttons {
-    /* background: #C01313; */
-    /* border-radius: 35px; */
-    display: block;
-    position: absolute;
-    top: 38%;
-    left: 0;
-    width: 50px;
-    height: 50px;
-    color: #fd8e09;
-    font-weight: bold;
-    text-align: center;
-    line-height: 35px;
-    text-decoration: none;
-    font-size: 55px;
-}
+        .divider-custom .divider-custom-line {
+            width: 100%;
+            /* max-width: 7rem; */
+            height: 0.25rem;
+            background-color: #de8300;
+            border-color: #de8300;
+        }
 
-.#slider1 .overview {
-    list-style: none;
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    width: 240px;
-    left: 0;
-    top: 0;
-}
-#slider1 .viewport {
-    height: 293px;
-    overflow: hidden;
-    position: relative;
-}
-#slider1 .overview {
-    list-style: none;
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    width: 240px;
-    left: 0;
-    top: 0;
-}
-#slider1 {
-    height: 1%;
-    margin: 30px 0 0;
-    overflow: hidden;
-    position: relative;
-    padding: 0 50px 10px;
-}
-.element.style {
-    width: 2214px;
-    left: 0px;
-}
-.divider-custom .divider-custom-line:last-child {
-    margin-left: 0px;
-}
+        .container,
+        .container-fluid,
+        .container-xxl,
+        .container-xl,
+        .container-lg,
+        .container-md,
+        .container-sm {
+            width: 100%;
+            padding-right: var(--bs-gutter-x, 0.75rem);
+            padding-left: var(--bs-gutter-x, 0.75rem);
+            margin-right: auto;
+            margin-left: auto;
+        }
 
-.divider-custom .divider-custom-line:first-child {
-    margin-right: 0px;
-}
-.divider-custom .divider-custom-line {
-    width: 100%;
-    /* max-width: 7rem; */
-    height: 0.25rem;
-    background-color: #de8300;
-    border-color: #de8300;
-}
+        .divider-custom .divider-custom-line:first-child {
+            margin-right: 0px;
+        }
+        .infografis {
+            border: solid 2px #fd8e09;
+            border-radius: 20px;
+            width: 87%;
+            padding: 25px;
+        }
+
+        .#slider1 .buttons {
+            /* background: #C01313; */
+            /* border-radius: 35px; */
+            display: block;
+            position: absolute;
+            top: 38%;
+            left: 0;
+            width: 50px;
+            height: 50px;
+            color: #fd8e09;
+            font-weight: bold;
+            text-align: center;
+            line-height: 35px;
+            text-decoration: none;
+            font-size: 55px;
+        }
+
+        .#slider1 .overview {
+            list-style: none;
+            position: absolute;
+            padding: 0;
+            margin: 0;
+            width: 240px;
+            left: 0;
+            top: 0;
+        }
+
+        #slider1 .viewport {
+            height: 293px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #slider1 .overview {
+            list-style: none;
+            position: absolute;
+            padding: 0;
+            margin: 0;
+            width: 240px;
+            left: 0;
+            top: 0;
+        }
+
+        #slider1 {
+            height: 1%;
+            margin: 30px 0 0;
+            overflow: hidden;
+            position: relative;
+            padding: 0 50px 10px;
+        }
+
+        .element.style {
+            width: 2214px;
+            left: 0px;
+        }
+
+        .divider-custom .divider-custom-line:last-child {
+            margin-left: 0px;
+        }
+
+        .divider-custom .divider-custom-line:first-child {
+            margin-right: 0px;
+        }
+
+        .divider-custom .divider-custom-line {
+            width: 100%;
+            /* max-width: 7rem; */
+            height: 0.25rem;
+            background-color: #de8300;
+            border-color: #de8300;
+        }
     </style>
 </head>
 
@@ -294,22 +296,17 @@
                 <img src="/img/Logo.png" alt="Logo" class="h-10">
                 <nav class="space-x-4">
                     <ul>
-                        <li class="btn nav-item" data-text="Home" >Home 
-                                 </li>
-                        <li class="btn nav-item" data-text="Profil">
-                           Profil 
-                            </li>
-                        <div class="btn nav-item" data-text="Event">
-                            Event
-                            </div>
-                        <li class="btn nav-item" data-text="Publikasi">
-                            <a href="{{ route('publikasi') }} " class="nav-link">Publikasi  </a>
+                        <li class="btn nav-item" onclick="Home()" data-text="Home">Home
                         </li>
-                        <li class="btn nav-item" data-text="Lapor Insiden Siber">  
-                            <a href="{{ route('lapor_insiden_siber') }}" class="nav-link">Lapor Insiden Siber </a> 
+                        <li class="btn nav-item" onclick="Profil()" data-text="Profil">Profil
                         </li>
-                        <li class="btn nav-item" data-text="Kontak Kami"> 
-                            <a href="{{ route('kontak_kami') }}" class="nav-link">Kontak Kami </a> 
+                        <li class="btn nav-item" onclick="Event()" data-text="Event">Event
+                        </li>
+                        <li class="btn nav-item" onclick="Publikasi()" data-text="Publikasi">Publikasi
+                        </li>
+                        <li class="btn nav-item" onclick="Lapor()" data-text="Lapor Insiden Siber">Lapor Insiden Siber
+                        </li>
+                        <li class="btn nav-item" onclick="Kontak()" data-text="Kontak Kami">Kontak Kami
                         </li>
                         <input type="text" class="search-box" placeholder="Search..."> </input>
                     </ul>
@@ -326,115 +323,84 @@
         </div>
         <button id="audioButton" class="btn btn-primary side-button">Play</button>
         <script>
-            // let isPlaying = false;
-            // let navItems = document.querySelectorAll('.nav-item');
-            // let links = document.querySelectorAll('.nav-link');
-            
-            // // Pengaturan paramSpeak untuk responsiveVoice
-            // var paramSpeak = {
-            //     onstart: function(text) {
-            //         // Callback ketika mulai berbicara
-            //         console.log("Mulai berbicara:", text);
-            //     },
-            //     onend: function() {
-            //         // Callback ketika selesai berbicara
-            //         console.log("Selesai berbicara.");
-            //     },
-            //     pitch: 1
-            // };
-            
-            // // Fungsi untuk berbicara dengan pengaturan paramSpeak
-            // function speakText(text) {
-            //     if (isPlaying) {
-            //         responsiveVoice.speak(text, 'Indonesian Female', paramSpeak);
-            //     }
-            // }
-            
-            // // Event listener untuk tombol audio
-            // document.getElementById('audioButton').addEventListener('click', function() {
-            //     const button = this;
-            //     if (isPlaying) {
-            //         responsiveVoice.cancel(); // Membatalkan semua pemutaran suara
-            //         button.textContent = 'Play';
-            //         isPlaying = false;
-            //     } else {
-            //         responsiveVoice.speak('Selamat Datang di Jakarta Prov CSIRT', 'Indonesian Female', paramSpeak);
-            //         button.textContent = 'Mute';
-            //         isPlaying = true;
-            //     }
-            // });
-            
-            // // Event listener untuk item navigasi
-            // navItems.forEach(item => {
-            //     item.addEventListener('mouseover', function() {
-            //         // Periksa apakah item memiliki link dan status isPlaying adalah true
-            //         if (isPlaying && this.querySelector('.nav-link')) {
-            //             speakText(this.getAttribute('data-text'));
-            //         }
-            //     });
-            // });
-            
-            // // Event listener untuk tautan
-            // links.forEach(link => {
-            //     link.addEventListener('mouseover', function() {
-            //         if (isPlaying) {
-            //             responsiveVoice.cancel(); // Membatalkan suara yang ada sebelum memulai yang baru
-            //             responsiveVoice.speak(this.textContent, 'Indonesian Female', paramSpeak);
-            //         }
-            //     });
-            // });
-            
-            // // Menghindari suara dari link jika audio dimatikan
-            // document.addEventListener('mouseover', function(event) {
-            //     if (!isPlaying) {
-            //         responsiveVoice.cancel(); // Membatalkan suara jika audio dimatikan
-            //     }
-            // });
-            // </script>
-             <script>
-                let isPlaying = false;
-                let navItems = document.querySelectorAll('.nav-item');
-        
-                
-                function speakText(text) {
-                    if (isPlaying) {
-                        responsiveVoice.speak(text, 'Indonesian Female');
-                    }
-                }
-        
-                document.getElementById('audioButton').addEventListener('click', function() {
-                    const button = this;
-                    if (isPlaying) {
-                        responsiveVoice.cancel(); 
-                        button.textContent = 'Play';
-                        isPlaying = false;
-                    } else {
-                        button.textContent = 'Mute', 'Selamat Datang di Jakarta Prov CSIRT';
-                        isPlaying = true;
-                    }
-                });
+            let isPlaying = false;
+            const navItems = document.querySelectorAll('.nav-item');
 
-                navItems.forEach(item => {
-                    item.addEventListener('mouseover', function() {
-                        speakText(this.getAttribute('data-text'));
-                    });
+            function speakText(text) {
+                if (isPlaying) {
+                    responsiveVoice.speak(text, 'Indonesian Female');
+                }
+            }
+
+            document.getElementById('audioButton').addEventListener('click', function() {
+                const button = this;
+                if (isPlaying) {
+                    responsiveVoice.cancel();
+                    button.textContent = 'Play';
+                    isPlaying = false;
+                } else {
+                    button.textContent = 'Mute', 'Selamat Datang di Jakarta Prov CSIRT';
+                    isPlaying = true;
+                }
+            });
+
+            navItems.forEach(item => {
+                item.addEventListener('mouseover', function(event) {
+
+                    const text = item.getAttribute('data-text') || event.target.getAttribute('data-text');
+                    if (isPlaying) {
+                        speakText(text);
+                    }
                 });
-            </script>
+            });
+        </script>
+        <script>
+            function Home() {
+                window.location.href = '{{ route('welcome') }}';;
+            }
+
+            function Profil() {
+                window.location.href = '{{ route('profil') }}';;
+            }
+
+            function Event() {
+                window.location.href = '{{ route('event') }}';;
+            }
+
+            function Publikasi() {
+                window.location.href = '{{ route('publikasi') }}';;
+            }
+
+            function Lapor() {
+                window.location.href = '{{ route('lapor_insiden_siber') }}';
+            }
+
+            function Kontak() {
+                window.location.href = '{{ route('kontak_kami') }}';
+            }
+
+            function IndexBerita() {
+                window.location.href = '{{ route('index_berita') }}';;
+            }
+        </script>
+
+
         &nbsp;
-<section class="page-section portofolio">
-    <div class="container conten">
-        <div class="box-title1">Berita Tekrini </div>
-        <div class="box-title2">
-            <a href=" " style="color: black;"> Index Berita </a>
-        </div>
-    </div>
-    <div class="container content">
-        <diiv classs="divider-custom">
-            <div class="divider-custom-line"></div>
-        </diiv>
-    </div>
-</section>
-&nbsp;
+        <section class="page-section portofolio">
+            <div class="container conten">
+                <div class="box-title1">Berita Tekrini </div>
+                <div class="box-title2">
+                    <p class="nav-item" onclick="IndexBerita()" data-text="Index Berita" style="color: black;"> Index
+                        Berita </a>
+                </div>
+            </div>
+            <div class="container content">
+                <diiv classs="divider-custom">
+                    <div class="divider-custom-line"></div>
+                </diiv>
+            </div>
+        </section>
+        &nbsp;
         <div class="card-container">
             <div class="card" style="width: 18rem;">
                 <img src="/img/3.png" class="card-img-top" alt="Berita 1">
@@ -445,7 +411,7 @@
                     <p class="card-text">Peneliti dari NCC Group melaporkan adanya aktivitas malware carbanak dalam
                         sebuah serangan ransomware. Kelompok kejahatan siber Carbanak pertama kali diidentifikasi oleh
                         Kaspersky Lab pada tahun 2015, dan telah berhasil mencuri setidaknya 300 juta</p>
-                <div class="btn nav-item" data-text="Selengkapnya">SELENGKAPNYA</div>
+                    <div class="btn nav-item" onclick="Selengkapnya1()" data-text="Selengkapnya">SELENGKAPNYA</div>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -457,43 +423,46 @@
                     <p class="card-text"> Malware loader baru bernama Rugmi digunakan oleh pelaku ancaman untuk
                         menyebarkan pencuri informasi seperti Lumma Stealer, Vidar, RecordBreaker, dan Rescoms.
                         Perusahaan keamanan siber ESET melacak trojan ini dengan nama Win/TrojanDownloader.Rugmi,</p>
-                    <a href="#" class="btn nav-item" data-text="Selengkapnya">SELENGKAPNYA</a>
+                    <div class="btn nav-item" onclick="Selengkapnya2()" data-text="Selengkapnya">SELENGKAPNYA</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/img/12.jpg" class="card-img-top" alt="Berita 3">
+                    <div class="card-body">
+                        <h6 class="card-title"> Barracuda Memperbaiki Kerentanan Baru ESG Zero-Day yang Dieksploitasi
+                            Oleh
+                            Kelompok Peretas UNC4841</h6>
+                        <p class="card-text"> 2024-01-10 13:48:18 | idsirtii.or.id</p>
+                        <p class="card-text"> Email Security Gateways (ESG) pada Barracuda Networks kembali menjadi
+                            korban
+                            eksploitasi para peretas yang menyalahgunakan kerentanan zero-day pada open-source library
+                            untuk
+                            memproses file Excel. Kerentanan yang diidentifikasi sebagai CVE-2023-710</p>
+                        <a href="#" class="btn nav-item" data-text="Selengkapnya">SELENGKAPNYA</a>
+                    </div>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="/img/12.jpg" class="card-img-top" alt="Berita 3">
-                <div class="card-body">
-                    <h6 class="card-title"> Barracuda Memperbaiki Kerentanan Baru ESG Zero-Day yang Dieksploitasi Oleh
-                        Kelompok Peretas UNC4841</h6>
-                    <p class="card-text"> 2024-01-10 13:48:18 | idsirtii.or.id</p>
-                    <p class="card-text"> Email Security Gateways (ESG) pada Barracuda Networks kembali menjadi korban
-                        eksploitasi para peretas yang menyalahgunakan kerentanan zero-day pada open-source library untuk
-                        memproses file Excel. Kerentanan yang diidentifikasi sebagai CVE-2023-710</p>
-                    <a href="#" class="btn nav-item" data-text="Selengkapnya">SELENGKAPNYA</a>
-                </div>
-            </div>
-        </div>
-        {{-- <section class="page-section portfolio" id="portfolio">
+            {{-- <section class="page-section portfolio" id="portfolio">
             <div class="container infografis" style="margin-top: -145px;">
                 <h6>Infografis Terkini<br>Keamanan Siber</h6>
                 <div id="slider1">  --}}
-                    {{-- <a class="buttons prev" href="#">&lt;</a>
+            {{-- <a class="buttons prev" href="#">&lt;</a>
                     <div class="viewport">
                         <ul class="overview" style="width: 2214px; left: 0px;">
                             <li><a data-fancybox="img" data-src="/img/12.png">
                                     <img src="/img/12.png" style="width:100%;border:1px solid #000;"></a></li><li><a data-fancybox="img" data-src="/img/12.png">
                                     <img src="/img/8.jpg" style="width:100%;border:1px solid #000;"></a></li><li><a data-fancybox="img" data-src="/img/12.png">
                                     <img src= " /img/12.png" style="width:100%;border:1px solid #000;"></a></li><li><a data-fancybox="img" data-src="/img.12.png"> --}}
-                                    {{-- <img src="images/gallery/Apa yang harus dilakukan pengelola server jika mengalami insiden siber_20230605075944.jpg" style="width:100%;border:1px solid #000;"></a></li><li><a data-fancybox="gallery" data-src="/images/gallery/WhatsApp Image 2023-05-23 at 11.22.14_20230523042511.jpeg">
+            {{-- <img src="images/gallery/Apa yang harus dilakukan pengelola server jika mengalami insiden siber_20230605075944.jpg" style="width:100%;border:1px solid #000;"></a></li><li><a data-fancybox="gallery" data-src="/images/gallery/WhatsApp Image 2023-05-23 at 11.22.14_20230523042511.jpeg">
                                     <img src="images/gallery/WhatsApp Image 2023-05-23 at 11.22.14_20230523042511.jpeg" style="width:100%;border:1px solid #000;"></a></li><li><a data-fancybox="gallery" data-src="/images/gallery/Tips agar terhindar dari serangan backdoor_20230523042411.jpeg">
                                     <img src="images/gallery/Tips agar terhindar dari serangan backdoor_20230523042411.jpeg" style="width:100%;border:1px solid #000;"></a></li>                </ul>  --}}
-                    {{-- </div>
+            {{-- </div>
                     <a class="buttons next" href="#">&gt;</a>
                 </div> 
             </div>
         </section> --}}
-        
-        {{-- <div class="card-container1">
+
+            {{-- <div class="card-container1">
             <div class="card2" style="width: 18rem;">
                 <img src="/img/16.png" class="card-img-top" alt="Berita 1">
                 <div class="card-body">
@@ -517,12 +486,12 @@
                 </div>
             </div>
         </div>  --}}
-        <footer class="footer">
-            <div class="container">
-            </div>
-        </footer>
-        
-        <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
+            <footer class="footer">
+                <div class="container">
+                </div>
+            </footer>
+
+            <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
 </body>
 
 </html>
