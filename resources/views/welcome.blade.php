@@ -719,8 +719,6 @@
                 </div>
             </div>
         </section>
-        
-
             <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
 </body>
 
