@@ -587,25 +587,6 @@
                     </div>
                 </div>
         </div>
-            {{-- <section class="page-section portfolio" id="portfolio">
-            <div class="container infografis" style="margin-top: -145px;">
-                <h6>Infografis Terkini<br>Keamanan Siber</h6>
-                <div id="slider1"> 
-            <a class="buttons prev" href="#">&lt;</a>
-                    <div class="viewport">
-                        <ul class="overview" style="width: 2214px; left: 0px;">
-                            <li><a data-fancybox="img" data-src="/img/12.png">
-                                    <img src="/img/12.png" style="width:100%;border:1px solid #000;"></a></li><li><a data-fancybox="img" data-src="/img/12.png">
-                                    <img src="/img/8.jpg" style="width:100%;border:1px solid #000;"></a></li><li><a data-fancybox="img" data-src="/img/12.png">
-                                    <img src= " /img/12.png" style="width:100%;border:1px solid #000;"></a></li><li><a data-fancybox="img" data-src="/img.12.png">  --}}
-            {{-- <img src="images/gallery/Apa yang harus dilakukan pengelola server jika mengalami insiden siber_20230605075944.jpg" style="width:100%;border:1px solid #000;"></a></li><li><a data-fancybox="gallery" data-src="/images/gallery/WhatsApp Image 2023-05-23 at 11.22.14_20230523042511.jpeg">
-                                    <img src="images/gallery/WhatsApp Image 2023-05-23 at 11.22.14_20230523042511.jpeg" style="width:100%;border:1px solid #000;"></a></li><li><a data-fancybox="gallery" data-src="/images/gallery/Tips agar terhindar dari serangan backdoor_20230523042411.jpeg">
-                                    <img src="images/gallery/Tips agar terhindar dari serangan backdoor_20230523042411.jpeg" style="width:100%;border:1px solid #000;"></a></li>                </ul>  --}}
-            {{-- </div>
-                    <a class="buttons next" href="#">&gt;</a>
-                </div> 
-            </div>
-        </section> --}}
 
        
             <div class="container conten">
