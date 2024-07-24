@@ -10,7 +10,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://code.responsivevoice.org/responsivevoice.js?key=N13Zi1Bw"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=k252SkNj"></script>
 
     <style>
         .btn-primary {
@@ -93,6 +93,7 @@
             width: 100%;
             height: 100%;
             gap: 20px;
+            
         }
 
         .card {
@@ -100,7 +101,6 @@
             border: none;
             border-radius: 0px;
             overflow: hidden;
-            width: 50rem;
         }
 
         .card-body {
@@ -184,7 +184,6 @@
 
         .divider-custom .divider-custom-line {
             width: 100%;
-            /* max-width: 7rem; */
             height: 0.25rem;
             background-color: #de8300;
             border-color: #de8300;
@@ -207,6 +206,8 @@
         .divider-custom .divider-custom-line:first-child {
             margin-right: 0px;
         }
+
+      
         .infografis {
             border: solid 2px #fd8e09;
             border-radius: 20px;
@@ -215,8 +216,6 @@
         }
 
         .#slider1 .buttons {
-            /* background: #C01313; */
-            /* border-radius: 35px; */
             display: block;
             position: absolute;
             top: 38%;
@@ -280,11 +279,150 @@
 
         .divider-custom .divider-custom-line {
             width: 100%;
-            /* max-width: 7rem; */
             height: 0.25rem;
             background-color: #de8300;
             border-color: #de8300;
         }
+        .line {
+            width: 100%;
+            height: 5px;
+            background-color:#de8300 ;
+            display: flex;
+            margin-top: -13px;
+        }
+
+        .container.conten {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-container1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            gap: 23px;
+            border: 8px;
+            border-color: #000;
+} 
+   
+.card2 {
+    border: 1px solid (128, 128, 128);
+    border-radius: 5px;
+    margin: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    width: 300px; 
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+.card2 img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid rgb(128, 128, 128);
+    margin-bottom: 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.card2 h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.card2 p {
+    color: grey;
+    font-size: 0.9em;
+}
+
+.card2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}   
+.card-title{
+    margin-left: 8px;
+    margin-right: 8px;
+    
+}
+.card-text{
+    margin-left:8px;
+    margin-right:8px;
+}
+.footer-section {
+    background-color: orange; /* Ganti dengan warna background sesuai */
+    padding: 20px 0;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    background-image: url(/img/footer.png);
+}
+
+.footer-section .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 20px;
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-column p,
+.footer-column ul {
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column button {
+    background-color:#de8300 ;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.footer-column button:hover {
+    background-color: #dfe6e9;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.social-media a img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-column img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
     </style>
 </head>
 
@@ -331,7 +469,6 @@
                     responsiveVoice.speak(text, 'Indonesian Female');
                 }
             }
-
             document.getElementById('audioButton').addEventListener('click', function() {
                 const button = this;
                 if (isPlaying) {
@@ -382,27 +519,29 @@
             function IndexBerita() {
                 window.location.href = '{{ route('index_berita') }}';;
             }
+            function Selengkapnya1(){
+                window.location.href = '{{ route('selengkapnya') }}';;
+            }
         </script>
-
-
         &nbsp;
         <section class="page-section portofolio">
             <div class="container conten">
                 <div class="box-title1">Berita Tekrini </div>
                 <div class="box-title2">
                     <p class="nav-item" onclick="IndexBerita()" data-text="Index Berita" style="color: black;"> Index
-                        Berita </a>
+                        Berita ></a>
+                    </p>
                 </div>
             </div>
-            <div class="container content">
-                <diiv classs="divider-custom">
-                    <div class="divider-custom-line"></div>
+                 <div class="container content">
+                    <div class="line"></div>
                 </diiv>
+            </div> 
             </div>
         </section>
         &nbsp;
         <div class="card-container">
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 22rem;">
                 <img src="/img/3.png" class="card-img-top" alt="Berita 1">
                 <div class="card-body">
                     <h6 class="card-title">Carbanak Malware Kembali Beroperasi Dalam Serangan Ransomware</h6>
@@ -411,10 +550,11 @@
                     <p class="card-text">Peneliti dari NCC Group melaporkan adanya aktivitas malware carbanak dalam
                         sebuah serangan ransomware. Kelompok kejahatan siber Carbanak pertama kali diidentifikasi oleh
                         Kaspersky Lab pada tahun 2015, dan telah berhasil mencuri setidaknya 300 juta</p>
-                    <div class="btn nav-item" onclick="Selengkapnya1()" data-text="Selengkapnya">SELENGKAPNYA</div>
+                        <nav class="space-x-4">
+                        <li class="btn nav-item" onclick="Selengkapnya1()" data-text="Selengkapnya">SELENGKAPNYA</li>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 22rem;">
                 <img src="/img/11.jpg" class="card-img-top" alt="Berita 2">
                 <div class="card-body">
                     <h6 class="card-title">Peningkatan Aktivitas Rugmi Malware Loader</h6>
@@ -423,10 +563,15 @@
                     <p class="card-text"> Malware loader baru bernama Rugmi digunakan oleh pelaku ancaman untuk
                         menyebarkan pencuri informasi seperti Lumma Stealer, Vidar, RecordBreaker, dan Rescoms.
                         Perusahaan keamanan siber ESET melacak trojan ini dengan nama Win/TrojanDownloader.Rugmi,</p>
-                    <div class="btn nav-item" onclick="Selengkapnya2()" data-text="Selengkapnya">SELENGKAPNYA</a>
+                        <nav class="space-x-4">
+                            <ul>
+                        <li class="btn nav-item" onclick="Selengkapnya()" data-text="Selengkapnya">SELENGKAPNYA</li>
+                            </ul>
+
+                    </nav>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 22rem;">
                     <img src="/img/12.jpg" class="card-img-top" alt="Berita 3">
                     <div class="card-body">
                         <h6 class="card-title"> Barracuda Memperbaiki Kerentanan Baru ESG Zero-Day yang Dieksploitasi
@@ -441,18 +586,18 @@
                         <a href="#" class="btn nav-item" data-text="Selengkapnya">SELENGKAPNYA</a>
                     </div>
                 </div>
-            </div>
+        </div>
             {{-- <section class="page-section portfolio" id="portfolio">
             <div class="container infografis" style="margin-top: -145px;">
                 <h6>Infografis Terkini<br>Keamanan Siber</h6>
-                <div id="slider1">  --}}
-            {{-- <a class="buttons prev" href="#">&lt;</a>
+                <div id="slider1"> 
+            <a class="buttons prev" href="#">&lt;</a>
                     <div class="viewport">
                         <ul class="overview" style="width: 2214px; left: 0px;">
                             <li><a data-fancybox="img" data-src="/img/12.png">
                                     <img src="/img/12.png" style="width:100%;border:1px solid #000;"></a></li><li><a data-fancybox="img" data-src="/img/12.png">
                                     <img src="/img/8.jpg" style="width:100%;border:1px solid #000;"></a></li><li><a data-fancybox="img" data-src="/img/12.png">
-                                    <img src= " /img/12.png" style="width:100%;border:1px solid #000;"></a></li><li><a data-fancybox="img" data-src="/img.12.png"> --}}
+                                    <img src= " /img/12.png" style="width:100%;border:1px solid #000;"></a></li><li><a data-fancybox="img" data-src="/img.12.png">  --}}
             {{-- <img src="images/gallery/Apa yang harus dilakukan pengelola server jika mengalami insiden siber_20230605075944.jpg" style="width:100%;border:1px solid #000;"></a></li><li><a data-fancybox="gallery" data-src="/images/gallery/WhatsApp Image 2023-05-23 at 11.22.14_20230523042511.jpeg">
                                     <img src="images/gallery/WhatsApp Image 2023-05-23 at 11.22.14_20230523042511.jpeg" style="width:100%;border:1px solid #000;"></a></li><li><a data-fancybox="gallery" data-src="/images/gallery/Tips agar terhindar dari serangan backdoor_20230523042411.jpeg">
                                     <img src="images/gallery/Tips agar terhindar dari serangan backdoor_20230523042411.jpeg" style="width:100%;border:1px solid #000;"></a></li>                </ul>  --}}
@@ -462,34 +607,119 @@
             </div>
         </section> --}}
 
-            {{-- <div class="card-container1">
-            <div class="card2" style="width: 18rem;">
+       
+            <div class="container conten">
+                <div class="box-title1">Gallery Kegiatan </div>
+                <div class="box-title2">
+                    <p class="nav-item" onclick="IndexBerita()" data-text="Index Berita" style="color: black;"> Index
+                        Gallery ></a>
+                    </p>
+                </div>
+            </div>
+                 <div class="container content">
+                    <div class="line"></div>
+                </diiv>
+            </div> 
+            </div>
+            &nbsp;
+            <div class="card-container1">
+            <div class="card2" style="width: 16rem;">
                 <img src="/img/16.png" class="card-img-top" alt="Berita 1">
                 <div class="card-body">
-                    <h5 class="card-title">Sosialisasi Security Awareness Keamanan Mobile Computing dan Teleworking
-                    </h5>
+                    <h6 class="card-title">Sosialisasi Security Awareness Keamanan Mobile Computing dan Teleworking
+                    </h6>
                     <p class="card-text">31-Aug-2023</p>
                 </div>
             </div>
-            <div class="card2" style="width: 18rem;">
+            <div class="card2" style="width: 16rem;">
                 <img src="/img/17.png" class="card-img-top" alt="Berita 2">
                 <div class="card-body">
-                    <h5 class="card-title">Security Awareness Potensi Ancaman Siber di Tahun 2023</h5>
+                    <h6 class="card-title">Security Awareness Potensi Ancaman Siber di Tahun 2023</h6>
                     <p class="card-text"> 31-Aug-2023</p>
                 </div>
             </div>
-            <div class="card2" style="width: 18rem;">
+            <div class="card2" style="width: 16rem;">
                 <img src="/img/14.jpg" class="card-img-top" alt="Berita 3">
                 <div class="card-body">
-                    <h5 class="card-title">Sosialisasi Security Awareness - Menjaga Keamanan Akses Jaringan</h5>
+                    <h6 class="card-title">Sosialisasi Security Awareness - Menjaga Keamanan Akses Jaringan</h6>
                     <p class="card-text"> 20-Oct-2022</p>
                 </div>
             </div>
-        </div>  --}}
-            <footer class="footer">
-                <div class="container">
+            <div class="card2" style="width: 16rem;">
+                <img src="/img/18.jpg" class="card-img-top" alt="Berita 3">
+                <div class="card-body">
+                    <h6 class="card-title">Sosialisasi Security Awareness - Workshop Secure Coding #3</h6>
+                    <p class="card-text"> 02-Aug-2022</p>
                 </div>
-            </footer>
+            </div>
+        </div>  
+        <div class="card-container1">
+            <div class="card2" style="width: 16rem;">
+                <img src="/img/16.png" class="card-img-top" alt="Berita 1">
+                <div class="card-body">
+                    <h6 class="card-title">Sosialisasi Security Awareness Keamanan Mobile Computing dan Teleworking
+                    </h6>
+                    <p class="card-text">31-Aug-2023</p>
+                </div>
+            </div>
+            <div class="card2" style="width: 16rem;">
+                <img src="/img/17.png" class="card-img-top" alt="Berita 2">
+                <div class="card-body">
+                    <h6 class="card-title">Security Awareness Potensi Ancaman Siber di Tahun 2023</h6>
+                    <p class="card-text"> 31-Aug-2023</p>
+                </div>
+            </div>
+            <div class="card2" style="width: 16rem;">
+                <img src="/img/14.jpg" class="card-img-top" alt="Berita 3">
+                <div class="card-body">
+                    <h6 class="card-title">Sosialisasi Security Awareness - Menjaga Keamanan Akses Jaringan</h6>
+                    <p class="card-text"> 20-Oct-2022</p>
+                </div>
+            </div>
+            <div class="card2" style="width: 16rem;">
+                <img src="/img/18.jpg" class="card-img-top" alt="Berita 3">
+                <div class="card-body">
+                    <h6 class="card-title">Sosialisasi Security Awareness - Workshop Secure Coding #3</h6>
+                    <p class="card-text"> 02-Aug-2022</p>
+                </div>
+            </div>
+        </div> 
+        &nbsp; 
+        <section class="footer-section">
+            <div class="container">
+                <div class="footer-column">
+                    <img src="/img/Logo.png" alt="CSIRT Logo">
+                    <p>Tim Tanggap Insiden Siber (Computer Security Incident Response Team) Pemerintah Provinsi DKI Jakarta yang selanjutnya disebut dengan JakartaProv-CSIRT merupakan CSIRT Pemprov DKI Jakarta.</p>
+                    <p>Tim JakartaProv-CSIRT ditetapkan oleh Sekretaris Daerah Provinsi DKI Jakarta dalam Keputusan Penjabat Sekretaris Daerah DKI Jakarta Nomor: 41 Tahun 2020 Tentang Compu</p>
+                    <button>SELENGKAPNYA</button>
+                </div>
+                <div class="footer-column">
+                    <h3>Visitor</h3>
+                    <p>Pengunjung Online: 4</p>
+                    <p>Hari ini: 15</p>
+                    <p>Tanggal: 24-07-2024</p>
+                    <p>Total Pengunjung: 47322</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Link</h3>
+                    <ul>
+                        <li><a href="#">Profil</a></li>
+                        <li><a href="#">Peringatan Keamanan</a></li>
+                        <li><a href="#">Event</a></li>
+                        <li><a href="#">Kontak Kami</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>JakartaProv-CSIRT</h3>
+                    <p> Siber, Sandi dan Aplikasi Diskominfotik Provinsi DKI Jakarta Balaikota Blok H Lantai 13, JL Merdeka Selatan 8-9, Jakarta Pusat 10110</p>
+                    <p><i class="fa fa-phone">  </i> 081388870152</p>
+                    <p><i class="fa fa-envelope"></i> csirt@jakarta.go.id</p>
+                    <div class="social-media">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
 
             <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
 </body>
