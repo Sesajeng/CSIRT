@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publikasi</title>
+    <title>Peringatan Keamanan</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -291,6 +291,81 @@
 
 
 
+        .footer-section {
+            background-color: orange;
+            /* Ganti dengan warna background sesuai */
+            padding: 20px 0;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            background-image: url(/img/footer.png);
+        }
+
+        .footer-section .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-column {
+            flex: 1;
+            padding: 0 20px;
+            min-width: 200px;
+        }
+
+        .footer-column h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .footer-column p,
+        .footer-column ul {
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 5px;
+        }
+
+        .footer-column ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-column button {
+            background-color: #de8300;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .footer-column button:hover {
+            background-color: #dfe6e9;
+        }
+
+        .social-media {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-media a img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .footer-column img {
+            max-width: 100px;
+            margin-bottom: 20px;
+        } 
+
     </style>
 </head>
 
@@ -328,15 +403,90 @@
     </header>
     </div>
     <div class="carousel-item active">
-        <img src="/img/5.png" class="d-block w-100" alt="gambar 1">
+        <img src="/img/23.png" class="d-block w-100" alt="gambar 1">
     </div>
-    <div class="search-container">
-        <input type="text" class="search-box" placeholder="Search...">
-    </div>
-    <footer class="footer">
-        <div class="container">
+   &nbsp;
+    <div class="max-w-6xl mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-lg mb-6">
+            <h2 class="text-lg font-semibold mb-4">Pencarian Peraturan Kebijakan:</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+                <input type="text" placeholder="Kata Pencarian" class="border border-gray-300 rounded-lg p-2">
+                <select class="border border-gray-300 rounded-lg p-2">
+                    <option>Pilih Tipe Peraturan</option>
+                </select>
+                <select class="border border-gray-300 rounded-lg p-2">
+                    <option>Pilih Tahun</option>
+                </select>
+            </div>
+            <button class="bg-yellow-500 text-white rounded-lg px-6 py-2">Cari Peraturan</button>
         </div>
-    </footer>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold">Perpres Nomor 47 Tahun 2023</h3>
+                <p class="text-gray-600">TENTANG STRATEGI KEAMANAN SIBER NASIONAL DAN MANAJEMEN KRISIS SIBER</p>
+                <p class="text-gray-500 text-sm">2023-08-14 09:53:13 | 38x diunduh</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold">Dokumen PKS BSrE Pemprov DKI 2023</h3>
+                <p class="text-gray-600">PEMANFAATAN SERTIFIKAT ELEKTRONIK PADA SISTEM ELEKTRONIK DI PEMERINTAH PROVINSI
+                    DAERAH KHUSUS IBUKOTA JAKARTA</p>
+                <p class="text-gray-500 text-sm">2023-05-11 13:59:30 | 407x diunduh</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold">INGUB - Nomor 1 Tahun 2013 Tentang Penggunaan Perangkat Lunak dan
+                    Perangkat keras Berlisesi</h3>
+                <p class="text-gray-600">Instruksi Gubernur Provinsi Daerah Khusus Ibukota Jakarta Nomor 1 Tahun 2013
+                    Tentang Penggunaan Perangkat Lunak dan Perangkat keras Berlisesi</p>
+                <p class="text-gray-500 text-sm">2023-03-13 11:41:21 | 292x diunduh</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold">PERGUB 43 TH 2022 PEMBANGUNAN PENGEMBANGAN APLIKASI SPBE</h3>
+                <p class="text-gray-600">TENTANG PEMBANGUNAN DAN PENGEMBANGAN APLIKASI SISTEM PEMERINTAHAN BERBASIS
+                    ELEKTRONIK</p>
+                <p class="text-gray-500 text-sm">2023-01-16 09:32:01 | 475x diunduh</p>
+            </div>
+        </div>
+    </div>
+&nbsp;
+    <section class="footer-section">
+        <div class="container">
+            <div class="footer-column">
+                <img src="/img/Logo.png" alt="CSIRT Logo">
+                <p>Tim Tanggap Insiden Siber (Computer Security Incident Response Team) Pemerintah Provinsi DKI Jakarta
+                    yang selanjutnya disebut dengan JakartaProv-CSIRT merupakan CSIRT Pemprov DKI Jakarta.</p>
+                <p>Tim JakartaProv-CSIRT ditetapkan oleh Sekretaris Daerah Provinsi DKI Jakarta dalam Keputusan Penjabat
+                    Sekretaris Daerah DKI Jakarta Nomor: 41 Tahun 2020 Tentang Compu</p>
+                <button>SELENGKAPNYA</button>
+            </div>
+            <div class="footer-column">
+                <h3>Visitor</h3>
+                <p>Pengunjung Online: 4</p>
+                <p>Hari ini: 15</p>
+                <p>Tanggal: 24-07-2024</p>
+                <p>Total Pengunjung: 47322</p>
+            </div>
+            <div class="footer-column">
+                <h3>Link</h3>
+                <ul>
+                    <li><a href="#">Profil</a></li>
+                    <li><a href="#">Peringatan Keamanan</a></li>
+                    <li><a href="#">Event</a></li>
+                    <li><a href="#">Kontak Kami</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>JakartaProv-CSIRT</h3>
+                <p> Siber, Sandi dan Aplikasi Diskominfotik Provinsi DKI Jakarta Balaikota Blok H Lantai 13, JL Merdeka
+                    Selatan 8-9, Jakarta Pusat 10110</p>
+                <p><i class="fa fa-phone"> </i> 081388870152</p>
+                <p><i class="fa fa-envelope"></i> csirt@jakarta.go.id</p>
+                <div class="social-media">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <button id="audioButton" class="btn btn-primary side-button">Play</button>
     <script>
         let isPlaying = false;

@@ -353,6 +353,110 @@
             border-radius: 10px;
         }
         
+
+        .navbar ul li a,
+        .dropdown .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 0px 2px;
+            text-decoration: none;
+        }
+
+        .navbar ul li a:hover,
+        .dropdown:hover .dropbtn {}
+
+        .navbar ul li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+       
+
+        .dropdown-content {
+            background-color: orange;
+        }
+
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            float: left;
+            position: relative;
+        }
+
+        .navbar ul li a,
+        .dropbtn,
+        .dropdown-content span {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            top: 100%;
+            left: 0;
+        }
+
+        .dropdown-content span {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content span:hover {
+            background-color: #e67e22;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .search-box {
+            padding: 10px;
+            margin-top: 8px;
+            margin-left: 16px;
+            font-size: 17px;
+        }
+
+
     </style>
 </head>
 
@@ -363,22 +467,26 @@
             <div class="container mx-auto flex justify-between items-center">
                 <img src="/img/Logo.png" alt="Logo" class="h-10">
                 <nav class="space-x-4">
-                    <nav class="space-x-4">
+                    <nav class="space-x-4 navbar">
                         <ul>
-                            <li class="btn nav-item" onclick="Home()" data-text="Home">Home
+                            <li class="btn nav-item" onclick="navigate('home')" data-text="Home">Home</li>
+                            <li class="btn nav-item" onclick="navigate('profil')" data-text="Profil">Profil</li>
+                            <li class="btn nav-item dropdown">
+                                <span class="dropbtn" data-text="Event">Event</span>
+                                <div class="dropdown-content">
+                                    <span class="btn nav-item" onclick="navigate('Peringatan_Keamanan')" data-text="Peringatan Keamanan">Peringatan Keamanan</span>
+                                    <span class="btn nav-item" onclick="navigate('Infografis_Keamanan_Informasi')" data-text="Infografis Keamanan Informasi">Infografis Keamanan Informasi</span>
+                                    <span class="btn nav-item" onclick="navigate('Peraturan_Kebijakan')" data-text="Peraturan Kebijakan">Peraturan Kebijakan</span>
+                                    <span class="btn nav-item" onclick="navigate('Berita_Siber')" data-text="Berita Siber (Cyber Blitz)">Berita Siber (Cyber Blitz)</span>
+                                    <span class="btn nav-item" onclick="navigate('Statistik_Honeypot')" data-text="Statistik (Honeypot)">Statistik (Honeypot)</span>
+                                    <span class="btn nav-item" onclick="navigate('Panduan_Teknis')" data-text="Panduan Teknis">Panduan Teknis</span>
+                                    <span class="btn nav-item" onclick="navigate('rfc2350')" data-text="RFC2350">RFC2350</span>
+                                </div>
                             </li>
-                            <li class="btn nav-item" onclick="Profil()" data-text="Profil">Profil
-                            </li>
-                            <li class="btn nav-item" onclick="Event()" data-text="Event">Event
-                            </li>
-                            <li class="btn nav-item" onclick="Publikasi()" data-text="Publikasi">Publikasi
-                            </li>
-                            <li class="btn nav-item" onclick="Lapor()" data-text="Lapor Insiden Siber">Lapor Insiden
-                                Siber
-                            </li>
-                            <li class="btn nav-item" onclick="Kontak()" data-text="Kontak Kami">Kontak Kami
-                            </li>
-                            <input type="text" class="search-box" placeholder="Search..."> </input>
+                            <li class="btn nav-item" onclick="navigate('publikasi')" data-text="Publikasi">Publikasi</li>
+                            <li class="btn nav-item" onclick="navigate('lapor_insiden_siber')" data-text="Lapor Insiden Siber">Lapor Insiden Siber</li>
+                            <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">Kontak Kami</li>
+                            <li><input type="text" class="search-box" placeholder="Search..."></li>
                         </ul>
                     </nav>
                 </nav>
@@ -556,33 +664,49 @@
                 });
             </script>
             <script>
-                function Home() {
-                    window.location.href = '{{ route('welcome') }}';;
-                }
-
-                function Profil() {
-                    window.location.href = '{{ route('profil') }}';;
-                }
-
-                function Event() {
-                    window.location.href = '{{ route('event') }}';;
-                }
-
-                function Publikasi() {
-                    window.location.href = '{{ route('publikasi') }}';;
-                }
-
-                function Lapor() {
+                 function navigate(page) {
+            switch(page) {
+                case 'Peringatan_Keamanan':
+                    window.location.href = '{{ route('peringatan_keamanan') }}';
+                    break;
+                case 'Infografis_Keamanan_Informasi':
+                    window.location.href = '{{ route('infografis_keamanan_informasi') }}';
+                    break;
+                case 'Peraturan_Kebijakan':
+                    window.location.href = '{{ route('peraturan_kebijakan') }}';
+                    break;
+                case 'Berita_Siber':
+                    window.location.href = '{{ route('berita_siber') }}';
+                    break;
+                case 'Statistik_Honeypot':
+                    window.location.href = '{{ route('statistik_honeypot') }}';
+                    break;
+                case 'Panduan_Teknis':
+                    window.location.href = '{{ route('panduan_teknis') }}';
+                    break;
+                case 'rfc2350':
+                    window.location.href = '{{ route('rfc2350') }}';
+                    break;
+                case 'home':
+                    window.location.href = '{{ route('welcome') }}';
+                    break;
+                case 'profil':
+                    window.location.href = '{{ route('profil') }}';
+                    break;
+                case 'publikasi':
+                    window.location.href = '{{ route('publikasi') }}';
+                    break;
+                case 'lapor_insiden_siber':
                     window.location.href = '{{ route('lapor_insiden_siber') }}';
-                }
-
-                function Kontak() {
+                    break;
+                case 'kontak_kami':
                     window.location.href = '{{ route('kontak_kami') }}';
-                }
+                    break;
+                default:
+                    console.log('No route defined for: ' + page);
+            }
+        }
 
-                function IndexBerita() {
-                    window.location.href = '{{ route('index_berita') }}';;
-                }
             </script>
 
             &nbsp;
