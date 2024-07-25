@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peringatan Keamanan</title>
+    <title>Jakarta Prov CSIRT</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -365,7 +365,20 @@
             max-width: 100px;
             margin-bottom: 20px;
         } 
+        .content {
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 1px solid #ccc;
+            background-color: #fff;
 
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 5px;
+            justify-content: center;
+        }
     </style>
 </head>
 
@@ -378,8 +391,9 @@
                     <ul>
                         <li class="btn nav-item" onclick="navigate('home')" data-text="Home">Home</li>
                         <li class="btn nav-item" onclick="navigate('profil')" data-text="Profil">Profil</li>
+                        <li class="btn nav-item" onclick="navigate('event')" data-text="Event">Event</li>
                         <li class="btn nav-item dropdown">
-                            <span class="dropbtn" data-text="Event">Event</span>
+                            <span class="dropbtn" data-text="Publikasi">Publikasi</span>
                             <div class="dropdown-content">
                                 <span class="btn nav-item" onclick="navigate('Peringatan_Keamanan')" data-text="Peringatan Keamanan">Peringatan Keamanan</span>
                                 <span class="btn nav-item" onclick="navigate('Infografis_Keamanan_Informasi')" data-text="Infografis Keamanan Informasi">Infografis Keamanan Informasi</span>
@@ -390,7 +404,6 @@
                                 <span class="btn nav-item" onclick="navigate('rfc2350')" data-text="RFC2350">RFC2350</span>
                             </div>
                         </li>
-                        <li class="btn nav-item" onclick="navigate('publikasi')" data-text="Publikasi">Publikasi</li>
                         <li class="btn nav-item" onclick="navigate('lapor_insiden_siber')" data-text="Lapor Insiden Siber">Lapor Insiden Siber</li>
                         <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">Kontak Kami</li>
                         <li><input type="text" class="search-box" placeholder="Search..."></li>
@@ -398,18 +411,19 @@
                 </nav>
             </div>
     </div>
-
     </div>
     </header>
     </div>
     <div class="carousel-item active">
         <img src="/img/27.png" class="d-block w-100" alt="gambar 1">
     </div>
-   
+    &nbsp;
+    <div class="content">
+    <iframe src="{{ url('/img/RFC 2350.PDF') }}" alt="Uploaded Image">
+    </iframe>
+    </div>
 
-
-
-
+&nbsp;
     <section class="footer-section">
         <div class="container">
             <div class="footer-column">
@@ -447,7 +461,6 @@
             </div>
         </div>
     </section>
-
     <button id="audioButton" class="btn btn-primary side-button">Play</button>
     <script>
         let isPlaying = false;
@@ -471,7 +484,6 @@
                 isPlaying = true;
             }
         });
-
 
         navItems.forEach(item => {
             item.addEventListener('mouseover', function() {
@@ -521,10 +533,7 @@
              default:
                  console.log('No route defined for: ' + page);
          }
-     }
-
-         
-         
+     }  
      </script>
     <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
 </body>

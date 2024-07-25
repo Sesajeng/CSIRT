@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Jakarta Prov CSIRT</title>
+    <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -551,8 +552,9 @@
                     <ul>
                         <li class="btn nav-item" onclick="navigate('home')" data-text="Home">Home</li>
                         <li class="btn nav-item" onclick="navigate('profil')" data-text="Profil">Profil</li>
+                        <li class="btn nav-item" onclick="navigate('event')" data-text="Event">Event</li>
                         <li class="btn nav-item dropdown">
-                            <span class="dropbtn" data-text="Event">Event</span>
+                            <span class="dropbtn" data-text="publikasi">Publikasi</span>
                             <div class="dropdown-content">
                                 <span class="btn nav-item" onclick="navigate('Peringatan_Keamanan')" data-text="Peringatan Keamanan">Peringatan Keamanan</span>
                                 <span class="btn nav-item" onclick="navigate('Infografis_Keamanan_Informasi')" data-text="Infografis Keamanan Informasi">Infografis Keamanan Informasi</span>
@@ -563,7 +565,6 @@
                                 <span class="btn nav-item" onclick="navigate('rfc2350')" data-text="RFC2350">RFC2350</span>
                             </div>
                         </li>
-                        <li class="btn nav-item" onclick="navigate('publikasi')" data-text="Publikasi">Publikasi</li>
                         <li class="btn nav-item" onclick="navigate('lapor_insiden_siber')" data-text="Lapor Insiden Siber">Lapor Insiden Siber</li>
                         <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">Kontak Kami</li>
                         <li><input type="text" class="search-box" placeholder="Search..."></li>
@@ -582,7 +583,7 @@
         <script>
             let isPlaying = false;
             const navItems = document.querySelectorAll('.nav-item', '.nav-item-dropdown', 'nav-item dropdown-content',
-                'dropbtn', 'dropdown-content');
+                'dropbtn', 'dropdown-content', 'card-title', 'card-text');
 
             function speakText(text) {
                 if (isPlaying) {
@@ -641,8 +642,8 @@
                 case 'profil':
                     window.location.href = '{{ route('profil') }}';
                     break;
-                case 'publikasi':
-                    window.location.href = '{{ route('publikasi') }}';
+                case 'event':
+                    window.location.href = '{{ route('event') }}';
                     break;
                 case 'lapor_insiden_siber':
                     window.location.href = '{{ route('lapor_insiden_siber') }}';
@@ -679,8 +680,8 @@
         <div class="card" style="width: 22rem;">
             <img src="/img/3.png" class="card-img-top" alt="Berita 1">
             <div class="card-body">
-                <h6 class="card-title">Carbanak Malware Kembali Beroperasi Dalam Serangan Ransomware</h6>
-                <p class="card-text">2024-01-10 13:50:20 |
+                <h6 class="card-title" data-text="Carbanak Malware Kembali Beroperasi Dalam Serangan Ransomware">Carbanak Malware Kembali Beroperasi Dalam Serangan Ransomware</h6>
+                <p class="card-text"  data-text="Peringatan Keamanan" >2024-01-10 13:50:20 |
                     https://securityaffairs.com/156410/malware/carbanak-malware-ransomware-attacks.html</p>
                 <p class="card-text">Peneliti dari NCC Group melaporkan adanya aktivitas malware carbanak dalam
                     sebuah serangan ransomware. Kelompok kejahatan siber Carbanak pertama kali diidentifikasi oleh

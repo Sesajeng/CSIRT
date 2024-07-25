@@ -36,3 +36,4 @@ Route::get('/berita_siber',[BeritaSiberController::class, 'index'])->name('berit
 Route::get('/statistik_honeypot',[StatistikHoneypotController::class, 'index'])->name('statistik_honeypot');
 Route::get('/panduan_teknis', [PanduanTeknisController::class, 'index'])->name('panduan_teknis');
 Route::get('/rfc2350', [RFC2350Controller::class, 'index'])->name('rfc2350');
+Route::post('/rfc2350',[RFC2350Controller::class, 'show'])->name('rfc2350');

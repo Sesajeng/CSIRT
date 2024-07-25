@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontak Kami</title>
+    <title>Jakarta Prov CSIRT</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -205,7 +205,7 @@
             width: 100%;
         }
         .footer-section {
-    background-color: orange; /* Ganti dengan warna background sesuai */
+    background-color: orange; 
     padding: 20px 0;
     color: white;
     font-family: Arial, sans-serif;
@@ -397,8 +397,9 @@
                             <ul>
                                 <li class="btn nav-item" onclick="navigate('home')" data-text="Home">Home</li>
                                 <li class="btn nav-item" onclick="navigate('profil')" data-text="Profil">Profil</li>
+                                <li class="btn nav-item" onclick="navigate('event')" data-text="Event">Event</li>
                                 <li class="btn nav-item dropdown">
-                                    <span class="dropbtn" data-text="Event">Event</span>
+                                    <span class="dropbtn" data-text="Publikasi">Publikasi</span>
                                     <div class="dropdown-content">
                                         <span class="btn nav-item" onclick="navigate('Peringatan_Keamanan')" data-text="Peringatan Keamanan">Peringatan Keamanan</span>
                                         <span class="btn nav-item" onclick="navigate('Infografis_Keamanan_Informasi')" data-text="Infografis Keamanan Informasi">Infografis Keamanan Informasi</span>
@@ -409,7 +410,6 @@
                                         <span class="btn nav-item" onclick="navigate('rfc2350')" data-text="RFC2350">RFC2350</span>
                                     </div>
                                 </li>
-                                <li class="btn nav-item" onclick="navigate('publikasi')" data-text="Publikasi">Publikasi</li>
                                 <li class="btn nav-item" onclick="navigate('lapor_insiden_siber')" data-text="Lapor Insiden Siber">Lapor Insiden Siber</li>
                                 <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">Kontak Kami</li>
                                 <li><input type="text" class="search-box" placeholder="Search..."></li>
@@ -486,8 +486,8 @@
                 case 'profil':
                     window.location.href = '{{ route('profil') }}';
                     break;
-                case 'publikasi':
-                    window.location.href = '{{ route('publikasi') }}';
+                case 'event':
+                    window.location.href = '{{ route('event') }}';
                     break;
                 case 'lapor_insiden_siber':
                     window.location.href = '{{ route('lapor_insiden_siber') }}';

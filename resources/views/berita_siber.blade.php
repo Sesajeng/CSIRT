@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peringatan Keamanan</title>
+    <title>Jakarta Prov CSIRT</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -377,8 +377,9 @@
                     <ul>
                         <li class="btn nav-item" onclick="navigate('home')" data-text="Home">Home</li>
                         <li class="btn nav-item" onclick="navigate('profil')" data-text="Profil">Profil</li>
+                        <li class="btn nav-item" onclick="navigate('event')" data-text="Event">Event</li>
                         <li class="btn nav-item dropdown">
-                            <span class="dropbtn" data-text="Event">Event</span>
+                            <span class="dropbtn" data-text="Publikasi">Publikasi</span>
                             <div class="dropdown-content">
                                 <span class="btn nav-item" onclick="navigate('Peringatan_Keamanan')"
                                     data-text="Peringatan Keamanan">Peringatan Keamanan</span>
@@ -396,7 +397,6 @@
                                     data-text="RFC2350">RFC2350</span>
                             </div>
                         </li>
-                        <li class="btn nav-item" onclick="navigate('publikasi')" data-text="Publikasi">Publikasi</li>
                         <li class="btn nav-item" onclick="navigate('lapor_insiden_siber')"
                             data-text="Lapor Insiden Siber">Lapor Insiden Siber</li>
                         <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">Kontak Kami
@@ -556,8 +556,8 @@
                 case 'profil':
                     window.location.href = '{{ route('profil') }}';
                     break;
-                case 'publikasi':
-                    window.location.href = '{{ route('publikasi') }}';
+                case 'event':
+                    window.location.href = '{{ route('event') }}';
                     break;
                 case 'lapor_insiden_siber':
                     window.location.href = '{{ route('lapor_insiden_siber') }}';
