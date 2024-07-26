@@ -228,7 +228,7 @@
             display: block;
         }
 
-       
+
 
         .dropdown-content {
             background-color: orange;
@@ -288,9 +288,6 @@
             margin-left: 16px;
             font-size: 17px;
         }
-
-
-
     </style>
 </head>
 
@@ -307,17 +304,26 @@
                         <li class="btn nav-item dropdown">
                             <span class="dropbtn" data-text="Publikasi">Publikasi</span>
                             <div class="dropdown-content">
-                                <span class="btn nav-item" onclick="navigate('Peringatan_Keamanan')" data-text="Peringatan Keamanan">Peringatan Keamanan</span>
-                                <span class="btn nav-item" onclick="navigate('Infografis_Keamanan_Informasi')" data-text="Infografis Keamanan Informasi">Infografis Keamanan Informasi</span>
-                                <span class="btn nav-item" onclick="navigate('Peraturan_Kebijakan')" data-text="Peraturan Kebijakan">Peraturan Kebijakan</span>
-                                <span class="btn nav-item" onclick="navigate('Berita_Siber')" data-text="Berita Siber (Cyber Blitz)">Berita Siber (Cyber Blitz)</span>
-                                <span class="btn nav-item" onclick="navigate('Statistik_Honeypot')" data-text="Statistik (Honeypot)">Statistik (Honeypot)</span>
-                                <span class="btn nav-item" onclick="navigate('Panduan_Teknis')" data-text="Panduan Teknis">Panduan Teknis</span>
-                                <span class="btn nav-item" onclick="navigate('rfc2350')" data-text="RFC2350">RFC2350</span>
+                                <span class="btn nav-item" onclick="navigate('Peringatan_Keamanan')"
+                                    data-text="Peringatan Keamanan">Peringatan Keamanan</span>
+                                <span class="btn nav-item" onclick="navigate('Infografis_Keamanan_Informasi')"
+                                    data-text="Infografis Keamanan Informasi">Infografis Keamanan Informasi</span>
+                                <span class="btn nav-item" onclick="navigate('Peraturan_Kebijakan')"
+                                    data-text="Peraturan Kebijakan">Peraturan Kebijakan</span>
+                                <span class="btn nav-item" onclick="navigate('Berita_Siber')"
+                                    data-text="Berita Siber (Cyber Blitz)">Berita Siber (Cyber Blitz)</span>
+                                <span class="btn nav-item" onclick="navigate('Statistik_Honeypot')"
+                                    data-text="Statistik (Honeypot)">Statistik (Honeypot)</span>
+                                <span class="btn nav-item" onclick="navigate('Panduan_Teknis')"
+                                    data-text="Panduan Teknis">Panduan Teknis</span>
+                                <span class="btn nav-item" onclick="navigate('rfc2350')"
+                                    data-text="RFC2350">RFC2350</span>
                             </div>
                         </li>
-                        <li class="btn nav-item" onclick="navigate('lapor_insiden_siber')" data-text="Lapor Insiden Siber">Lapor Insiden Siber</li>
-                        <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">Kontak Kami</li>
+                        <li class="btn nav-item" onclick="navigate('lapor_insiden_siber')"
+                            data-text="Lapor Insiden Siber">Lapor Insiden Siber</li>
+                        <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">Kontak Kami
+                        </li>
                         <li><input type="text" class="search-box" placeholder="Search..."></li>
                     </ul>
                 </nav>
@@ -358,6 +364,7 @@
             } else {
                 button.textContent = 'Mute';
                 isPlaying = true;
+                responsiveVoice.speak('Selamat Datang di Jakarta Prov CSIRT', 'Indonesian Female');
             }
         });
 
@@ -368,53 +375,50 @@
             });
         });
     </script>
-     <script>
+    <script>
         function navigate(page) {
-         switch(page) {
-             case 'Peringatan_Keamanan':
-                 window.location.href = '{{ route('peringatan_keamanan') }}';
-                 break;
-             case 'Infografis_Keamanan_Informasi':
-                 window.location.href = '{{ route('infografis_keamanan_informasi') }}';
-                 break;
-             case 'Peraturan_Kebijakan':
-                 window.location.href = '{{ route('peraturan_kebijakan') }}';
-                 break;
-             case 'Berita_Siber':
-                 window.location.href = '{{ route('berita_siber') }}';
-                 break;
-             case 'Statistik_Honeypot':
-                 window.location.href = '{{ route('statistik_honeypot') }}';
-                 break;
-             case 'Panduan_Teknis':
-                 window.location.href = '{{ route('panduan_teknis') }}';
-                 break;
-             case 'rfc2350':
-                 window.location.href = '{{ route('rfc2350') }}';
-                 break;
-             case 'home':
-                 window.location.href = '{{ route('welcome') }}';
-                 break;
-             case 'profil':
-                 window.location.href = '{{ route('profil') }}';
-                 break;
-             case 'event':
-                 window.location.href = '{{ route('event') }}';
-                 break;
-             case 'lapor_insiden_siber':
-                 window.location.href = '{{ route('lapor_insiden_siber') }}';
-                 break;
-             case 'kontak_kami':
-                 window.location.href = '{{ route('kontak_kami') }}';
-                 break;
-             default:
-                 console.log('No route defined for: ' + page);
-         }
-     }
-
-         
-         
-     </script>
+            switch (page) {
+                case 'Peringatan_Keamanan':
+                    window.location.href = '{{ route('peringatan_keamanan') }}';
+                    break;
+                case 'Infografis_Keamanan_Informasi':
+                    window.location.href = '{{ route('infografis_keamanan_informasi') }}';
+                    break;
+                case 'Peraturan_Kebijakan':
+                    window.location.href = '{{ route('peraturan_kebijakan') }}';
+                    break;
+                case 'Berita_Siber':
+                    window.location.href = '{{ route('berita_siber') }}';
+                    break;
+                case 'Statistik_Honeypot':
+                    window.location.href = '{{ route('statistik_honeypot') }}';
+                    break;
+                case 'Panduan_Teknis':
+                    window.location.href = '{{ route('panduan_teknis') }}';
+                    break;
+                case 'rfc2350':
+                    window.location.href = '{{ route('rfc2350') }}';
+                    break;
+                case 'home':
+                    window.location.href = '{{ route('welcome') }}';
+                    break;
+                case 'profil':
+                    window.location.href = '{{ route('profil') }}';
+                    break;
+                case 'event':
+                    window.location.href = '{{ route('event') }}';
+                    break;
+                case 'lapor_insiden_siber':
+                    window.location.href = '{{ route('lapor_insiden_siber') }}';
+                    break;
+                case 'kontak_kami':
+                    window.location.href = '{{ route('kontak_kami') }}';
+                    break;
+                default:
+                    console.log('No route defined for: ' + page);
+            }
+        }
+    </script>
     <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
 </body>
 

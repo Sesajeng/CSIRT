@@ -28,7 +28,7 @@ Route::get('publikasi',[PublikasiController::class, 'index'])->name('publikasi')
 Route::get('lapor_insiden_siber', [LaporInsidenSiberController::class, 'index'])->name('lapor_insiden_siber');
 Route::get('kontak_kami',[KontakKamiController::class, 'index'])->name('kontak_kami');
 Route::get('/index_berita', [IndexBeritaController::class, 'index'])->name('index_berita');
-Route::get('/selengkapnya', [Selengkapnya1Controller::class, 'index'])->name('selengkapnya');
+Route::get('/selengkapnya1', [Selengkapnya1Controller::class, 'index'])->name('selengkapnya1');
 Route::get('/peringatan_keamanan',[PeringatanKeamananController::class, 'index'])->name('peringatan_keamanan');
 Route::get('/infografis_keamanan_informasi',[InfografisKeamananInformasiController::class, 'index'])->name('infografis_keamanan_informasi');
 Route::get('/peraturan_kebijakan',[PeraturanKebijakanController::class, 'index'])->name('peraturan_kebijakan');

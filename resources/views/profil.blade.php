@@ -212,82 +212,83 @@
         .flex-container .text-content {
             flex: 1;
         }
+
         .footer-section {
-    background-color: orange; 
-    padding: 20px 0;
-    color: white;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    background-image: url(/img/footer.png);
-}
+            background-color: orange;
+            padding: 20px 0;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            background-image: url(/img/footer.png);
+        }
 
-.footer-section .container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+        .footer-section .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-.footer-column {
-    flex: 1;
-    padding: 0 20px;
-    min-width: 200px;
-}
+        .footer-column {
+            flex: 1;
+            padding: 0 20px;
+            min-width: 200px;
+        }
 
-.footer-column h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
+        .footer-column h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
 
-.footer-column p,
-.footer-column ul {
-    margin-bottom: 10px;
-}
+        .footer-column p,
+        .footer-column ul {
+            margin-bottom: 10px;
+        }
 
-.footer-column ul {
-    list-style: none;
-    padding: 0;
-}
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
 
-.footer-column ul li {
-    margin-bottom: 5px;
-}
+        .footer-column ul li {
+            margin-bottom: 5px;
+        }
 
-.footer-column ul li a {
-    color: white;
-    text-decoration: none;
-}
+        .footer-column ul li a {
+            color: white;
+            text-decoration: none;
+        }
 
-.footer-column button {
-    background-color:#de8300 ;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-}
+        .footer-column button {
+            background-color: #de8300;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
 
-.footer-column button:hover {
-    background-color: #dfe6e9;
-}
+        .footer-column button:hover {
+            background-color: #dfe6e9;
+        }
 
-.social-media {
-    display: flex;
-    gap: 10px;
-}
+        .social-media {
+            display: flex;
+            gap: 10px;
+        }
 
-.social-media a img {
-    width: 40px;
-    height: 40px;
-}
+        .social-media a img {
+            width: 40px;
+            height: 40px;
+        }
 
-.footer-column img {
-    max-width: 100px;
-    margin-bottom: 20px;
-}
+        .footer-column img {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
 
 
-.navbar ul li a,
+        .navbar ul li a,
         .dropdown .dropbtn {
             display: inline-block;
             color: white;
@@ -328,7 +329,7 @@
             display: block;
         }
 
-       
+
 
         .dropdown-content {
             background-color: orange;
@@ -388,10 +389,6 @@
             margin-left: 16px;
             font-size: 17px;
         }
-
-
-
-
     </style>
 </head>
 
@@ -410,21 +407,31 @@
                                 <li class="btn nav-item dropdown">
                                     <span class="dropbtn" data-text="Publikasi">Publikasi</span>
                                     <div class="dropdown-content">
-                                        <span class="btn nav-item" onclick="navigate('Peringatan_Keamanan')" data-text="Peringatan Keamanan">Peringatan Keamanan</span>
-                                        <span class="btn nav-item" onclick="navigate('Infografis_Keamanan_Informasi')" data-text="Infografis Keamanan Informasi">Infografis Keamanan Informasi</span>
-                                        <span class="btn nav-item" onclick="navigate('Peraturan_Kebijakan')" data-text="Peraturan Kebijakan">Peraturan Kebijakan</span>
-                                        <span class="btn nav-item" onclick="navigate('Berita_Siber')" data-text="Berita Siber (Cyber Blitz)">Berita Siber (Cyber Blitz)</span>
-                                        <span class="btn nav-item" onclick="navigate('Statistik_Honeypot')" data-text="Statistik (Honeypot)">Statistik (Honeypot)</span>
-                                        <span class="btn nav-item" onclick="navigate('Panduan_Teknis')" data-text="Panduan Teknis">Panduan Teknis</span>
-                                        <span class="btn nav-item" onclick="navigate('rfc2350')" data-text="RFC2350">RFC2350</span>
+                                        <span class="btn nav-item" onclick="navigate('Peringatan_Keamanan')"
+                                            data-text="Peringatan Keamanan">Peringatan Keamanan</span>
+                                        <span class="btn nav-item" onclick="navigate('Infografis_Keamanan_Informasi')"
+                                            data-text="Infografis Keamanan Informasi">Infografis Keamanan
+                                            Informasi</span>
+                                        <span class="btn nav-item" onclick="navigate('Peraturan_Kebijakan')"
+                                            data-text="Peraturan Kebijakan">Peraturan Kebijakan</span>
+                                        <span class="btn nav-item" onclick="navigate('Berita_Siber')"
+                                            data-text="Berita Siber (Cyber Blitz)">Berita Siber (Cyber Blitz)</span>
+                                        <span class="btn nav-item" onclick="navigate('Statistik_Honeypot')"
+                                            data-text="Statistik (Honeypot)">Statistik (Honeypot)</span>
+                                        <span class="btn nav-item" onclick="navigate('Panduan_Teknis')"
+                                            data-text="Panduan Teknis">Panduan Teknis</span>
+                                        <span class="btn nav-item" onclick="navigate('rfc2350')"
+                                            data-text="RFC2350">RFC2350</span>
                                     </div>
                                 </li>
-                                <li class="btn nav-item" onclick="navigate('lapor_insiden_siber')" data-text="Lapor Insiden Siber">Lapor Insiden Siber</li>
-                                <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">Kontak Kami</li>
+                                <li class="btn nav-item" onclick="navigate('lapor_insiden_siber')"
+                                    data-text="Lapor Insiden Siber">Lapor Insiden Siber</li>
+                                <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">
+                                    Kontak Kami</li>
                                 <li><input type="text" class="search-box" placeholder="Search..."></li>
                             </ul>
                         </nav>
-                </nav>
+                    </nav>
             </div>
     </div>
     </header>
@@ -434,41 +441,42 @@
     </div>
 
     <button id="audioButton" class="btn btn-primary side-button">Play</button>
-        <script>
-            let isPlaying = false;
-            const navItems = document.querySelectorAll('.nav-item');
+    <script>
+        let isPlaying = false;
+        const navItems = document.querySelectorAll('.nav-item');
 
-            function speakText(text) {
-                if (isPlaying) {
-                    responsiveVoice.speak(text, 'Indonesian Female');
-                }
+        function speakText(text) {
+            if (isPlaying) {
+                responsiveVoice.speak(text, 'Indonesian Female');
             }
+        }
 
-            document.getElementById('audioButton').addEventListener('click', function() {
-                const button = this;
+        document.getElementById('audioButton').addEventListener('click', function() {
+            const button = this;
+            if (isPlaying) {
+                responsiveVoice.cancel();
+                button.textContent = 'Play';
+                isPlaying = false;
+            } else {
+                button.textContent = 'Mute', 'Selamat Datang di Jakarta Prov CSIRT';
+                isPlaying = true;
+                responsiveVoice.speak('Selamat Datang di Jakarta Prov CSIRT', 'Indonesian Female');
+            }
+        });
+
+        navItems.forEach(item => {
+            item.addEventListener('mouseover', function(event) {
+
+                const text = item.getAttribute('data-text') || event.target.getAttribute('data-text');
                 if (isPlaying) {
-                    responsiveVoice.cancel();
-                    button.textContent = 'Play';
-                    isPlaying = false;
-                } else {
-                    button.textContent = 'Mute', 'Selamat Datang di Jakarta Prov CSIRT';
-                    isPlaying = true;
+                    speakText(text);
                 }
             });
-
-            navItems.forEach(item => {
-                item.addEventListener('mouseover', function(event) {
-
-                    const text = item.getAttribute('data-text') || event.target.getAttribute('data-text');
-                    if (isPlaying) {
-                        speakText(text);
-                    }
-                });
-            });
-        </script>
-        <script>
-            function navigate(page) {
-            switch(page) {
+        });
+    </script>
+    <script>
+        function navigate(page) {
+            switch (page) {
                 case 'Peringatan_Keamanan':
                     window.location.href = '{{ route('peringatan_keamanan') }}';
                     break;
@@ -509,86 +517,89 @@
                     console.log('No route defined for: ' + page);
             }
         }
-        </script>
+    </script>
 
     &nbsp;
-    
-            <div class="col-12 flex-container">
-                <img src="/img/Logo.png" alt="Logo">
-                <div class="text-content">
-                    <p> Tim Tanggap Insiden Siber (Computer Security Incident Response Team) Pemerintah Provinsi DKI
-                        Jakarta yang selanjutnya disebut dengan <b> JakartaProv-CSIRT</b> merupakan CSIRT Pemprov DKI
-                        Jakarta.</p>
-                   
-                    <p> Tim <b> JakartaProv- CSIRT </b> ditetapkan oleh Sekretaris Daerah Provinsi DKI Jakarta dalam
-                        Keputusan Penjabat Sekretaris Daerah DKI Jakarta Nomor: 41 Tahun 2020 Tentang Computer Security
-                        Incident Response Team </p>
-                   
-                    <p> Kepala Dinas Komunikasi Informatika dan Statistik Provinsi DKI Jakarta ditunjuk sebagai Ketua
-                        CSIRT Propinsi DKI Jakarta dan ditugaskan untuk melaksanakan memimpin, mengkoordinasikan,
-                        memfasilitasi pengembangan kemampuan SDM, pengalokasian sumber daya, memantau, serta melaporkan
-                        pelaksanaan terkait JakartaProv-CSIRT. </p>
-                  
-                    <p> Dalam pembentukannya, JakartaProv-CSIRT memiliki tujuan yaitu: </p>
-                  
-                    <p> - Membangun mengkoordinasikan, mengkolaborasikan dan mengoperasionalkan sistem mitigasi,
-                        manajemen krisis, penanggulangan dan pemulihan terhadap insiden keamanan siber pada sektor
-                        Pemerintah Daerah Provinsi DKI Jakarta.
-                    <p> - Membangun kapasitas sumber daya penanggulangan dan pemulihan insiden keamanan siber pada
-                        sektor Pemerintah Daerah Provinsi DKI Jakarta </p>
-                    
-                    <p> CSIRT Propinsi DKI Jakarta melaksanakan layanan tanggap insiden siber, berupa:
-                    <p> - Layanan reaktif, yaitu layanan yang terkait dengan kebutuhan melakukan respon terhadap insiden
-                        siber termasuk penangkalan, penindakan dan pemulihan siber.
-                    <p>- Layanan proaktif, yaitu layanan yang mendeteksi dan mencegah serangan siber sebelum ada dampak
-                        nyata. </p>
-                    
-                    <p> CSIRT Propinsi DKI Jakarta secara resmi di-launching pada 23 Desember 2020. Konstituen
-                        JakartaProv-CSIRT meliputi Perangkat Daerah (OPD) di lingkungan Pemerintah Daerah Provinsi DKI
-                        Jakarta. </p>
+
+    <div class="col-12 flex-container">
+        <img src="/img/Logo.png" alt="Logo">
+        <div class="text-content">
+            <p> Tim Tanggap Insiden Siber (Computer Security Incident Response Team) Pemerintah Provinsi DKI
+                Jakarta yang selanjutnya disebut dengan <b> JakartaProv-CSIRT</b> merupakan CSIRT Pemprov DKI
+                Jakarta.</p>
+
+            <p> Tim <b> JakartaProv- CSIRT </b> ditetapkan oleh Sekretaris Daerah Provinsi DKI Jakarta dalam
+                Keputusan Penjabat Sekretaris Daerah DKI Jakarta Nomor: 41 Tahun 2020 Tentang Computer Security
+                Incident Response Team </p>
+
+            <p> Kepala Dinas Komunikasi Informatika dan Statistik Provinsi DKI Jakarta ditunjuk sebagai Ketua
+                CSIRT Propinsi DKI Jakarta dan ditugaskan untuk melaksanakan memimpin, mengkoordinasikan,
+                memfasilitasi pengembangan kemampuan SDM, pengalokasian sumber daya, memantau, serta melaporkan
+                pelaksanaan terkait JakartaProv-CSIRT. </p>
+
+            <p> Dalam pembentukannya, JakartaProv-CSIRT memiliki tujuan yaitu: </p>
+
+            <p> - Membangun mengkoordinasikan, mengkolaborasikan dan mengoperasionalkan sistem mitigasi,
+                manajemen krisis, penanggulangan dan pemulihan terhadap insiden keamanan siber pada sektor
+                Pemerintah Daerah Provinsi DKI Jakarta.
+            <p> - Membangun kapasitas sumber daya penanggulangan dan pemulihan insiden keamanan siber pada
+                sektor Pemerintah Daerah Provinsi DKI Jakarta </p>
+
+            <p> CSIRT Propinsi DKI Jakarta melaksanakan layanan tanggap insiden siber, berupa:
+            <p> - Layanan reaktif, yaitu layanan yang terkait dengan kebutuhan melakukan respon terhadap insiden
+                siber termasuk penangkalan, penindakan dan pemulihan siber.
+            <p>- Layanan proaktif, yaitu layanan yang mendeteksi dan mencegah serangan siber sebelum ada dampak
+                nyata. </p>
+
+            <p> CSIRT Propinsi DKI Jakarta secara resmi di-launching pada 23 Desember 2020. Konstituen
+                JakartaProv-CSIRT meliputi Perangkat Daerah (OPD) di lingkungan Pemerintah Daerah Provinsi DKI
+                Jakarta. </p>
+        </div>
+    </div>
+    </div>
+    <section class="footer-section">
+        <div class="container">
+            <div class="footer-column">
+                <img src="/img/Logo.png" alt="CSIRT Logo">
+                <p>Tim Tanggap Insiden Siber (Computer Security Incident Response Team) Pemerintah Provinsi DKI Jakarta
+                    yang selanjutnya disebut dengan JakartaProv-CSIRT merupakan CSIRT Pemprov DKI Jakarta.</p>
+                <p>Tim JakartaProv-CSIRT ditetapkan oleh Sekretaris Daerah Provinsi DKI Jakarta dalam Keputusan Penjabat
+                    Sekretaris Daerah DKI Jakarta Nomor: 41 Tahun 2020 Tentang Compu</p>
+                <button>SELENGKAPNYA</button>
+            </div>
+            <div class="footer-column">
+                <h3>Visitor</h3>
+                <p>Pengunjung Online: 4</p>
+                <p>Hari ini: 15</p>
+                <p>Tanggal: 24-07-2024</p>
+                <p>Total Pengunjung: 47322</p>
+            </div>
+            <div class="footer-column">
+                <h3>Link</h3>
+                <ul>
+                    <li><a href="#">Profil</a></li>
+                    <li><a href="#">Peringatan Keamanan</a></li>
+                    <li><a href="#">Event</a></li>
+                    <li><a href="#">Kontak Kami</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>JakartaProv-CSIRT</h3>
+                <p> Siber, Sandi dan Aplikasi Diskominfotik Provinsi DKI Jakarta Balaikota Blok H Lantai 13, JL Merdeka
+                    Selatan 8-9, Jakarta Pusat 10110</p>
+                <p><i class="fa fa-phone"> </i> 081388870152</p>
+                <p><i class="fa fa-envelope"></i> csirt@jakarta.go.id</p>
+                <div class="social-media">
                 </div>
             </div>
         </div>
-        <section class="footer-section">
-            <div class="container">
-                <div class="footer-column">
-                    <img src="/img/Logo.png" alt="CSIRT Logo">
-                    <p>Tim Tanggap Insiden Siber (Computer Security Incident Response Team) Pemerintah Provinsi DKI Jakarta yang selanjutnya disebut dengan JakartaProv-CSIRT merupakan CSIRT Pemprov DKI Jakarta.</p>
-                    <p>Tim JakartaProv-CSIRT ditetapkan oleh Sekretaris Daerah Provinsi DKI Jakarta dalam Keputusan Penjabat Sekretaris Daerah DKI Jakarta Nomor: 41 Tahun 2020 Tentang Compu</p>
-                    <button>SELENGKAPNYA</button>
-                </div>
-                <div class="footer-column">
-                    <h3>Visitor</h3>
-                    <p>Pengunjung Online: 4</p>
-                    <p>Hari ini: 15</p>
-                    <p>Tanggal: 24-07-2024</p>
-                    <p>Total Pengunjung: 47322</p>
-                </div>
-                <div class="footer-column">
-                    <h3>Link</h3>
-                    <ul>
-                        <li><a href="#">Profil</a></li>
-                        <li><a href="#">Peringatan Keamanan</a></li>
-                        <li><a href="#">Event</a></li>
-                        <li><a href="#">Kontak Kami</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>JakartaProv-CSIRT</h3>
-                    <p> Siber, Sandi dan Aplikasi Diskominfotik Provinsi DKI Jakarta Balaikota Blok H Lantai 13, JL Merdeka Selatan 8-9, Jakarta Pusat 10110</p>
-                    <p><i class="fa fa-phone">  </i> 081388870152</p>
-                    <p><i class="fa fa-envelope"></i> csirt@jakarta.go.id</p>
-                    <div class="social-media">
-                    </div>
-                </div>
-            </div>
-        </section>
-        
+    </section>
 
 
 
 
-        <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
+
+    <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
 </body>
 
 </html>

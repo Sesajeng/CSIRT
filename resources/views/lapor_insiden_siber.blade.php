@@ -309,9 +309,10 @@
 
         li {
             margin-right: 10px;
-          
+
 
         }
+
         .card {
             position: relative;
             display: flex;
@@ -327,6 +328,7 @@
             max-width: 100%;
             max-height: 100%;
         }
+
         .form-image-container {
             display: flex;
             justify-content: space-between;
@@ -351,7 +353,7 @@
             height: auto;
             border-radius: 10px;
         }
-        
+
 
         .navbar ul li a,
         .dropdown .dropbtn {
@@ -394,7 +396,7 @@
             display: block;
         }
 
-       
+
 
         .dropdown-content {
             background-color: orange;
@@ -454,8 +456,6 @@
             margin-left: 16px;
             font-size: 17px;
         }
-
-
     </style>
 </head>
 
@@ -474,17 +474,26 @@
                             <li class="btn nav-item dropdown">
                                 <span class="dropbtn" data-text="Publikasi">Publikasi</span>
                                 <div class="dropdown-content">
-                                    <span class="btn nav-item" onclick="navigate('Peringatan_Keamanan')" data-text="Peringatan Keamanan">Peringatan Keamanan</span>
-                                    <span class="btn nav-item" onclick="navigate('Infografis_Keamanan_Informasi')" data-text="Infografis Keamanan Informasi">Infografis Keamanan Informasi</span>
-                                    <span class="btn nav-item" onclick="navigate('Peraturan_Kebijakan')" data-text="Peraturan Kebijakan">Peraturan Kebijakan</span>
-                                    <span class="btn nav-item" onclick="navigate('Berita_Siber')" data-text="Berita Siber (Cyber Blitz)">Berita Siber (Cyber Blitz)</span>
-                                    <span class="btn nav-item" onclick="navigate('Statistik_Honeypot')" data-text="Statistik (Honeypot)">Statistik (Honeypot)</span>
-                                    <span class="btn nav-item" onclick="navigate('Panduan_Teknis')" data-text="Panduan Teknis">Panduan Teknis</span>
-                                    <span class="btn nav-item" onclick="navigate('rfc2350')" data-text="RFC2350">RFC2350</span>
+                                    <span class="btn nav-item" onclick="navigate('Peringatan_Keamanan')"
+                                        data-text="Peringatan Keamanan">Peringatan Keamanan</span>
+                                    <span class="btn nav-item" onclick="navigate('Infografis_Keamanan_Informasi')"
+                                        data-text="Infografis Keamanan Informasi">Infografis Keamanan Informasi</span>
+                                    <span class="btn nav-item" onclick="navigate('Peraturan_Kebijakan')"
+                                        data-text="Peraturan Kebijakan">Peraturan Kebijakan</span>
+                                    <span class="btn nav-item" onclick="navigate('Berita_Siber')"
+                                        data-text="Berita Siber (Cyber Blitz)">Berita Siber (Cyber Blitz)</span>
+                                    <span class="btn nav-item" onclick="navigate('Statistik_Honeypot')"
+                                        data-text="Statistik (Honeypot)">Statistik (Honeypot)</span>
+                                    <span class="btn nav-item" onclick="navigate('Panduan_Teknis')"
+                                        data-text="Panduan Teknis">Panduan Teknis</span>
+                                    <span class="btn nav-item" onclick="navigate('rfc2350')"
+                                        data-text="RFC2350">RFC2350</span>
                                 </div>
                             </li>
-                            <li class="btn nav-item" onclick="navigate('lapor_insiden_siber')" data-text="Lapor Insiden Siber">Lapor Insiden Siber</li>
-                            <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">Kontak Kami</li>
+                            <li class="btn nav-item" onclick="navigate('lapor_insiden_siber')"
+                                data-text="Lapor Insiden Siber">Lapor Insiden Siber</li>
+                            <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">Kontak
+                                Kami</li>
                             <li><input type="text" class="search-box" placeholder="Search..."></li>
                         </ul>
                     </nav>
@@ -496,175 +505,185 @@
     <div class="carousel-item active">
         <img src="/img/18.png" class="d-block w-100" alt="gambar tampilan event">
     </div>
-<table>
-    <td>
-    <div class="col-12 flex-container">
-        <div class="text-content">
-            <h3> Form Laporan Insiden Siber </h3>
-            <p> Catatan : </p>
-            <ol>
-                <li>Lingkup Domain dan subdomain yang dilaporkan adalah *. Jakarta.go.id</li>
-                <li>Harap mengisi nama lengkap dan kontak pribadi dengan benar, karena sertifikat akan ditulis
-                    berdasarkan data yang ada</li>
-                <li>Proses validasi report bug bounty memerlukan waktu maksimal selama 7 hari kerja</li>
-                <li>Jika report dinyatakan VALID dan tidak DUPLICATED, maka kami akan mengirimkan sertifikat apresiasi
-                    maksimal selama 3 hari kerja </li>
-            </ol>
-            <div class="card card-frame" style="padding:10px; margin-bottom:10px;">
-                <h5 class="card-title">Data Pelapor</h5>
-                <div class="form-group field-cyberreport-name required">
-                    <label class="control-label" for="cyberreport-name">Nama Lengkap</label>
-                    <input type="text" id="cyberreport-name" class="form-control" name="CyberReport[name]"
-                        maxlength="100" aria-required="true">
+    <table>
+        <td>
+            <div class="col-12 flex-container">
+                <div class="text-content">
+                    <h3> Form Laporan Insiden Siber </h3>
+                    <p> Catatan : </p>
+                    <ol>
+                        <li>Lingkup Domain dan subdomain yang dilaporkan adalah *. Jakarta.go.id</li>
+                        <li>Harap mengisi nama lengkap dan kontak pribadi dengan benar, karena sertifikat akan ditulis
+                            berdasarkan data yang ada</li>
+                        <li>Proses validasi report bug bounty memerlukan waktu maksimal selama 7 hari kerja</li>
+                        <li>Jika report dinyatakan VALID dan tidak DUPLICATED, maka kami akan mengirimkan sertifikat
+                            apresiasi
+                            maksimal selama 3 hari kerja </li>
+                    </ol>
+                    <div class="card card-frame" style="padding:10px; margin-bottom:10px;">
+                        <h5 class="card-title">Data Pelapor</h5>
+                        <div class="form-group field-cyberreport-name required">
+                            <label class="control-label" for="cyberreport-name">Nama Lengkap</label>
+                            <input type="text" id="cyberreport-name" class="form-control" name="CyberReport[name]"
+                                maxlength="100" aria-required="true">
 
-                    <div class="help-block"></div>
+                            <div class="help-block"></div>
+                        </div>
+                        <div class="form-group field-cyberreport-email required">
+                            <label class="control-label" for="cyberreport-email">Email</label>
+                            <input type="text" id="cyberreport-email" class="form-control" name="CyberReport[email]"
+                                maxlength="100" aria-required="true">
+
+                            <div class="help-block"></div>
+                        </div>
+                        <div class="form-group field-cyberreport-phone_number required">
+                            <label class="control-label" for="cyberreport-phone_number">Nomor HP</label>
+                            <input type="number" id="cyberreport-phone_number" class="form-control"
+                                name="CyberReport[phone_number]" maxlength="100" aria-required="true">
+
+                            <div class="help-block"></div>
+                        </div>
+                        <div style=";margin-top:10px;" class="form-group">
+                            <label for="datepicker">Tanggal Temuan</label>
+                            <input type="text" name="CyberReport[report_date]" class="form-control"
+                                id="datepicker" placeholder="Input Tanggal">
+                        </div>
+                    </div>
+                    <div class="card card-frame" style="padding:10px; margin-bottom:10px;">
+                        <h5 class="card-title">Data Website</h5>
+                        <div class="form-group field-cyberreport-domain_name required">
+                            <label class="control-label" for="cyberreport-domain_name">Nama Domain</label>
+                            <input type="text" id="cyberreport-domain_name" class="form-control"
+                                name="CyberReport[domain_name]" maxlength="100" aria-required="true">
+
+                            <div class="help-block"></div>
+                        </div>
+                        <div class="form-group field-cyberreport-url_affected required">
+                            <label class="control-label" for="cyberreport-url_affected">Url Terdampak</label>
+                            <input type="text" id="cyberreport-url_affected" class="form-control"
+                                name="CyberReport[url_affected]" aria-required="true">
+
+                            <div class="help-block"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group field-cyberreport-email required">
-                    <label class="control-label" for="cyberreport-email">Email</label>
-                    <input type="text" id="cyberreport-email" class="form-control" name="CyberReport[email]"
-                        maxlength="100" aria-required="true">
 
-                    <div class="help-block"></div>
+                <div class="card card-frame" style="padding:10px; margin-bottom:10px;">
+                    <h5 class="card-title">Detail Laporan</h5>
+                    <div class="form-group field-cyberreport-description required">
+                        <label class="control-label" for="cyberreport-description">Deskripsi</label>
+                        <textarea id="cyberreport-description" class="form-control" name="CyberReport[description]" rows="6"
+                            aria-required="true"></textarea>
+
+                        <div class="help-block"></div>
+                    </div>
+                    <div class="form-group field-cyberreport-risk_type required">
+                        <label class="control-label" for="cyberreport-risk_type">Jenis Risiko</label>
+                        <input type="text" id="cyberreport-risk_type" class="form-control"
+                            name="CyberReport[risk_type]" maxlength="100" aria-required="true">
+
+                        <div class="help-block"></div>
+                    </div>
+                    <div class="form-group field-cyberreport-risk_level required">
+                        <label class="control-label" for="cyberreport-risk_level">Tingkat Risiko</label>
+                        <input type="text" id="cyberreport-risk_level" class="form-control"
+                            name="CyberReport[risk_level]" maxlength="100" aria-required="true">
+
+                        <div class="help-block"></div>
+                    </div>
+                    <div class="form-group field-cyberreport-cvss_score required">
+                        <label class="control-label" for="cyberreport-cvss_score">Cvss Score</label>
+                        <input type="text" id="cyberreport-cvss_score" class="form-control"
+                            name="CyberReport[cvss_score]" maxlength="255" aria-required="true">
+
+                        <div class="help-block"></div>
+                    </div>
+                    <div class="form-group field-cyberreport-url_video required">
+                        <label class="control-label" for="cyberreport-url_video">Url Bukti Video</label>
+                        <input type="text" id="cyberreport-url_video" class="form-control"
+                            name="CyberReport[url_video]" aria-required="true">
+
+                        <div class="help-block"></div>
+                    </div>
+                    <div class="form-group field-cyberreport-refrence required">
+                        <label class="control-label" for="cyberreport-refrence">Refrensi (Optional)</label>
+                        <input type="text" id="cyberreport-refrence" class="form-control"
+                            name="CyberReport[refrence]" value="-" maxlength="200" aria-required="true">
+
+                        <div class="help-block"></div>
+                    </div>
+                    <div class="form-group field-cyberreport-recomendation required">
+                        <label class="control-label" for="cyberreport-recomendation">Rekomendasi</label>
+                        <input type="text" id="cyberreport-recomendation" class="form-control"
+                            name="CyberReport[recomendation]" maxlength="200" aria-required="true">
+
+                        <div class="help-block"></div>
+                    </div>
+                    <div class="form-group field-file-image">
+                        <label class="control-label" for="file-image">Screenshot Bukti</label>
+                        <input type="hidden" name="CyberReport[proofFile]" value=""><input type="file"
+                            id="file-image" class="form-control" name="CyberReport[proofFile]" accept="image/*"
+                            onchange="return showImage()">
+
+                        <div class="help-block"></div>
+                    </div>
                 </div>
-                <div class="form-group field-cyberreport-phone_number required">
-                    <label class="control-label" for="cyberreport-phone_number">Nomor HP</label>
-                    <input type="number" id="cyberreport-phone_number" class="form-control"
-                        name="CyberReport[phone_number]" maxlength="100" aria-required="true">
-
-                    <div class="help-block"></div>
-                </div>
-                <div style=";margin-top:10px;" class="form-group">
-                    <label for="datepicker">Tanggal Temuan</label>
-                    <input type="text" name="CyberReport[report_date]" class="form-control" id="datepicker"
-                        placeholder="Input Tanggal">
+            </div>
+            <div class="row" style="margin-top:10px;">
+                <div class="col-lg-7"><img id="cyberreport-verifycode-image"
+                        src="/site/captcha?v=66a0b13b6a3620.36799103" alt=""></div>
+                <div class="col-lg-7"><input type="text" id="cyberreport-verifycode" class="form-control"
+                        name="CyberReport[verifyCode]" placeholder=" Captcha" required="" aria-invalid="true">
                 </div>
             </div>
-            <div class="card card-frame" style="padding:10px; margin-bottom:10px;">
-                <h5 class="card-title">Data Website</h5>
-                <div class="form-group field-cyberreport-domain_name required">
-                    <label class="control-label" for="cyberreport-domain_name">Nama Domain</label>
-                    <input type="text" id="cyberreport-domain_name" class="form-control"
-                        name="CyberReport[domain_name]" maxlength="100" aria-required="true">
 
-                    <div class="help-block"></div>
-                </div>
-                <div class="form-group field-cyberreport-url_affected required">
-                    <label class="control-label" for="cyberreport-url_affected">Url Terdampak</label>
-                    <input type="text" id="cyberreport-url_affected" class="form-control"
-                        name="CyberReport[url_affected]" aria-required="true">
-
-                    <div class="help-block"></div>
-                </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success" style="margin-top:10px;">Save</button>
             </div>
-        </div>
-
-        <div class="card card-frame" style="padding:10px; margin-bottom:10px;">
-            <h5 class="card-title">Detail Laporan</h5>
-            <div class="form-group field-cyberreport-description required">
-                <label class="control-label" for="cyberreport-description">Deskripsi</label>
-                <textarea id="cyberreport-description" class="form-control" name="CyberReport[description]" rows="6"
-                    aria-required="true"></textarea>
-
-                <div class="help-block"></div>
+        </td>
+        <th>
+            <div class="image-section">
+                <img src="/img/20.png" alt="Your Image">
             </div>
-            <div class="form-group field-cyberreport-risk_type required">
-                <label class="control-label" for="cyberreport-risk_type">Jenis Risiko</label>
-                <input type="text" id="cyberreport-risk_type" class="form-control" name="CyberReport[risk_type]"
-                    maxlength="100" aria-required="true">
+        </th>
+    </table>
+    <button id="audioButton" class="btn btn-primary side-button">Play</button>
+    <script>
+        let isPlaying = false;
+        const navItems = document.querySelectorAll('.nav-item');
 
-                <div class="help-block"></div>
-            </div>
-            <div class="form-group field-cyberreport-risk_level required">
-                <label class="control-label" for="cyberreport-risk_level">Tingkat Risiko</label>
-                <input type="text" id="cyberreport-risk_level" class="form-control"
-                    name="CyberReport[risk_level]" maxlength="100" aria-required="true">
+        function speakText(text) {
+            if (isPlaying) {
+                responsiveVoice.speak(text, 'Indonesian Female');
+            }
+        }
 
-                <div class="help-block"></div>
-            </div>
-            <div class="form-group field-cyberreport-cvss_score required">
-                <label class="control-label" for="cyberreport-cvss_score">Cvss Score</label>
-                <input type="text" id="cyberreport-cvss_score" class="form-control"
-                    name="CyberReport[cvss_score]" maxlength="255" aria-required="true">
+        document.getElementById('audioButton').addEventListener('click', function() {
+            const button = this;
+            if (isPlaying) {
+                responsiveVoice.cancel();
+                button.textContent = 'Play';
+                isPlaying = false;
+            } else {
+                button.textContent = 'Mute', 'Selamat Datang di Jakarta Prov CSIRT';
+                isPlaying = true;
+                responsiveVoice.speak('Selamat Datang di Jakarta Prov CSIRT', 'Indonesian Female');
+            }
+        });
 
-                <div class="help-block"></div>
-            </div>
-            <div class="form-group field-cyberreport-url_video required">
-                <label class="control-label" for="cyberreport-url_video">Url Bukti Video</label>
-                <input type="text" id="cyberreport-url_video" class="form-control" name="CyberReport[url_video]"
-                    aria-required="true">
+        navItems.forEach(item => {
+            item.addEventListener('mouseover', function(event) {
 
-                <div class="help-block"></div>
-            </div>
-            <div class="form-group field-cyberreport-refrence required">
-                <label class="control-label" for="cyberreport-refrence">Refrensi (Optional)</label>
-                <input type="text" id="cyberreport-refrence" class="form-control" name="CyberReport[refrence]"
-                    value="-" maxlength="200" aria-required="true">
-
-                <div class="help-block"></div>
-            </div>
-            <div class="form-group field-cyberreport-recomendation required">
-                <label class="control-label" for="cyberreport-recomendation">Rekomendasi</label>
-                <input type="text" id="cyberreport-recomendation" class="form-control"
-                    name="CyberReport[recomendation]" maxlength="200" aria-required="true">
-
-                <div class="help-block"></div>
-            </div>
-            <div class="form-group field-file-image">
-                <label class="control-label" for="file-image">Screenshot Bukti</label>
-                <input type="hidden" name="CyberReport[proofFile]" value=""><input type="file"
-                    id="file-image" class="form-control" name="CyberReport[proofFile]" accept="image/*"
-                    onchange="return showImage()">
-
-                <div class="help-block"></div>
-            </div>
-        </div>
-    </div>
-    <div class="row" style="margin-top:10px;"><div class="col-lg-7"><img id="cyberreport-verifycode-image" src="/site/captcha?v=66a0b13b6a3620.36799103" alt=""></div><div class="col-lg-7"><input type="text" id="cyberreport-verifycode" class="form-control" name="CyberReport[verifyCode]" placeholder=" Captcha" required="" aria-invalid="true"></div></div>
-   
-    <div class="form-group">
-        <button type="submit" class="btn btn-success" style="margin-top:10px;">Save</button>    </div></td>
-    <th>
-        <div class="image-section">
-            <img src="/img/20.png" alt="Your Image">
-        </div>
-    </th>
-</table>
-            <button id="audioButton" class="btn btn-primary side-button">Play</button>
-            <script>
-                let isPlaying = false;
-                const navItems = document.querySelectorAll('.nav-item');
-
-                function speakText(text) {
-                    if (isPlaying) {
-                        responsiveVoice.speak(text, 'Indonesian Female');
-                    }
+                const text = item.getAttribute('data-text') || event.target.getAttribute('data-text');
+                if (isPlaying) {
+                    speakText(text);
                 }
-
-                document.getElementById('audioButton').addEventListener('click', function() {
-                    const button = this;
-                    if (isPlaying) {
-                        responsiveVoice.cancel();
-                        button.textContent = 'Play';
-                        isPlaying = false;
-                    } else {
-                        button.textContent = 'Mute', 'Selamat Datang di Jakarta Prov CSIRT';
-                        isPlaying = true;
-                    }
-                });
-
-                navItems.forEach(item => {
-                    item.addEventListener('mouseover', function(event) {
-
-                        const text = item.getAttribute('data-text') || event.target.getAttribute('data-text');
-                        if (isPlaying) {
-                            speakText(text);
-                        }
-                    });
-                });
-            </script>
-            <script>
-                 function navigate(page) {
-            switch(page) {
+            });
+        });
+    </script>
+    <script>
+        function navigate(page) {
+            switch (page) {
                 case 'Peringatan_Keamanan':
                     window.location.href = '{{ route('peringatan_keamanan') }}';
                     break;
@@ -705,52 +724,51 @@
                     console.log('No route defined for: ' + page);
             }
         }
+    </script>
 
-            </script>
-
-            &nbsp;
-            <section class="footer-section">
-                <div class="container">
-                    <div class="footer-column">
-                        <img src="/img/Logo.png" alt="CSIRT Logo">
-                        <p>Tim Tanggap Insiden Siber (Computer Security Incident Response Team) Pemerintah Provinsi DKI
-                            Jakarta yang selanjutnya disebut dengan JakartaProv-CSIRT merupakan CSIRT Pemprov DKI
-                            Jakarta.</p>
-                        <p>Tim JakartaProv-CSIRT ditetapkan oleh Sekretaris Daerah Provinsi DKI Jakarta dalam Keputusan
-                            Penjabat Sekretaris Daerah DKI Jakarta Nomor: 41 Tahun 2020 Tentang Compu</p>
-                        <button>SELENGKAPNYA</button>
-                    </div>
-                    <div class="footer-column">
-                        <h3>Visitor</h3>
-                        <p>Pengunjung Online: 4</p>
-                        <p>Hari ini: 15</p>
-                        <p>Tanggal: 24-07-2024</p>
-                        <p>Total Pengunjung: 47322</p>
-                    </div>
-                    <div class="footer-column">
-                        <h3>Link</h3>
-                        <ul>
-                            <li><a href="#">Profil</a></li>
-                            <li><a href="#">Peringatan Keamanan</a></li>
-                            <li><a href="#">Event</a></li>
-                            <li><a href="#">Kontak Kami</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h3>JakartaProv-CSIRT</h3>
-                        <p> Siber, Sandi dan Aplikasi Diskominfotik Provinsi DKI Jakarta Balaikota Blok H Lantai 13, JL
-                            Merdeka Selatan 8-9, Jakarta Pusat 10110</p>
-                        <p><i class="fa fa-phone"> </i> 081388870152</p>
-                        <p><i class="fa fa-envelope"></i> csirt@jakarta.go.id</p>
-                        <div class="social-media">
-                        </div>
-                    </div>
+    &nbsp;
+    <section class="footer-section">
+        <div class="container">
+            <div class="footer-column">
+                <img src="/img/Logo.png" alt="CSIRT Logo">
+                <p>Tim Tanggap Insiden Siber (Computer Security Incident Response Team) Pemerintah Provinsi DKI
+                    Jakarta yang selanjutnya disebut dengan JakartaProv-CSIRT merupakan CSIRT Pemprov DKI
+                    Jakarta.</p>
+                <p>Tim JakartaProv-CSIRT ditetapkan oleh Sekretaris Daerah Provinsi DKI Jakarta dalam Keputusan
+                    Penjabat Sekretaris Daerah DKI Jakarta Nomor: 41 Tahun 2020 Tentang Compu</p>
+                <button>SELENGKAPNYA</button>
+            </div>
+            <div class="footer-column">
+                <h3>Visitor</h3>
+                <p>Pengunjung Online: 4</p>
+                <p>Hari ini: 15</p>
+                <p>Tanggal: 24-07-2024</p>
+                <p>Total Pengunjung: 47322</p>
+            </div>
+            <div class="footer-column">
+                <h3>Link</h3>
+                <ul>
+                    <li><a href="#">Profil</a></li>
+                    <li><a href="#">Peringatan Keamanan</a></li>
+                    <li><a href="#">Event</a></li>
+                    <li><a href="#">Kontak Kami</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>JakartaProv-CSIRT</h3>
+                <p> Siber, Sandi dan Aplikasi Diskominfotik Provinsi DKI Jakarta Balaikota Blok H Lantai 13, JL
+                    Merdeka Selatan 8-9, Jakarta Pusat 10110</p>
+                <p><i class="fa fa-phone"> </i> 081388870152</p>
+                <p><i class="fa fa-envelope"></i> csirt@jakarta.go.id</p>
+                <div class="social-media">
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
 
 
-            <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
+    <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
 </body>
 
 </html>

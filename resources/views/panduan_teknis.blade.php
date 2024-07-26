@@ -228,7 +228,7 @@
             display: block;
         }
 
-       
+
 
         .dropdown-content {
             background-color: orange;
@@ -364,8 +364,7 @@
         .footer-column img {
             max-width: 100px;
             margin-bottom: 20px;
-        } 
-
+        }
     </style>
 </head>
 
@@ -382,17 +381,26 @@
                         <li class="btn nav-item dropdown">
                             <span class="dropbtn" data-text="Publikasi">Publikasi</span>
                             <div class="dropdown-content">
-                                <span class="btn nav-item" onclick="navigate('Peringatan_Keamanan')" data-text="Peringatan Keamanan">Peringatan Keamanan</span>
-                                <span class="btn nav-item" onclick="navigate('Infografis_Keamanan_Informasi')" data-text="Infografis Keamanan Informasi">Infografis Keamanan Informasi</span>
-                                <span class="btn nav-item" onclick="navigate('Peraturan_Kebijakan')" data-text="Peraturan Kebijakan">Peraturan Kebijakan</span>
-                                <span class="btn nav-item" onclick="navigate('Berita_Siber')" data-text="Berita Siber (Cyber Blitz)">Berita Siber (Cyber Blitz)</span>
-                                <span class="btn nav-item" onclick="navigate('Statistik_Honeypot')" data-text="Statistik (Honeypot)">Statistik (Honeypot)</span>
-                                <span class="btn nav-item" onclick="navigate('Panduan_Teknis')" data-text="Panduan Teknis">Panduan Teknis</span>
-                                <span class="btn nav-item" onclick="navigate('rfc2350')" data-text="RFC2350">RFC2350</span>
+                                <span class="btn nav-item" onclick="navigate('Peringatan_Keamanan')"
+                                    data-text="Peringatan Keamanan">Peringatan Keamanan</span>
+                                <span class="btn nav-item" onclick="navigate('Infografis_Keamanan_Informasi')"
+                                    data-text="Infografis Keamanan Informasi">Infografis Keamanan Informasi</span>
+                                <span class="btn nav-item" onclick="navigate('Peraturan_Kebijakan')"
+                                    data-text="Peraturan Kebijakan">Peraturan Kebijakan</span>
+                                <span class="btn nav-item" onclick="navigate('Berita_Siber')"
+                                    data-text="Berita Siber (Cyber Blitz)">Berita Siber (Cyber Blitz)</span>
+                                <span class="btn nav-item" onclick="navigate('Statistik_Honeypot')"
+                                    data-text="Statistik (Honeypot)">Statistik (Honeypot)</span>
+                                <span class="btn nav-item" onclick="navigate('Panduan_Teknis')"
+                                    data-text="Panduan Teknis">Panduan Teknis</span>
+                                <span class="btn nav-item" onclick="navigate('rfc2350')"
+                                    data-text="RFC2350">RFC2350</span>
                             </div>
                         </li>
-                        <li class="btn nav-item" onclick="navigate('lapor_insiden_siber')" data-text="Lapor Insiden Siber">Lapor Insiden Siber</li>
-                        <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">Kontak Kami</li>
+                        <li class="btn nav-item" onclick="navigate('lapor_insiden_siber')"
+                            data-text="Lapor Insiden Siber">Lapor Insiden Siber</li>
+                        <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">Kontak Kami
+                        </li>
                         <li><input type="text" class="search-box" placeholder="Search..."></li>
                     </ul>
                 </nav>
@@ -405,6 +413,49 @@
     <div class="carousel-item active">
         <img src="/img/26.png" class="d-block w-100" alt="gambar 1">
     </div>
+    <div class="container mx-auto py-8">
+        <!-- Search bar -->
+        <div class="flex justify-center mb-8">
+            <div class="relative w-full max-w-md">
+                <input type="text" placeholder="Cari Panduan"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                <button class="absolute top-1/2 right-4 transform -translate-y-1/2">
+                    <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Guide List -->
+        <div class="space-y-4">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-bold">Analisa Pola Web Attack - Memahami jenis serangan melalui pola yang
+                    dicatat
+                    oleh log file</h2>
+                <p class="text-gray-500">Bidang Siber Sandi & Aplikasi Diskominfotik Provinsi DKI Jakarta</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-bold">Panduan Penanganan Insiden web defacement judi online</h2>
+                <p class="text-gray-500">BSSN</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-bold">Panduan Keamanan Instagram</h2>
+                <p class="text-gray-500">BSSN</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-bold">Panduan Keamaan MyloBot</h2>
+                <p class="text-gray-500">BSSN</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-bold">Panduan Keamanan Twitter</h2>
+                <p class="text-gray-500">BSSN</p>
+            </div>
+        </div>
+    </div>
+
    
 
 
@@ -469,6 +520,7 @@
             } else {
                 button.textContent = 'Mute';
                 isPlaying = true;
+                responsiveVoice.speak('Selamat Datang di Jakarta Prov CSIRT', 'Indonesian Female');
             }
         });
 
@@ -479,53 +531,50 @@
             });
         });
     </script>
-     <script>
+    <script>
         function navigate(page) {
-         switch(page) {
-             case 'Peringatan_Keamanan':
-                 window.location.href = '{{ route('peringatan_keamanan') }}';
-                 break;
-             case 'Infografis_Keamanan_Informasi':
-                 window.location.href = '{{ route('infografis_keamanan_informasi') }}';
-                 break;
-             case 'Peraturan_Kebijakan':
-                 window.location.href = '{{ route('peraturan_kebijakan') }}';
-                 break;
-             case 'Berita_Siber':
-                 window.location.href = '{{ route('berita_siber') }}';
-                 break;
-             case 'Statistik_Honeypot':
-                 window.location.href = '{{ route('statistik_honeypot') }}';
-                 break;
-             case 'Panduan_Teknis':
-                 window.location.href = '{{ route('panduan_teknis') }}';
-                 break;
-             case 'rfc2350':
-                 window.location.href = '{{ route('rfc2350') }}';
-                 break;
-             case 'home':
-                 window.location.href = '{{ route('welcome') }}';
-                 break;
-             case 'profil':
-                 window.location.href = '{{ route('profil') }}';
-                 break;
-             case 'event':
-                 window.location.href = '{{ route('event') }}';
-                 break;
-             case 'lapor_insiden_siber':
-                 window.location.href = '{{ route('lapor_insiden_siber') }}';
-                 break;
-             case 'kontak_kami':
-                 window.location.href = '{{ route('kontak_kami') }}';
-                 break;
-             default:
-                 console.log('No route defined for: ' + page);
-         }
-     }
-
-         
-         
-     </script>
+            switch (page) {
+                case 'Peringatan_Keamanan':
+                    window.location.href = '{{ route('peringatan_keamanan') }}';
+                    break;
+                case 'Infografis_Keamanan_Informasi':
+                    window.location.href = '{{ route('infografis_keamanan_informasi') }}';
+                    break;
+                case 'Peraturan_Kebijakan':
+                    window.location.href = '{{ route('peraturan_kebijakan') }}';
+                    break;
+                case 'Berita_Siber':
+                    window.location.href = '{{ route('berita_siber') }}';
+                    break;
+                case 'Statistik_Honeypot':
+                    window.location.href = '{{ route('statistik_honeypot') }}';
+                    break;
+                case 'Panduan_Teknis':
+                    window.location.href = '{{ route('panduan_teknis') }}';
+                    break;
+                case 'rfc2350':
+                    window.location.href = '{{ route('rfc2350') }}';
+                    break;
+                case 'home':
+                    window.location.href = '{{ route('welcome') }}';
+                    break;
+                case 'profil':
+                    window.location.href = '{{ route('profil') }}';
+                    break;
+                case 'event':
+                    window.location.href = '{{ route('event') }}';
+                    break;
+                case 'lapor_insiden_siber':
+                    window.location.href = '{{ route('lapor_insiden_siber') }}';
+                    break;
+                case 'kontak_kami':
+                    window.location.href = '{{ route('kontak_kami') }}';
+                    break;
+                default:
+                    console.log('No route defined for: ' + page);
+            }
+        }
+    </script>
     <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
 </body>
 

@@ -226,81 +226,82 @@
             border-color: white;
 
         }
+
         .footer-section {
-    background-color: orange; 
-    padding: 20px 0;
-    color: white;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    background-image: url(/img/footer.png);
-}
+            background-color: orange;
+            padding: 20px 0;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            background-image: url(/img/footer.png);
+        }
 
-.footer-section .container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+        .footer-section .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-.footer-column {
-    flex: 1;
-    padding: 0 20px;
-    min-width: 200px;
-}
+        .footer-column {
+            flex: 1;
+            padding: 0 20px;
+            min-width: 200px;
+        }
 
-.footer-column h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
+        .footer-column h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
 
-.footer-column p,
-.footer-column ul {
-    margin-bottom: 10px;
-}
+        .footer-column p,
+        .footer-column ul {
+            margin-bottom: 10px;
+        }
 
-.footer-column ul {
-    list-style: none;
-    padding: 0;
-}
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
 
-.footer-column ul li {
-    margin-bottom: 5px;
-}
+        .footer-column ul li {
+            margin-bottom: 5px;
+        }
 
-.footer-column ul li a {
-    color: white;
-    text-decoration: none;
-}
+        .footer-column ul li a {
+            color: white;
+            text-decoration: none;
+        }
 
-.footer-column button {
-    background-color:#de8300 ;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-}
+        .footer-column button {
+            background-color: #de8300;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
 
-.footer-column button:hover {
-    background-color: #dfe6e9;
-}
+        .footer-column button:hover {
+            background-color: #dfe6e9;
+        }
 
-.social-media {
-    display: flex;
-    gap: 10px;
-}
+        .social-media {
+            display: flex;
+            gap: 10px;
+        }
 
-.social-media a img {
-    width: 40px;
-    height: 40px;
-}
+        .social-media a img {
+            width: 40px;
+            height: 40px;
+        }
 
-.footer-column img {
-    max-width: 100px;
-    margin-bottom: 20px;
-}
+        .footer-column img {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
 
-.navbar ul li a,
+        .navbar ul li a,
         .dropdown .dropbtn {
             display: inline-block;
             color: white;
@@ -401,12 +402,9 @@
             margin-left: 16px;
             font-size: 17px;
         }
-
     </style>
 </head>
-
 <body class=" text-black">
-
     <div class="header">
         <header class="bg-orange-800 py-4">
             <div class="container mx-auto flex justify-between items-center">
@@ -438,7 +436,8 @@
                             </li>
                             <li class="btn nav-item" onclick="navigate('lapor_insiden_siber')"
                                 data-text="Lapor Insiden Siber">Lapor Insiden Siber</li>
-                            <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">Kontak Kami
+                            <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">Kontak
+                                Kami
                             </li>
                             <li><input type="text" class="search-box" placeholder="Search..."></li>
                         </ul>
@@ -477,6 +476,7 @@
             } else {
                 button.textContent = 'Mute', 'Selamat Datang di Jakarta Prov CSIRT';
                 isPlaying = true;
+                responsiveVoice.speak('Selamat Datang di Jakarta Prov CSIRT', 'Indonesian Female');
             }
         });
 
@@ -492,7 +492,7 @@
     </script>
     <script>
         function navigate(page) {
-            switch(page) {
+            switch (page) {
                 case 'Peringatan_Keamanan':
                     window.location.href = '{{ route('peringatan_keamanan') }}';
                     break;
@@ -533,7 +533,6 @@
                     console.log('No route defined for: ' + page);
             }
         }
-
     </script>
     <div class="card-container1">
         <div class="card2" style="width: 18rem;">
@@ -566,8 +565,10 @@
         <div class="container">
             <div class="footer-column">
                 <img src="/img/Logo.png" alt="CSIRT Logo">
-                <p>Tim Tanggap Insiden Siber (Computer Security Incident Response Team) Pemerintah Provinsi DKI Jakarta yang selanjutnya disebut dengan JakartaProv-CSIRT merupakan CSIRT Pemprov DKI Jakarta.</p>
-                <p>Tim JakartaProv-CSIRT ditetapkan oleh Sekretaris Daerah Provinsi DKI Jakarta dalam Keputusan Penjabat Sekretaris Daerah DKI Jakarta Nomor: 41 Tahun 2020 Tentang Compu</p>
+                <p>Tim Tanggap Insiden Siber (Computer Security Incident Response Team) Pemerintah Provinsi DKI Jakarta
+                    yang selanjutnya disebut dengan JakartaProv-CSIRT merupakan CSIRT Pemprov DKI Jakarta.</p>
+                <p>Tim JakartaProv-CSIRT ditetapkan oleh Sekretaris Daerah Provinsi DKI Jakarta dalam Keputusan Penjabat
+                    Sekretaris Daerah DKI Jakarta Nomor: 41 Tahun 2020 Tentang Compu</p>
                 <button>SELENGKAPNYA</button>
             </div>
             <div class="footer-column">
@@ -588,17 +589,18 @@
             </div>
             <div class="footer-column">
                 <h3>JakartaProv-CSIRT</h3>
-                <p> Siber, Sandi dan Aplikasi Diskominfotik Provinsi DKI Jakarta Balaikota Blok H Lantai 13, JL Merdeka Selatan 8-9, Jakarta Pusat 10110</p>
-                <p><i class="fa fa-phone">  </i> 081388870152</p>
+                <p> Siber, Sandi dan Aplikasi Diskominfotik Provinsi DKI Jakarta Balaikota Blok H Lantai 13, JL Merdeka
+                    Selatan 8-9, Jakarta Pusat 10110</p>
+                <p><i class="fa fa-phone"> </i> 081388870152</p>
                 <p><i class="fa fa-envelope"></i> csirt@jakarta.go.id</p>
                 <div class="social-media">
                 </div>
             </div>
         </div>
     </section>
-    
 
-   
+
+
     <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
 </body>
 

@@ -228,7 +228,7 @@
             display: block;
         }
 
-       
+
 
         .dropdown-content {
             background-color: orange;
@@ -363,7 +363,74 @@
         .footer-column img {
             max-width: 100px;
             margin-bottom: 20px;
-        } 
+        }
+        .form-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .search-button {
+            display: flex;
+            align-items: center;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 5px 10px;
+        }
+        .search-button img {
+            width: 16px;
+            height: 16px;
+            margin-left: 5px;
+        }
+        .input-field {
+            display: flex;
+            flex-direction: column;
+        }
+        .input-field input {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .submit-button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-button:hover {
+            background-color: #218838;
+        }
+        .card-container1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            gap: 20px;
+            border: 2px;
+            border-radius: 2px;
+        }
+
+        .card2 {
+            border: 1px solid orange;
+            border-radius: 15px;
+            margin: 2px;
+            box-shadow: 10 20px 1px rgba(0, 0, 0, 0.1);
+            padding: 5px
+        }
+        .card-body {
+            padding: 5px;
+        }
+        .line {
+            width: 100%;
+            height: 1px;
+            background-color: orange;
+            margin-top: 5px;
+        }
 
     </style>
 </head>
@@ -381,17 +448,26 @@
                         <li class="btn nav-item dropdown">
                             <span class="dropbtn" data-text="Publikasi">Publikasi</span>
                             <div class="dropdown-content">
-                                <span class="btn nav-item" onclick="navigate('Peringatan_Keamanan')" data-text="Peringatan Keamanan">Peringatan Keamanan</span>
-                                <span class="btn nav-item" onclick="navigate('Infografis_Keamanan_Informasi')" data-text="Infografis Keamanan Informasi">Infografis Keamanan Informasi</span>
-                                <span class="btn nav-item" onclick="navigate('Peraturan_Kebijakan')" data-text="Peraturan Kebijakan">Peraturan Kebijakan</span>
-                                <span class="btn nav-item" onclick="navigate('Berita_Siber')" data-text="Berita Siber (Cyber Blitz)">Berita Siber (Cyber Blitz)</span>
-                                <span class="btn nav-item" onclick="navigate('Statistik_Honeypot')" data-text="Statistik (Honeypot)">Statistik (Honeypot)</span>
-                                <span class="btn nav-item" onclick="navigate('Panduan_Teknis')" data-text="Panduan Teknis">Panduan Teknis</span>
-                                <span class="btn nav-item" onclick="navigate('rfc2350')" data-text="RFC2350">RFC2350</span>
+                                <span class="btn nav-item" onclick="navigate('Peringatan_Keamanan')"
+                                    data-text="Peringatan Keamanan">Peringatan Keamanan</span>
+                                <span class="btn nav-item" onclick="navigate('Infografis_Keamanan_Informasi')"
+                                    data-text="Infografis Keamanan Informasi">Infografis Keamanan Informasi</span>
+                                <span class="btn nav-item" onclick="navigate('Peraturan_Kebijakan')"
+                                    data-text="Peraturan Kebijakan">Peraturan Kebijakan</span>
+                                <span class="btn nav-item" onclick="navigate('Berita_Siber')"
+                                    data-text="Berita Siber (Cyber Blitz)">Berita Siber (Cyber Blitz)</span>
+                                <span class="btn nav-item" onclick="navigate('Statistik_Honeypot')"
+                                    data-text="Statistik (Honeypot)">Statistik (Honeypot)</span>
+                                <span class="btn nav-item" onclick="navigate('Panduan_Teknis')"
+                                    data-text="Panduan Teknis">Panduan Teknis</span>
+                                <span class="btn nav-item" onclick="navigate('rfc2350')"
+                                    data-text="RFC2350">RFC2350</span>
                             </div>
                         </li>
-                        <li class="btn nav-item" onclick="navigate('lapor_insiden_siber')" data-text="Lapor Insiden Siber">Lapor Insiden Siber</li>
-                        <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">Kontak Kami</li>
+                        <li class="btn nav-item" onclick="navigate('lapor_insiden_siber')"
+                            data-text="Lapor Insiden Siber">Lapor Insiden Siber</li>
+                        <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">Kontak Kami
+                        </li>
                         <li><input type="text" class="search-box" placeholder="Search..."></li>
                     </ul>
                 </nav>
@@ -404,9 +480,47 @@
     <div class="carousel-item active">
         <img src="/img/22.png" class="d-block w-100" alt="gambar 1">
     </div>
-  
-    
-
+    <div class="form-container">
+        <div class="container mx-auto py-8">
+                    <input type="text" placeholder="Cari Infografis"
+                        class=" px-4 py-2 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"></div>
+        <div class="input-field">
+            <label for="start-date">Tanggal Awal</label>
+            <input type="text" id="start-date" placeholder="Input Tanggal">
+        </div>
+        <div class="input-field">
+            <label for="end-date">Tanggal Akhir</label>
+            <input type="text" id="end-date" placeholder="Input Tanggal">
+        </div>
+        <button class="submit-button">Submit</button>
+    </div>
+    <div class="card-container1">
+        <div class="card2" style="width: 18rem;">
+            <img src="/img/22.jpg" class="card-img-top" alt="Berita 1">
+            <div class="line">
+            </div>
+            <div class="card-body">
+                <p class="card-title"> Peringatan Keamanan - Celah berbahaya di temukan di open ssh
+                </p>
+            </div>
+        </div>
+        <div class="card2" style="width: 18rem;">
+            <img src="/img/23.jpg" class="card-img-top" alt="Berita 2">
+            <div class="line">
+            </div>
+            <div class="card-body">
+                <p class="card-title">Waspada penipuan melalui whatsapp berkedok file APK</p>
+            </div>
+        </div>
+        <div class="card2" style="width: 18rem;">
+            <img src="/img/24.jpg" class="card-img-top" alt="Berita 3">
+            <div class="line"></div>
+            <div class="card-body">
+                <p class="card-title">Tips Amam menggunakan Wifi Publik</p>
+            </div>
+        </div>
+    </div>
+&nbsp;
     <section class="footer-section">
         <div class="container">
             <div class="footer-column">
@@ -466,6 +580,7 @@
             } else {
                 button.textContent = 'Mute';
                 isPlaying = true;
+                responsiveVoice.speak('Selamat Datang di Jakarta Prov CSIRT', 'Indonesian Female');
             }
         });
 
@@ -476,53 +591,50 @@
             });
         });
     </script>
-     <script>
+    <script>
         function navigate(page) {
-         switch(page) {
-             case 'Peringatan_Keamanan':
-                 window.location.href = '{{ route('peringatan_keamanan') }}';
-                 break;
-             case 'Infografis_Keamanan_Informasi':
-                 window.location.href = '{{ route('infografis_keamanan_informasi') }}';
-                 break;
-             case 'Peraturan_Kebijakan':
-                 window.location.href = '{{ route('peraturan_kebijakan') }}';
-                 break;
-             case 'Berita_Siber':
-                 window.location.href = '{{ route('berita_siber') }}';
-                 break;
-             case 'Statistik_Honeypot':
-                 window.location.href = '{{ route('statistik_honeypot') }}';
-                 break;
-             case 'Panduan_Teknis':
-                 window.location.href = '{{ route('panduan_teknis') }}';
-                 break;
-             case 'rfc2350':
-                 window.location.href = '{{ route('rfc2350') }}';
-                 break;
-             case 'home':
-                 window.location.href = '{{ route('welcome') }}';
-                 break;
-             case 'profil':
-                 window.location.href = '{{ route('profil') }}';
-                 break;
-             case 'event':
-                 window.location.href = '{{ route('event') }}';
-                 break;
-             case 'lapor_insiden_siber':
-                 window.location.href = '{{ route('lapor_insiden_siber') }}';
-                 break;
-             case 'kontak_kami':
-                 window.location.href = '{{ route('kontak_kami') }}';
-                 break;
-             default:
-                 console.log('No route defined for: ' + page);
-         }
-     }
-
-         
-         
-     </script>
+            switch (page) {
+                case 'Peringatan_Keamanan':
+                    window.location.href = '{{ route('peringatan_keamanan') }}';
+                    break;
+                case 'Infografis_Keamanan_Informasi':
+                    window.location.href = '{{ route('infografis_keamanan_informasi') }}';
+                    break;
+                case 'Peraturan_Kebijakan':
+                    window.location.href = '{{ route('peraturan_kebijakan') }}';
+                    break;
+                case 'Berita_Siber':
+                    window.location.href = '{{ route('berita_siber') }}';
+                    break;
+                case 'Statistik_Honeypot':
+                    window.location.href = '{{ route('statistik_honeypot') }}';
+                    break;
+                case 'Panduan_Teknis':
+                    window.location.href = '{{ route('panduan_teknis') }}';
+                    break;
+                case 'rfc2350':
+                    window.location.href = '{{ route('rfc2350') }}';
+                    break;
+                case 'home':
+                    window.location.href = '{{ route('welcome') }}';
+                    break;
+                case 'profil':
+                    window.location.href = '{{ route('profil') }}';
+                    break;
+                case 'event':
+                    window.location.href = '{{ route('event') }}';
+                    break;
+                case 'lapor_insiden_siber':
+                    window.location.href = '{{ route('lapor_insiden_siber') }}';
+                    break;
+                case 'kontak_kami':
+                    window.location.href = '{{ route('kontak_kami') }}';
+                    break;
+                default:
+                    console.log('No route defined for: ' + page);
+            }
+        }
+    </script>
     <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
 </body>
 

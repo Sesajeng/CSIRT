@@ -35,7 +35,7 @@
         .card {
             justify-content: center;
             align-items: center;
-            height: 100vh;
+          
             margin: 0;
         }
 
@@ -94,6 +94,8 @@
             width: 100%;
             height: 100%;
             gap: 20px;
+            margin-bottom: 0; 
+            padding-bottom: 0; 
 
         }
 
@@ -296,7 +298,8 @@
         .container.conten {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: center
+
         }
 
         .card-container1 {
@@ -539,11 +542,10 @@
             margin-left: 16px;
             font-size: 17px;
         }
+
     </style>
 </head>
-
 <body class=" text-black">
-
     <div class="header">
         <header class="bg-orange-800 py-4">
             <div class="container mx-auto flex justify-between items-center">
@@ -582,8 +584,7 @@
         <button id="audioButton" class="btn btn-primary side-button">Play</button>
         <script>
             let isPlaying = false;
-            const navItems = document.querySelectorAll('.nav-item', '.nav-item-dropdown', 'nav-item dropdown-content',
-                'dropbtn', 'dropdown-content', 'card-title', 'card-text');
+            const navItems = document.querySelectorAll('.nav-item, .nav-item-dropdown, .nav-item .dropdown-content, .dropbtn, .dropdown-content, .card-title, .card-text, .card-body, .card-container, .card');
 
             function speakText(text) {
                 if (isPlaying) {
@@ -597,8 +598,9 @@
                     button.textContent = 'Play';
                     isPlaying = false;
                 } else {
-                    button.textContent = 'Mute', 'Selamat Datang di Jakarta Prov CSIRT';
+                    button.textContent = 'Mute';
                     isPlaying = true;
+                    responsiveVoice.speak('Selamat Datang di Jakarta Prov CSIRT', 'Indonesian Female');
                 }
             });
 
@@ -651,13 +653,13 @@
                 case 'kontak_kami':
                     window.location.href = '{{ route('kontak_kami') }}';
                     break;
+                case 'selengkapnya1':
+                    window.location.href = '{{ route('selengkapnya1') }}';
+                    break;
                 default:
                     console.log('No route defined for: ' + page);
             }
-        }
-
-            
-            
+        }      
         </script>
         &nbsp;
         <section class="page-section portofolio">
@@ -680,15 +682,18 @@
         <div class="card" style="width: 22rem;">
             <img src="/img/3.png" class="card-img-top" alt="Berita 1">
             <div class="card-body">
-                <h6 class="card-title" data-text="Carbanak Malware Kembali Beroperasi Dalam Serangan Ransomware">Carbanak Malware Kembali Beroperasi Dalam Serangan Ransomware</h6>
+                <h6 class="card-title"  data-text="Carbanak Malware Kembali Beroperasi Dalam Serangan Ransomware">Carbanak Malware Kembali Beroperasi Dalam Serangan Ransomware</h6>
                 <p class="card-text"  data-text="Peringatan Keamanan" >2024-01-10 13:50:20 |
                     https://securityaffairs.com/156410/malware/carbanak-malware-ransomware-attacks.html</p>
                 <p class="card-text">Peneliti dari NCC Group melaporkan adanya aktivitas malware carbanak dalam
                     sebuah serangan ransomware. Kelompok kejahatan siber Carbanak pertama kali diidentifikasi oleh
                     Kaspersky Lab pada tahun 2015, dan telah berhasil mencuri setidaknya 300 juta</p>
-                <nav class="space-x-4">
-                    <li class="btn nav-item" onclick="Selengkapnya1()" data-text="Selengkapnya">SELENGKAPNYA</li>
-            </div>
+                    <nav class="space-x-4 navbar">
+                        <ul>
+                            <li class="btn nav-item" onclick="navigate('selengkpanya1')" data-text="Selengkapnya">Selengkapnya</li>
+                    </ul>
+                </nav>
+                </div>
         </div>
         <div class="card" style="width: 22rem;">
             <img src="/img/11.jpg" class="card-img-top" alt="Berita 2">
@@ -703,7 +708,6 @@
                     <ul>
                         <li class="btn nav-item" onclick="Selengkapnya()" data-text="Selengkapnya">SELENGKAPNYA</li>
                     </ul>
-
                 </nav>
             </div>
         </div>
@@ -719,12 +723,10 @@
                     eksploitasi para peretas yang menyalahgunakan kerentanan zero-day pada open-source library
                     untuk
                     memproses file Excel. Kerentanan yang diidentifikasi sebagai CVE-2023-710</p>
-                <a href="#" class="btn nav-item" data-text="Selengkapnya">SELENGKAPNYA</a>
+                <span class="btn nav-item" data-text="Selengkapnya">SELENGKAPNYA</span>
             </div>
         </div>
     </div>
-
-
     <div class="container conten">
         <div class="box-title1">Gallery Kegiatan </div>
         <div class="box-title2">

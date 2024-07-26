@@ -34,7 +34,6 @@
 
             justify-content: center;
             align-items: center;
-            height: 100vh;
             margin: 0;
         }
 
@@ -101,10 +100,11 @@
             border: none;
             border-radius: 0px;
             overflow: hidden;
+            border: 1px solid #ccc; 
         }
 
         .card-body {
-            padding: 5px;
+            padding: 20px;
         }
 
         .header {
@@ -140,8 +140,7 @@
             height: 100%;
             gap: 20px;
             border: 2px;
-            border-radius;
-            2px;
+           
         }
 
         .card2 {
@@ -152,9 +151,7 @@
 
         }
 
-        .card-body {
-            padding: 5px;
-        }
+        
 
         .footer {
             background-color: orange;
@@ -228,7 +225,7 @@
             display: block;
         }
 
-       
+
 
         .dropdown-content {
             background-color: orange;
@@ -363,7 +360,79 @@
         .footer-column img {
             max-width: 100px;
             margin-bottom: 20px;
-        } 
+        }
+        
+        .divider-custom .divider-custom-line:last-child {
+            margin-left: 0px;
+        }
+
+        .divider-custom .divider-custom-line:first-child {
+            margin-right: 0px;
+        }
+
+        .divider-custom .divider-custom-line {
+            width: 100%;
+            height: 0.25rem;
+            background-color: #de8300;
+            border-color: #de8300;
+        }
+
+        .line {
+            width: 100%;
+            height: 5px;
+            background-color: #de8300;
+            display: flex;
+            margin-top: -5px;
+        }
+        .container.conten {
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+
+        }
+        .box-title1 {
+            width: 200px;
+            float: left;
+            background: #de8300;
+            color: #fff;
+            padding: 5px;
+            font-size: 18px;
+            padding-left: 15px;
+        }
+        .container {
+    display: flex;
+    align-items: center;
+}
+
+.image img {
+    width: 350px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.content {
+    flex: 1;
+}
+
+.content h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.content p {
+    margin: 5px 0;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
 
     </style>
 </head>
@@ -381,17 +450,26 @@
                         <li class="btn nav-item dropdown">
                             <span class="dropbtn" data-text="Publikasi">Publikasi</span>
                             <div class="dropdown-content">
-                                <span class="btn nav-item" onclick="navigate('Peringatan_Keamanan')" data-text="Peringatan Keamanan">Peringatan Keamanan</span>
-                                <span class="btn nav-item" onclick="navigate('Infografis_Keamanan_Informasi')" data-text="Infografis Keamanan Informasi">Infografis Keamanan Informasi</span>
-                                <span class="btn nav-item" onclick="navigate('Peraturan_Kebijakan')" data-text="Peraturan Kebijakan">Peraturan Kebijakan</span>
-                                <span class="btn nav-item" onclick="navigate('Berita_Siber')" data-text="Berita Siber (Cyber Blitz)">Berita Siber (Cyber Blitz)</span>
-                                <span class="btn nav-item" onclick="navigate('Statistik_Honeypot')" data-text="Statistik (Honeypot)">Statistik (Honeypot)</span>
-                                <span class="btn nav-item" onclick="navigate('Panduan_Teknis')" data-text="Panduan Teknis">Panduan Teknis</span>
-                                <span class="btn nav-item" onclick="navigate('rfc2350')" data-text="RFC2350">RFC2350</span>
+                                <span class="btn nav-item" onclick="navigate('Peringatan_Keamanan')"
+                                    data-text="Peringatan Keamanan">Peringatan Keamanan</span>
+                                <span class="btn nav-item" onclick="navigate('Infografis_Keamanan_Informasi')"
+                                    data-text="Infografis Keamanan Informasi">Infografis Keamanan Informasi</span>
+                                <span class="btn nav-item" onclick="navigate('Peraturan_Kebijakan')"
+                                    data-text="Peraturan Kebijakan">Peraturan Kebijakan</span>
+                                <span class="btn nav-item" onclick="navigate('Berita_Siber')"
+                                    data-text="Berita Siber (Cyber Blitz)">Berita Siber (Cyber Blitz)</span>
+                                <span class="btn nav-item" onclick="navigate('Statistik_Honeypot')"
+                                    data-text="Statistik (Honeypot)">Statistik (Honeypot)</span>
+                                <span class="btn nav-item" onclick="navigate('Panduan_Teknis')"
+                                    data-text="Panduan Teknis">Panduan Teknis</span>
+                                <span class="btn nav-item" onclick="navigate('rfc2350')"
+                                    data-text="RFC2350">RFC2350</span>
                             </div>
                         </li>
-                        <li class="btn nav-item" onclick="navigate('lapor_insiden_siber')" data-text="Lapor Insiden Siber">Lapor Insiden Siber</li>
-                        <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">Kontak Kami</li>
+                        <li class="btn nav-item" onclick="navigate('lapor_insiden_siber')"
+                            data-text="Lapor Insiden Siber">Lapor Insiden Siber</li>
+                        <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">Kontak Kami
+                        </li>
                         <li><input type="text" class="search-box" placeholder="Search..."></li>
                     </ul>
                 </nav>
@@ -404,11 +482,119 @@
     <div class="carousel-item active">
         <img src="/img/21.png" class="d-block w-100" alt="gambar 1">
     </div>
+    &nbsp;
+
+    <div class="container conten">
+        <div class="box-title1">Info Terkini </div>
+       
+        </div>
+    </div>
+    <div class="container content">
+        <div class="line"></div>
+        </diiv>
+    </div>
+    </div>
+&nbsp;
+<div class="container">
+    <div class="image">
+        <img src="/img/28.png" alt="Telegram Logo">
+    </div>
+    <div class="content">
+        <h2>Cek Versi Telegram di Ponsel Android Anda, Kerentanan Zero-Day EvilVideo Mengintai</h2>
+        <p>2024-07-25 15:47:53 | <a href="https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/">https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/</a></p>
+        <p>Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File Berbahaya yang Disamarkan sebagai Video.</p>
+        <p>ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang menggunakan platform Android untuk mendistribusikan file berbahaya yang disamarkan sebagai dalam format video.</p>
+        <p>Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.</p>
+        <a class="read-more" href="#">SELENGKAPNYA</a>
+    </div>
+</div>
+&nbsp;
+<div class="container conten">
+    <div class="box-title1">Info Lainnya </div>
    
-
-
-
-
+    </div>
+</div>
+<div class="container content">
+    <div class="line"></div>
+    </diiv>
+</div>
+</div>
+&nbsp;
+<div class="card-container">
+    <div class="card" style="width: 22rem;">
+        <img src="/img/11.jpg" class="card-img-top" alt="Berita 1">
+        <div class="card-body">
+            <h6 class="card-title"  data-text="Peringatan Keamanan Malware Bitrait">Peringatan Keamanan Malware Bitrait</h6>
+            <p class="card-text"  data-text="Peringatan Keamanan" >2022-05-17 10:48:18 | idsirtii</p>
+            <p class="card-text">BitRAT merupakan jenis malware yang diklasifikasikan sebagai Remote Access Trojan (RAT). Kampanye malware BitRAT secara aktif menargetkan pengguna yang mencari aktivator lisensi Windows tidak resmi. Aktivator lisensi tersebut dimaksudkan untuk men</p>
+                <nav class="space-x-4 navbar">
+                    <ul>
+                        <li class="btn nav-item" onclick="navigate('selengkpanya1')" data-text="Selengkapnya">Selengkapnya</li>
+                </ul>
+            </nav>
+            </div>
+    </div>
+    <div class="card" style="width: 22rem;">
+        <img src="/img/20.jpg" class="card-img-top" alt="Berita 2">
+        <div class="card-body">
+            <h6 class="card-title">CVE-2022-27926 KERENTANAN XSS PADA ZIMBRA COLLOBOR</h6>
+            <p class="card-text"> 2022-05-17 11:06:06 | idsirtii</p>
+            <p class="card-text"> Zimbra Collaboration, sebelumnya dikenal sebagai Zimbra Collaboration Suite (ZCS), adalah rangkaian koloborasi perangkat lunak yang mencakup server email dan klien web milik perusahaan Synacor. Pada tanggal 20 April 2022, National Vulnerabilit</p>
+            <nav class="space-x-4">
+                <ul>
+                    <li class="btn nav-item" onclick="Selengkapnya()" data-text="Selengkapnya">SELENGKAPNYA</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="card" style="width: 22rem;">
+        <img src="/img/21.jpg" class="card-img-top" alt="Berita 3">
+        <div class="card-body">
+            <h6 class="card-title"> CVE-2022-26809 KERENTANAN REMOTE PROCEDURE CALL</h6>
+            <p class="card-text"> 2022-05-17 11:11:14 | idsirtii</p>
+            <p class="card-text"> Pada 12 April 2022, Microsoft mengeluarkan himbauan beserta patch mengenai kerentanan Remote Procedure Call Runtime Remote Code Execution. Kerentanan ini mengeksploitasi suatu integer overflow pada Microsoft Remote Procedure Call (MS-RPC). Kerenta</p>
+            <span class="btn nav-item" data-text="Selengkapnya">SELENGKAPNYA</span>
+        </div>
+    </div>
+</div>
+<div class="card-container">
+    <div class="card" style="width: 22rem;">
+        <img src="/img/11.jpg" class="card-img-top" alt="Berita 1">
+        <div class="card-body">
+            <h6 class="card-title"  data-text="Peringatan Keamanan Malware Bitrait">Peringatan Keamanan Malware Bitrait</h6>
+            <p class="card-text"  data-text="Peringatan Keamanan" >2022-05-17 10:48:18 | idsirtii</p>
+            <p class="card-text">BitRAT merupakan jenis malware yang diklasifikasikan sebagai Remote Access Trojan (RAT). Kampanye malware BitRAT secara aktif menargetkan pengguna yang mencari aktivator lisensi Windows tidak resmi. Aktivator lisensi tersebut dimaksudkan untuk men</p>
+                <nav class="space-x-4 navbar">
+                    <ul>
+                        <li class="btn nav-item" onclick="navigate('selengkpanya1')" data-text="Selengkapnya">Selengkapnya</li>
+                </ul>
+            </nav>
+            </div>
+    </div>
+    <div class="card" style="width: 22rem;">
+        <img src="/img/20.jpg" class="card-img-top" alt="Berita 2">
+        <div class="card-body">
+            <h6 class="card-title">CVE-2022-27926 KERENTANAN XSS PADA ZIMBRA COLLOBOR</h6>
+            <p class="card-text"> 2022-05-17 11:06:06 | idsirtii</p>
+            <p class="card-text"> Zimbra Collaboration, sebelumnya dikenal sebagai Zimbra Collaboration Suite (ZCS), adalah rangkaian koloborasi perangkat lunak yang mencakup server email dan klien web milik perusahaan Synacor. Pada tanggal 20 April 2022, National Vulnerabilit</p>
+            <nav class="space-x-4">
+                <ul>
+                    <li class="btn nav-item" onclick="Selengkapnya()" data-text="Selengkapnya">SELENGKAPNYA</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="card" style="width: 22rem;">
+        <img src="/img/21.jpg" class="card-img-top" alt="Berita 3">
+        <div class="card-body">
+            <h6 class="card-title"> CVE-2022-26809 KERENTANAN REMOTE PROCEDURE CALL</h6>
+            <p class="card-text"> 2022-05-17 11:11:14 | idsirtii</p>
+            <p class="card-text"> Pada 12 April 2022, Microsoft mengeluarkan himbauan beserta patch mengenai kerentanan Remote Procedure Call Runtime Remote Code Execution. Kerentanan ini mengeksploitasi suatu integer overflow pada Microsoft Remote Procedure Call (MS-RPC). Kerenta</p>
+            <span class="btn nav-item" data-text="Selengkapnya">SELENGKAPNYA</span>
+        </div>
+    </div>
+</div>
+&nbsp;
     <section class="footer-section">
         <div class="container">
             <div class="footer-column">
@@ -468,6 +654,7 @@
             } else {
                 button.textContent = 'Mute';
                 isPlaying = true;
+                responsiveVoice.speak('Selamat Datang di Jakarta Prov CSIRT', 'Indonesian Female');
             }
         });
 
@@ -478,53 +665,50 @@
             });
         });
     </script>
-     <script>
+    <script>
         function navigate(page) {
-         switch(page) {
-             case 'Peringatan_Keamanan':
-                 window.location.href = '{{ route('peringatan_keamanan') }}';
-                 break;
-             case 'Infografis_Keamanan_Informasi':
-                 window.location.href = '{{ route('infografis_keamanan_informasi') }}';
-                 break;
-             case 'Peraturan_Kebijakan':
-                 window.location.href = '{{ route('peraturan_kebijakan') }}';
-                 break;
-             case 'Berita_Siber':
-                 window.location.href = '{{ route('berita_siber') }}';
-                 break;
-             case 'Statistik_Honeypot':
-                 window.location.href = '{{ route('statistik_honeypot') }}';
-                 break;
-             case 'Panduan_Teknis':
-                 window.location.href = '{{ route('panduan_teknis') }}';
-                 break;
-             case 'rfc2350':
-                 window.location.href = '{{ route('rfc2350') }}';
-                 break;
-             case 'home':
-                 window.location.href = '{{ route('welcome') }}';
-                 break;
-             case 'profil':
-                 window.location.href = '{{ route('profil') }}';
-                 break;
-             case 'event':
-                 window.location.href = '{{ route('event') }}';
-                 break;
-             case 'lapor_insiden_siber':
-                 window.location.href = '{{ route('lapor_insiden_siber') }}';
-                 break;
-             case 'kontak_kami':
-                 window.location.href = '{{ route('kontak_kami') }}';
-                 break;
-             default:
-                 console.log('No route defined for: ' + page);
-         }
-     }
-
-         
-         
-     </script>
+            switch (page) {
+                case 'Peringatan_Keamanan':
+                    window.location.href = '{{ route('peringatan_keamanan') }}';
+                    break;
+                case 'Infografis_Keamanan_Informasi':
+                    window.location.href = '{{ route('infografis_keamanan_informasi') }}';
+                    break;
+                case 'Peraturan_Kebijakan':
+                    window.location.href = '{{ route('peraturan_kebijakan') }}';
+                    break;
+                case 'Berita_Siber':
+                    window.location.href = '{{ route('berita_siber') }}';
+                    break;
+                case 'Statistik_Honeypot':
+                    window.location.href = '{{ route('statistik_honeypot') }}';
+                    break;
+                case 'Panduan_Teknis':
+                    window.location.href = '{{ route('panduan_teknis') }}';
+                    break;
+                case 'rfc2350':
+                    window.location.href = '{{ route('rfc2350') }}';
+                    break;
+                case 'home':
+                    window.location.href = '{{ route('welcome') }}';
+                    break;
+                case 'profil':
+                    window.location.href = '{{ route('profil') }}';
+                    break;
+                case 'event':
+                    window.location.href = '{{ route('event') }}';
+                    break;
+                case 'lapor_insiden_siber':
+                    window.location.href = '{{ route('lapor_insiden_siber') }}';
+                    break;
+                case 'kontak_kami':
+                    window.location.href = '{{ route('kontak_kami') }}';
+                    break;
+                default:
+                    console.log('No route defined for: ' + page);
+            }
+        }
+    </script>
     <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
 </body>
 
