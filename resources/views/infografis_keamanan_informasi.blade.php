@@ -364,6 +364,7 @@
             max-width: 100px;
             margin-bottom: 20px;
         }
+
         .form-container {
             display: flex;
             align-items: center;
@@ -371,6 +372,7 @@
             gap: 10px;
             margin-top: 20px;
         }
+
         .search-button {
             display: flex;
             align-items: center;
@@ -379,20 +381,24 @@
             border-radius: 20px;
             padding: 5px 10px;
         }
+
         .search-button img {
             width: 16px;
             height: 16px;
             margin-left: 5px;
         }
+
         .input-field {
             display: flex;
             flex-direction: column;
         }
+
         .input-field input {
             padding: 5px;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
+
         .submit-button {
             background-color: #28a745;
             color: white;
@@ -401,9 +407,11 @@
             border-radius: 5px;
             cursor: pointer;
         }
+
         .submit-button:hover {
             background-color: #218838;
         }
+
         .card-container1 {
             display: flex;
             justify-content: center;
@@ -422,16 +430,17 @@
             box-shadow: 10 20px 1px rgba(0, 0, 0, 0.1);
             padding: 5px
         }
+
         .card-body {
             padding: 5px;
         }
+
         .line {
             width: 100%;
             height: 1px;
             background-color: orange;
             margin-top: 5px;
         }
-
     </style>
 </head>
 
@@ -482,8 +491,9 @@
     </div>
     <div class="form-container">
         <div class="container mx-auto py-8">
-                    <input type="text" placeholder="Cari Infografis"
-                        class=" px-4 py-2 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"></div>
+            <input type="text" placeholder="Cari Infografis"
+                class=" px-4 py-2 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+        </div>
         <div class="input-field">
             <label for="start-date">Tanggal Awal</label>
             <input type="text" id="start-date" placeholder="Input Tanggal">
@@ -520,7 +530,7 @@
             </div>
         </div>
     </div>
-&nbsp;
+    &nbsp;
     <section class="footer-section">
         <div class="container">
             <div class="footer-column">
@@ -577,6 +587,7 @@
                 responsiveVoice.cancel();
                 button.textContent = 'Play';
                 isPlaying = false;
+                responsiveVoice.speak('Mode Suara of', 'Indonesian Female');
             } else {
                 button.textContent = 'Mute';
                 isPlaying = true;

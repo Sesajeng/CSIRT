@@ -456,7 +456,7 @@
         </div>
     </div>
 
-   
+
 
 
 
@@ -517,6 +517,7 @@
                 responsiveVoice.cancel();
                 button.textContent = 'Play';
                 isPlaying = false;
+                responsiveVoice.speak('Mode Suara of', 'Indonesian Female');
             } else {
                 button.textContent = 'Mute';
                 isPlaying = true;

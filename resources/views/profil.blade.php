@@ -457,8 +457,9 @@
                 responsiveVoice.cancel();
                 button.textContent = 'Play';
                 isPlaying = false;
+                responsiveVoice.speak('Mode Suara of', 'Indonesian Female');
             } else {
-                button.textContent = 'Mute', 'Selamat Datang di Jakarta Prov CSIRT';
+                button.textContent = 'Mute';
                 isPlaying = true;
                 responsiveVoice.speak('Selamat Datang di Jakarta Prov CSIRT', 'Indonesian Female');
             }

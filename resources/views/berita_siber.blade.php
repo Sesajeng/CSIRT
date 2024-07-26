@@ -393,20 +393,9 @@
             margin: 5px 0;
         }
 
-        .read-more {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 15px;
-            background-color: #f0f0f0;
-            text-decoration: none;
-            color: black;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        .space{
-            justify-content: center;
-            text-align: center;
-        }
+        .read-more {}
+
+        .content1 {}
     </style>
 </head>
 
@@ -455,153 +444,195 @@
     <div class="carousel-item active">
         <img src="/img/24.png" class="d-block w-100" alt="gambar 1">
     </div>
-
-    <div class="space">
-        <div class="container mx-auto p-4">
-            <div class="flex items-center mb-4">
-                <input type="text" placeholder="Search" class="border p-2 rounded-l-md">
-                <input type="date" placeholder="Tanggal Awal" class="border p-2 mx-2">
-                <input type="date" placeholder="Tanggal Akhir" class="border p-2">
-                <button class="bg-green-600 text-white p-2 rounded-r-md">Submit</button>
+    <div class="content1 flex justify-center">
+        <div class="space">
+            <div class="container mx-auto p-4">
+                <div class="flex items-center mb-4">
+                    <input type="text" placeholder="Search" class="border p-2 rounded-l-md">
+                    <input type="date" placeholder="Tanggal Awal" class="border p-2 mx-2">
+                    <input type="date" placeholder="Tanggal Akhir" class="border p-2">
+                    <button class="bg-green-600 text-white p-2 rounded-r-md">Submit</button>
+                </div>
+            </div>
+            <div class="container3">
+                <div class="image">
+                    <img src="/img/28.png" alt="Telegram Logo">
+                </div>
+                <div class="content">
+                    <h2>Cek Versi Telegram di Ponsel Android Anda, Kerentanan Zero-Day EvilVideo Mengintai</h2>
+                    <p>2024-07-25 15:47:53 | <a
+                            href="https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/">https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/</a>
+                    </p>
+                    <p>Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
+                        Berbahaya yang Disamarkan sebagai Video.</p>
+                    <p>ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang
+                        menggunakan platform Android untuk mendistribusikan file berbahaya yang disamarkan sebagai dalam
+                        format video.</p>
+                    <p>Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.</p>
+                    <a class="read-more" href="#">SELENGKAPNYA</a>
+                </div>
+            </div>
+            &nbsp;
+            <div class="container3">
+                <div class="image">
+                    <img src="/img/1.jpeg" alt="Telegram Logo">
+                </div>
+                <div class="content">
+                    <h2>Batas Waktu Microsoft Windows—Anda Memiliki 7 Hari Untuk Memperbarui PC Anda</h2>
+                    <p>2024-07-25 11:57:01 | <a
+                            href="https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/">https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/</a>
+                    </p>
+                    <p>Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
+                        Berbahaya yang Disamarkan sebagai Video.</p>
+                    <p>ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang
+                        menggunakan platform Android untuk mendistribusikan file berbahaya yang disamarkan sebagai dalam
+                        format video.</p>
+                    <p>Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.</p>
+                    <a class="read-more" href="#">SELENGKAPNYA</a>
+                </div>
+            </div>
+            &nbsp;
+            <div class="container3">
+                <div class="image">
+                    <img src="/img/1.jpg" alt="Telegram Logo">
+                </div>
+                <div class="content">
+                    <h2>Carbanak Malware Kembali Beroperasi Dalam Serangan Ransomware</h2>
+                    <p>2024-01-10 13:50:20 | <a
+                            href="https://securityaffairs.com/156410/malware/carbanak-malware-ransomware-attacks.html</a>
+                    </p>
+                    <p>Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
+                        Berbahaya yang Disamarkan sebagai Video.</p>
+                    <p>ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang
+                        menggunakan platform Android untuk mendistribusikan file berbahaya yang disamarkan sebagai dalam
+                        format video.</p>
+                    <p>Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.</p>
+                    <a class="read-more"
+                            href="#">SELENGKAPNYA</a>
+                </div>
             </div>
         </div>
-        <div class="container3">
-            <div class="image">
-                <img src="/img/28.png" alt="Telegram Logo">
+    </div>
+    &nbsp;
+    <section class="footer-section">
+        <div class="container">
+            <div class="footer-column">
+                <img src="/img/Logo.png" alt="CSIRT Logo">
+                <p>Tim Tanggap Insiden Siber (Computer Security Incident Response Team) Pemerintah Provinsi DKI
+                    Jakarta
+                    yang selanjutnya disebut dengan JakartaProv-CSIRT merupakan CSIRT Pemprov DKI Jakarta.</p>
+                <p>Tim JakartaProv-CSIRT ditetapkan oleh Sekretaris Daerah Provinsi DKI Jakarta dalam Keputusan
+                    Penjabat
+                    Sekretaris Daerah DKI Jakarta Nomor: 41 Tahun 2020 Tentang Compu</p>
+                <button>SELENGKAPNYA</button>
             </div>
-            <div class="content">
-                <h2>Cek Versi Telegram di Ponsel Android Anda, Kerentanan Zero-Day EvilVideo Mengintai</h2>
-                <p>2024-07-25 15:47:53 | <a
-                        href="https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/">https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/</a>
-                </p>
-                <p>Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
-                    Berbahaya yang Disamarkan sebagai Video.</p>
-                <p>ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang
-                    menggunakan platform Android untuk mendistribusikan file berbahaya yang disamarkan sebagai dalam
-                    format video.</p>
-                <p>Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.</p>
-                <a class="read-more" href="#">SELENGKAPNYA</a>
+            <div class="footer-column">
+                <h3>Visitor</h3>
+                <p>Pengunjung Online: 4</p>
+                <p>Hari ini: 15</p>
+                <p>Tanggal: 24-07-2024</p>
+                <p>Total Pengunjung: 47322</p>
+            </div>
+            <div class="footer-column">
+                <h3>Link</h3>
+                <ul>
+                    <li><a href="#">Profil</a></li>
+                    <li><a href="#">Peringatan Keamanan</a></li>
+                    <li><a href="#">Event</a></li>
+                    <li><a href="#">Kontak Kami</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>JakartaProv-CSIRT</h3>
+                <p> Siber, Sandi dan Aplikasi Diskominfotik Provinsi DKI Jakarta Balaikota Blok H Lantai 13, JL
+                    Merdeka
+                    Selatan 8-9, Jakarta Pusat 10110</p>
+                <p><i class="fa fa-phone"> </i> 081388870152</p>
+                <p><i class="fa fa-envelope"></i> csirt@jakarta.go.id</p>
+                <div class="social-media">
+                </div>
             </div>
         </div>
-&nbsp;
-        <section class="footer-section">
-            <div class="container">
-                <div class="footer-column">
-                    <img src="/img/Logo.png" alt="CSIRT Logo">
-                    <p>Tim Tanggap Insiden Siber (Computer Security Incident Response Team) Pemerintah Provinsi DKI
-                        Jakarta
-                        yang selanjutnya disebut dengan JakartaProv-CSIRT merupakan CSIRT Pemprov DKI Jakarta.</p>
-                    <p>Tim JakartaProv-CSIRT ditetapkan oleh Sekretaris Daerah Provinsi DKI Jakarta dalam Keputusan
-                        Penjabat
-                        Sekretaris Daerah DKI Jakarta Nomor: 41 Tahun 2020 Tentang Compu</p>
-                    <button>SELENGKAPNYA</button>
-                </div>
-                <div class="footer-column">
-                    <h3>Visitor</h3>
-                    <p>Pengunjung Online: 4</p>
-                    <p>Hari ini: 15</p>
-                    <p>Tanggal: 24-07-2024</p>
-                    <p>Total Pengunjung: 47322</p>
-                </div>
-                <div class="footer-column">
-                    <h3>Link</h3>
-                    <ul>
-                        <li><a href="#">Profil</a></li>
-                        <li><a href="#">Peringatan Keamanan</a></li>
-                        <li><a href="#">Event</a></li>
-                        <li><a href="#">Kontak Kami</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>JakartaProv-CSIRT</h3>
-                    <p> Siber, Sandi dan Aplikasi Diskominfotik Provinsi DKI Jakarta Balaikota Blok H Lantai 13, JL
-                        Merdeka
-                        Selatan 8-9, Jakarta Pusat 10110</p>
-                    <p><i class="fa fa-phone"> </i> 081388870152</p>
-                    <p><i class="fa fa-envelope"></i> csirt@jakarta.go.id</p>
-                    <div class="social-media">
-                    </div>
-                </div>
-            </div>
-        </section>
+    </section>
 
-        <button id="audioButton" class="btn btn-primary side-button">Play</button>
-        <script>
-            let isPlaying = false;
-            let navItems = document.querySelectorAll('.nav-item');
+    <button id="audioButton" class="btn btn-primary side-button">Play</button>
+    <script>
+        let isPlaying = false;
+        let navItems = document.querySelectorAll('.nav-item');
 
 
-            function speakText(text) {
-                if (isPlaying) {
-                    responsiveVoice.speak(text, 'Indonesian Female');
-                }
+        function speakText(text) {
+            if (isPlaying) {
+                responsiveVoice.speak(text, 'Indonesian Female');
             }
+        }
 
-            document.getElementById('audioButton').addEventListener('click', function() {
-                const button = this;
-                if (isPlaying) {
-                    responsiveVoice.cancel();
-                    button.textContent = 'Play';
-                    isPlaying = false;
-                } else {
-                    button.textContent = 'Mute';
-                    isPlaying = true;
-                    responsiveVoice.speak('Selamat Datang di Jakarta Prov CSIRT', 'Indonesian Female');
-                }
-            });
-
-
-            navItems.forEach(item => {
-                item.addEventListener('mouseover', function() {
-                    speakText(this.getAttribute('data-text'));
-                });
-            });
-        </script>
-        <script>
-            function navigate(page) {
-                switch (page) {
-                    case 'Peringatan_Keamanan':
-                        window.location.href = '{{ route('peringatan_keamanan') }}';
-                        break;
-                    case 'Infografis_Keamanan_Informasi':
-                        window.location.href = '{{ route('infografis_keamanan_informasi') }}';
-                        break;
-                    case 'Peraturan_Kebijakan':
-                        window.location.href = '{{ route('peraturan_kebijakan') }}';
-                        break;
-                    case 'Berita_Siber':
-                        window.location.href = '{{ route('berita_siber') }}';
-                        break;
-                    case 'Statistik_Honeypot':
-                        window.location.href = '{{ route('statistik_honeypot') }}';
-                        break;
-                    case 'Panduan_Teknis':
-                        window.location.href = '{{ route('panduan_teknis') }}';
-                        break;
-                    case 'rfc2350':
-                        window.location.href = '{{ route('rfc2350') }}';
-                        break;
-                    case 'home':
-                        window.location.href = '{{ route('welcome') }}';
-                        break;
-                    case 'profil':
-                        window.location.href = '{{ route('profil') }}';
-                        break;
-                    case 'event':
-                        window.location.href = '{{ route('event') }}';
-                        break;
-                    case 'lapor_insiden_siber':
-                        window.location.href = '{{ route('lapor_insiden_siber') }}';
-                        break;
-                    case 'kontak_kami':
-                        window.location.href = '{{ route('kontak_kami') }}';
-                        break;
-                    default:
-                        console.log('No route defined for: ' + page);
-                }
+        document.getElementById('audioButton').addEventListener('click', function() {
+            const button = this;
+            if (isPlaying) {
+                responsiveVoice.cancel();
+                button.textContent = 'Play';
+                isPlaying = false;
+                responsiveVoice.speak('Mode Suara of', 'Indonesian Female');
+            } else {
+                button.textContent = 'Mute';
+                isPlaying = true;
+                responsiveVoice.speak('Selamat Datang di Jakarta Prov CSIRT', 'Indonesian Female');
             }
-        </script>
-        <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
+        });
+
+
+        navItems.forEach(item => {
+            item.addEventListener('mouseover', function() {
+                speakText(this.getAttribute('data-text'));
+            });
+        });
+    </script>
+    <script>
+        function navigate(page) {
+            switch (page) {
+                case 'Peringatan_Keamanan':
+                    window.location.href = '{{ route('peringatan_keamanan') }}';
+                    break;
+                case 'Infografis_Keamanan_Informasi':
+                    window.location.href = '{{ route('infografis_keamanan_informasi') }}';
+                    break;
+                case 'Peraturan_Kebijakan':
+                    window.location.href = '{{ route('peraturan_kebijakan') }}';
+                    break;
+                case 'Berita_Siber':
+                    window.location.href = '{{ route('berita_siber') }}';
+                    break;
+                case 'Statistik_Honeypot':
+                    window.location.href = '{{ route('statistik_honeypot') }}';
+                    break;
+                case 'Panduan_Teknis':
+                    window.location.href = '{{ route('panduan_teknis') }}';
+                    break;
+                case 'rfc2350':
+                    window.location.href = '{{ route('rfc2350') }}';
+                    break;
+                case 'home':
+                    window.location.href = '{{ route('welcome') }}';
+                    break;
+                case 'profil':
+                    window.location.href = '{{ route('profil') }}';
+                    break;
+                case 'event':
+                    window.location.href = '{{ route('event') }}';
+                    break;
+                case 'lapor_insiden_siber':
+                    window.location.href = '{{ route('lapor_insiden_siber') }}';
+                    break;
+                case 'kontak_kami':
+                    window.location.href = '{{ route('kontak_kami') }}';
+                    break;
+                default:
+                    console.log('No route defined for: ' + page);
+            }
+        }
+    </script>
+    <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
 </body>
 
 </html>

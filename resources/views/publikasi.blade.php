@@ -361,14 +361,13 @@
                 responsiveVoice.cancel();
                 button.textContent = 'Play';
                 isPlaying = false;
+                responsiveVoice.speak('Mode Suara of', 'Indonesian Female');
             } else {
                 button.textContent = 'Mute';
                 isPlaying = true;
                 responsiveVoice.speak('Selamat Datang di Jakarta Prov CSIRT', 'Indonesian Female');
             }
         });
-
-
         navItems.forEach(item => {
             item.addEventListener('mouseover', function() {
                 speakText(this.getAttribute('data-text'));

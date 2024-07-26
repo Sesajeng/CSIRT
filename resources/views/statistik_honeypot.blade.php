@@ -410,7 +410,6 @@
                                     data-text="RFC2350">RFC2350</span>
                             </div>
                         </li>
-                        <li class="btn nav-item" onclick="navigate('publikasi')" data-text="Publikasi">Publikasi</li>
                         <li class="btn nav-item" onclick="navigate('lapor_insiden_siber')"
                             data-text="Lapor Insiden Siber">Lapor Insiden Siber</li>
                         <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">Kontak Kami
@@ -495,6 +494,7 @@
                 responsiveVoice.cancel();
                 button.textContent = 'Play';
                 isPlaying = false;
+                responsiveVoice.speak('Mode Suara of', 'Indonesian Female');
             } else {
                 button.textContent = 'Mute';
                 isPlaying = true;

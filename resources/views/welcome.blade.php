@@ -35,7 +35,7 @@
         .card {
             justify-content: center;
             align-items: center;
-          
+
             margin: 0;
         }
 
@@ -94,8 +94,8 @@
             width: 100%;
             height: 100%;
             gap: 20px;
-            margin-bottom: 0; 
-            padding-bottom: 0; 
+            margin-bottom: 0;
+            padding-bottom: 0;
 
         }
 
@@ -299,7 +299,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center
-
         }
 
         .card-container1 {
@@ -482,7 +481,7 @@
             display: block;
         }
 
-       
+
 
         .dropdown-content {
             background-color: orange;
@@ -542,9 +541,9 @@
             margin-left: 16px;
             font-size: 17px;
         }
-
     </style>
 </head>
+
 <body class=" text-black">
     <div class="header">
         <header class="bg-orange-800 py-4">
@@ -558,17 +557,26 @@
                         <li class="btn nav-item dropdown">
                             <span class="dropbtn" data-text="publikasi">Publikasi</span>
                             <div class="dropdown-content">
-                                <span class="btn nav-item" onclick="navigate('Peringatan_Keamanan')" data-text="Peringatan Keamanan">Peringatan Keamanan</span>
-                                <span class="btn nav-item" onclick="navigate('Infografis_Keamanan_Informasi')" data-text="Infografis Keamanan Informasi">Infografis Keamanan Informasi</span>
-                                <span class="btn nav-item" onclick="navigate('Peraturan_Kebijakan')" data-text="Peraturan Kebijakan">Peraturan Kebijakan</span>
-                                <span class="btn nav-item" onclick="navigate('Berita_Siber')" data-text="Berita Siber (Cyber Blitz)">Berita Siber (Cyber Blitz)</span>
-                                <span class="btn nav-item" onclick="navigate('Statistik_Honeypot')" data-text="Statistik (Honeypot)">Statistik (Honeypot)</span>
-                                <span class="btn nav-item" onclick="navigate('Panduan_Teknis')" data-text="Panduan Teknis">Panduan Teknis</span>
-                                <span class="btn nav-item" onclick="navigate('rfc2350')" data-text="RFC2350">RFC2350</span>
+                                <span class="btn nav-item" onclick="navigate('Peringatan_Keamanan')"
+                                    data-text="Peringatan Keamanan">Peringatan Keamanan</span>
+                                <span class="btn nav-item" onclick="navigate('Infografis_Keamanan_Informasi')"
+                                    data-text="Infografis Keamanan Informasi">Infografis Keamanan Informasi</span>
+                                <span class="btn nav-item" onclick="navigate('Peraturan_Kebijakan')"
+                                    data-text="Peraturan Kebijakan">Peraturan Kebijakan</span>
+                                <span class="btn nav-item" onclick="navigate('Berita_Siber')"
+                                    data-text="Berita Siber (Cyber Blitz)">Berita Siber (Cyber Blitz)</span>
+                                <span class="btn nav-item" onclick="navigate('Statistik_Honeypot')"
+                                    data-text="Statistik (Honeypot)">Statistik (Honeypot)</span>
+                                <span class="btn nav-item" onclick="navigate('Panduan_Teknis')"
+                                    data-text="Panduan Teknis">Panduan Teknis</span>
+                                <span class="btn nav-item" onclick="navigate('rfc2350')"
+                                    data-text="RFC2350">RFC2350</span>
                             </div>
                         </li>
-                        <li class="btn nav-item" onclick="navigate('lapor_insiden_siber')" data-text="Lapor Insiden Siber">Lapor Insiden Siber</li>
-                        <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">Kontak Kami</li>
+                        <li class="btn nav-item" onclick="navigate('lapor_insiden_siber')"
+                            data-text="Lapor Insiden Siber">Lapor Insiden Siber</li>
+                        <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">Kontak Kami
+                        </li>
                         <li><input type="text" class="search-box" placeholder="Search..."></li>
                     </ul>
                 </nav>
@@ -584,7 +592,9 @@
         <button id="audioButton" class="btn btn-primary side-button">Play</button>
         <script>
             let isPlaying = false;
-            const navItems = document.querySelectorAll('.nav-item, .nav-item-dropdown, .nav-item .dropdown-content, .dropbtn, .dropdown-content, .card-title, .card-text, .card-body, .card-container, .card');
+            const navItems = document.querySelectorAll(
+                '.nav-item, .nav-item-dropdown, .nav-item .dropdown-content, .dropbtn, .dropdown-content, .card-title, .card-text, .card-body, .card-container, .card'
+            );
 
             function speakText(text) {
                 if (isPlaying) {
@@ -597,6 +607,7 @@
                     responsiveVoice.cancel();
                     button.textContent = 'Play';
                     isPlaying = false;
+                    responsiveVoice.speak('Mode Suara of', 'Indonesian Female');
                 } else {
                     button.textContent = 'Mute';
                     isPlaying = true;
@@ -615,51 +626,51 @@
             });
         </script>
         <script>
-           function navigate(page) {
-            switch(page) {
-                case 'Peringatan_Keamanan':
-                    window.location.href = '{{ route('peringatan_keamanan') }}';
-                    break;
-                case 'Infografis_Keamanan_Informasi':
-                    window.location.href = '{{ route('infografis_keamanan_informasi') }}';
-                    break;
-                case 'Peraturan_Kebijakan':
-                    window.location.href = '{{ route('peraturan_kebijakan') }}';
-                    break;
-                case 'Berita_Siber':
-                    window.location.href = '{{ route('berita_siber') }}';
-                    break;
-                case 'Statistik_Honeypot':
-                    window.location.href = '{{ route('statistik_honeypot') }}';
-                    break;
-                case 'Panduan_Teknis':
-                    window.location.href = '{{ route('panduan_teknis') }}';
-                    break;
-                case 'rfc2350':
-                    window.location.href = '{{ route('rfc2350') }}';
-                    break;
-                case 'home':
-                    window.location.href = '{{ route('welcome') }}';
-                    break;
-                case 'profil':
-                    window.location.href = '{{ route('profil') }}';
-                    break;
-                case 'event':
-                    window.location.href = '{{ route('event') }}';
-                    break;
-                case 'lapor_insiden_siber':
-                    window.location.href = '{{ route('lapor_insiden_siber') }}';
-                    break;
-                case 'kontak_kami':
-                    window.location.href = '{{ route('kontak_kami') }}';
-                    break;
-                case 'selengkapnya1':
-                    window.location.href = '{{ route('selengkapnya1') }}';
-                    break;
-                default:
-                    console.log('No route defined for: ' + page);
+            function navigate(page) {
+                switch (page) {
+                    case 'Peringatan_Keamanan':
+                        window.location.href = '{{ route('peringatan_keamanan') }}';
+                        break;
+                    case 'Infografis_Keamanan_Informasi':
+                        window.location.href = '{{ route('infografis_keamanan_informasi') }}';
+                        break;
+                    case 'Peraturan_Kebijakan':
+                        window.location.href = '{{ route('peraturan_kebijakan') }}';
+                        break;
+                    case 'Berita_Siber':
+                        window.location.href = '{{ route('berita_siber') }}';
+                        break;
+                    case 'Statistik_Honeypot':
+                        window.location.href = '{{ route('statistik_honeypot') }}';
+                        break;
+                    case 'Panduan_Teknis':
+                        window.location.href = '{{ route('panduan_teknis') }}';
+                        break;
+                    case 'rfc2350':
+                        window.location.href = '{{ route('rfc2350') }}';
+                        break;
+                    case 'home':
+                        window.location.href = '{{ route('welcome') }}';
+                        break;
+                    case 'profil':
+                        window.location.href = '{{ route('profil') }}';
+                        break;
+                    case 'event':
+                        window.location.href = '{{ route('event') }}';
+                        break;
+                    case 'lapor_insiden_siber':
+                        window.location.href = '{{ route('lapor_insiden_siber') }}';
+                        break;
+                    case 'kontak_kami':
+                        window.location.href = '{{ route('kontak_kami') }}';
+                        break;
+                    case 'selengkapnya1':
+                        window.location.href = '{{ route('selengkapnya1') }}';
+                        break;
+                    default:
+                        console.log('No route defined for: ' + page);
+                }
             }
-        }      
         </script>
         &nbsp;
         <section class="page-section portofolio">
@@ -682,18 +693,20 @@
         <div class="card" style="width: 22rem;">
             <img src="/img/3.png" class="card-img-top" alt="Berita 1">
             <div class="card-body">
-                <h6 class="card-title"  data-text="Carbanak Malware Kembali Beroperasi Dalam Serangan Ransomware">Carbanak Malware Kembali Beroperasi Dalam Serangan Ransomware</h6>
-                <p class="card-text"  data-text="Peringatan Keamanan" >2024-01-10 13:50:20 |
+                <h6 class="card-title" data-text="Carbanak Malware Kembali Beroperasi Dalam Serangan Ransomware">
+                    Carbanak Malware Kembali Beroperasi Dalam Serangan Ransomware</h6>
+                <p class="card-text" data-text="Peringatan Keamanan">2024-01-10 13:50:20 |
                     https://securityaffairs.com/156410/malware/carbanak-malware-ransomware-attacks.html</p>
                 <p class="card-text">Peneliti dari NCC Group melaporkan adanya aktivitas malware carbanak dalam
                     sebuah serangan ransomware. Kelompok kejahatan siber Carbanak pertama kali diidentifikasi oleh
                     Kaspersky Lab pada tahun 2015, dan telah berhasil mencuri setidaknya 300 juta</p>
-                    <nav class="space-x-4 navbar">
-                        <ul>
-                            <li class="btn nav-item" onclick="navigate('selengkpanya1')" data-text="Selengkapnya">Selengkapnya</li>
+                <nav class="space-x-4 navbar">
+                    <ul>
+                        <li class="btn nav-item" onclick="navigate('selengkpanya1')" data-text="Selengkapnya">
+                            Selengkapnya</li>
                     </ul>
                 </nav>
-                </div>
+            </div>
         </div>
         <div class="card" style="width: 22rem;">
             <img src="/img/11.jpg" class="card-img-top" alt="Berita 2">
