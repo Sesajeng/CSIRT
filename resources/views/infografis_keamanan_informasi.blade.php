@@ -441,6 +441,15 @@
             background-color: orange;
             margin-top: 5px;
         }
+
+        .btn img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .btn:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 
@@ -489,20 +498,20 @@
     <div class="carousel-item active">
         <img src="/img/22.png" class="d-block w-100" alt="gambar 1">
     </div>
-    <div class="form-container">
-        <div class="container mx-auto py-8">
+    <div class="form-container flex items-center ">
+        <div class="container mx-auto py-8 text-center">
             <input type="text" placeholder="Cari Infografis"
                 class=" px-4 py-2 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent">
         </div>
-        <div class="input-field">
-            <label for="start-date">Tanggal Awal</label>
+        <div class="input-field mb-4">
+            <label for="start-date" class="block mb-2">Tanggal Awal</label>
             <input type="text" id="start-date" placeholder="Input Tanggal">
         </div>
-        <div class="input-field">
-            <label for="end-date">Tanggal Akhir</label>
+        <div class="input-field mb-4">
+            <label for="end-date" class="block mb-2">Tanggal Akhir</label>
             <input type="text" id="end-date" placeholder="Input Tanggal">
         </div>
-        <button class="submit-button">Submit</button>
+        <button class="submit-button" class="block mb-2">Submit</button>
     </div>
     <div class="card-container1">
         <div class="card2" style="width: 18rem;">
@@ -569,38 +578,51 @@
         </div>
     </section>
 
-    <button id="audioButton" class="btn btn-primary side-button">Play</button>
-    <script>
-        let isPlaying = false;
-        let navItems = document.querySelectorAll('.nav-item');
+    <button id="audioButton" class="btn btn-primary side-button">
+        <img id="audioIcon" src="/img/mute.png" alt="Play" />
+    </button>
 
+    <script>
+        let isPlaying = localStorage.getItem('audioStatus') === 'true';
 
         function speakText(text) {
             if (isPlaying) {
+                console.log('Speaking: ', text);
                 responsiveVoice.speak(text, 'Indonesian Female');
             }
         }
 
         document.getElementById('audioButton').addEventListener('click', function() {
             const button = this;
+            const icon = document.getElementById('audioIcon');
             if (isPlaying) {
                 responsiveVoice.cancel();
-                button.textContent = 'Play';
+                icon.src = '/img/mute.png'; // Gambar untuk mode Play
+                icon.alt = 'Play';
                 isPlaying = false;
+                localStorage.setItem('audioStatus', 'false');
                 responsiveVoice.speak('Mode Suara of', 'Indonesian Female');
             } else {
-                button.textContent = 'Mute';
+                icon.src = '/img/play.png'; // Gambar untuk mode Mute
+                icon.alt = 'Mute';
                 isPlaying = true;
+                localStorage.setItem('audioStatus', 'true');
                 responsiveVoice.speak('Selamat Datang di Jakarta Prov CSIRT', 'Indonesian Female');
             }
         });
 
-
-        navItems.forEach(item => {
-            item.addEventListener('mouseover', function() {
-                speakText(this.getAttribute('data-text'));
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.addEventListener('mouseover', function(event) {
+                const text = item.getAttribute('data-text') || event.target.getAttribute('data-text');
+                if (text && isPlaying) {
+                    speakText(text);
+                }
             });
         });
+
+        // Set initial icon based on the saved status
+        document.getElementById('audioIcon').src = isPlaying ? '/img/play.png' : '/img/mute.png';
+        document.getElementById('audioIcon').alt = isPlaying ? 'Mute' : 'Play';
     </script>
     <script>
         function navigate(page) {

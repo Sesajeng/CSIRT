@@ -393,9 +393,23 @@
             margin: 5px 0;
         }
 
-        .read-more {}
+        .btn img {
+            width: 24px;
+            height: 24px;
+        }
 
-        .content1 {}
+        .btn:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .btn img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .btn:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 
@@ -437,7 +451,6 @@
                 </nav>
             </div>
     </div>
-
     </div>
     </header>
     </div>
@@ -445,7 +458,7 @@
         <img src="/img/24.png" class="d-block w-100" alt="gambar 1">
     </div>
     <div class="content1 flex justify-center">
-        <div class="space">
+        <div class="space ">
             <div class="container mx-auto p-4">
                 <div class="flex items-center mb-4">
                     <input type="text" placeholder="Search" class="border p-2 rounded-l-md">
@@ -454,52 +467,52 @@
                     <button class="bg-green-600 text-white p-2 rounded-r-md">Submit</button>
                 </div>
             </div>
-            <div class="container3">
-                <div class="image">
-                    <img src="/img/28.png" alt="Telegram Logo">
-                </div>
-                <div class="content">
-                    <h2>Cek Versi Telegram di Ponsel Android Anda, Kerentanan Zero-Day EvilVideo Mengintai</h2>
-                    <p>2024-07-25 15:47:53 | <a
-                            href="https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/">https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/</a>
-                    </p>
-                    <p>Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
-                        Berbahaya yang Disamarkan sebagai Video.</p>
-                    <p>ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang
-                        menggunakan platform Android untuk mendistribusikan file berbahaya yang disamarkan sebagai dalam
-                        format video.</p>
-                    <p>Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.</p>
-                    <a class="read-more" href="#">SELENGKAPNYA</a>
-                </div>
-            </div>
-            &nbsp;
-            <div class="container3">
-                <div class="image">
-                    <img src="/img/1.jpeg" alt="Telegram Logo">
-                </div>
-                <div class="content">
-                    <h2>Batas Waktu Microsoft Windows—Anda Memiliki 7 Hari Untuk Memperbarui PC Anda</h2>
-                    <p>2024-07-25 11:57:01 | <a
-                            href="https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/">https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/</a>
-                    </p>
-                    <p>Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
-                        Berbahaya yang Disamarkan sebagai Video.</p>
-                    <p>ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang
-                        menggunakan platform Android untuk mendistribusikan file berbahaya yang disamarkan sebagai dalam
-                        format video.</p>
-                    <p>Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.</p>
-                    <a class="read-more" href="#">SELENGKAPNYA</a>
-                </div>
-            </div>
-            &nbsp;
-            <div class="container3">
-                <div class="image">
-                    <img src="/img/1.jpg" alt="Telegram Logo">
-                </div>
-                <div class="content">
-                    <h2>Carbanak Malware Kembali Beroperasi Dalam Serangan Ransomware</h2>
-                    <p>2024-01-10 13:50:20 | <a
-                            href="https://securityaffairs.com/156410/malware/carbanak-malware-ransomware-attacks.html</a>
+        </div>
+    </div>
+    <div class="container3 flex items-center justify-center mx-auto my-8">
+        <div class="image">
+            <img src="/img/28.png" alt="Telegram Logo">
+        </div>
+        <div class="content ">
+            <h2>Cek Versi Telegram di Ponsel Android Anda, Kerentanan Zero-Day EvilVideo Mengintai</h2>
+            <p>2024-07-25 15:47:53 | <a
+                    href="https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/">https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/</a>
+            </p>
+            <p>Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
+                Berbahaya yang Disamarkan sebagai Video.</p>
+            <p>ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang
+                menggunakan platform Android untuk mendistribusikan file berbahaya yang disamarkan sebagai dalam
+                format video.</p>
+            <p>Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.</p>
+            <a class="read-more" href="#">SELENGKAPNYA</a>
+        </div>
+    </div>
+    <div class="container3 flex items-center justify-center mx-auto my-8">
+        <div class="image">
+            <img src="/img/1.jpeg" alt="Telegram Logo">
+        </div>
+        <div class="content">
+            <h2>Batas Waktu Microsoft Windows—Anda Memiliki 7 Hari Untuk Memperbarui PC Anda</h2>
+            <p>2024-07-25 11:57:01 | <a
+                    href="https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/">https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/</a>
+            </p>
+            <p>Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
+                Berbahaya yang Disamarkan sebagai Video.</p>
+            <p>ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang
+                menggunakan platform Android untuk mendistribusikan file berbahaya yang disamarkan sebagai dalam
+                format video.</p>
+            <p>Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.</p>
+            <a class="read-more" href="#">SELENGKAPNYA</a>
+        </div>
+    </div>
+    <div class="container3 flex items-center justify-center mx-auto my-8">
+        <div class="image">
+            <img src="/img/1.jpg" alt="Telegram Logo">
+        </div>
+        <div class="content">
+            <h2>Carbanak Malware Kembali Beroperasi Dalam Serangan Ransomware</h2>
+            <p>2024-01-10 13:50:20 | <a
+                    href="https://securityaffairs.com/156410/malware/carbanak-malware-ransomware-attacks.html</a>
                     </p>
                     <p>Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
                         Berbahaya yang Disamarkan sebagai Video.</p>
@@ -508,10 +521,10 @@
                         format video.</p>
                     <p>Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.</p>
                     <a class="read-more"
-                            href="#">SELENGKAPNYA</a>
-                </div>
-            </div>
+                    href="#">SELENGKAPNYA</a>
         </div>
+    </div>
+    </div>
     </div>
     &nbsp;
     <section class="footer-section">
@@ -555,38 +568,51 @@
         </div>
     </section>
 
-    <button id="audioButton" class="btn btn-primary side-button">Play</button>
-    <script>
-        let isPlaying = false;
-        let navItems = document.querySelectorAll('.nav-item');
+    <button id="audioButton" class="btn btn-primary side-button">
+        <img id="audioIcon" src="/img/mute.png" alt="Play" />
+    </button>
 
+    <script>
+        let isPlaying = localStorage.getItem('audioStatus') === 'true';
 
         function speakText(text) {
             if (isPlaying) {
+                console.log('Speaking: ', text);
                 responsiveVoice.speak(text, 'Indonesian Female');
             }
         }
 
         document.getElementById('audioButton').addEventListener('click', function() {
             const button = this;
+            const icon = document.getElementById('audioIcon');
             if (isPlaying) {
                 responsiveVoice.cancel();
-                button.textContent = 'Play';
+                icon.src = '/img/mute.png'; // Gambar untuk mode Play
+                icon.alt = 'Play';
                 isPlaying = false;
+                localStorage.setItem('audioStatus', 'false');
                 responsiveVoice.speak('Mode Suara of', 'Indonesian Female');
             } else {
-                button.textContent = 'Mute';
+                icon.src = '/img/play.png'; // Gambar untuk mode Mute
+                icon.alt = 'Mute';
                 isPlaying = true;
+                localStorage.setItem('audioStatus', 'true');
                 responsiveVoice.speak('Selamat Datang di Jakarta Prov CSIRT', 'Indonesian Female');
             }
         });
 
-
-        navItems.forEach(item => {
-            item.addEventListener('mouseover', function() {
-                speakText(this.getAttribute('data-text'));
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.addEventListener('mouseover', function(event) {
+                const text = item.getAttribute('data-text') || event.target.getAttribute('data-text');
+                if (text && isPlaying) {
+                    speakText(text);
+                }
             });
         });
+
+        // Set initial icon based on the saved status
+        document.getElementById('audioIcon').src = isPlaying ? '/img/play.png' : '/img/mute.png';
+        document.getElementById('audioIcon').alt = isPlaying ? 'Mute' : 'Play';
     </script>
     <script>
         function navigate(page) {

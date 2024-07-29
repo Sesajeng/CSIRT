@@ -541,6 +541,15 @@
             margin-left: 16px;
             font-size: 17px;
         }
+
+        .btn img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .btn:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 
@@ -555,7 +564,7 @@
                         <li class="btn nav-item" onclick="navigate('profil')" data-text="Profil">Profil</li>
                         <li class="btn nav-item" onclick="navigate('event')" data-text="Event">Event</li>
                         <li class="btn nav-item dropdown">
-                            <span class="dropbtn" data-text="publikasi">Publikasi</span>
+                            <span class="dropbtn" data-text="home">Publikasi</span>
                             <div class="dropdown-content">
                                 <span class="btn nav-item" onclick="navigate('Peringatan_Keamanan')"
                                     data-text="Peringatan Keamanan">Peringatan Keamanan</span>
@@ -589,41 +598,51 @@
                 <img src="/img/1.png" class="d-block w-100" alt="gambar 1">
             </div>
         </div>
-        <button id="audioButton" class="btn btn-primary side-button">Play</button>
+        <button id="audioButton" class="btn btn-primary side-button">
+            <img id="audioIcon" src="/img/mute.png" alt="Play" />
+        </button>
+
         <script>
-            let isPlaying = false;
-            const navItems = document.querySelectorAll(
-                '.nav-item, .nav-item-dropdown, .nav-item .dropdown-content, .dropbtn, .dropdown-content, .card-title, .card-text, .card-body, .card-container, .card'
-            );
+            let isPlaying = localStorage.getItem('audioStatus') === 'true';
 
             function speakText(text) {
                 if (isPlaying) {
+                    console.log('Speaking: ', text);
                     responsiveVoice.speak(text, 'Indonesian Female');
                 }
             }
+
             document.getElementById('audioButton').addEventListener('click', function() {
                 const button = this;
+                const icon = document.getElementById('audioIcon');
                 if (isPlaying) {
                     responsiveVoice.cancel();
-                    button.textContent = 'Play';
+                    icon.src = '/img/mute.png'; // Gambar untuk mode Play
+                    icon.alt = 'Play';
                     isPlaying = false;
+                    localStorage.setItem('audioStatus', 'false');
                     responsiveVoice.speak('Mode Suara of', 'Indonesian Female');
                 } else {
-                    button.textContent = 'Mute';
+                    icon.src = '/img/play.png'; // Gambar untuk mode Mute
+                    icon.alt = 'Mute';
                     isPlaying = true;
+                    localStorage.setItem('audioStatus', 'true');
                     responsiveVoice.speak('Selamat Datang di Jakarta Prov CSIRT', 'Indonesian Female');
                 }
             });
 
-            navItems.forEach(item => {
+            document.querySelectorAll('.nav-item').forEach(item => {
                 item.addEventListener('mouseover', function(event) {
-
                     const text = item.getAttribute('data-text') || event.target.getAttribute('data-text');
-                    if (isPlaying) {
+                    if (text && isPlaying) {
                         speakText(text);
                     }
                 });
             });
+
+            // Set initial icon based on the saved status
+            document.getElementById('audioIcon').src = isPlaying ? '/img/play.png' : '/img/mute.png';
+            document.getElementById('audioIcon').alt = isPlaying ? 'Mute' : 'Play';
         </script>
         <script>
             function navigate(page) {
@@ -677,7 +696,8 @@
             <div class="container conten">
                 <div class="box-title1">Berita Tekrini </div>
                 <div class="box-title2">
-                    <p class="nav-item" onclick="IndexBerita()" data-text="Index Berita" style="color: black;"> Index
+                    <p class="nav-item" onclick="navigate('index_berita')" data-text="Index Berita"
+                        style="color: black;"> Index
                         Berita ></a>
                     </p>
                 </div>
@@ -695,48 +715,59 @@
             <div class="card-body">
                 <h6 class="card-title" data-text="Carbanak Malware Kembali Beroperasi Dalam Serangan Ransomware">
                     Carbanak Malware Kembali Beroperasi Dalam Serangan Ransomware</h6>
-                <p class="card-text" data-text="Peringatan Keamanan">2024-01-10 13:50:20 |
+                <p class="card-text"
+                    data-text="2024-01-10 13:50:20 |
+                https://securityaffairs.com/156410/malware/carbanak-malware-ransomware-attacks.html">
+                    2024-01-10 13:50:20 |
                     https://securityaffairs.com/156410/malware/carbanak-malware-ransomware-attacks.html</p>
                 <p class="card-text">Peneliti dari NCC Group melaporkan adanya aktivitas malware carbanak dalam
                     sebuah serangan ransomware. Kelompok kejahatan siber Carbanak pertama kali diidentifikasi oleh
                     Kaspersky Lab pada tahun 2015, dan telah berhasil mencuri setidaknya 300 juta</p>
-                <nav class="space-x-4 navbar">
-                    <ul>
-                        <li class="btn nav-item" onclick="navigate('selengkpanya1')" data-text="Selengkapnya">
-                            Selengkapnya</li>
-                    </ul>
-                </nav>
+                <a href="selengkapnya1" class="btn nav-item" onclick="navigate('selengkpanya1')"
+                    data-text="Selengkapnya">SELENGKAPNYA</a>
             </div>
         </div>
         <div class="card" style="width: 22rem;">
             <img src="/img/11.jpg" class="card-img-top" alt="Berita 2">
             <div class="card-body">
-                <h6 class="card-title">Peningkatan Aktivitas Rugmi Malware Loader</h6>
-                <p class="card-text"> 2024-01-10 13:49:27 |
+                <h6 class="card-title" data-text="Peningkatan Aktivitas Rugmi Malware Loader">Peningkatan Aktivitas
+                    Rugmi Malware Loader</h6>
+                <p class="card-text"
+                    data-text="2024-01-10 13:49:27 |
+                    https://thehackernews.com/2023/12/new-rugmi-malware-loader-surges-with.html">
+                    2024-01-10 13:49:27 |
                     https://thehackernews.com/2023/12/new-rugmi-malware-loader-surges-with.html</p>
-                <p class="card-text"> Malware loader baru bernama Rugmi digunakan oleh pelaku ancaman untuk
+                <p class="card-text"
+                    data-text="Malware loader baru bernama Rugmi digunakan oleh pelaku ancaman untuk
+                    menyebarkan pencuri informasi seperti Lumma Stealer, Vidar, RecordBreaker, dan Rescoms.
+                    Perusahaan keamanan siber ESET melacak trojan ini dengan nama Win/TrojanDownloader.Rugmi">
+                    Malware loader baru bernama Rugmi digunakan oleh pelaku ancaman untuk
                     menyebarkan pencuri informasi seperti Lumma Stealer, Vidar, RecordBreaker, dan Rescoms.
                     Perusahaan keamanan siber ESET melacak trojan ini dengan nama Win/TrojanDownloader.Rugmi,</p>
-                <nav class="space-x-4">
-                    <ul>
-                        <li class="btn nav-item" onclick="Selengkapnya()" data-text="Selengkapnya">SELENGKAPNYA</li>
-                    </ul>
-                </nav>
+                <a href="selengkapnya1" class="btn nav-item" onclick="navigate('selengkpanya1')"
+                    data-text="Selengkapnya">SELENGKAPNYA</a>
             </div>
         </div>
         <div class="card" style="width: 22rem;">
             <img src="/img/12.jpg" class="card-img-top" alt="Berita 3">
             <div class="card-body">
-                <h6 class="card-title"> Barracuda Memperbaiki Kerentanan Baru ESG Zero-Day yang Dieksploitasi
+                <h6 class="card-title"
+                    data-text="Barracuda Memperbaiki Kerentanan Baru ESG Zero-Day yang Dieksploitasi
+                    Oleh
+                    Kelompok Peretas UNC4841">
+                    Barracuda Memperbaiki Kerentanan Baru ESG Zero-Day yang Dieksploitasi
                     Oleh
                     Kelompok Peretas UNC4841</h6>
-                <p class="card-text"> 2024-01-10 13:48:18 | idsirtii.or.id</p>
-                <p class="card-text"> Email Security Gateways (ESG) pada Barracuda Networks kembali menjadi
+                <p class="card-text" data-text="2024-01-10 13:48:18 | idsirtii.or.id"> 2024-01-10 13:48:18 |
+                    idsirtii.or.id</p>
+                <p class="card-text" data-text=""> Email Security Gateways (ESG) pada Barracuda Networks kembali
+                    menjadi
                     korban
                     eksploitasi para peretas yang menyalahgunakan kerentanan zero-day pada open-source library
                     untuk
                     memproses file Excel. Kerentanan yang diidentifikasi sebagai CVE-2023-710</p>
-                <span class="btn nav-item" data-text="Selengkapnya">SELENGKAPNYA</span>
+                <a href="selengkapnya1" class="btn nav-item" onclick="navigate('selengkpanya1')"
+                    data-text="Selengkapnya">SELENGKAPNYA</a>
             </div>
         </div>
     </div>

@@ -402,10 +402,19 @@
             margin-left: 16px;
             font-size: 17px;
         }
+
+        .btn img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .btn:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 
-<body class=" text-black">
+<body class="text-black">
     <div class="header">
         <header class="bg-orange-800 py-4">
             <div class="container mx-auto flex justify-between items-center">
@@ -457,40 +466,51 @@
         </div>
     </div>
 
-    <button id="audioButton" class="btn btn-primary side-button">Play</button>
+    <button id="audioButton" class="btn btn-primary side-button">
+        <img id="audioIcon" src="/img/mute.png" alt="Play" />
+    </button>
+
     <script>
-        let isPlaying = false;
-        const navItems = document.querySelectorAll('.nav-item');
+        let isPlaying = localStorage.getItem('audioStatus') === 'true';
 
         function speakText(text) {
             if (isPlaying) {
+                console.log('Speaking: ', text);
                 responsiveVoice.speak(text, 'Indonesian Female');
             }
         }
 
         document.getElementById('audioButton').addEventListener('click', function() {
             const button = this;
+            const icon = document.getElementById('audioIcon');
             if (isPlaying) {
                 responsiveVoice.cancel();
-                button.textContent = 'Play';
+                icon.src = '/img/mute.png'; // Gambar untuk mode Play
+                icon.alt = 'Play';
                 isPlaying = false;
+                localStorage.setItem('audioStatus', 'false');
                 responsiveVoice.speak('Mode Suara of', 'Indonesian Female');
             } else {
-                button.textContent = 'Mute';
+                icon.src = '/img/play.png'; // Gambar untuk mode Mute
+                icon.alt = 'Mute';
                 isPlaying = true;
+                localStorage.setItem('audioStatus', 'true');
                 responsiveVoice.speak('Selamat Datang di Jakarta Prov CSIRT', 'Indonesian Female');
             }
         });
 
-        navItems.forEach(item => {
+        document.querySelectorAll('.nav-item').forEach(item => {
             item.addEventListener('mouseover', function(event) {
-
                 const text = item.getAttribute('data-text') || event.target.getAttribute('data-text');
-                if (isPlaying) {
+                if (text && isPlaying) {
                     speakText(text);
                 }
             });
         });
+
+        // Set initial icon based on the saved status
+        document.getElementById('audioIcon').src = isPlaying ? '/img/play.png' : '/img/mute.png';
+        document.getElementById('audioIcon').alt = isPlaying ? 'Mute' : 'Play';
     </script>
     <script>
         function navigate(page) {
@@ -542,7 +562,9 @@
             <div class="line">
             </div>
             <div class="card-body">
-                <h5 class="card-title"> Sosialisasi Security Awareness - Pencegahan dan Penanganan Serangan Ransomware
+                <h5 class="card-title"
+                    data-text="Sosialisasi Security Awareness - Pencegahan dan Penanganan Serangan Ransomware">
+                    Sosialisasi Security Awareness - Pencegahan dan Penanganan Serangan Ransomware
                 </h5>
             </div>
         </div>
@@ -551,14 +573,17 @@
             <div class="line">
             </div>
             <div class="card-body">
-                <h5 class="card-title">Sosialisasi Security Awareness - Keamanan Mobile Computing dan Teleworking</h5>
+                <h5 class="card-title"
+                    data-text="Sosialisasi Security Awareness - Keamanan Mobile Computing dan Teleworking">Sosialisasi
+                    Security Awareness - Keamanan Mobile Computing dan Teleworking</h5>
             </div>
         </div>
         <div class="card2" style="width: 18rem;">
             <img src="/img/10.jpg" class="card-img-top" alt="Berita 3">
             <div class="line"></div>
             <div class="card-body">
-                <h5 class="card-title">Edukasi Pemanfaatan - Index Keamanan Informasi (Indeks Kami)</h5>
+                <h5 class="card-title" data-text="Edukasi Pemanfaatan - Index Keamanan Informasi (Indeks Kami)">
+                    Edukasi Pemanfaatan - Index Keamanan Informasi (Indeks Kami)</h5>
             </div>
         </div>
     </div>
