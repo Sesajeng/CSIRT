@@ -438,14 +438,10 @@
     &nbsp;
     <div class="container content">
         <div class="line"></div>
-        <p> Data 2021 sampai 2022 </p>
+        <p class="nav-item" data-text="Data 2021 sampai 2022"> Data 2021 sampai 2022 </p>
         <img src="/img/19.jpg"class="d-block w-100">
         </diiv>
     </div>
-
-
-
-
 
     <section class="footer-section">
         <div class="container">

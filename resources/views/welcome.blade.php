@@ -634,13 +634,13 @@
             document.querySelectorAll('.nav-item').forEach(item => {
                 item.addEventListener('mouseover', function(event) {
                     const text = item.getAttribute('data-text') || event.target.getAttribute('data-text');
+                    console.log('Hovered over: ', text);
                     if (text && isPlaying) {
                         speakText(text);
                     }
                 });
             });
 
-            // Set initial icon based on the saved status
             document.getElementById('audioIcon').src = isPlaying ? '/img/play.png' : '/img/mute.png';
             document.getElementById('audioIcon').alt = isPlaying ? 'Mute' : 'Play';
         </script>
@@ -713,14 +713,19 @@
         <div class="card" style="width: 22rem;">
             <img src="/img/3.png" class="card-img-top" alt="Berita 1">
             <div class="card-body">
-                <h6 class="card-title" data-text="Carbanak Malware Kembali Beroperasi Dalam Serangan Ransomware">
+                <h6 class="nav-item" 
+                data-text="Carbanak Malware Kembali Beroperasi Dalam Serangan Ransomware">
                     Carbanak Malware Kembali Beroperasi Dalam Serangan Ransomware</h6>
-                <p class="card-text"
+                <p class="nav-item"
                     data-text="2024-01-10 13:50:20 |
                 https://securityaffairs.com/156410/malware/carbanak-malware-ransomware-attacks.html">
                     2024-01-10 13:50:20 |
                     https://securityaffairs.com/156410/malware/carbanak-malware-ransomware-attacks.html</p>
-                <p class="card-text">Peneliti dari NCC Group melaporkan adanya aktivitas malware carbanak dalam
+                <p class="nav-item" 
+                data-text="Peneliti dari NCC Group melaporkan adanya aktivitas malware carbanak dalam
+                    sebuah serangan ransomware. Kelompok kejahatan siber Carbanak pertama kali diidentifikasi oleh
+                    Kaspersky Lab pada tahun 2015, dan telah berhasil mencuri setidaknya 300 juta"
+                >Peneliti dari NCC Group melaporkan adanya aktivitas malware carbanak dalam
                     sebuah serangan ransomware. Kelompok kejahatan siber Carbanak pertama kali diidentifikasi oleh
                     Kaspersky Lab pada tahun 2015, dan telah berhasil mencuri setidaknya 300 juta</p>
                 <a href="selengkapnya1" class="btn nav-item" onclick="navigate('selengkpanya1')"
@@ -789,7 +794,8 @@
         <div class="card2" style="width: 16rem;">
             <img src="/img/16.png" class="card-img-top" alt="Berita 1">
             <div class="card-body">
-                <h6 class="card-title">Sosialisasi Security Awareness Keamanan Mobile Computing dan Teleworking
+                <h6 class="
+                lnav-item" data-text="Sosialisasi Security Awareness Keamanan Mobile Computing dan Teleworking">Sosialisasi Security Awareness Keamanan Mobile Computing dan Teleworking
                 </h6>
                 <p class="card-text">31-Aug-2023</p>
             </div>
@@ -820,9 +826,9 @@
         <div class="card2" style="width: 16rem;">
             <img src="/img/16.png" class="card-img-top" alt="Berita 1">
             <div class="card-body">
-                <h6 class="card-title">Sosialisasi Security Awareness Keamanan Mobile Computing dan Teleworking
+                <h6 class="nav-item" data-text="Sosialisasi Security Awareness Keamanan Mobile Computing dan Teleworking">Sosialisasi Security Awareness Keamanan Mobile Computing dan Teleworking
                 </h6>
-                <p class="card-text">31-Aug-2023</p>
+                <p class="nav-item" data-text="31-Aug-2023">31-Aug-2023</p>
             </div>
         </div>
         <div class="card2" style="width: 16rem;">

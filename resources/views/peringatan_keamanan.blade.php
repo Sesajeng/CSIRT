@@ -510,15 +510,22 @@
             <img src="/img/28.png" alt="Telegram Logo">
         </div>
         <div class="content">
-            <h2>Cek Versi Telegram di Ponsel Android Anda, Kerentanan Zero-Day EvilVideo Mengintai</h2>
+            <h2 class="nav-item" 
+            data-text="Cek Versi Telegram di Ponsel Android Anda, Kerentanan Zero-Day EvilVideo Mengintai">Cek Versi Telegram di Ponsel Android Anda, Kerentanan Zero-Day EvilVideo Mengintai</h2>
             <p>2024-07-25 15:47:53 | <a
                     href="https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/">https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/</a>
             </p>
-            <p>Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
+            <p class="nav-item" data-text="Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
+                Berbahaya yang Disamarkan sebagai Video. 
+                ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang menggunakan
+                platform Android untuk mendistribusikan file berbahaya yang disamarkan sebagai dalam format video. 
+                Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.
+                ">Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
                 Berbahaya yang Disamarkan sebagai Video.</p>
-            <p>ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang menggunakan
+            <p class="nav-item" data-text="ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang menggunakan
+                platform Android untuk mendistribusikan file berbahaya yang disamarkan sebagai dalam format video. ">ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang menggunakan
                 platform Android untuk mendistribusikan file berbahaya yang disamarkan sebagai dalam format video.</p>
-            <p>Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.</p>
+            <p class="nav-item" data-text="Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.">Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.</p>
             <a class="read-more" href="#">SELENGKAPNYA</a>
         </div>
     </div>
@@ -538,10 +545,12 @@
         <div class="card" style="width: 22rem;">
             <img src="/img/11.jpg" class="card-img-top" alt="Berita 1">
             <div class="card-body">
-                <h6 class="card-title" data-text="Peringatan Keamanan Malware Bitrait">Peringatan Keamanan Malware
+                <h6 class="nav-item" data-text="Peringatan Keamanan Malware Bitrait">Peringatan Keamanan Malware
                     Bitrait</h6>
-                <p class="card-text" data-text="Peringatan Keamanan">2022-05-17 10:48:18 | idsirtii</p>
-                <p class="card-text">BitRAT merupakan jenis malware yang diklasifikasikan sebagai Remote Access Trojan
+                <p class="nav-item" data-text="2022-05-17 10:48:18 | idsirtii">2022-05-17 10:48:18 | idsirtii</p>
+                <p class="nav-item" data data-text="BitRAT merupakan jenis malware yang diklasifikasikan sebagai Remote Access Trojan
+                    (RAT). Kampanye malware BitRAT secara aktif menargetkan pengguna yang mencari aktivator lisensi
+                    Windows tidak resmi. Aktivator lisensi tersebut dimaksudkan untuk men">BitRAT merupakan jenis malware yang diklasifikasikan sebagai Remote Access Trojan
                     (RAT). Kampanye malware BitRAT secara aktif menargetkan pengguna yang mencari aktivator lisensi
                     Windows tidak resmi. Aktivator lisensi tersebut dimaksudkan untuk men</p>
                 <nav class="space-x-4 navbar">
@@ -555,9 +564,11 @@
         <div class="card" style="width: 22rem;">
             <img src="/img/20.jpg" class="card-img-top" alt="Berita 2">
             <div class="card-body">
-                <h6 class="card-title">CVE-2022-27926 KERENTANAN XSS PADA ZIMBRA COLLOBOR</h6>
+                <h6 class="nav-item" data-text="CVE-2022-27926 KERENTANAN XSS PADA ZIMBRA COLLOBOR">CVE-2022-27926 KERENTANAN XSS PADA ZIMBRA COLLOBOR</h6>
                 <p class="card-text"> 2022-05-17 11:06:06 | idsirtii</p>
-                <p class="card-text"> Zimbra Collaboration, sebelumnya dikenal sebagai Zimbra Collaboration Suite
+                <p class="nav-item" data-text="Zimbra Collaboration, sebelumnya dikenal sebagai Zimbra Collaboration Suite
+                    (ZCS), adalah rangkaian koloborasi perangkat lunak yang mencakup server email dan klien web milik
+                    perusahaan Synacor. Pada tanggal 20 April 2022, National Vulnerabilit"> Zimbra Collaboration, sebelumnya dikenal sebagai Zimbra Collaboration Suite
                     (ZCS), adalah rangkaian koloborasi perangkat lunak yang mencakup server email dan klien web milik
                     perusahaan Synacor. Pada tanggal 20 April 2022, National Vulnerabilit</p>
                 <nav class="space-x-4">
