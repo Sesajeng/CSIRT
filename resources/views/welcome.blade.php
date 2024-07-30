@@ -598,107 +598,14 @@
                 <img src="/img/1.png" class="d-block w-100" alt="gambar 1">
             </div>
         </div>
-        <button id="audioButton" class="btn btn-primary side-button">
-            <img id="audioIcon" src="/img/mute.png" alt="Play" />
-        </button>
-
-        <script>
-            let isPlaying = localStorage.getItem('audioStatus') === 'true';
-
-            function speakText(text) {
-                if (isPlaying) {
-                    console.log('Speaking: ', text);
-                    responsiveVoice.speak(text, 'Indonesian Female');
-                }
-            }
-
-            document.getElementById('audioButton').addEventListener('click', function() {
-                const button = this;
-                const icon = document.getElementById('audioIcon');
-                if (isPlaying) {
-                    responsiveVoice.cancel();
-                    icon.src = '/img/mute.png'; // Gambar untuk mode Play
-                    icon.alt = 'Play';
-                    isPlaying = false;
-                    localStorage.setItem('audioStatus', 'false');
-                    responsiveVoice.speak('Mode Suara of', 'Indonesian Female');
-                } else {
-                    icon.src = '/img/play.png'; // Gambar untuk mode Mute
-                    icon.alt = 'Mute';
-                    isPlaying = true;
-                    localStorage.setItem('audioStatus', 'true');
-                    responsiveVoice.speak('Selamat Datang di Jakarta Prov CSIRT', 'Indonesian Female');
-                }
-            });
-
-            document.querySelectorAll('.nav-item').forEach(item => {
-                item.addEventListener('mouseover', function(event) {
-                    const text = item.getAttribute('data-text') || event.target.getAttribute('data-text');
-                    console.log('Hovered over: ', text);
-                    if (text && isPlaying) {
-                        speakText(text);
-                    }
-                });
-            });
-
-            document.getElementById('audioIcon').src = isPlaying ? '/img/play.png' : '/img/mute.png';
-            document.getElementById('audioIcon').alt = isPlaying ? 'Mute' : 'Play';
-        </script>
-        <script>
-            function navigate(page) {
-                switch (page) {
-                    case 'Peringatan_Keamanan':
-                        window.location.href = '{{ route('peringatan_keamanan') }}';
-                        break;
-                    case 'Infografis_Keamanan_Informasi':
-                        window.location.href = '{{ route('infografis_keamanan_informasi') }}';
-                        break;
-                    case 'Peraturan_Kebijakan':
-                        window.location.href = '{{ route('peraturan_kebijakan') }}';
-                        break;
-                    case 'Berita_Siber':
-                        window.location.href = '{{ route('berita_siber') }}';
-                        break;
-                    case 'Statistik_Honeypot':
-                        window.location.href = '{{ route('statistik_honeypot') }}';
-                        break;
-                    case 'Panduan_Teknis':
-                        window.location.href = '{{ route('panduan_teknis') }}';
-                        break;
-                    case 'rfc2350':
-                        window.location.href = '{{ route('rfc2350') }}';
-                        break;
-                    case 'home':
-                        window.location.href = '{{ route('welcome') }}';
-                        break;
-                    case 'profil':
-                        window.location.href = '{{ route('profil') }}';
-                        break;
-                    case 'event':
-                        window.location.href = '{{ route('event') }}';
-                        break;
-                    case 'lapor_insiden_siber':
-                        window.location.href = '{{ route('lapor_insiden_siber') }}';
-                        break;
-                    case 'kontak_kami':
-                        window.location.href = '{{ route('kontak_kami') }}';
-                        break;
-                    case 'selengkapnya1':
-                        window.location.href = '{{ route('selengkapnya1') }}';
-                        break;
-                    default:
-                        console.log('No route defined for: ' + page);
-                }
-            }
-        </script>
+       
         &nbsp;
         <section class="page-section portofolio">
             <div class="container conten">
                 <div class="box-title1">Berita Tekrini </div>
                 <div class="box-title2">
                     <p class="nav-item" onclick="navigate('index_berita')" data-text="Index Berita"
-                        style="color: black;"> Index
-                        Berita ></a>
+                        style="color: black;"> Index Berita ></a>
                     </p>
                 </div>
             </div>
@@ -728,44 +635,49 @@
                 >Peneliti dari NCC Group melaporkan adanya aktivitas malware carbanak dalam
                     sebuah serangan ransomware. Kelompok kejahatan siber Carbanak pertama kali diidentifikasi oleh
                     Kaspersky Lab pada tahun 2015, dan telah berhasil mencuri setidaknya 300 juta</p>
-                <a href="selengkapnya1" class="btn nav-item" onclick="navigate('selengkpanya1')"
+                <a href="selengkapnya1" class="nav-item" onclick="navigate('selengkpanya1')"
                     data-text="Selengkapnya">SELENGKAPNYA</a>
             </div>
         </div>
         <div class="card" style="width: 22rem;">
             <img src="/img/11.jpg" class="card-img-top" alt="Berita 2">
             <div class="card-body">
-                <h6 class="card-title" data-text="Peningkatan Aktivitas Rugmi Malware Loader">Peningkatan Aktivitas
+                <h6 class="nav-item" data-text="Peningkatan Aktivitas Rugmi Malware Loader">Peningkatan Aktivitas
                     Rugmi Malware Loader</h6>
-                <p class="card-text"
+                <p class="nav-item"
                     data-text="2024-01-10 13:49:27 |
                     https://thehackernews.com/2023/12/new-rugmi-malware-loader-surges-with.html">
                     2024-01-10 13:49:27 |
                     https://thehackernews.com/2023/12/new-rugmi-malware-loader-surges-with.html</p>
-                <p class="card-text"
+                <p class="nav-item"
                     data-text="Malware loader baru bernama Rugmi digunakan oleh pelaku ancaman untuk
                     menyebarkan pencuri informasi seperti Lumma Stealer, Vidar, RecordBreaker, dan Rescoms.
                     Perusahaan keamanan siber ESET melacak trojan ini dengan nama Win/TrojanDownloader.Rugmi">
                     Malware loader baru bernama Rugmi digunakan oleh pelaku ancaman untuk
                     menyebarkan pencuri informasi seperti Lumma Stealer, Vidar, RecordBreaker, dan Rescoms.
                     Perusahaan keamanan siber ESET melacak trojan ini dengan nama Win/TrojanDownloader.Rugmi,</p>
-                <a href="selengkapnya1" class="btn nav-item" onclick="navigate('selengkpanya1')"
+                <a href="selengkapnya1" class="nav-item" onclick="navigate('selengkpanya1')"
                     data-text="Selengkapnya">SELENGKAPNYA</a>
             </div>
         </div>
         <div class="card" style="width: 22rem;">
             <img src="/img/12.jpg" class="card-img-top" alt="Berita 3">
             <div class="card-body">
-                <h6 class="card-title"
+                <h6 class="nav-item"
                     data-text="Barracuda Memperbaiki Kerentanan Baru ESG Zero-Day yang Dieksploitasi
                     Oleh
                     Kelompok Peretas UNC4841">
                     Barracuda Memperbaiki Kerentanan Baru ESG Zero-Day yang Dieksploitasi
                     Oleh
                     Kelompok Peretas UNC4841</h6>
-                <p class="card-text" data-text="2024-01-10 13:48:18 | idsirtii.or.id"> 2024-01-10 13:48:18 |
+                <p class="nav-item" data-text="2024-01-10 13:48:18 | idsirtii.or.id"> 2024-01-10 13:48:18 |
                     idsirtii.or.id</p>
-                <p class="card-text" data-text=""> Email Security Gateways (ESG) pada Barracuda Networks kembali
+                <p class="nav-item" data-text="Email Security Gateways (ESG) pada Barracuda Networks kembali
+                    menjadi
+                    korban
+                    eksploitasi para peretas yang menyalahgunakan kerentanan zero-day pada open-source library
+                    untuk
+                    memproses file Excel. Kerentanan yang diidentifikasi sebagai CVE-2023-710"> Email Security Gateways (ESG) pada Barracuda Networks kembali
                     menjadi
                     korban
                     eksploitasi para peretas yang menyalahgunakan kerentanan zero-day pada open-source library
@@ -779,7 +691,7 @@
     <div class="container conten">
         <div class="box-title1">Gallery Kegiatan </div>
         <div class="box-title2">
-            <p class="nav-item" onclick="IndexBerita()" data-text="Index Berita" style="color: black;"> Index
+            <p class="nav-item" onclick="IndexBerita()" data-text="Index Gallery" style="color: black;"> Index
                 Gallery ></a>
             </p>
         </div>
@@ -794,30 +706,30 @@
         <div class="card2" style="width: 16rem;">
             <img src="/img/16.png" class="card-img-top" alt="Berita 1">
             <div class="card-body">
-                <h6 class="
-                lnav-item" data-text="Sosialisasi Security Awareness Keamanan Mobile Computing dan Teleworking">Sosialisasi Security Awareness Keamanan Mobile Computing dan Teleworking
+                <h6 class="nav-item" data-text="Sosialisasi Security Awareness Keamanan Mobile Computing dan Teleworking">Sosialisasi Security Awareness Keamanan Mobile Computing dan Teleworking
                 </h6>
-                <p class="card-text">31-Aug-2023</p>
+                <p class="nav-item" data-text="
+                31 Aguatus 2023">31-Aug-2023</p>
             </div>
         </div>
         <div class="card2" style="width: 16rem;">
             <img src="/img/17.png" class="card-img-top" alt="Berita 2">
             <div class="card-body">
-                <h6 class="card-title">Security Awareness Potensi Ancaman Siber di Tahun 2023</h6>
+                <h6 class="nav-item" data-text="Security Awareness Potensi Ancaman Siber di Tahun 2023">Security Awareness Potensi Ancaman Siber di Tahun 2023</h6>
                 <p class="card-text"> 31-Aug-2023</p>
             </div>
         </div>
         <div class="card2" style="width: 16rem;">
             <img src="/img/14.jpg" class="card-img-top" alt="Berita 3">
             <div class="card-body">
-                <h6 class="card-title">Sosialisasi Security Awareness - Menjaga Keamanan Akses Jaringan</h6>
-                <p class="card-text"> 20-Oct-2022</p>
+                <h6 class="nav-item" data-text="Sosialisasi Security Awareness - Menjaga Keamanan Akses Jaringan">Sosialisasi Security Awareness - Menjaga Keamanan Akses Jaringan</h6>
+                <p class="nav-item" data-text=" 20 Oktober 2022"> 20-Oct-2022</p>
             </div>
         </div>
         <div class="card2" style="width: 16rem;">
             <img src="/img/18.jpg" class="card-img-top" alt="Berita 3">
             <div class="card-body">
-                <h6 class="card-title">Sosialisasi Security Awareness - Workshop Secure Coding #3</h6>
+                <h6 class="nav-item" data-text="Sosialisasi Security Awareness - Workshop Secure Coding #3">Sosialisasi Security Awareness - Workshop Secure Coding #3</h6>
                 <p class="card-text"> 02-Aug-2022</p>
             </div>
         </div>
@@ -834,25 +746,118 @@
         <div class="card2" style="width: 16rem;">
             <img src="/img/17.png" class="card-img-top" alt="Berita 2">
             <div class="card-body">
-                <h6 class="card-title">Security Awareness Potensi Ancaman Siber di Tahun 2023</h6>
+                <h6 class="nav-item" data-text="Security Awareness Potensi Ancaman Siber di Tahun 2023">Security Awareness Potensi Ancaman Siber di Tahun 2023</h6>
                 <p class="card-text"> 31-Aug-2023</p>
             </div>
         </div>
         <div class="card2" style="width: 16rem;">
             <img src="/img/14.jpg" class="card-img-top" alt="Berita 3">
             <div class="card-body">
-                <h6 class="card-title">Sosialisasi Security Awareness - Menjaga Keamanan Akses Jaringan</h6>
+                <h6 class="nav-item" data-text="Sosialisasi Security Awareness - Menjaga Keamanan Akses Jaringan">Sosialisasi Security Awareness - Menjaga Keamanan Akses Jaringan</h6>
                 <p class="card-text"> 20-Oct-2022</p>
             </div>
         </div>
         <div class="card2" style="width: 16rem;">
             <img src="/img/18.jpg" class="card-img-top" alt="Berita 3">
             <div class="card-body">
-                <h6 class="card-title">Sosialisasi Security Awareness - Workshop Secure Coding #3</h6>
+                <h6 class="nav-item" data-text="Sosialisasi Security Awareness - Workshop Secure Coding #3">Sosialisasi Security Awareness - Workshop Secure Coding #3</h6>
                 <p class="card-text"> 02-Aug-2022</p>
             </div>
         </div>
     </div>
+    <button id="audioButton" class="btn btn-primary side-button">
+        <img id="audioIcon" src="/img/mute.png" alt="Play" />
+    </button>
+
+    <script>
+        let isPlaying = localStorage.getItem('audioStatus') === 'true';
+
+        function speakText(text) {
+            if (isPlaying) {
+                console.log('Speaking: ', text);
+                responsiveVoice.speak(text, 'Indonesian Female');
+            }
+        }
+
+        document.getElementById('audioButton').addEventListener('click', function() {
+            const button = this;
+            const icon = document.getElementById('audioIcon');
+            if (isPlaying) {
+                responsiveVoice.cancel();
+                icon.src = '/img/mute.png'; // Gambar untuk mode Play
+                icon.alt = 'Play';
+                isPlaying = false;
+                localStorage.setItem('audioStatus', 'false');
+                responsiveVoice.speak('Mode Suara of', 'Indonesian Female');
+            } else {
+                icon.src = '/img/play.png'; // Gambar untuk mode Mute
+                icon.alt = 'Mute';
+                isPlaying = true;
+                localStorage.setItem('audioStatus', 'true');
+                responsiveVoice.speak('Selamat Datang di Jakarta Prov CSIRT', 'Indonesian Female');
+            }
+        });
+
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.addEventListener('mouseover', function(event) {
+                const text = item.getAttribute('data-text') || event.target.getAttribute('data-text');
+                if (text && isPlaying) {
+                    speakText(text);
+                }
+            });
+        });
+
+        document.getElementById('audioIcon').src = isPlaying ? '/img/play.png' : '/img/mute.png';
+        document.getElementById('audioIcon').alt = isPlaying ? 'Mute' : 'Play';
+    </script>
+    <script>
+        function navigate(page) {
+            switch (page) {
+                case 'Peringatan_Keamanan':
+                    window.location.href = '{{ route('peringatan_keamanan') }}';
+                    break;
+                case 'Infografis_Keamanan_Informasi':
+                    window.location.href = '{{ route('infografis_keamanan_informasi') }}';
+                    break;
+                case 'Peraturan_Kebijakan':
+                    window.location.href = '{{ route('peraturan_kebijakan') }}';
+                    break;
+                case 'Berita_Siber':
+                    window.location.href = '{{ route('berita_siber') }}';
+                    break;
+                case 'Statistik_Honeypot':
+                    window.location.href = '{{ route('statistik_honeypot') }}';
+                    break;
+                case 'Panduan_Teknis':
+                    window.location.href = '{{ route('panduan_teknis') }}';
+                    break;
+                case 'rfc2350':
+                    window.location.href = '{{ route('rfc2350') }}';
+                    break;
+                case 'home':
+                    window.location.href = '{{ route('welcome') }}';
+                    break;
+                case 'profil':
+                    window.location.href = '{{ route('profil') }}';
+                    break;
+                case 'event':
+                    window.location.href = '{{ route('event') }}';
+                    break;
+                case 'lapor_insiden_siber':
+                    window.location.href = '{{ route('lapor_insiden_siber') }}';
+                    break;
+                case 'kontak_kami':
+                    window.location.href = '{{ route('kontak_kami') }}';
+                    break;
+                case 'selengkapnya1':
+                    window.location.href = '{{ route('selengkapnya1') }}';
+                    break;
+                default:
+                    console.log('No route defined for: ' + page);
+            }
+        }
+    </script>
+
     &nbsp;
     <section class="footer-section">
         <div class="container">

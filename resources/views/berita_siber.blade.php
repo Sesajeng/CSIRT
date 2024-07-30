@@ -475,8 +475,7 @@
         </div>
         <div class="content">
             <h2 class="nav-item" data-text="Cek Versi Telegram di Ponsel Android Anda, Kerentanan Zero-Day EvilVideo Mengintai">Cek Versi Telegram di Ponsel Android Anda, Kerentanan Zero-Day EvilVideo Mengintai</h2>
-            <p>2024-07-25 15:47:53 | <a
-                    href="https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/">https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/</a>
+            <p>2024-07-25 15:47:53 | https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/
             </p>
             <p class="nav-item" data-text="Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
                 Berbahaya yang Disamarkan sebagai Video.
@@ -501,8 +500,7 @@
         </div>
         <div class="content">
             <h2 class="nav-item" data-text="Batas Waktu Microsoft Windows—Anda Memiliki 7 Hari Untuk Memperbarui PC Anda">Batas Waktu Microsoft Windows—Anda Memiliki 7 Hari Untuk Memperbarui PC Anda</h2>
-            <p class="nav-item" data-text="2024-07-25 11:57:01 | https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/  ">2024-07-25 11:57:01 | <a
-                    href="https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/">https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/</a>
+            <p class="nav-item" data-text="2024-07-25 11:57:01 | https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/  ">2024-07-25 11:57:01 | https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/
             </p>
             <p class="nav-item" data-text="Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
                 BerbahayaSET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang
@@ -526,8 +524,7 @@
         </div>
         <div class="content">
             <h2>Carbanak Malware Kembali Beroperasi Dalam Serangan Ransomware</h2>
-            <p>2024-01-10 13:50:20 | <a
-                    href="https://securityaffairs.com/156410/malware/carbanak-malware-ransomware-attacks.html</a>
+            <p>2024-01-10 13:50:20 | https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/ 
                     </p>
                     <p>Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
                         Berbahaya yang Disamarkan sebagai Video.</p>

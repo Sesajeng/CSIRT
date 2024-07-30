@@ -440,25 +440,25 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="text-lg font-semibold">Perpres Nomor 47 Tahun 2023</h3>
+                <h5 class="nav-item" data-text="Peraturan Kebijakan - Perpres Nomor 47 Tahun 2023 - TENTANG STRATEGI KEAMANAN SIBER NASIONAL DAN MANAJEMEN KRISIS SIBER">Perpres Nomor 47 Tahun 2023</h5>
                 <p class="text-gray-600">TENTANG STRATEGI KEAMANAN SIBER NASIONAL DAN MANAJEMEN KRISIS SIBER</p>
                 <p class="text-gray-500 text-sm">2023-08-14 09:53:13 | 38x diunduh</p>
             </div>
             <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="text-lg font-semibold">Dokumen PKS BSrE Pemprov DKI 2023</h3>
+                <h5 class="nav-item" data-text="Peraturan Kebijakan - Dokumen PKS BSrE Pemprov DKI 2023 - Pemanfaatan sertifikat elektronik pada sistem elektronik di pemerintah provinsi daerah khusus ibukota jakarta">Dokumen PKS BSrE Pemprov DKI 2023</h5>
                 <p class="text-gray-600">PEMANFAATAN SERTIFIKAT ELEKTRONIK PADA SISTEM ELEKTRONIK DI PEMERINTAH PROVINSI
                     DAERAH KHUSUS IBUKOTA JAKARTA</p>
                 <p class="text-gray-500 text-sm">2023-05-11 13:59:30 | 407x diunduh</p>
             </div>
             <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="text-lg font-semibold">INGUB - Nomor 1 Tahun 2013 Tentang Penggunaan Perangkat Lunak dan
-                    Perangkat keras Berlisesi</h3>
+                <h5 class="nav-item" data-text="Peraturan Kebijakan - INGUB Nomor 1 Tahun 2013 Tentang penggunaan perangkat lunak dan perangkat keras berlisensi - Instruksi gubernur provinsi daerah khusus ibukota jakarta Nomor 1 tahun 2013 tentang penggunaan perangkat lunak dan perangkat keras berlisensi">INGUB - Nomor 1 Tahun 2013 Tentang Penggunaan Perangkat Lunak dan
+                    Perangkat keras Berlisensi</h5>
                 <p class="text-gray-600">Instruksi Gubernur Provinsi Daerah Khusus Ibukota Jakarta Nomor 1 Tahun 2013
-                    Tentang Penggunaan Perangkat Lunak dan Perangkat keras Berlisesi</p>
+                    Tentang Penggunaan Perangkat Lunak dan Perangkat keras Berlisensi</p>
                 <p class="text-gray-500 text-sm">2023-03-13 11:41:21 | 292x diunduh</p>
             </div>
             <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="text-lg font-semibold">PERGUB 43 TH 2022 PEMBANGUNAN PENGEMBANGAN APLIKASI SPBE</h3>
+                <h5 class="nav-item" data-text="Peraturan Kebijakan - Pergub 43 Tahun 2022 pembangunan pengembangan aplikasi SPBE - Tentang pembangunan dan pengembangan aplikasi sistem pemerintah berbasis elektronik">PERGUB 43 TH 2022 PEMBANGUNAN PENGEMBANGAN APLIKASI SPBE</h5>
                 <p class="text-gray-600">TENTANG PEMBANGUNAN DAN PENGEMBANGAN APLIKASI SISTEM PEMERINTAHAN BERBASIS
                     ELEKTRONIK</p>
                 <p class="text-gray-500 text-sm">2023-01-16 09:32:01 | 475x diunduh</p>

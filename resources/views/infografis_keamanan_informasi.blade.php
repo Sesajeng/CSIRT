@@ -519,7 +519,9 @@
             <div class="line">
             </div>
             <div class="card-body">
-                <p class="card-title"> Peringatan Keamanan - Celah berbahaya di temukan di open ssh
+                <p class="nav-item"
+                    data-text=" Infografis Peringatan Keamanan - Celah berbahaya di temukan di open ssh"> Peringatan
+                    Keamanan - Celah berbahaya di temukan di open ssh
                 </p>
             </div>
         </div>
@@ -528,14 +530,16 @@
             <div class="line">
             </div>
             <div class="card-body">
-                <p class="card-title">Waspada penipuan melalui whatsapp berkedok file APK</p>
+                <p class="nav-item" data-text=" Infografis Waspada penipuan melalui whatsapp berkedok file APK">Waspada
+                    penipuan melalui whatsapp berkedok file APK</p>
             </div>
         </div>
         <div class="card2" style="width: 18rem;">
             <img src="/img/24.jpg" class="card-img-top" alt="Berita 3">
             <div class="line"></div>
             <div class="card-body">
-                <p class="card-title">Tips Amam menggunakan Wifi Publik</p>
+                <p class="nav-item" data-text=" Infografis Tips Aman menggunakan Wifi Publik">Tips Aman menggunakan
+                    Wifi Publik</p>
             </div>
         </div>
     </div>

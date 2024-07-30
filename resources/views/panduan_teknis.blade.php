@@ -441,25 +441,25 @@
         <!-- Guide List -->
         <div class="space-y-4">
             <div class="bg-white p-6 rounded-lg shadow-md">
-                <h2 class="text-xl font-bold">Analisa Pola Web Attack - Memahami jenis serangan melalui pola yang
+                <h5 class="nav-item" data-text="Analisa Pola Web Attack - Memahami jenis serangan melalui pola yang dicatat oleh log file - Bidang siber sandi & aplikasi diskominfotik provinsi DKI Jakarta"> <b> Analisa Pola Web Attack - Memahami jenis serangan melalui pola yang
                     dicatat
-                    oleh log file</h2>
+                    oleh log file </b></h5>
                 <p class="text-gray-500">Bidang Siber Sandi & Aplikasi Diskominfotik Provinsi DKI Jakarta</p>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-md">
-                <h2 class="text-xl font-bold">Panduan Penanganan Insiden web defacement judi online</h2>
+                <h5 class="nav-item" data-text="Panduan Penanganan insiden web defacement judi online - BSSN"> <b>Panduan Penanganan Insiden web defacement judi online </b></h5>
                 <p class="text-gray-500">BSSN</p>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-md">
-                <h2 class="text-xl font-bold">Panduan Keamanan Instagram</h2>
+                <h5 class="nav-item" data-text="Panduan Keamanan instagram - BSSN"> <b>Panduan Keamanan Instagram </b></h5>
                 <p class="text-gray-500">BSSN</p>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-md">
-                <h2 class="text-xl font-bold">Panduan Keamaan MyloBot</h2>
+                <h5 class="nav-item" data-text="Panduan Keamanan MyloBot - BSSN"> <b>Panduan Keamaan MyloBot </b></h5>
                 <p class="text-gray-500">BSSN</p>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-md">
-                <h2 class="text-xl font-bold">Panduan Keamanan Twitter</h2>
+                <h5 class="nav-item" data-text="Panduan Keamanan Twitter - BSSN"> <b> Panduan Keamanan Twitter </b></h5>
                 <p class="text-gray-500">BSSN</p>
             </div>
         </div>

@@ -548,7 +548,7 @@
                 <h6 class="nav-item" data-text="Peringatan Keamanan Malware Bitrait">Peringatan Keamanan Malware
                     Bitrait</h6>
                 <p class="nav-item" data-text="2022-05-17 10:48:18 | idsirtii">2022-05-17 10:48:18 | idsirtii</p>
-                <p class="nav-item" data data-text="BitRAT merupakan jenis malware yang diklasifikasikan sebagai Remote Access Trojan
+                <p class="nav-item"  data-text="BitRAT merupakan jenis malware yang diklasifikasikan sebagai Remote Access Trojan
                     (RAT). Kampanye malware BitRAT secara aktif menargetkan pengguna yang mencari aktivator lisensi
                     Windows tidak resmi. Aktivator lisensi tersebut dimaksudkan untuk men">BitRAT merupakan jenis malware yang diklasifikasikan sebagai Remote Access Trojan
                     (RAT). Kampanye malware BitRAT secara aktif menargetkan pengguna yang mencari aktivator lisensi
@@ -565,7 +565,59 @@
             <img src="/img/20.jpg" class="card-img-top" alt="Berita 2">
             <div class="card-body">
                 <h6 class="nav-item" data-text="CVE-2022-27926 KERENTANAN XSS PADA ZIMBRA COLLOBOR">CVE-2022-27926 KERENTANAN XSS PADA ZIMBRA COLLOBOR</h6>
-                <p class="card-text"> 2022-05-17 11:06:06 | idsirtii</p>
+                <p class="nav-item" data-text="2022-05-17 11:06:06 | idsirtii"> 2022-05-17 11:06:06 | idsirtii</p>
+                <p class="nav-item" data-text="Zimbra Collaboration, sebelumnya dikenal sebagai Zimbra Collaboration Suite
+                    (ZCS), adalah rangkaian koloborasi perangkat lunak yang mencakup server email dan klien web milik
+                    perusahaan Synacor. Pada tanggal 20 April 2022, National Vulnerabilit"> Zimbra Collaboration, sebelumnya dikenal sebagai Zimbra Collaboration Suite
+                    (ZCS), adalah rangkaian koloborasi perangkat lunak yang mencakup server email dan klien web milik
+                    perusahaan Synacor. Pada tanggal 20 April 2022, National Vulnerabilit</p>
+                <nav class="space-x-4">
+                    <ul>
+                        <li class="nav-item" onclick="Selengkapnya()" data-text="Selengkapnya">SELENGKAPNYA</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="card" style="width: 22rem;">
+            <img src="/img/21.jpg" class="card-img-top" alt="Berita 3">
+            <div class="card-body">
+                <h6 class="nav-item" data-text="CVE-2022-26809 KERENTANAN REMOTE PROCEDURE CALL"> CVE-2022-26809 KERENTANAN REMOTE PROCEDURE CALL</h6>
+                <p class="nav-item" data-text="2022-05-17 11:11:14 | idsirtii"> 2022-05-17 11:11:14 | idsirtii</p>
+                <p class="nav-item" data-text="Pada 12 April 2022, Microsoft mengeluarkan himbauan beserta patch mengenai
+                    kerentanan Remote Procedure Call Runtime Remote Code Execution. Kerentanan ini mengeksploitasi suatu
+                    integer overflow pada Microsoft Remote Procedure Call (MS-RPC). Kerenta"> Pada 12 April 2022, Microsoft mengeluarkan himbauan beserta patch mengenai
+                    kerentanan Remote Procedure Call Runtime Remote Code Execution. Kerentanan ini mengeksploitasi suatu
+                    integer overflow pada Microsoft Remote Procedure Call (MS-RPC). Kerenta</p>
+                <span class="btn nav-item" data-text="Selengkapnya">SELENGKAPNYA</span>
+            </div>
+        </div>
+    </div>
+    &nbsp;
+    <div class="card-container">
+        <div class="card" style="width: 22rem;">
+            <img src="/img/11.jpg" class="card-img-top" alt="Berita 1">
+            <div class="card-body">
+                <h6 class="nav-item" data-text="Peringatan Keamanan Malware Bitrait">Peringatan Keamanan Malware
+                    Bitrait</h6>
+                <p class="nav-item" data-text="2022-05-17 10:48:18 | idsirtii">2022-05-17 10:48:18 | idsirtii</p>
+                <p class="nav-item" data-text="BitRAT merupakan jenis malware yang diklasifikasikan sebagai Remote Access Trojan
+                    (RAT). Kampanye malware BitRAT secara aktif menargetkan pengguna yang mencari aktivator lisensi
+                    Windows tidak resmi. Aktivator lisensi tersebut dimaksudkan untuk men">BitRAT merupakan jenis malware yang diklasifikasikan sebagai Remote Access Trojan
+                    (RAT). Kampanye malware BitRAT secara aktif menargetkan pengguna yang mencari aktivator lisensi
+                    Windows tidak resmi. Aktivator lisensi tersebut dimaksudkan untuk men</p>
+                <nav class="space-x-4 navbar">
+                    <ul>
+                        <li class="btn nav-item" onclick="navigate('selengkpanya1')" data-text="Selengkapnya">
+                            Selengkapnya</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="card" style="width: 22rem;">
+            <img src="/img/20.jpg" class="card-img-top" alt="Berita 2">
+            <div class="card-body">
+                <h6 class="nav-item" data-text="CVE-2022-27926 KERENTANAN XSS PADA ZIMBRA COLLOBOR">CVE-2022-27926 KERENTANAN XSS PADA ZIMBRA COLLOBOR</h6>
+                <p class="nav-item" data-text="2022-05-17 11:06:06 | idsirtii"> 2022-05-17 11:06:06 | idsirtii</p>
                 <p class="nav-item" data-text="Zimbra Collaboration, sebelumnya dikenal sebagai Zimbra Collaboration Suite
                     (ZCS), adalah rangkaian koloborasi perangkat lunak yang mencakup server email dan klien web milik
                     perusahaan Synacor. Pada tanggal 20 April 2022, National Vulnerabilit"> Zimbra Collaboration, sebelumnya dikenal sebagai Zimbra Collaboration Suite
@@ -581,55 +633,11 @@
         <div class="card" style="width: 22rem;">
             <img src="/img/21.jpg" class="card-img-top" alt="Berita 3">
             <div class="card-body">
-                <h6 class="card-title"> CVE-2022-26809 KERENTANAN REMOTE PROCEDURE CALL</h6>
+                <h6 class="nav-item" data-text="CVE-2022-26809 KERENTANAN REMOTE PROCEDURE CALL"> CVE-2022-26809 KERENTANAN REMOTE PROCEDURE CALL</h6>
                 <p class="card-text"> 2022-05-17 11:11:14 | idsirtii</p>
-                <p class="card-text"> Pada 12 April 2022, Microsoft mengeluarkan himbauan beserta patch mengenai
+                <p class="nav-item" data-text="Pada 12 April 2022, Microsoft mengeluarkan himbauan beserta patch mengenai
                     kerentanan Remote Procedure Call Runtime Remote Code Execution. Kerentanan ini mengeksploitasi suatu
-                    integer overflow pada Microsoft Remote Procedure Call (MS-RPC). Kerenta</p>
-                <span class="btn nav-item" data-text="Selengkapnya">SELENGKAPNYA</span>
-            </div>
-        </div>
-    </div>
-    &nbsp;
-    <div class="card-container">
-        <div class="card" style="width: 22rem;">
-            <img src="/img/11.jpg" class="card-img-top" alt="Berita 1">
-            <div class="card-body">
-                <h6 class="card-title" data-text="Peringatan Keamanan Malware Bitrait">Peringatan Keamanan Malware
-                    Bitrait</h6>
-                <p class="card-text" data-text="Peringatan Keamanan">2022-05-17 10:48:18 | idsirtii</p>
-                <p class="card-text">BitRAT merupakan jenis malware yang diklasifikasikan sebagai Remote Access Trojan
-                    (RAT). Kampanye malware BitRAT secara aktif menargetkan pengguna yang mencari aktivator lisensi
-                    Windows tidak resmi. Aktivator lisensi tersebut dimaksudkan untuk men</p>
-                <nav class="space-x-4 navbar">
-                    <ul>
-                        <li class="btn nav-item" onclick="navigate('selengkpanya1')" data-text="Selengkapnya">
-                            Selengkapnya</li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <div class="card" style="width: 22rem;">
-            <img src="/img/20.jpg" class="card-img-top" alt="Berita 2">
-            <div class="card-body">
-                <h6 class="card-title">CVE-2022-27926 KERENTANAN XSS PADA ZIMBRA COLLOBOR</h6>
-                <p class="card-text"> 2022-05-17 11:06:06 | idsirtii</p>
-                <p class="card-text"> Zimbra Collaboration, sebelumnya dikenal sebagai Zimbra Collaboration Suite
-                    (ZCS), adalah rangkaian koloborasi perangkat lunak yang mencakup server email dan klien web milik
-                    perusahaan Synacor. Pada tanggal 20 April 2022, National Vulnerabilit</p>
-                <nav class="space-x-4">
-                    <ul>
-                        <li class="btn nav-item" onclick="Selengkapnya()" data-text="Selengkapnya">SELENGKAPNYA</li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <div class="card" style="width: 22rem;">
-            <img src="/img/21.jpg" class="card-img-top" alt="Berita 3">
-            <div class="card-body">
-                <h6 class="card-title"> CVE-2022-26809 KERENTANAN REMOTE PROCEDURE CALL</h6>
-                <p class="card-text"> 2022-05-17 11:11:14 | idsirtii</p>
-                <p class="card-text"> Pada 12 April 2022, Microsoft mengeluarkan himbauan beserta patch mengenai
+                    integer overflow pada Microsoft Remote Procedure Call (MS-RPC). Kerenta"> Pada 12 April 2022, Microsoft mengeluarkan himbauan beserta patch mengenai
                     kerentanan Remote Procedure Call Runtime Remote Code Execution. Kerentanan ini mengeksploitasi suatu
                     integer overflow pada Microsoft Remote Procedure Call (MS-RPC). Kerenta</p>
                 <span class="btn nav-item" data-text="Selengkapnya">SELENGKAPNYA</span>

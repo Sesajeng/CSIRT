@@ -465,6 +465,111 @@
             <input type="text" class="search-box" placeholder="Search...">
         </div>
     </div>
+    <div class="card-container1">
+        <div class="card2" style="width: 18rem;">
+            <img src="/img/15.jpg" class="card-img-top" alt="Berita 1">
+            <div class="line">
+            </div>
+            <div class="card-body">
+                <h5 class="nav-item"
+                    data-text="Sosialisasi Security Awareness - Pencegahan dan Penanganan Serangan Ransomware">
+                    Sosialisasi Security Awareness - Pencegahan dan Penanganan Serangan Ransomware
+                </h5>
+            </div>
+        </div>
+        <div class="card2" style="width: 18rem;">
+            <img src="/img/16.jpg" class="card-img-top" alt="Berita 2">
+            <div class="line">
+            </div>
+            <div class="card-body">
+                <h5 class="nav-item"
+                    data-text="Sosialisasi Security Awareness - Keamanan Mobile Computing dan Teleworking">Sosialisasi
+                    Security Awareness - Keamanan Mobile Computing dan Teleworking</h5>
+            </div>
+        </div>
+        <div class="card2" style="width: 18rem;">
+            <img src="/img/10.jpg" class="card-img-top" alt="Berita 3">
+            <div class="line"></div>
+            <div class="card-body">
+                <h5 class="nav-item" data-text="Edukasi Pemanfaatan - Index Keamanan Informasi (Indeks Kami)">
+                    Edukasi Pemanfaatan - Index Keamanan Informasi (Indeks Kami)</h5>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card-container1">
+        <div class="card2" style="width: 18rem;">
+            <img src="/img/29.png" class="card-img-top" alt="Berita 1">
+            <div class="line">
+            </div>
+            <div class="card-body">
+                <h5 class="nav-item"
+                    data-text="Security Awareness : Pengelolaan insiden Siber">
+                    Security Awareness : Pengelolaan insiden Siber
+                </h5>
+            </div>
+        </div>
+        <div class="card2" style="width: 18rem;">
+            <img src="/img/25.jpg" class="card-img-top" alt="Berita 2">
+            <div class="line">
+            </div>
+            <div class="card-body">
+                <h5 class="nav-item"
+                    data-text="Sosialisasi Security Awareness">
+                    Sosialisasi Security Awareness</h5>
+            </div>
+        </div>
+        <div class="card2" style="width: 18rem;">
+            <img src="/img/26.jpg" class="card-img-top" alt="Berita 3">
+            <div class="line"></div>
+            <div class="card-body">
+                <h5 class="nav-item" data-text="Sosialisasi Penilaian Mandiri - Terkait Kategorisasi Sistem Elektronik">
+                    Sosialisasi Penilaian Mandiri - Terkait Kategorisasi Sistem Elektronikh5>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    &nbsp;
+    <section class="footer-section">
+        <div class="container">
+            <div class="footer-column">
+                <img src="/img/Logo.png" alt="CSIRT Logo">
+                <p>Tim Tanggap Insiden Siber (Computer Security Incident Response Team) Pemerintah Provinsi DKI Jakarta
+                    yang selanjutnya disebut dengan JakartaProv-CSIRT merupakan CSIRT Pemprov DKI Jakarta.</p>
+                <p>Tim JakartaProv-CSIRT ditetapkan oleh Sekretaris Daerah Provinsi DKI Jakarta dalam Keputusan Penjabat
+                    Sekretaris Daerah DKI Jakarta Nomor: 41 Tahun 2020 Tentang Compu</p>
+                <button>SELENGKAPNYA</button>
+            </div>
+            <div class="footer-column">
+                <h3>Visitor</h3>
+                <p>Pengunjung Online: 4</p>
+                <p>Hari ini: 15</p>
+                <p>Tanggal: 24-07-2024</p>
+                <p>Total Pengunjung: 47322</p>
+            </div>
+            <div class="footer-column">
+                <h3>Link</h3>
+                <ul>
+                    <li><a href="#">Profil</a></li>
+                    <li><a href="#">Peringatan Keamanan</a></li>
+                    <li><a href="#">Event</a></li>
+                    <li><a href="#">Kontak Kami</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>JakartaProv-CSIRT</h3>
+                <p> Siber, Sandi dan Aplikasi Diskominfotik Provinsi DKI Jakarta Balaikota Blok H Lantai 13, JL Merdeka
+                    Selatan 8-9, Jakarta Pusat 10110</p>
+                <p><i class="fa fa-phone"> </i> 081388870152</p>
+                <p><i class="fa fa-envelope"></i> csirt@jakarta.go.id</p>
+                <div class="social-media">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <button id="audioButton" class="btn btn-primary side-button">
         <img id="audioIcon" src="/img/mute.png" alt="Play" />
@@ -556,77 +661,6 @@
             }
         }
     </script>
-    <div class="card-container1">
-        <div class="card2" style="width: 18rem;">
-            <img src="/img/15.jpg" class="card-img-top" alt="Berita 1">
-            <div class="line">
-            </div>
-            <div class="card-body">
-                <h5 class="card-title"
-                    data-text="Sosialisasi Security Awareness - Pencegahan dan Penanganan Serangan Ransomware">
-                    Sosialisasi Security Awareness - Pencegahan dan Penanganan Serangan Ransomware
-                </h5>
-            </div>
-        </div>
-        <div class="card2" style="width: 18rem;">
-            <img src="/img/16.jpg" class="card-img-top" alt="Berita 2">
-            <div class="line">
-            </div>
-            <div class="card-body">
-                <h5 class="card-title"
-                    data-text="Sosialisasi Security Awareness - Keamanan Mobile Computing dan Teleworking">Sosialisasi
-                    Security Awareness - Keamanan Mobile Computing dan Teleworking</h5>
-            </div>
-        </div>
-        <div class="card2" style="width: 18rem;">
-            <img src="/img/10.jpg" class="card-img-top" alt="Berita 3">
-            <div class="line"></div>
-            <div class="card-body">
-                <h5 class="card-title" data-text="Edukasi Pemanfaatan - Index Keamanan Informasi (Indeks Kami)">
-                    Edukasi Pemanfaatan - Index Keamanan Informasi (Indeks Kami)</h5>
-            </div>
-        </div>
-    </div>
-    &nbsp;
-    <section class="footer-section">
-        <div class="container">
-            <div class="footer-column">
-                <img src="/img/Logo.png" alt="CSIRT Logo">
-                <p>Tim Tanggap Insiden Siber (Computer Security Incident Response Team) Pemerintah Provinsi DKI Jakarta
-                    yang selanjutnya disebut dengan JakartaProv-CSIRT merupakan CSIRT Pemprov DKI Jakarta.</p>
-                <p>Tim JakartaProv-CSIRT ditetapkan oleh Sekretaris Daerah Provinsi DKI Jakarta dalam Keputusan Penjabat
-                    Sekretaris Daerah DKI Jakarta Nomor: 41 Tahun 2020 Tentang Compu</p>
-                <button>SELENGKAPNYA</button>
-            </div>
-            <div class="footer-column">
-                <h3>Visitor</h3>
-                <p>Pengunjung Online: 4</p>
-                <p>Hari ini: 15</p>
-                <p>Tanggal: 24-07-2024</p>
-                <p>Total Pengunjung: 47322</p>
-            </div>
-            <div class="footer-column">
-                <h3>Link</h3>
-                <ul>
-                    <li><a href="#">Profil</a></li>
-                    <li><a href="#">Peringatan Keamanan</a></li>
-                    <li><a href="#">Event</a></li>
-                    <li><a href="#">Kontak Kami</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>JakartaProv-CSIRT</h3>
-                <p> Siber, Sandi dan Aplikasi Diskominfotik Provinsi DKI Jakarta Balaikota Blok H Lantai 13, JL Merdeka
-                    Selatan 8-9, Jakarta Pusat 10110</p>
-                <p><i class="fa fa-phone"> </i> 081388870152</p>
-                <p><i class="fa fa-envelope"></i> csirt@jakarta.go.id</p>
-                <div class="social-media">
-                </div>
-            </div>
-        </div>
-    </section>
-
-
 
     <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
 </body>
