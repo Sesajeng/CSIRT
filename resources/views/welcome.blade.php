@@ -550,6 +550,55 @@
         .btn:hover {
             background-color: rgba(0, 0, 0, 0.1);
         }
+
+
+        /* Default styles */
+        body {
+            background-color: white;
+            color: black;
+        }
+
+        .accessibility-toolbar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .accessibility-button {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        /* High contrast styles */
+        .high-contrast {
+            background-color: black !important;
+            color: white !important;
+        }
+
+        .high-contrast a {
+            color: yellow !important;
+        }
+
+        .high-contrast .navbar {
+            background-color: blue !important;
+        }
+
+        .high-contrast .card {
+            background-color: #333 !important;
+            color: white !important;
+        }
+
+        .high-contrast .btn {
+            background-color: white !important;
+            color: black !important;
+        }
     </style>
 </head>
 
@@ -598,7 +647,7 @@
                 <img src="/img/1.png" class="d-block w-100" alt="gambar 1">
             </div>
         </div>
-       
+
         &nbsp;
         <section class="page-section portofolio">
             <div class="container conten">
@@ -620,19 +669,18 @@
         <div class="card" style="width: 22rem;">
             <img src="/img/3.png" class="card-img-top" alt="Berita 1">
             <div class="card-body">
-                <h6 class="nav-item" 
-                data-text="Carbanak Malware Kembali Beroperasi Dalam Serangan Ransomware">
+                <h6 class="nav-item" data-text="Carbanak Malware Kembali Beroperasi Dalam Serangan Ransomware">
                     Carbanak Malware Kembali Beroperasi Dalam Serangan Ransomware</h6>
                 <p class="nav-item"
                     data-text="2024-01-10 13:50:20 |
                 https://securityaffairs.com/156410/malware/carbanak-malware-ransomware-attacks.html">
                     2024-01-10 13:50:20 |
                     https://securityaffairs.com/156410/malware/carbanak-malware-ransomware-attacks.html</p>
-                <p class="nav-item" 
-                data-text="Peneliti dari NCC Group melaporkan adanya aktivitas malware carbanak dalam
+                <p class="nav-item"
+                    data-text="Peneliti dari NCC Group melaporkan adanya aktivitas malware carbanak dalam
                     sebuah serangan ransomware. Kelompok kejahatan siber Carbanak pertama kali diidentifikasi oleh
-                    Kaspersky Lab pada tahun 2015, dan telah berhasil mencuri setidaknya 300 juta"
-                >Peneliti dari NCC Group melaporkan adanya aktivitas malware carbanak dalam
+                    Kaspersky Lab pada tahun 2015, dan telah berhasil mencuri setidaknya 300 juta">
+                    Peneliti dari NCC Group melaporkan adanya aktivitas malware carbanak dalam
                     sebuah serangan ransomware. Kelompok kejahatan siber Carbanak pertama kali diidentifikasi oleh
                     Kaspersky Lab pada tahun 2015, dan telah berhasil mencuri setidaknya 300 juta</p>
                 <a href="selengkapnya1" class="nav-item" onclick="navigate('selengkpanya1')"
@@ -672,12 +720,14 @@
                     Kelompok Peretas UNC4841</h6>
                 <p class="nav-item" data-text="2024-01-10 13:48:18 | idsirtii.or.id"> 2024-01-10 13:48:18 |
                     idsirtii.or.id</p>
-                <p class="nav-item" data-text="Email Security Gateways (ESG) pada Barracuda Networks kembali
+                <p class="nav-item"
+                    data-text="Email Security Gateways (ESG) pada Barracuda Networks kembali
                     menjadi
                     korban
                     eksploitasi para peretas yang menyalahgunakan kerentanan zero-day pada open-source library
                     untuk
-                    memproses file Excel. Kerentanan yang diidentifikasi sebagai CVE-2023-710"> Email Security Gateways (ESG) pada Barracuda Networks kembali
+                    memproses file Excel. Kerentanan yang diidentifikasi sebagai CVE-2023-710">
+                    Email Security Gateways (ESG) pada Barracuda Networks kembali
                     menjadi
                     korban
                     eksploitasi para peretas yang menyalahgunakan kerentanan zero-day pada open-source library
@@ -706,7 +756,9 @@
         <div class="card2" style="width: 16rem;">
             <img src="/img/16.png" class="card-img-top" alt="Berita 1">
             <div class="card-body">
-                <h6 class="nav-item" data-text="Sosialisasi Security Awareness Keamanan Mobile Computing dan Teleworking">Sosialisasi Security Awareness Keamanan Mobile Computing dan Teleworking
+                <h6 class="nav-item"
+                    data-text="Sosialisasi Security Awareness Keamanan Mobile Computing dan Teleworking">Sosialisasi
+                    Security Awareness Keamanan Mobile Computing dan Teleworking
                 </h6>
                 <p class="nav-item" data-text="
                 31 Aguatus 2023">31-Aug-2023</p>
@@ -715,21 +767,24 @@
         <div class="card2" style="width: 16rem;">
             <img src="/img/17.png" class="card-img-top" alt="Berita 2">
             <div class="card-body">
-                <h6 class="nav-item" data-text="Security Awareness Potensi Ancaman Siber di Tahun 2023">Security Awareness Potensi Ancaman Siber di Tahun 2023</h6>
+                <h6 class="nav-item" data-text="Security Awareness Potensi Ancaman Siber di Tahun 2023">Security
+                    Awareness Potensi Ancaman Siber di Tahun 2023</h6>
                 <p class="card-text"> 31-Aug-2023</p>
             </div>
         </div>
         <div class="card2" style="width: 16rem;">
             <img src="/img/14.jpg" class="card-img-top" alt="Berita 3">
             <div class="card-body">
-                <h6 class="nav-item" data-text="Sosialisasi Security Awareness - Menjaga Keamanan Akses Jaringan">Sosialisasi Security Awareness - Menjaga Keamanan Akses Jaringan</h6>
+                <h6 class="nav-item" data-text="Sosialisasi Security Awareness - Menjaga Keamanan Akses Jaringan">
+                    Sosialisasi Security Awareness - Menjaga Keamanan Akses Jaringan</h6>
                 <p class="nav-item" data-text=" 20 Oktober 2022"> 20-Oct-2022</p>
             </div>
         </div>
         <div class="card2" style="width: 16rem;">
             <img src="/img/18.jpg" class="card-img-top" alt="Berita 3">
             <div class="card-body">
-                <h6 class="nav-item" data-text="Sosialisasi Security Awareness - Workshop Secure Coding #3">Sosialisasi Security Awareness - Workshop Secure Coding #3</h6>
+                <h6 class="nav-item" data-text="Sosialisasi Security Awareness - Workshop Secure Coding #3">
+                    Sosialisasi Security Awareness - Workshop Secure Coding #3</h6>
                 <p class="card-text"> 02-Aug-2022</p>
             </div>
         </div>
@@ -738,7 +793,9 @@
         <div class="card2" style="width: 16rem;">
             <img src="/img/16.png" class="card-img-top" alt="Berita 1">
             <div class="card-body">
-                <h6 class="nav-item" data-text="Sosialisasi Security Awareness Keamanan Mobile Computing dan Teleworking">Sosialisasi Security Awareness Keamanan Mobile Computing dan Teleworking
+                <h6 class="nav-item"
+                    data-text="Sosialisasi Security Awareness Keamanan Mobile Computing dan Teleworking">Sosialisasi
+                    Security Awareness Keamanan Mobile Computing dan Teleworking
                 </h6>
                 <p class="nav-item" data-text="31-Aug-2023">31-Aug-2023</p>
             </div>
@@ -746,21 +803,24 @@
         <div class="card2" style="width: 16rem;">
             <img src="/img/17.png" class="card-img-top" alt="Berita 2">
             <div class="card-body">
-                <h6 class="nav-item" data-text="Security Awareness Potensi Ancaman Siber di Tahun 2023">Security Awareness Potensi Ancaman Siber di Tahun 2023</h6>
+                <h6 class="nav-item" data-text="Security Awareness Potensi Ancaman Siber di Tahun 2023">Security
+                    Awareness Potensi Ancaman Siber di Tahun 2023</h6>
                 <p class="card-text"> 31-Aug-2023</p>
             </div>
         </div>
         <div class="card2" style="width: 16rem;">
             <img src="/img/14.jpg" class="card-img-top" alt="Berita 3">
             <div class="card-body">
-                <h6 class="nav-item" data-text="Sosialisasi Security Awareness - Menjaga Keamanan Akses Jaringan">Sosialisasi Security Awareness - Menjaga Keamanan Akses Jaringan</h6>
+                <h6 class="nav-item" data-text="Sosialisasi Security Awareness - Menjaga Keamanan Akses Jaringan">
+                    Sosialisasi Security Awareness - Menjaga Keamanan Akses Jaringan</h6>
                 <p class="card-text"> 20-Oct-2022</p>
             </div>
         </div>
         <div class="card2" style="width: 16rem;">
             <img src="/img/18.jpg" class="card-img-top" alt="Berita 3">
             <div class="card-body">
-                <h6 class="nav-item" data-text="Sosialisasi Security Awareness - Workshop Secure Coding #3">Sosialisasi Security Awareness - Workshop Secure Coding #3</h6>
+                <h6 class="nav-item" data-text="Sosialisasi Security Awareness - Workshop Secure Coding #3">
+                    Sosialisasi Security Awareness - Workshop Secure Coding #3</h6>
                 <p class="card-text"> 02-Aug-2022</p>
             </div>
         </div>
@@ -858,6 +918,18 @@
         }
     </script>
 
+    {{-- <div class="accessibility-toolbar">
+        <button class="accessibility-button" id="contrast">Contrast +</button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('contrast').addEventListener('click', function() {
+                document.body.classList.toggle('high-contrast');
+            });
+        });
+    </script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
+ --}}
     &nbsp;
     <section class="footer-section">
         <div class="container">
@@ -896,6 +968,11 @@
             </div>
         </div>
     </section>
+
+
+
+
+
     <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
 </body>
 

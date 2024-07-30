@@ -512,8 +512,7 @@
         <div class="content">
             <h2 class="nav-item" 
             data-text="Cek Versi Telegram di Ponsel Android Anda, Kerentanan Zero-Day EvilVideo Mengintai">Cek Versi Telegram di Ponsel Android Anda, Kerentanan Zero-Day EvilVideo Mengintai</h2>
-            <p>2024-07-25 15:47:53 | <a
-                    href="https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/">https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/</a>
+            <p>2024-07-25 15:47:53 | https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/</a>
             </p>
             <p class="nav-item" data-text="Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
                 Berbahaya yang Disamarkan sebagai Video. 
