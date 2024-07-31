@@ -289,6 +289,99 @@
             font-size: 17px;
         }
 
+
+
+        .footer-section {
+            background-color: orange;
+            /* Ganti dengan warna background sesuai */
+            padding: 20px 0;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            background-image: url(/img/footer.png);
+        }
+
+        .footer-section .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-column {
+            flex: 1;
+            padding: 0 20px;
+            min-width: 200px;
+        }
+
+        .footer-column h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .footer-column p,
+        .footer-column ul {
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 5px;
+        }
+
+        .footer-column ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-column button {
+            background-color: #de8300;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .footer-column button:hover {
+            background-color: #dfe6e9;
+        }
+
+        .social-media {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-media a img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .footer-column img {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 1px solid #ccc;
+            background-color: #fff;
+
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 5px;
+            justify-content: center;
+        }
+
         .btn img {
             width: 24px;
             height: 24px;
@@ -296,6 +389,64 @@
 
         .btn:hover {
             background-color: rgba(0, 0, 0, 0.1);
+        }
+
+
+        .container4 {
+            width: 80%;
+            max-width: 1200px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-start;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-section {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-section img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .content-section {
+            flex: 2;
+            padding: 20px;
+        }
+
+        .content-section h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .content-section .meta {
+            margin: 10px 0;
+            color: #888;
+            font-size: 14px;
+        }
+
+        .content-section .meta a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .content-section .meta a:hover {
+            text-decoration: underline;
+        }
+
+        .content-section p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -340,20 +491,152 @@
                 </nav>
             </div>
     </div>
-
     </div>
     </header>
     </div>
     <div class="carousel-item active">
-        <img src="/img/5.png" class="d-block w-100" alt="gambar 1">
+        <img src="/img/24.png" class="d-block w-100" alt="gambar 1">
     </div>
-    <div class="search-container">
-        <input type="text" class="search-box" placeholder="Search...">
-    </div>
-    <footer class="footer">
-        <div class="container">
+    &nbsp;
+    <div class="container4 mx-auto flex justify-between items-center">
+        <div class="image-section">
+            <img src="/img/1.jpeg" alt="Display Image">
         </div>
-    </footer>
+        <div class="content-section">
+            <h2 class="nav-item"
+                data-text="Batas Waktu Microsoft Windows—Anda Memiliki 7 Hari Untuk Memperbarui PC Anda  Anda Memiliki 7 Hari Untuk Memperbarui PC Anda
+            2024-07-25 11:57:01 | https://www.forbes.com/sites/zakdoffman/2024/07/11/microsoft-warning-21-days-to-update-or-stop-using-windows
+            Anda Memiliki 6 Hari Untuk Memperbarui PC Anda
+
+Batas Waktu Microsoft Windows—Anda Memiliki 6 Hari Untuk Memperbarui PC Anda.
+
+Pengguna Microsoft Windows tiba-tiba berisiko terkena trik “previously unknown” untuk menyerang PC mereka. Ancaman ini sekarang sedang dieksploitasi secara aktif melalui kerentanan tersembunyi di sistem "Jendela",
+                yang baru saja ditambal oleh Microsoft. Tim peneliti di Check Point memperingatkan bahwa “attackers
+                menggunakan file Shortcut Internet Windows khusus, yang, ketika diklik, memanggil Internet Explorer (IE)
+                yang sudah pensiun untuk mengunjungi URL yang dikendalikan penyerang… Dengan membuka URL menggunakan
+                browser IE, bukan yang modern dan browser Chrome/Edge yang jauh lebih aman di Windows, attackers
+                memperoleh keuntungan signifikan dalam mengeksploitasi komputer korban, meskipun komputer tersebut
+                menjalankan sistem operasi Windows 10/11 modern.” Ancaman ini cukup serius sehingga pemerintah AS baru
+                saja menambahkannya ke katalog Kerentanan Eksploitasi yang Diketahui , memperingatkan bahwa Microsoft
+                Windows mengandung “kerentanan spoofing yang berdampak besar terhadap kerahasiaan, integritas, dan
+                ketersediaan.” CISA, badan keamanan sibernya pemerintah US, telah mengamanatkan semua sistem Windows
+                yang digunakan oleh pegawai federal untuk diperbarui atau dimatikan dalam waktu 21 hari (terhitung dari
+                tanggal 7 Juli 2024) dan paling lambat tanggal 30 Juli. Mengingat Check Point melaporkan bahwa “threat
+                actors telah menggunakan teknik penyerangan selama beberapa waktu, ” Penting bagi semua organisasi untuk
+                tidak mengabaikan dan menerapkan woro-woro CISA tersebut. Banyak pengguna Windows yang merasa tidak
+                senang dengan hal ini karena IE sudah lama pensiun. “IE adalah browser web yang sudah ketinggalan zaman
+                dan terkenal karena ketidakamanannya,” kata Check Point, meskipun “IE masih merupakan bagian dari OS
+                Windows.” Pengguna tidak boleh membuka URL dengan IE kecuali diminta secara khusus. Namun, “with the
+                mhtml trick”, korban mengeklik tautan karena mengira tautan tersebut membuka PDF, bukan pintasan IE.
+                Kerentanan ini— CVE-2024-38112 —bukan satu-satunya patch Microsoft Windows yang masuk daftar CISA dengan
+                batas waktu 30 Juli. Pemerintah juga menambahkan CVE-2024-38080 , memperingatkan bahwa “Microsoft
+                Windows Hyper-V mengandung kerentanan eskalasi hak istimewa yang memungkinkan penyerang lokal dengan
+                izin pengguna untuk mendapatkan hak istimewa SISTEM.” Memperbarui Windows sekarang jelas akan mengatasi
+                keduanya, serta 137 patch lebih lanjut dalam pembaruan Microsoft bulan Juli yang menonjol.
+                Jadi "semua pengguna Windows [harus] segera menerapkan patch Microsoft untuk melindungi diri mereka sendiri.”
+
+Diterjemahkan secara bebas dari sumber dibawah ini. Sekarang pilihan ada ditangan anda, mau aman menggunakan operating system " Jendela", jangan abaikan woro-woro ini, atau migrasi ke operating system lainnya
+                yang memang secure by
+                design. ">Batas Waktu Microsoft Windows—Anda Memiliki 7 Hari Untuk Memperbarui PC Anda</h2>
+            <div class="meta">
+                <span>2024-07-25 11:57:01 | https://www.forbes.com/sites/zakdoffman/2024/07/11/microsoft-warning-21-days-to-update-or-stop-using-windows/</a>
+            </div>
+            <p>Anda Memiliki 6 Hari Untuk Memperbarui PC Anda </p>
+
+
+                <p> Batas Waktu Microsoft Windows—Anda Memiliki 6 Hari Untuk Memperbarui PC Anda. </p>
+                <p>Pengguna Microsoft Windows tiba-tiba berisiko terkena trik “previously unknown” untuk menyerang PC mereka. Ancaman ini sekarang sedang dieksploitasi secara aktif melalui kerentanan tersembunyi di sistem "
+                Jendela", yang baru saja ditambal oleh Microsoft. </p>
+
+                <p>Tim peneliti di Check Point memperingatkan bahwa “attackers menggunakan file Shortcut Internet
+                    Windows khusus, yang, ketika diklik, memanggil Internet Explorer (IE) yang sudah pensiun untuk
+                    mengunjungi URL yang dikendalikan penyerang… Dengan membuka URL menggunakan browser IE, bukan yang
+                    modern dan browser Chrome/Edge yang jauh lebih aman di Windows, attackers memperoleh keuntungan
+                    signifikan dalam mengeksploitasi komputer korban, meskipun komputer tersebut menjalankan sistem
+                    operasi Windows 10/11 modern.” </p>
+
+                <p>Ancaman ini cukup serius sehingga pemerintah AS baru saja menambahkannya ke katalog Kerentanan
+                    Eksploitasi yang Diketahui , memperingatkan bahwa Microsoft Windows mengandung “kerentanan spoofing
+                    yang berdampak besar terhadap kerahasiaan, integritas, dan ketersediaan.” </p>
+
+                <p> CISA, badan keamanan sibernya pemerintah US, telah mengamanatkan semua sistem Windows yang digunakan
+                    oleh pegawai federal untuk diperbarui atau dimatikan dalam waktu 21 hari (terhitung dari tanggal 7
+                    Juli 2024) dan paling lambat tanggal 30 Juli. Mengingat Check Point melaporkan bahwa “threat actors
+                    telah menggunakan teknik penyerangan selama beberapa waktu, ” Penting bagi semua organisasi untuk
+                    tidak mengabaikan dan menerapkan woro-woro CISA tersebut. </p>
+
+                <p> Banyak pengguna Windows yang merasa tidak senang dengan hal ini karena IE sudah lama pensiun. “IE
+                    adalah browser web yang sudah ketinggalan zaman dan terkenal karena ketidakamanannya,” kata Check
+                    Point, meskipun “IE masih merupakan bagian dari OS Windows.” Pengguna tidak boleh membuka URL dengan
+                    IE kecuali diminta secara khusus. Namun, “with the mhtml trick”, korban mengeklik tautan karena
+                    mengira tautan tersebut membuka PDF, bukan pintasan IE. </p>
+
+                <p>Kerentanan ini— CVE-2024-38112 —bukan satu-satunya patch Microsoft Windows yang masuk daftar CISA
+                    dengan batas waktu 30 Juli. Pemerintah juga menambahkan CVE-2024-38080 , memperingatkan bahwa
+                    “Microsoft Windows Hyper-V mengandung kerentanan eskalasi hak istimewa yang memungkinkan penyerang
+                    lokal dengan izin pengguna untuk mendapatkan hak istimewa SISTEM.” Memperbarui Windows sekarang
+                    jelas akan mengatasi keduanya, serta 137 patch lebih lanjut dalam pembaruan Microsoft bulan Juli
+                    yang menonjol. Jadi "semua pengguna Windows [harus] segera menerapkan patch Microsoft untuk
+                    melindungi diri mereka sendiri.” </p>
+
+                <p>Diterjemahkan secara bebas dari sumber dibawah ini. Sekarang pilihan ada ditangan anda, mau aman
+                    menggunakan operating system "Jendela", jangan abaikan woro-woro ini, atau migrasi ke operating
+                    system lainnya yang memang secure by design.</p>
+                <img src="/img/suara.png" alt="Icon" style="width: 60px; height: 58px;" id="soundImage">
+                <audio id="soundEffect">
+                    <source src="/path/to/sound.mp3" type="audio/mpeg">
+                    <source src="/path/to/sound.ogg" type="audio/ogg">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <script>
+                    document.getElementById("soundImage").addEventListener("click", function() {
+                        var audio = document.getElementById("soundEffect");
+                        audio.play();
+                    });
+                </script>
+        </div>
+    </div>
+    </div>
+
+    &nbsp;
+    <section class="footer-section">
+        <div class="container">
+            <div class="footer-column">
+                <img src="/img/Logo.png" alt="CSIRT Logo">
+                <p>Tim Tanggap Insiden Siber (Computer Security Incident Response Team) Pemerintah Provinsi DKI Jakarta
+                    yang selanjutnya disebut dengan JakartaProv-CSIRT merupakan CSIRT Pemprov DKI Jakarta.</p>
+                <p>Tim JakartaProv-CSIRT ditetapkan oleh Sekretaris Daerah Provinsi DKI Jakarta dalam Keputusan Penjabat
+                    Sekretaris Daerah DKI Jakarta Nomor: 41 Tahun 2020 Tentang Compu</p>
+                <button>SELENGKAPNYA</button>
+            </div>
+            <div class="footer-column">
+                <h3>Visitor</h3>
+                <p>Pengunjung Online: 4</p>
+                <p>Hari ini: 15</p>
+                <p>Tanggal: 24-07-2024</p>
+                <p>Total Pengunjung: 47322</p>
+            </div>
+            <div class="footer-column">
+                <h3>Link</h3>
+                <ul>
+                    <li><a href="#">Profil</a></li>
+                    <li><a href="#">Peringatan Keamanan</a></li>
+                    <li><a href="#">Event</a></li>
+                    <li><a href="#">Kontak Kami</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>JakartaProv-CSIRT</h3>
+                <p> Siber, Sandi dan Aplikasi Diskominfotik Provinsi DKI Jakarta Balaikota Blok H Lantai 13, JL Merdeka
+                    Selatan 8-9, Jakarta Pusat 10110</p>
+                <p><i class="fa fa-phone"> </i> 081388870152</p>
+                <p><i class="fa fa-envelope"></i> csirt@jakarta.go.id</p>
+                <div class="social-media">
+                </div>
+            </div>
+        </div>
+    </section>
     <button id="audioButton" class="btn btn-primary side-button">
         <img id="audioIcon" src="/img/mute.png" alt="Play" />
     </button>
@@ -438,6 +721,9 @@
                     break;
                 case 'kontak_kami':
                     window.location.href = '{{ route('kontak_kami') }}';
+                    break;
+                case 'selengkapnya1':
+                    window.location.href = '{{ route('selengkapnya1') }}';
                     break;
                 case 'Gallery':
                     window.location.href = '{{ route('gallery') }}';

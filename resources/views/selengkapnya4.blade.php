@@ -390,6 +390,64 @@
         .btn:hover {
             background-color: rgba(0, 0, 0, 0.1);
         }
+
+
+        .container4 {
+            width: 80%;
+            max-width: 1200px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-start;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-section {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-section img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .content-section {
+            flex: 2;
+            padding: 20px;
+        }
+
+        .content-section h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .content-section .meta {
+            margin: 10px 0;
+            color: #888;
+            font-size: 14px;
+        }
+
+        .content-section .meta a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .content-section .meta a:hover {
+            text-decoration: underline;
+        }
+
+        .content-section p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+        }
     </style>
 </head>
 
@@ -415,9 +473,9 @@
                                 <span class="btn nav-item" onclick="navigate('Berita_Siber')"
                                     data-text="Berita Siber (Cyber Blitz)">Berita Siber (Cyber Blitz)</span>
                                 <span class="btn nav-item" onclick="navigate('Gallery')"
-                                    data-text="Gallery">Gallery</span>
-                                <span class="btn nav-item" onclick="navigate('Statistik_Honeypot')"
-                                    data-text="Statistik (Honeypot)">Statistik (Honeypot)</span>
+                                    data-text="Gallery">Gallery</span> <span class="btn nav-item"
+                                    onclick="navigate('Statistik_Honeypot')" data-text="Statistik (Honeypot)">Statistik
+                                    (Honeypot)</span>
                                 <span class="btn nav-item" onclick="navigate('Panduan_Teknis')"
                                     data-text="Panduan Teknis">Panduan Teknis</span>
                                 <span class="btn nav-item" onclick="navigate('rfc2350')"
@@ -437,12 +495,130 @@
     </header>
     </div>
     <div class="carousel-item active">
-        <img src="/img/27.png" class="d-block w-100" alt="gambar 1">
+        <img src="/img/24.png" class="d-block w-100" alt="gambar 1">
     </div>
     &nbsp;
-    <div class="content">
-        <iframe src="{{ url('/img/RFC 2350.PDF') }}" alt="Uploaded Image">
-        </iframe>
+    <div class="container4 mx-auto flex justify-between items-center">
+        <div class="image-section">
+            <img src="/img/28.png" alt="Display Image">
+        </div>
+        <div class="content-section">
+            <h2 class="nav-item"
+                data-text="Cek Versi Telegram di Ponsel Android Anda, Kerentanan Zero-Day EvilVideo Mengintai
+            2024-07-25 15:47:53 | https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/
+            Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File Berbahaya yang Disamarkan sebagai Video.
+
+ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang menggunakan platform Android untuk mendistribusikan file berbahaya yang disamarkan sebagai dalam format video.
+
+Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah menemukan di forum kejahatan siber sebuah iklan eksploitasi zero-day yang menargetkan Telegram untuk Android.
+
+Menurut ESET, eksploitasi tersebut kemungkinan dikembangkan menggunakan API Telegram, yang memungkinkan developers mengupload file multimedia ke chat atau channel Telegram secara terprogram.
+
+Kode tersebut mengeksploitasi kerentanan di Telegram untuk Android, yang oleh ESET disebut EvilVideo , memungkinkan attackers mengirimkan payloads berisi file APK yang ditampilkan sebagai pratinjau multimedia.
+
+Secara default, Telegram mendownload file multimedia secara otomatis, artinya malicious payload secara otomatis diambil di perangkat pengguna.
+
+Namun, ketika pengguna mencoba memutar video tersebut, Telegram menampilkan pesan sah (legitimate message) yang memperingatkan mereka bahwa ia tidak dapat memutar file dan menyarankan agar video tersebut dibuka di pemutar eksternal.
+
+Kemudian, jika pengguna memilih opsi untuk membuka video di pemutar eksternal, mereka akan diminta untuk menginstall malicious aplikasi yang menyamar sebagai pemutar video. Telegram juga meminta pengguna untuk mengaktifkan instalasi aplikasi yang tidak dikenal.
+
+ESET menambahkan bahwa “pada titik ini, aplikasi malicious tersebut telah didownload sebagai file video, tetapi dengan ekstensi .apk. Dan menariknya, sifat kerentananlah yang membuat file yang dibagikan terlihat seperti video – malicious app sebenarnya tidak diubah untuk menyamar sebagai file multimedia.”
+
+Eksploitasi ini dibuat khusus untuk Telegram yang menggunakan platform Android dan tidak akan berfungsi di ponsel platform yang lain.
+
+Analisis ESET terhadap eksploitasi tersebut mengarahkan mereka pada penemuan kerentanan mendasar EvilVideo, yang dilaporkan ke Telegram pada akhir Juni 2024 dan ditambal pada 11 Juli. Namun, eksploitasi zero-day telah tersedia untuk dijual sejak awal Juni.
+
+Di forum underground yang sama tempat mereka menawarkan eksploitasi tersebut, threat actor telah mengiklankan cryptor-as-a-service Android yang diduga sepenuhnya tidak terdeteksi sejak Januari 2024.
+
+EvilVideo memengaruhi Telegram untuk Android versi 10.14.4 dan yang lebih lama. Pengguna disarankan untuk memperbarui aplikasi Telegram ke versi 10.14.5, yang memperbaiki bug, membuat pratinjau chat multimedia menampilkan payload sebagai aplikasi dan bukan video dengan benar.
+
+PEMBARUAN: Telegram telah memberikan pernyataan berikut:
+
+“Eksploitasi ini bukanlah kerentanan di Telegram. Ini mengharuskan pengguna untuk membuka video, menyesuaikan pengaturan keamanan Android dan kemudian secara manual menginstal 'aplikasi media' yang tampak mencurigakan.
+
+Kami menerima laporan tentang eksploitasi ini pada tanggal 5 Juli dan perbaikan sisi server diterapkan pada tanggal 9 Juli untuk melindungi pengguna di semua versi Telegram.”
+
+So.., segera update versi Telegram anda, agar tetap bisa menggunakannya dengan aman.(BSSA-MF)
+            ">
+                Cek Versi Telegram di Ponsel Android Anda, Kerentanan Zero-Day EvilVideo Mengintai</h2>
+            <div class="meta">
+                <span>2024-07-25 15:47:53 | https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/</a>
+            </div>
+            <p>Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
+                Berbahaya yang Disamarkan sebagai Video. </p>
+
+            <p> ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang menggunakan
+                platform Android untuk mendistribusikan file berbahaya yang disamarkan sebagai dalam format video. </p>
+
+            <p> Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah menemukan di forum
+                kejahatan siber sebuah iklan eksploitasi zero-day yang menargetkan Telegram untuk Android. </p>
+
+            <p> Menurut ESET, eksploitasi tersebut kemungkinan dikembangkan menggunakan API Telegram, yang memungkinkan
+                developers mengupload file multimedia ke chat atau channel Telegram secara terprogram. </p>
+
+            <p> Kode tersebut mengeksploitasi kerentanan di Telegram untuk Android, yang oleh ESET disebut EvilVideo ,
+                memungkinkan attackers mengirimkan payloads berisi file APK yang ditampilkan sebagai pratinjau
+                multimedia. </p>
+
+            <p> Secara default, Telegram mendownload file multimedia secara otomatis, artinya malicious payload secara
+                otomatis diambil di perangkat pengguna. </p>
+
+            <p> Namun, ketika pengguna mencoba memutar video tersebut, Telegram menampilkan pesan sah (legitimate
+                message) yang memperingatkan mereka bahwa ia tidak dapat memutar file dan menyarankan agar video
+                tersebut dibuka di pemutar eksternal. </p>
+
+
+
+            <p> Kemudian, jika pengguna memilih opsi untuk membuka video di pemutar eksternal, mereka akan diminta untuk
+                menginstall malicious aplikasi yang menyamar sebagai pemutar video. Telegram juga meminta pengguna untuk
+                mengaktifkan instalasi aplikasi yang tidak dikenal. </p>
+
+            <p> ESET menambahkan bahwa “pada titik ini, aplikasi malicious tersebut telah didownload sebagai file video,
+                tetapi dengan ekstensi .apk. Dan menariknya, sifat kerentananlah yang membuat file yang dibagikan
+                terlihat seperti video – malicious app sebenarnya tidak diubah untuk menyamar sebagai file multimedia.”
+            </p>
+
+            <p> Eksploitasi ini dibuat khusus untuk Telegram yang menggunakan platform Android dan tidak akan berfungsi
+                di ponsel platform yang lain. </p>
+
+            <p> Analisis ESET terhadap eksploitasi tersebut mengarahkan mereka pada penemuan kerentanan mendasar
+                EvilVideo, yang dilaporkan ke Telegram pada akhir Juni 2024 dan ditambal pada 11 Juli. Namun,
+                eksploitasi zero-day telah tersedia untuk dijual sejak awal Juni. </p>
+
+            <p> Di forum underground yang sama tempat mereka menawarkan eksploitasi tersebut, threat actor telah
+                mengiklankan cryptor-as-a-service Android yang diduga sepenuhnya tidak terdeteksi sejak Januari 2024.
+            </p>
+
+            <p> EvilVideo memengaruhi Telegram untuk Android versi 10.14.4 dan yang lebih lama. Pengguna disarankan
+                untuk memperbarui aplikasi Telegram ke versi 10.14.5, yang memperbaiki bug, membuat pratinjau chat
+                multimedia menampilkan payload sebagai aplikasi dan bukan video dengan benar.</p>
+
+            <p> PEMBARUAN: Telegram telah memberikan pernyataan berikut: </p>
+
+            <p> “Eksploitasi ini bukanlah kerentanan di Telegram. Ini mengharuskan pengguna untuk membuka video,
+                menyesuaikan pengaturan keamanan Android dan kemudian secara manual menginstal 'aplikasi media' yang
+                tampak mencurigakan. </p>
+
+            <p> Kami menerima laporan tentang eksploitasi ini pada tanggal 5 Juli dan perbaikan sisi server diterapkan
+                pada tanggal 9 Juli untuk melindungi pengguna di semua versi Telegram.” </p>
+
+            <p> So.., segera update versi Telegram anda, agar tetap bisa menggunakannya dengan aman.(BSSA-MF)</p>
+
+            <img src="/img/suara.png" alt="Icon" style="width: 60px; height: 58px;" id="soundImage">
+            <audio id="soundEffect">
+                <source src="/path/to/sound.mp3" type="audio/mpeg">
+                <source src="/path/to/sound.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <script>
+                document.getElementById("soundImage").addEventListener("click", function() {
+                    var audio = document.getElementById("soundEffect");
+                    audio.play();
+                });
+            </script>
+        </div>
+    </div>
     </div>
 
     &nbsp;
@@ -559,14 +735,17 @@
                 case 'profil':
                     window.location.href = '{{ route('profil') }}';
                     break;
-                case 'publikasi':
-                    window.location.href = '{{ route('publikasi') }}';
+                case 'event':
+                    window.location.href = '{{ route('event') }}';
                     break;
                 case 'lapor_insiden_siber':
                     window.location.href = '{{ route('lapor_insiden_siber') }}';
                     break;
                 case 'kontak_kami':
                     window.location.href = '{{ route('kontak_kami') }}';
+                    break;
+                case 'selengkapnya1':
+                    window.location.href = '{{ route('selengkapnya1') }}';
                     break;
                 case 'Gallery':
                     window.location.href = '{{ route('gallery') }}';

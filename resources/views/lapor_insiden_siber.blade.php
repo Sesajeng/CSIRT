@@ -491,6 +491,8 @@
                                         data-text="Peraturan Kebijakan">Peraturan Kebijakan</span>
                                     <span class="btn nav-item" onclick="navigate('Berita_Siber')"
                                         data-text="Berita Siber (Cyber Blitz)">Berita Siber (Cyber Blitz)</span>
+                                    <span class="btn nav-item" onclick="navigate('Gallery')"
+                                        data-text="Gallery">Gallery</span>
                                     <span class="btn nav-item" onclick="navigate('Statistik_Honeypot')"
                                         data-text="Statistik (Honeypot)">Statistik (Honeypot)</span>
                                     <span class="btn nav-item" onclick="navigate('Panduan_Teknis')"
@@ -740,6 +742,9 @@
                     break;
                 case 'kontak_kami':
                     window.location.href = '{{ route('kontak_kami') }}';
+                    break;
+                case 'Gallery':
+                    window.location.href = '{{ route('gallery') }}';
                     break;
                 default:
                     console.log('No route defined for: ' + page);

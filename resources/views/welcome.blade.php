@@ -599,6 +599,24 @@
             background-color: white !important;
             color: black !important;
         }
+
+
+
+        .custom-button {
+            display: inline-block;
+            padding: 4px 7px;
+            color: #000;
+            text-align: center;
+            text-decoration: none;
+            border: 1px solid orange;
+            border-radius: 1px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .custom-button:hover {
+            background-color: orange;
+            color: #fff;
+        }
     </style>
 </head>
 
@@ -623,6 +641,8 @@
                                     data-text="Peraturan Kebijakan">Peraturan Kebijakan</span>
                                 <span class="btn nav-item" onclick="navigate('Berita_Siber')"
                                     data-text="Berita Siber (Cyber Blitz)">Berita Siber (Cyber Blitz)</span>
+                                <span class="btn nav-item" onclick="navigate('Gallery')"
+                                    data-text="Gallery">Gallery</span>
                                 <span class="btn nav-item" onclick="navigate('Statistik_Honeypot')"
                                     data-text="Statistik (Honeypot)">Statistik (Honeypot)</span>
                                 <span class="btn nav-item" onclick="navigate('Panduan_Teknis')"
@@ -653,9 +673,9 @@
             <div class="container conten">
                 <div class="box-title1">Berita Tekrini </div>
                 <div class="box-title2">
-                    <p class="nav-item" onclick="navigate('index_berita')" data-text="Index Berita"
+                    <span class="nav-item " onclick="navigate('Berita_Siber')" data-text="Index Berita"
                         style="color: black;"> Index Berita ></a>
-                    </p>
+                        </p>
                 </div>
             </div>
             <div class="container content">
@@ -683,10 +703,11 @@
                     Peneliti dari NCC Group melaporkan adanya aktivitas malware carbanak dalam
                     sebuah serangan ransomware. Kelompok kejahatan siber Carbanak pertama kali diidentifikasi oleh
                     Kaspersky Lab pada tahun 2015, dan telah berhasil mencuri setidaknya 300 juta</p>
-                <a href="selengkapnya1" class="nav-item" onclick="navigate('selengkpanya1')"
-                    data-text="Selengkapnya">SELENGKAPNYA</a>
+                <span class="nav-item custom-button" onclick="navigate('selengkapnya1')"
+                    data-text="Selengkapnya">SELENGKAPNYA</span>
             </div>
         </div>
+
         <div class="card" style="width: 22rem;">
             <img src="/img/11.jpg" class="card-img-top" alt="Berita 2">
             <div class="card-body">
@@ -704,8 +725,8 @@
                     Malware loader baru bernama Rugmi digunakan oleh pelaku ancaman untuk
                     menyebarkan pencuri informasi seperti Lumma Stealer, Vidar, RecordBreaker, dan Rescoms.
                     Perusahaan keamanan siber ESET melacak trojan ini dengan nama Win/TrojanDownloader.Rugmi,</p>
-                <a href="selengkapnya1" class="nav-item" onclick="navigate('selengkpanya1')"
-                    data-text="Selengkapnya">SELENGKAPNYA</a>
+                <span class="nav-item custom-button" onclick="navigate('selengkapnya2')"
+                    data-text="Selengkapnya">SELENGKAPNYA</span>
             </div>
         </div>
         <div class="card" style="width: 22rem;">
@@ -733,17 +754,17 @@
                     eksploitasi para peretas yang menyalahgunakan kerentanan zero-day pada open-source library
                     untuk
                     memproses file Excel. Kerentanan yang diidentifikasi sebagai CVE-2023-710</p>
-                <a href="selengkapnya1" class="btn nav-item" onclick="navigate('selengkpanya1')"
-                    data-text="Selengkapnya">SELENGKAPNYA</a>
+                <span class="nav-item custom-button" onclick="navigate('selengkapnya3')"
+                    data-text="Selengkapnya">SELENGKAPNYA</span>
             </div>
         </div>
     </div>
     <div class="container conten">
         <div class="box-title1">Gallery Kegiatan </div>
         <div class="box-title2">
-            <p class="nav-item" onclick="IndexBerita()" data-text="Index Gallery" style="color: black;"> Index
-                Gallery ></a>
-            </p>
+            <span class="nav-item " onclick="navigate('Gallery')" data-text="Index Gallery" style="color: black;">
+                Index Gallery ></a>
+                </p>
         </div>
     </div>
     <div class="container content">
@@ -911,6 +932,15 @@
                     break;
                 case 'selengkapnya1':
                     window.location.href = '{{ route('selengkapnya1') }}';
+                    break;
+                case 'selengkapnya2':
+                    window.location.href = '{{ route('selengkapnya2') }}';
+                    break;
+                case 'selengkapnya3':
+                    window.location.href = '{{ route('selengkapnya3') }}';
+                    break;
+                case 'Gallery':
+                    window.location.href = '{{ route('gallery') }}';
                     break;
                 default:
                     console.log('No route defined for: ' + page);

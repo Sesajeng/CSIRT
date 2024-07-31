@@ -57,7 +57,6 @@
             border-radius: 20px;
             outline: none;
             font-size: 16px;
-
         }
 
         .menu {
@@ -177,44 +176,6 @@
             transform: translateY(-50%);
         }
 
-        .parent-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 9vh;
-        }
-
-        .card-container1 {
-            display: flex;
-            flex-wrap: wrap;
-
-        }
-
-        .card2 {
-            border: 1px solid orange;
-            border-radius: 5px;
-            margin: 2px;
-            box-shadow: 10 20px 1px rgba(0, 0, 0, 0.1);
-            padding: 5px
-        }
-
-        .card-body {
-            padding: 15px;
-
-        }
-
-        .line {
-            width: 100%;
-            height: 1px;
-            background-color: orange;
-            margin-top: 5px;
-        }
-
-        .card-body {
-            padding: 10px;
-
-        }
-
         .btn:hover {
             background-color: #e57800;
             border: 2px solid white;
@@ -224,81 +185,6 @@
         .btn.active {
             background-color: #e57800;
             border-color: white;
-
-        }
-
-        .footer-section {
-            background-color: orange;
-            padding: 20px 0;
-            color: white;
-            font-family: Arial, sans-serif;
-            font-size: 12px;
-            background-image: url(/img/footer.png);
-        }
-
-        .footer-section .container {
-            display: flex;
-            justify-content: space-between;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .footer-column {
-            flex: 1;
-            padding: 0 20px;
-            min-width: 200px;
-        }
-
-        .footer-column h3 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-
-        .footer-column p,
-        .footer-column ul {
-            margin-bottom: 10px;
-        }
-
-        .footer-column ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .footer-column ul li {
-            margin-bottom: 5px;
-        }
-
-        .footer-column ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        .footer-column button {
-            background-color: #de8300;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .footer-column button:hover {
-            background-color: #dfe6e9;
-        }
-
-        .social-media {
-            display: flex;
-            gap: 10px;
-        }
-
-        .social-media a img {
-            width: 40px;
-            height: 40px;
-        }
-
-        .footer-column img {
-            max-width: 100px;
-            margin-bottom: 20px;
         }
 
         .navbar ul li a,
@@ -403,6 +289,99 @@
             font-size: 17px;
         }
 
+
+
+        .footer-section {
+            background-color: orange;
+            /* Ganti dengan warna background sesuai */
+            padding: 20px 0;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            background-image: url(/img/footer.png);
+        }
+
+        .footer-section .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-column {
+            flex: 1;
+            padding: 0 20px;
+            min-width: 200px;
+        }
+
+        .footer-column h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .footer-column p,
+        .footer-column ul {
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 5px;
+        }
+
+        .footer-column ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-column button {
+            background-color: #de8300;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .footer-column button:hover {
+            background-color: #dfe6e9;
+        }
+
+        .social-media {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-media a img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .footer-column img {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 1px solid #ccc;
+            background-color: #fff;
+
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 5px;
+            justify-content: center;
+        }
+
         .btn img {
             width: 24px;
             height: 24px;
@@ -411,128 +390,248 @@
         .btn:hover {
             background-color: rgba(0, 0, 0, 0.1);
         }
+
+        .card-container1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            gap: 23px;
+            border: 8px;
+            border-color: #000;
+        }
+
+        .container.conten {
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+
+        .card2 {
+            border: 1px solid (128, 128, 128);
+            border-radius: 5px;
+            margin: 2px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            width: 300px;
+            transition: transform 0.3s, box-shadow 0.3s;
+
+        }
+
+        .card2 img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid rgb(128, 128, 128);
+            margin-bottom: 10px;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .card2 h2 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .card2 p {
+            color: grey;
+            font-size: 0.9em;
+        }
     </style>
 </head>
 
-<body class="text-black">
+<body class=" text-black">
     <div class="header">
         <header class="bg-orange-800 py-4">
             <div class="container mx-auto flex justify-between items-center">
                 <img src="/img/Logo.png" alt="Logo" class="h-10">
-                <nav class="space-x-4">
-                    <nav class="space-x-4 navbar">
-                        <ul>
-                            <li class="btn nav-item" onclick="navigate('home')" data-text="Home">Home</li>
-                            <li class="btn nav-item" onclick="navigate('profil')" data-text="Profil">Profil</li>
-                            <li class="btn nav-item" onclick="navigate('event')" data-text="Event">Event</li>
-                            <li class="btn nav-item dropdown">
-                                <span class="dropbtn" data-text="Publikasi">Publikasi</span>
-                                <div class="dropdown-content">
-                                    <span class="btn nav-item" onclick="navigate('Peringatan_Keamanan')"
-                                        data-text="Peringatan Keamanan">Peringatan Keamanan</span>
-                                    <span class="btn nav-item" onclick="navigate('Infografis_Keamanan_Informasi')"
-                                        data-text="Infografis Keamanan Informasi">Infografis Keamanan Informasi</span>
-                                    <span class="btn nav-item" onclick="navigate('Peraturan_Kebijakan')"
-                                        data-text="Peraturan Kebijakan">Peraturan Kebijakan</span>
-                                    <span class="btn nav-item" onclick="navigate('Berita_Siber')"
-                                        data-text="Berita Siber (Cyber Blitz)">Berita Siber (Cyber Blitz)</span>
-                                    <span class="btn nav-item" onclick="navigate('Gallery')"
-                                        data-text="Gallery">Gallery</span>
-                                    <span class="btn nav-item" onclick="navigate('Statistik_Honeypot')"
-                                        data-text="Statistik (Honeypot)">Statistik (Honeypot)</span>
-                                    <span class="btn nav-item" onclick="navigate('Panduan_Teknis')"
-                                        data-text="Panduan Teknis">Panduan Teknis</span>
-                                    <span class="btn nav-item" onclick="navigate('rfc2350')"
-                                        data-text="RFC2350">RFC2350</span>
-                                </div>
-                            </li>
-                            <li class="btn nav-item" onclick="navigate('lapor_insiden_siber')"
-                                data-text="Lapor Insiden Siber">Lapor Insiden Siber</li>
-                            <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">Kontak
-                                Kami
-                            </li>
-                            <li><input type="text" class="search-box" placeholder="Search..."></li>
-                        </ul>
-                    </nav>
+                <nav class="space-x-4 navbar">
+                    <ul>
+                        <li class="btn nav-item" onclick="navigate('home')" data-text="Home">Home</li>
+                        <li class="btn nav-item" onclick="navigate('profil')" data-text="Profil">Profil</li>
+                        <li class="btn nav-item" onclick="navigate('event')" data-text="Event">Event</li>
+                        <li class="btn nav-item dropdown">
+                            <span class="dropbtn" data-text="Publikasi">Publikasi</span>
+                            <div class="dropdown-content">
+                                <span class="btn nav-item" onclick="navigate('Peringatan_Keamanan')"
+                                    data-text="Peringatan Keamanan">Peringatan Keamanan</span>
+                                <span class="btn nav-item" onclick="navigate('Infografis_Keamanan_Informasi')"
+                                    data-text="Infografis Keamanan Informasi">Infografis Keamanan Informasi</span>
+                                <span class="btn nav-item" onclick="navigate('Peraturan_Kebijakan')"
+                                    data-text="Peraturan Kebijakan">Peraturan Kebijakan</span>
+                                <span class="btn nav-item" onclick="navigate('Berita_Siber')"
+                                    data-text="Berita Siber (Cyber Blitz)">Berita Siber (Cyber Blitz)</span>
+                                <span class="btn nav-item" onclick="navigate('Gallery')"
+                                    data-text="Gallery">Gallery</span>
+                                <span class="btn nav-item" onclick="navigate('Statistik_Honeypot')"
+                                    data-text="Statistik (Honeypot)">Statistik (Honeypot)</span>
+                                <span class="btn nav-item" onclick="navigate('Panduan_Teknis')"
+                                    data-text="Panduan Teknis">Panduan Teknis</span>
+                                <span class="btn nav-item" onclick="navigate('rfc2350')"
+                                    data-text="RFC2350">RFC2350</span>
+                            </div>
+                        </li>
+                        <li class="btn nav-item" onclick="navigate('lapor_insiden_siber')"
+                            data-text="Lapor Insiden Siber">Lapor Insiden Siber</li>
+                        <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">Kontak Kami
+                        </li>
+                        <li><input type="text" class="search-box" placeholder="Search..."></li>
+                    </ul>
                 </nav>
             </div>
+    </div>
     </div>
     </header>
     </div>
     <div class="carousel-item active">
-        <img src="/img/5.png" class="d-block w-100" alt="gambar tampilan event">
+        <img src="/img/30.png" class="d-block w-100" alt="gambar 1">
     </div>
-    <div class="parent-container">
-        <div class="search-container">
-            <input type="text" class="search-box" placeholder="Search...">
+    &nbsp;
+    <div class="card-container1">
+        <div class="card2" style="width: 16rem;">
+            <img src="/img/16.png" class="card-img-top" alt="Berita 1">
+            <div class="card-body">
+                <h6 class="nav-item"
+                    data-text="Sosialisasi Security Awareness Keamanan Mobile Computing dan Teleworking">Sosialisasi
+                    Security Awareness Keamanan Mobile Computing dan Teleworking
+                </h6>
+                <p class="nav-item" data-text="
+                31 Aguatus 2023">31-Aug-2023</p>
+            </div>
+        </div>
+        <div class="card2" style="width: 16rem;">
+            <img src="/img/17.png" class="card-img-top" alt="Berita 2">
+            <div class="card-body">
+                <h6 class="nav-item" data-text="Security Awareness Potensi Ancaman Siber di Tahun 2023">Security
+                    Awareness Potensi Ancaman Siber di Tahun 2023</h6>
+                <p class="card-text"> 31-Aug-2023</p>
+            </div>
+        </div>
+        <div class="card2" style="width: 16rem;">
+            <img src="/img/14.jpg" class="card-img-top" alt="Berita 3">
+            <div class="card-body">
+                <h6 class="nav-item" data-text="Sosialisasi Security Awareness - Menjaga Keamanan Akses Jaringan">
+                    Sosialisasi Security Awareness - Menjaga Keamanan Akses Jaringan</h6>
+                <p class="nav-item" data-text=" 20 Oktober 2022"> 20-Oct-2022</p>
+            </div>
+        </div>
+        <div class="card2" style="width: 16rem;">
+            <img src="/img/18.jpg" class="card-img-top" alt="Berita 3">
+            <div class="card-body">
+                <h6 class="nav-item" data-text="Sosialisasi Security Awareness - Workshop Secure Coding #3">
+                    Sosialisasi Security Awareness - Workshop Secure Coding #3</h6>
+                <p class="card-text"> 02-Aug-2022</p>
+            </div>
         </div>
     </div>
     <div class="card-container1">
-        <div class="card2" style="width: 18rem;">
-            <img src="/img/15.jpg" class="card-img-top" alt="Berita 1">
-            <div class="line">
-            </div>
+        <div class="card2" style="width: 16rem;">
+            <img src="/img/16.png" class="card-img-top" alt="Berita 1">
             <div class="card-body">
-                <h5 class="nav-item"
-                    data-text="Sosialisasi Security Awareness - Pencegahan dan Penanganan Serangan Ransomware">
-                    Sosialisasi Security Awareness - Pencegahan dan Penanganan Serangan Ransomware
-                </h5>
+                <h6 class="nav-item"
+                    data-text="Sosialisasi Security Awareness Keamanan Mobile Computing dan Teleworking">Sosialisasi
+                    Security Awareness Keamanan Mobile Computing dan Teleworking
+                </h6>
+                <p class="nav-item" data-text="31-Aug-2023">31-Aug-2023</p>
             </div>
         </div>
-        <div class="card2" style="width: 18rem;">
-            <img src="/img/16.jpg" class="card-img-top" alt="Berita 2">
-            <div class="line">
-            </div>
+        <div class="card2" style="width: 16rem;">
+            <img src="/img/17.png" class="card-img-top" alt="Berita 2">
             <div class="card-body">
-                <h5 class="nav-item"
-                    data-text="Sosialisasi Security Awareness - Keamanan Mobile Computing dan Teleworking">Sosialisasi
-                    Security Awareness - Keamanan Mobile Computing dan Teleworking</h5>
+                <h6 class="nav-item" data-text="Security Awareness Potensi Ancaman Siber di Tahun 2023">Security
+                    Awareness Potensi Ancaman Siber di Tahun 2023</h6>
+                <p class="card-text"> 31-Aug-2023</p>
             </div>
         </div>
-        <div class="card2" style="width: 18rem;">
-            <img src="/img/10.jpg" class="card-img-top" alt="Berita 3">
-            <div class="line"></div>
+        <div class="card2" style="width: 16rem;">
+            <img src="/img/14.jpg" class="card-img-top" alt="Berita 3">
             <div class="card-body">
-                <h5 class="nav-item" data-text="Edukasi Pemanfaatan - Index Keamanan Informasi (Indeks Kami)">
-                    Edukasi Pemanfaatan - Index Keamanan Informasi (Indeks Kami)</h5>
+                <h6 class="nav-item" data-text="Sosialisasi Security Awareness - Menjaga Keamanan Akses Jaringan">
+                    Sosialisasi Security Awareness - Menjaga Keamanan Akses Jaringan</h6>
+                <p class="card-text"> 20-Oct-2022</p>
+            </div>
+        </div>
+        <div class="card2" style="width: 16rem;">
+            <img src="/img/18.jpg" class="card-img-top" alt="Berita 3">
+            <div class="card-body">
+                <h6 class="nav-item" data-text="Sosialisasi Security Awareness - Workshop Secure Coding #3">
+                    Sosialisasi Security Awareness - Workshop Secure Coding #3</h6>
+                <p class="card-text"> 02-Aug-2022</p>
             </div>
         </div>
     </div>
-
     <div class="card-container1">
-        <div class="card2" style="width: 18rem;">
-            <img src="/img/29.png" class="card-img-top" alt="Berita 1">
-            <div class="line">
-            </div>
+        <div class="card2" style="width: 16rem;">
+            <img src="/img/16.png" class="card-img-top" alt="Berita 1">
             <div class="card-body">
-                <h5 class="nav-item" data-text="Security Awareness : Pengelolaan insiden Siber">
-                    Security Awareness : Pengelolaan insiden Siber
-                </h5>
+                <h6 class="nav-item"
+                    data-text="Sosialisasi Security Awareness Keamanan Mobile Computing dan Teleworking">Sosialisasi
+                    Security Awareness Keamanan Mobile Computing dan Teleworking
+                </h6>
+                <p class="nav-item" data-text="
+                31 Aguatus 2023">31-Aug-2023</p>
             </div>
         </div>
-        <div class="card2" style="width: 18rem;">
-            <img src="/img/25.jpg" class="card-img-top" alt="Berita 2">
-            <div class="line">
-            </div>
+        <div class="card2" style="width: 16rem;">
+            <img src="/img/17.png" class="card-img-top" alt="Berita 2">
             <div class="card-body">
-                <h5 class="nav-item" data-text="Sosialisasi Security Awareness">
-                    Sosialisasi Security Awareness</h5>
+                <h6 class="nav-item" data-text="Security Awareness Potensi Ancaman Siber di Tahun 2023">Security
+                    Awareness Potensi Ancaman Siber di Tahun 2023</h6>
+                <p class="card-text"> 31-Aug-2023</p>
             </div>
         </div>
-        <div class="card2" style="width: 18rem;">
-            <img src="/img/26.jpg" class="card-img-top" alt="Berita 3">
-            <div class="line"></div>
+        <div class="card2" style="width: 16rem;">
+            <img src="/img/14.jpg" class="card-img-top" alt="Berita 3">
             <div class="card-body">
-                <h5 class="nav-item"
-                    data-text="Sosialisasi Penilaian Mandiri - Terkait Kategorisasi Sistem Elektronik">
-                    Sosialisasi Penilaian Mandiri - Terkait Kategorisasi Sistem Elektronikh5>
+                <h6 class="nav-item" data-text="Sosialisasi Security Awareness - Menjaga Keamanan Akses Jaringan">
+                    Sosialisasi Security Awareness - Menjaga Keamanan Akses Jaringan</h6>
+                <p class="nav-item" data-text=" 20 Oktober 2022"> 20-Oct-2022</p>
+            </div>
+        </div>
+        <div class="card2" style="width: 16rem;">
+            <img src="/img/18.jpg" class="card-img-top" alt="Berita 3">
+            <div class="card-body">
+                <h6 class="nav-item" data-text="Sosialisasi Security Awareness - Workshop Secure Coding #3">
+                    Sosialisasi Security Awareness - Workshop Secure Coding #3</h6>
+                <p class="card-text"> 02-Aug-2022</p>
             </div>
         </div>
     </div>
-
-
-
-
+    <div class="card-container1">
+        <div class="card2" style="width: 16rem;">
+            <img src="/img/16.png" class="card-img-top" alt="Berita 1">
+            <div class="card-body">
+                <h6 class="nav-item"
+                    data-text="Sosialisasi Security Awareness Keamanan Mobile Computing dan Teleworking">Sosialisasi
+                    Security Awareness Keamanan Mobile Computing dan Teleworking
+                </h6>
+                <p class="nav-item" data-text="31-Aug-2023">31-Aug-2023</p>
+            </div>
+        </div>
+        <div class="card2" style="width: 16rem;">
+            <img src="/img/17.png" class="card-img-top" alt="Berita 2">
+            <div class="card-body">
+                <h6 class="nav-item" data-text="Security Awareness Potensi Ancaman Siber di Tahun 2023">Security
+                    Awareness Potensi Ancaman Siber di Tahun 2023</h6>
+                <p class="card-text"> 31-Aug-2023</p>
+            </div>
+        </div>
+        <div class="card2" style="width: 16rem;">
+            <img src="/img/14.jpg" class="card-img-top" alt="Berita 3">
+            <div class="card-body">
+                <h6 class="nav-item" data-text="Sosialisasi Security Awareness - Menjaga Keamanan Akses Jaringan">
+                    Sosialisasi Security Awareness - Menjaga Keamanan Akses Jaringan</h6>
+                <p class="card-text"> 20-Oct-2022</p>
+            </div>
+        </div>
+        <div class="card2" style="width: 16rem;">
+            <img src="/img/18.jpg" class="card-img-top" alt="Berita 3">
+            <div class="card-body">
+                <h6 class="nav-item" data-text="Sosialisasi Security Awareness - Workshop Secure Coding #3">
+                    Sosialisasi Security Awareness - Workshop Secure Coding #3</h6>
+                <p class="card-text"> 02-Aug-2022</p>
+            </div>
+        </div>
+    </div>
     &nbsp;
     <section class="footer-section">
         <div class="container">
@@ -571,7 +670,6 @@
             </div>
         </div>
     </section>
-
     <button id="audioButton" class="btn btn-primary side-button">
         <img id="audioIcon" src="/img/mute.png" alt="Play" />
     </button>
@@ -648,8 +746,8 @@
                 case 'profil':
                     window.location.href = '{{ route('profil') }}';
                     break;
-                case 'event':
-                    window.location.href = '{{ route('event') }}';
+                case 'publikasi':
+                    window.location.href = '{{ route('publikasi') }}';
                     break;
                 case 'lapor_insiden_siber':
                     window.location.href = '{{ route('lapor_insiden_siber') }}';
@@ -660,12 +758,14 @@
                 case 'Gallery':
                     window.location.href = '{{ route('gallery') }}';
                     break;
+                case 'event':
+                    window.location.href = '{{ route('event') }}';
+                    break;
                 default:
                     console.log('No route defined for: ' + page);
             }
         }
     </script>
-
     <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
 </body>
 

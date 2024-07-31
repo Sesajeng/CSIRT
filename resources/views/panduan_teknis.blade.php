@@ -398,6 +398,8 @@
                                     data-text="Peraturan Kebijakan">Peraturan Kebijakan</span>
                                 <span class="btn nav-item" onclick="navigate('Berita_Siber')"
                                     data-text="Berita Siber (Cyber Blitz)">Berita Siber (Cyber Blitz)</span>
+                                <span class="btn nav-item" onclick="navigate('Gallery')"
+                                    data-text="Gallery">Gallery</span>
                                 <span class="btn nav-item" onclick="navigate('Statistik_Honeypot')"
                                     data-text="Statistik (Honeypot)">Statistik (Honeypot)</span>
                                 <span class="btn nav-item" onclick="navigate('Panduan_Teknis')"
@@ -441,17 +443,23 @@
         <!-- Guide List -->
         <div class="space-y-4">
             <div class="bg-white p-6 rounded-lg shadow-md">
-                <h5 class="nav-item" data-text="Analisa Pola Web Attack - Memahami jenis serangan melalui pola yang dicatat oleh log file - Bidang siber sandi & aplikasi diskominfotik provinsi DKI Jakarta"> <b> Analisa Pola Web Attack - Memahami jenis serangan melalui pola yang
-                    dicatat
-                    oleh log file </b></h5>
+                <h5 class="nav-item"
+                    data-text="Analisa Pola Web Attack - Memahami jenis serangan melalui pola yang dicatat oleh log file - Bidang siber sandi & aplikasi diskominfotik provinsi DKI Jakarta">
+                    <b> Analisa Pola Web Attack - Memahami jenis serangan melalui pola yang
+                        dicatat
+                        oleh log file </b>
+                </h5>
                 <p class="text-gray-500">Bidang Siber Sandi & Aplikasi Diskominfotik Provinsi DKI Jakarta</p>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-md">
-                <h5 class="nav-item" data-text="Panduan Penanganan insiden web defacement judi online - BSSN"> <b>Panduan Penanganan Insiden web defacement judi online </b></h5>
+                <h5 class="nav-item" data-text="Panduan Penanganan insiden web defacement judi online - BSSN">
+                    <b>Panduan Penanganan Insiden web defacement judi online </b>
+                </h5>
                 <p class="text-gray-500">BSSN</p>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-md">
-                <h5 class="nav-item" data-text="Panduan Keamanan instagram - BSSN"> <b>Panduan Keamanan Instagram </b></h5>
+                <h5 class="nav-item" data-text="Panduan Keamanan instagram - BSSN"> <b>Panduan Keamanan Instagram </b>
+                </h5>
                 <p class="text-gray-500">BSSN</p>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-md">
@@ -459,7 +467,8 @@
                 <p class="text-gray-500">BSSN</p>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-md">
-                <h5 class="nav-item" data-text="Panduan Keamanan Twitter - BSSN"> <b> Panduan Keamanan Twitter </b></h5>
+                <h5 class="nav-item" data-text="Panduan Keamanan Twitter - BSSN"> <b> Panduan Keamanan Twitter </b>
+                </h5>
                 <p class="text-gray-500">BSSN</p>
             </div>
         </div>
@@ -587,6 +596,9 @@
                     break;
                 case 'kontak_kami':
                     window.location.href = '{{ route('kontak_kami') }}';
+                    break;
+                case 'Gallery':
+                    window.location.href = '{{ route('gallery') }}';
                     break;
                 default:
                     console.log('No route defined for: ' + page);

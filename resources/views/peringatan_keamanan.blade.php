@@ -468,6 +468,8 @@
                                     data-text="Peraturan Kebijakan">Peraturan Kebijakan</span>
                                 <span class="btn nav-item" onclick="navigate('Berita_Siber')"
                                     data-text="Berita Siber (Cyber Blitz)">Berita Siber (Cyber Blitz)</span>
+                                <span class="btn nav-item" onclick="navigate('Gallery')"
+                                    data-text="Gallery">Gallery</span>
                                 <span class="btn nav-item" onclick="navigate('Statistik_Honeypot')"
                                     data-text="Statistik (Honeypot)">Statistik (Honeypot)</span>
                                 <span class="btn nav-item" onclick="navigate('Panduan_Teknis')"
@@ -510,21 +512,28 @@
             <img src="/img/28.png" alt="Telegram Logo">
         </div>
         <div class="content">
-            <h2 class="nav-item" 
-            data-text="Cek Versi Telegram di Ponsel Android Anda, Kerentanan Zero-Day EvilVideo Mengintai">Cek Versi Telegram di Ponsel Android Anda, Kerentanan Zero-Day EvilVideo Mengintai</h2>
+            <h2 class="nav-item"
+                data-text="Cek Versi Telegram di Ponsel Android Anda, Kerentanan Zero-Day EvilVideo Mengintai">Cek Versi
+                Telegram di Ponsel Android Anda, Kerentanan Zero-Day EvilVideo Mengintai</h2>
             <p>2024-07-25 15:47:53 | https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/</a>
             </p>
-            <p class="nav-item" data-text="Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
+            <p class="nav-item"
+                data-text="Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
                 Berbahaya yang Disamarkan sebagai Video. 
                 ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang menggunakan
                 platform Android untuk mendistribusikan file berbahaya yang disamarkan sebagai dalam format video. 
                 Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.
-                ">Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
+                ">
+                Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
                 Berbahaya yang Disamarkan sebagai Video.</p>
-            <p class="nav-item" data-text="ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang menggunakan
-                platform Android untuk mendistribusikan file berbahaya yang disamarkan sebagai dalam format video. ">ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang menggunakan
+            <p class="nav-item"
+                data-text="ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang menggunakan
+                platform Android untuk mendistribusikan file berbahaya yang disamarkan sebagai dalam format video. ">
+                ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang menggunakan
                 platform Android untuk mendistribusikan file berbahaya yang disamarkan sebagai dalam format video.</p>
-            <p class="nav-item" data-text="Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.">Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.</p>
+            <p class="nav-item"
+                data-text="Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.">
+                Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.</p>
             <a class="read-more" href="#">SELENGKAPNYA</a>
         </div>
     </div>
@@ -547,9 +556,11 @@
                 <h6 class="nav-item" data-text="Peringatan Keamanan Malware Bitrait">Peringatan Keamanan Malware
                     Bitrait</h6>
                 <p class="nav-item" data-text="2022-05-17 10:48:18 | idsirtii">2022-05-17 10:48:18 | idsirtii</p>
-                <p class="nav-item"  data-text="BitRAT merupakan jenis malware yang diklasifikasikan sebagai Remote Access Trojan
+                <p class="nav-item"
+                    data-text="BitRAT merupakan jenis malware yang diklasifikasikan sebagai Remote Access Trojan
                     (RAT). Kampanye malware BitRAT secara aktif menargetkan pengguna yang mencari aktivator lisensi
-                    Windows tidak resmi. Aktivator lisensi tersebut dimaksudkan untuk men">BitRAT merupakan jenis malware yang diklasifikasikan sebagai Remote Access Trojan
+                    Windows tidak resmi. Aktivator lisensi tersebut dimaksudkan untuk men">
+                    BitRAT merupakan jenis malware yang diklasifikasikan sebagai Remote Access Trojan
                     (RAT). Kampanye malware BitRAT secara aktif menargetkan pengguna yang mencari aktivator lisensi
                     Windows tidak resmi. Aktivator lisensi tersebut dimaksudkan untuk men</p>
                 <nav class="space-x-4 navbar">
@@ -563,11 +574,14 @@
         <div class="card" style="width: 22rem;">
             <img src="/img/20.jpg" class="card-img-top" alt="Berita 2">
             <div class="card-body">
-                <h6 class="nav-item" data-text="CVE-2022-27926 KERENTANAN XSS PADA ZIMBRA COLLOBOR">CVE-2022-27926 KERENTANAN XSS PADA ZIMBRA COLLOBOR</h6>
+                <h6 class="nav-item" data-text="CVE-2022-27926 KERENTANAN XSS PADA ZIMBRA COLLOBOR">CVE-2022-27926
+                    KERENTANAN XSS PADA ZIMBRA COLLOBOR</h6>
                 <p class="nav-item" data-text="2022-05-17 11:06:06 | idsirtii"> 2022-05-17 11:06:06 | idsirtii</p>
-                <p class="nav-item" data-text="Zimbra Collaboration, sebelumnya dikenal sebagai Zimbra Collaboration Suite
+                <p class="nav-item"
+                    data-text="Zimbra Collaboration, sebelumnya dikenal sebagai Zimbra Collaboration Suite
                     (ZCS), adalah rangkaian koloborasi perangkat lunak yang mencakup server email dan klien web milik
-                    perusahaan Synacor. Pada tanggal 20 April 2022, National Vulnerabilit"> Zimbra Collaboration, sebelumnya dikenal sebagai Zimbra Collaboration Suite
+                    perusahaan Synacor. Pada tanggal 20 April 2022, National Vulnerabilit">
+                    Zimbra Collaboration, sebelumnya dikenal sebagai Zimbra Collaboration Suite
                     (ZCS), adalah rangkaian koloborasi perangkat lunak yang mencakup server email dan klien web milik
                     perusahaan Synacor. Pada tanggal 20 April 2022, National Vulnerabilit</p>
                 <nav class="space-x-4">
@@ -580,11 +594,14 @@
         <div class="card" style="width: 22rem;">
             <img src="/img/21.jpg" class="card-img-top" alt="Berita 3">
             <div class="card-body">
-                <h6 class="nav-item" data-text="CVE-2022-26809 KERENTANAN REMOTE PROCEDURE CALL"> CVE-2022-26809 KERENTANAN REMOTE PROCEDURE CALL</h6>
+                <h6 class="nav-item" data-text="CVE-2022-26809 KERENTANAN REMOTE PROCEDURE CALL"> CVE-2022-26809
+                    KERENTANAN REMOTE PROCEDURE CALL</h6>
                 <p class="nav-item" data-text="2022-05-17 11:11:14 | idsirtii"> 2022-05-17 11:11:14 | idsirtii</p>
-                <p class="nav-item" data-text="Pada 12 April 2022, Microsoft mengeluarkan himbauan beserta patch mengenai
+                <p class="nav-item"
+                    data-text="Pada 12 April 2022, Microsoft mengeluarkan himbauan beserta patch mengenai
                     kerentanan Remote Procedure Call Runtime Remote Code Execution. Kerentanan ini mengeksploitasi suatu
-                    integer overflow pada Microsoft Remote Procedure Call (MS-RPC). Kerenta"> Pada 12 April 2022, Microsoft mengeluarkan himbauan beserta patch mengenai
+                    integer overflow pada Microsoft Remote Procedure Call (MS-RPC). Kerenta">
+                    Pada 12 April 2022, Microsoft mengeluarkan himbauan beserta patch mengenai
                     kerentanan Remote Procedure Call Runtime Remote Code Execution. Kerentanan ini mengeksploitasi suatu
                     integer overflow pada Microsoft Remote Procedure Call (MS-RPC). Kerenta</p>
                 <span class="btn nav-item" data-text="Selengkapnya">SELENGKAPNYA</span>
@@ -599,9 +616,11 @@
                 <h6 class="nav-item" data-text="Peringatan Keamanan Malware Bitrait">Peringatan Keamanan Malware
                     Bitrait</h6>
                 <p class="nav-item" data-text="2022-05-17 10:48:18 | idsirtii">2022-05-17 10:48:18 | idsirtii</p>
-                <p class="nav-item" data-text="BitRAT merupakan jenis malware yang diklasifikasikan sebagai Remote Access Trojan
+                <p class="nav-item"
+                    data-text="BitRAT merupakan jenis malware yang diklasifikasikan sebagai Remote Access Trojan
                     (RAT). Kampanye malware BitRAT secara aktif menargetkan pengguna yang mencari aktivator lisensi
-                    Windows tidak resmi. Aktivator lisensi tersebut dimaksudkan untuk men">BitRAT merupakan jenis malware yang diklasifikasikan sebagai Remote Access Trojan
+                    Windows tidak resmi. Aktivator lisensi tersebut dimaksudkan untuk men">
+                    BitRAT merupakan jenis malware yang diklasifikasikan sebagai Remote Access Trojan
                     (RAT). Kampanye malware BitRAT secara aktif menargetkan pengguna yang mencari aktivator lisensi
                     Windows tidak resmi. Aktivator lisensi tersebut dimaksudkan untuk men</p>
                 <nav class="space-x-4 navbar">
@@ -615,11 +634,14 @@
         <div class="card" style="width: 22rem;">
             <img src="/img/20.jpg" class="card-img-top" alt="Berita 2">
             <div class="card-body">
-                <h6 class="nav-item" data-text="CVE-2022-27926 KERENTANAN XSS PADA ZIMBRA COLLOBOR">CVE-2022-27926 KERENTANAN XSS PADA ZIMBRA COLLOBOR</h6>
+                <h6 class="nav-item" data-text="CVE-2022-27926 KERENTANAN XSS PADA ZIMBRA COLLOBOR">CVE-2022-27926
+                    KERENTANAN XSS PADA ZIMBRA COLLOBOR</h6>
                 <p class="nav-item" data-text="2022-05-17 11:06:06 | idsirtii"> 2022-05-17 11:06:06 | idsirtii</p>
-                <p class="nav-item" data-text="Zimbra Collaboration, sebelumnya dikenal sebagai Zimbra Collaboration Suite
+                <p class="nav-item"
+                    data-text="Zimbra Collaboration, sebelumnya dikenal sebagai Zimbra Collaboration Suite
                     (ZCS), adalah rangkaian koloborasi perangkat lunak yang mencakup server email dan klien web milik
-                    perusahaan Synacor. Pada tanggal 20 April 2022, National Vulnerabilit"> Zimbra Collaboration, sebelumnya dikenal sebagai Zimbra Collaboration Suite
+                    perusahaan Synacor. Pada tanggal 20 April 2022, National Vulnerabilit">
+                    Zimbra Collaboration, sebelumnya dikenal sebagai Zimbra Collaboration Suite
                     (ZCS), adalah rangkaian koloborasi perangkat lunak yang mencakup server email dan klien web milik
                     perusahaan Synacor. Pada tanggal 20 April 2022, National Vulnerabilit</p>
                 <nav class="space-x-4">
@@ -632,11 +654,14 @@
         <div class="card" style="width: 22rem;">
             <img src="/img/21.jpg" class="card-img-top" alt="Berita 3">
             <div class="card-body">
-                <h6 class="nav-item" data-text="CVE-2022-26809 KERENTANAN REMOTE PROCEDURE CALL"> CVE-2022-26809 KERENTANAN REMOTE PROCEDURE CALL</h6>
+                <h6 class="nav-item" data-text="CVE-2022-26809 KERENTANAN REMOTE PROCEDURE CALL"> CVE-2022-26809
+                    KERENTANAN REMOTE PROCEDURE CALL</h6>
                 <p class="card-text"> 2022-05-17 11:11:14 | idsirtii</p>
-                <p class="nav-item" data-text="Pada 12 April 2022, Microsoft mengeluarkan himbauan beserta patch mengenai
+                <p class="nav-item"
+                    data-text="Pada 12 April 2022, Microsoft mengeluarkan himbauan beserta patch mengenai
                     kerentanan Remote Procedure Call Runtime Remote Code Execution. Kerentanan ini mengeksploitasi suatu
-                    integer overflow pada Microsoft Remote Procedure Call (MS-RPC). Kerenta"> Pada 12 April 2022, Microsoft mengeluarkan himbauan beserta patch mengenai
+                    integer overflow pada Microsoft Remote Procedure Call (MS-RPC). Kerenta">
+                    Pada 12 April 2022, Microsoft mengeluarkan himbauan beserta patch mengenai
                     kerentanan Remote Procedure Call Runtime Remote Code Execution. Kerentanan ini mengeksploitasi suatu
                     integer overflow pada Microsoft Remote Procedure Call (MS-RPC). Kerenta</p>
                 <span class="btn nav-item" data-text="Selengkapnya">SELENGKAPNYA</span>
@@ -766,6 +791,9 @@
                     break;
                 case 'kontak_kami':
                     window.location.href = '{{ route('kontak_kami') }}';
+                    break;
+                case 'Gallery':
+                    window.location.href = '{{ route('gallery') }}';
                     break;
                 default:
                     console.log('No route defined for: ' + page);

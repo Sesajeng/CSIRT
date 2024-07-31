@@ -410,6 +410,22 @@
         .btn:hover {
             background-color: rgba(0, 0, 0, 0.1);
         }
+
+        .custom-button {
+            display: inline-block;
+            padding: 4px 7px;
+            color: #000;
+            text-align: center;
+            text-decoration: none;
+            border: 1px solid orange;
+            border-radius: 1px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .custom-button:hover {
+            background-color: orange;
+            color: #fff;
+        }
     </style>
 </head>
 
@@ -434,6 +450,8 @@
                                     data-text="Peraturan Kebijakan">Peraturan Kebijakan</span>
                                 <span class="btn nav-item" onclick="navigate('Berita_Siber')"
                                     data-text="Berita Siber (Cyber Blitz)">Berita Siber (Cyber Blitz)</span>
+                                <span class="btn nav-item" onclick="navigate('Gallery')"
+                                    data-text="Gallery">Gallery</span>
                                 <span class="btn nav-item" onclick="navigate('Statistik_Honeypot')"
                                     data-text="Statistik (Honeypot)">Statistik (Honeypot)</span>
                                 <span class="btn nav-item" onclick="navigate('Panduan_Teknis')"
@@ -474,24 +492,33 @@
             <img src="/img/28.png" alt="Telegram Logo">
         </div>
         <div class="content">
-            <h2 class="nav-item" data-text="Cek Versi Telegram di Ponsel Android Anda, Kerentanan Zero-Day EvilVideo Mengintai">Cek Versi Telegram di Ponsel Android Anda, Kerentanan Zero-Day EvilVideo Mengintai</h2>
+            <h2 class="nav-item"
+                data-text="Cek Versi Telegram di Ponsel Android Anda, Kerentanan Zero-Day EvilVideo Mengintai">Cek Versi
+                Telegram di Ponsel Android Anda, Kerentanan Zero-Day EvilVideo Mengintai</h2>
             <p>2024-07-25 15:47:53 | https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/
             </p>
-            <p class="nav-item" data-text="Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
+            <p class="nav-item"
+                data-text="Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
                 Berbahaya yang Disamarkan sebagai Video.
                 ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang
                 menggunakan platform Android untuk mendistribusikan file berbahaya yang disamarkan sebagai dalam
                 format video.
                 Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.
-                ">Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
+                ">
+                Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
                 Berbahaya yang Disamarkan sebagai Video.</p>
-            <p class="nav-item" data-text="ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang
+            <p class="nav-item"
+                data-text="ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang
                 menggunakan platform Android untuk mendistribusikan file berbahaya yang disamarkan sebagai dalam
-                format video.">ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang
+                format video.">
+                ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang
                 menggunakan platform Android untuk mendistribusikan file berbahaya yang disamarkan sebagai dalam
                 format video.</p>
-            <p class="nav-item" data-text=" Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.">Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.</p>
-            <a class="read-more" href="#">SELENGKAPNYA</a>
+            <p class="nav-item"
+                data-text=" Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.">
+                Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.</p>
+            <span class="nav-item custom-button" onclick="navigate('selengkapnya4')"
+                data-text="Selengkapnya">SELENGKAPNYA</span>
         </div>
     </div>
     <div class="container3 flex items-center justify-center mx-auto my-8">
@@ -499,23 +526,34 @@
             <img src="/img/1.jpeg" alt="Telegram Logo">
         </div>
         <div class="content">
-            <h2 class="nav-item" data-text="Batas Waktu Microsoft Windows—Anda Memiliki 7 Hari Untuk Memperbarui PC Anda">Batas Waktu Microsoft Windows—Anda Memiliki 7 Hari Untuk Memperbarui PC Anda</h2>
-            <p class="nav-item" data-text="2024-07-25 11:57:01 | https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/  ">2024-07-25 11:57:01 | https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/
+            <h2 class="nav-item"
+                data-text="Batas Waktu Microsoft Windows—Anda Memiliki 7 Hari Untuk Memperbarui PC Anda">Batas Waktu
+                Microsoft Windows—Anda Memiliki 7 Hari Untuk Memperbarui PC Anda</h2>
+            <p class="nav-item"
+                data-text="2024-07-25 11:57:01 | https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/  ">
+                2024-07-25 11:57:01 | https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/
             </p>
-            <p class="nav-item" data-text="Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
+            <p class="nav-item"
+                data-text="Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
                 BerbahayaSET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang
                 menggunakan platform Android untuk mendistribusikan file berbahaya yang disamarkan sebagai dalam
                 format video. yang Disamarkan sebagai Video.
                 Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.
-                ">Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
+                ">
+                Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
                 Berbahaya yang Disamarkan sebagai Video.</p>
-            <p class="nav-item" data-text="ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang
+            <p class="nav-item"
+                data-text="ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang
                 menggunakan platform Android untuk mendistribusikan file berbahaya yang disamarkan sebagai dalam
-                format video.">ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang
+                format video.">
+                ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang
                 menggunakan platform Android untuk mendistribusikan file berbahaya yang disamarkan sebagai dalam
                 format video.</p>
-            <p class="nav-item" data-text="Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.">Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.</p>
-            <a class="read-more" href="#">SELENGKAPNYA</a>
+            <p class="nav-item"
+                data-text="Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.">
+                Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.</p>
+            <span class="nav-item custom-button" onclick="navigate('selengkapnya5')"
+                data-text="Selengkapnya">SELENGKAPNYA</span>
         </div>
     </div>
     <div class="container3 flex items-center justify-center mx-auto my-8">
@@ -523,17 +561,29 @@
             <img src="/img/1.jpg" alt="Telegram Logo">
         </div>
         <div class="content">
-            <h2>Carbanak Malware Kembali Beroperasi Dalam Serangan Ransomware</h2>
-            <p>2024-01-10 13:50:20 | https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/ 
-                    </p>
-                    <p>Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
-                        Berbahaya yang Disamarkan sebagai Video.</p>
-                    <p>ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang
+            <h2 class="nav-item" data-text="Carbanak Malware Kembali Beroperasi Dalam Serangan Ransomware">Carbanak
+                Malware Kembali Beroperasi Dalam Serangan Ransomware</h2>
+            <p>2024-01-10 13:50:20 | https://www.securityweek.com/telegram-zero-day-enabled-malware-delivery/
+            </p>
+            <p class="nav-item"
+                data-text="Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
+                        Berbahaya yang Disamarkan sebagai Video. - ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang
                         menggunakan platform Android untuk mendistribusikan file berbahaya yang disamarkan sebagai dalam
-                        format video.</p>
-                    <p>Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.</p>
-                    <a class="read-more"
-                    href="#">SELENGKAPNYA</a>
+                        format video. - Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.">
+                Kerentanan Zero-Day EvilVideo di Telegram untuk Android Memungkinkan Threat Actors Mengirim File
+                Berbahaya yang Disamarkan sebagai Video.</p>
+            <p class="nav-item"
+                data-text="ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang
+                        menggunakan platform Android untuk mendistribusikan file berbahaya yang disamarkan sebagai dalam
+                        format video">
+                ESET memperingatkan bahwa Threat Actors telah menggunakan kerentanan Telegram di ponsel yang
+                menggunakan platform Android untuk mendistribusikan file berbahaya yang disamarkan sebagai dalam
+                format video.</p>
+            <p class="nav-item"
+                data-text="Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.">
+                Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.</p>
+            <span class="nav-item custom-button" onclick=" navigate('selengkapnya1')" data-text="Selengkapnya">
+                SELENGKAPNYA </span>
         </div>
     </div>
     </div>
@@ -664,6 +714,18 @@
                     break;
                 case 'kontak_kami':
                     window.location.href = '{{ route('kontak_kami') }}';
+                    break;
+                case 'selengkapnya1':
+                    window.location.href = '{{ route('selengkapnya1') }}';
+                    break;
+                case 'selengkapnya4':
+                    window.location.href = '{{ route('selengkapnya4') }}';
+                    break;
+                case 'selengkapnya5':
+                    window.location.href = '{{ route('selengkapnya5') }}';
+                    break;
+                case 'Gallery':
+                    window.location.href = '{{ route('gallery') }}';
                     break;
                 default:
                     console.log('No route defined for: ' + page);

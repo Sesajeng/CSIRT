@@ -418,6 +418,8 @@
                                             data-text="Peraturan Kebijakan">Peraturan Kebijakan</span>
                                         <span class="btn nav-item" onclick="navigate('Berita_Siber')"
                                             data-text="Berita Siber (Cyber Blitz)">Berita Siber (Cyber Blitz)</span>
+                                        <span class="btn nav-item" onclick="navigate('Gallery')"
+                                            data-text="Gallery">Gallery</span>
                                         <span class="btn nav-item" onclick="navigate('Statistik_Honeypot')"
                                             data-text="Statistik (Honeypot)">Statistik (Honeypot)</span>
                                         <span class="btn nav-item" onclick="navigate('Panduan_Teknis')"
@@ -446,7 +448,9 @@
             <thead>
                 <tr>
                     <th>
-                        <h2 class="nav-item" data-text="Jakarta Prov-CSIRT - Bidang Siber, Sandi dan Aplikasi Diskominfotik Provinsi DKI Jakarta - Balaikota Blok H Lantai 13 Jl. Medan Merdeka Selatan 8-9, Jakarta Pusat 10110">Jakarta Prov-CSIRT</h2>
+                        <h2 class="nav-item"
+                            data-text="Jakarta Prov-CSIRT - Bidang Siber, Sandi dan Aplikasi Diskominfotik Provinsi DKI Jakarta - Balaikota Blok H Lantai 13 Jl. Medan Merdeka Selatan 8-9, Jakarta Pusat 10110">
+                            Jakarta Prov-CSIRT</h2>
                         <p>Bidang Siber, Sandi dan Aplikasi Diskominfotik Provinsi DKI Jakarta.</p>
                         <p> Balaikota Blok H Lantai 13 Jl. Medan Merdeka Selatan 8-9, Jakarta Pusat 10110 </p>
                         <iframe
@@ -610,6 +614,9 @@
                     break;
                 case 'kontak_kami':
                     window.location.href = '{{ route('kontak_kami') }}';
+                    break;
+                case 'Gallery':
+                    window.location.href = '{{ route('gallery') }}';
                     break;
                 default:
                     console.log('No route defined for: ' + page);
