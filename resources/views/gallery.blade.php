@@ -488,6 +488,75 @@
     &nbsp;
     <div class="card-container1">
         <div class="card2" style="width: 16rem;">
+            <img src="/img/2.jpeg" class="card-img-top" alt="Berita 1">
+            <div class="card-body">
+                <h6 class="nav-item"
+                    data-text="Acara bimtek siberchat tanggal 23 maret 2021"> Acara bimtek siberchat tanggal 23 maret 2021
+                </h6>
+                <p class="nav-item" data-text="
+                31 Aguatus 2023">13-May-2022</p>
+            </div>
+        </div>
+        <div class="card2" style="width: 16rem;">
+            <img src="/img/27.jpg" class="card-img-top" alt="Berita 2">
+            <div class="card-body">
+                <h6 class="nav-item" data-text="Pelatihan Malware Analysis">Pelatihan Malware Analysis</h6>
+                <p class="card-text"> 17-May-2022</p>
+            </div>
+        </div>
+        <div class="card2" style="width: 16rem;">
+            <img src="/img/28.jpg" class="card-img-top" alt="Berita 3">
+            <div class="card-body">
+                <h6 class="nav-item" data-text="Seminar drill test">
+                    Seminar drill test</h6>
+                <p class="nav-item" data-text=" 20 Oktober 2022"> 19-May-2022</p>
+            </div>
+        </div>
+        <div class="card2" style="width: 16rem;">
+            <img src="/img/3.jpeg" class="card-img-top" alt="Berita 3">
+            <div class="card-body">
+                <h6 class="nav-item" data-text="Sosialisasi Security Awareness - Perangkat Mobile">
+                    Sosialisasi Security Awareness - Perangkat Mobile</h6>
+                <p class="card-text"> 25-May-2022</p>
+            </div>
+        </div>
+    </div>
+    <div class="card-container1">
+        <div class="card2" style="width: 16rem;">
+            <img src="/img/29.jpg" class="card-img-top" alt="Berita 1">
+            <div class="card-body">
+                <h6 class="nav-item"
+                    data-text="Sosialisasi Penggunaan komputer yang aman">Sosialisasi Penggunaan komputer yang aman
+                </h6>
+                <p class="nav-item" data-text="31-Aug-2023">08-Jun-2022</p>
+            </div>
+        </div>
+        <div class="card2" style="width: 16rem;">
+            <img src="/img/4.jpeg" class="card-img-top" alt="Berita 2">
+            <div class="card-body">
+                <h6 class="nav-item" data-text="Bimtek Integrasi ke Aplikasi Esign">Bimtek Integrasi ke Aplikasi Esign</h6>
+                <p class="card-text"> 17-Jun-2022</p>
+            </div>
+        </div>
+        <div class="card2" style="width: 16rem;">
+            <img src="/img/5.jpeg" class="card-img-top" alt="Berita 3">
+            <div class="card-body">
+                <h6 class="nav-item" data-text="Rapat Identifikasi Layanan Siber Sandi pada kegiatan Penyusunan Kebijakan Tata Kelola Siber Sandi">
+                Rapat Identifikasi Layanan Siber Sandi pada kegiatan Penyusunan Kebijakan Tata Kelola Siber Sandi</h6>
+                <p class="card-text"> 17-Jun-2022</p>
+            </div>
+        </div>
+        <div class="card2" style="width: 16rem;">
+            <img src="/img/6.jpeg" class="card-img-top" alt="Berita 3">
+            <div class="card-body">
+                <h6 class="nav-item" data-text="Rapat Penyusunan Pendukung Kebijakan Tata Kelola Siber Sandi">
+                    Rapat Penyusunan Pendukung Kebijakan Tata Kelola Siber Sandi</h6>
+                <p class="card-text"> 17-Jun-2022</p>
+            </div>
+        </div>
+    </div>
+    <div class="card-container1">
+        <div class="card2" style="width: 16rem;">
             <img src="/img/16.png" class="card-img-top" alt="Berita 1">
             <div class="card-body">
                 <h6 class="nav-item"
@@ -528,8 +597,7 @@
             <img src="/img/16.png" class="card-img-top" alt="Berita 1">
             <div class="card-body">
                 <h6 class="nav-item"
-                    data-text="Sosialisasi Security Awareness Keamanan Mobile Computing dan Teleworking">Sosialisasi
-                    Security Awareness Keamanan Mobile Computing dan Teleworking
+                    data-text="Acara bimtek siberchat tanggal 23 maret 2021">Acara bimtek siberchat tanggal 23 maret 2021
                 </h6>
                 <p class="nav-item" data-text="31-Aug-2023">31-Aug-2023</p>
             </div>
@@ -537,81 +605,7 @@
         <div class="card2" style="width: 16rem;">
             <img src="/img/17.png" class="card-img-top" alt="Berita 2">
             <div class="card-body">
-                <h6 class="nav-item" data-text="Security Awareness Potensi Ancaman Siber di Tahun 2023">Security
-                    Awareness Potensi Ancaman Siber di Tahun 2023</h6>
-                <p class="card-text"> 31-Aug-2023</p>
-            </div>
-        </div>
-        <div class="card2" style="width: 16rem;">
-            <img src="/img/14.jpg" class="card-img-top" alt="Berita 3">
-            <div class="card-body">
-                <h6 class="nav-item" data-text="Sosialisasi Security Awareness - Menjaga Keamanan Akses Jaringan">
-                    Sosialisasi Security Awareness - Menjaga Keamanan Akses Jaringan</h6>
-                <p class="card-text"> 20-Oct-2022</p>
-            </div>
-        </div>
-        <div class="card2" style="width: 16rem;">
-            <img src="/img/18.jpg" class="card-img-top" alt="Berita 3">
-            <div class="card-body">
-                <h6 class="nav-item" data-text="Sosialisasi Security Awareness - Workshop Secure Coding #3">
-                    Sosialisasi Security Awareness - Workshop Secure Coding #3</h6>
-                <p class="card-text"> 02-Aug-2022</p>
-            </div>
-        </div>
-    </div>
-    <div class="card-container1">
-        <div class="card2" style="width: 16rem;">
-            <img src="/img/16.png" class="card-img-top" alt="Berita 1">
-            <div class="card-body">
-                <h6 class="nav-item"
-                    data-text="Sosialisasi Security Awareness Keamanan Mobile Computing dan Teleworking">Sosialisasi
-                    Security Awareness Keamanan Mobile Computing dan Teleworking
-                </h6>
-                <p class="nav-item" data-text="
-                31 Aguatus 2023">31-Aug-2023</p>
-            </div>
-        </div>
-        <div class="card2" style="width: 16rem;">
-            <img src="/img/17.png" class="card-img-top" alt="Berita 2">
-            <div class="card-body">
-                <h6 class="nav-item" data-text="Security Awareness Potensi Ancaman Siber di Tahun 2023">Security
-                    Awareness Potensi Ancaman Siber di Tahun 2023</h6>
-                <p class="card-text"> 31-Aug-2023</p>
-            </div>
-        </div>
-        <div class="card2" style="width: 16rem;">
-            <img src="/img/14.jpg" class="card-img-top" alt="Berita 3">
-            <div class="card-body">
-                <h6 class="nav-item" data-text="Sosialisasi Security Awareness - Menjaga Keamanan Akses Jaringan">
-                    Sosialisasi Security Awareness - Menjaga Keamanan Akses Jaringan</h6>
-                <p class="nav-item" data-text=" 20 Oktober 2022"> 20-Oct-2022</p>
-            </div>
-        </div>
-        <div class="card2" style="width: 16rem;">
-            <img src="/img/18.jpg" class="card-img-top" alt="Berita 3">
-            <div class="card-body">
-                <h6 class="nav-item" data-text="Sosialisasi Security Awareness - Workshop Secure Coding #3">
-                    Sosialisasi Security Awareness - Workshop Secure Coding #3</h6>
-                <p class="card-text"> 02-Aug-2022</p>
-            </div>
-        </div>
-    </div>
-    <div class="card-container1">
-        <div class="card2" style="width: 16rem;">
-            <img src="/img/16.png" class="card-img-top" alt="Berita 1">
-            <div class="card-body">
-                <h6 class="nav-item"
-                    data-text="Sosialisasi Security Awareness Keamanan Mobile Computing dan Teleworking">Sosialisasi
-                    Security Awareness Keamanan Mobile Computing dan Teleworking
-                </h6>
-                <p class="nav-item" data-text="31-Aug-2023">31-Aug-2023</p>
-            </div>
-        </div>
-        <div class="card2" style="width: 16rem;">
-            <img src="/img/17.png" class="card-img-top" alt="Berita 2">
-            <div class="card-body">
-                <h6 class="nav-item" data-text="Security Awareness Potensi Ancaman Siber di Tahun 2023">Security
-                    Awareness Potensi Ancaman Siber di Tahun 2023</h6>
+                <h6 class="nav-item" data-text="Pelatihan Malware Analysis">Pelatihan Malware Analysis</h6>
                 <p class="card-text"> 31-Aug-2023</p>
             </div>
         </div>

@@ -140,15 +140,14 @@
             height: 100%;
             gap: 20px;
             border: 2px;
-            border-radius;
-            2px;
+            border-radius: 2px;
         }
 
         .card2 {
             box-shadow: 5 5px 4px rgba(0, 0, 0, 1);
             border: 2px;
             border-radius: 2px;
-            overflow: hidden;
+
 
         }
 
@@ -414,11 +413,9 @@
 
         .card-container1 {
             display: flex;
-            justify-content: center;
-            align-items: center;
+
             width: 100%;
             height: 100%;
-            gap: 20px;
             border: 2px;
             border-radius: 2px;
         }
@@ -427,7 +424,6 @@
             border: 1px solid orange;
             border-radius: 15px;
             margin: 2px;
-            box-shadow: 10 20px 1px rgba(0, 0, 0, 0.1);
             padding: 5px
         }
 
@@ -500,20 +496,22 @@
     <div class="carousel-item active">
         <img src="/img/22.png" class="d-block w-100" alt="gambar 1">
     </div>
-    <div class="form-container flex items-center ">
-        <div class="container mx-auto py-8 text-center">
-            <input type="text" placeholder="Cari Infografis"
-                class=" px-4 py-2 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+    <div class="form-container justify-center ">
+        <div class="form-container flex items-center ">
+            <div class="container mx-auto py-8 text-center">
+                <input type="text" placeholder="Cari Infografis"
+                    class=" px-4 py-2 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+            </div>
+            <div class="input-field mb-4 flex">
+                <label for="start-date" class="block mb-2">Tanggal Awal</label>
+                <input type="text" id="start-date" placeholder="Input Tanggal">
+            </div>
+            <div class="input-field mb-4">
+                <label for="end-date" class="block mb-2">Tanggal Akhir</label>
+                <input type="text" id="end-date" placeholder="Input Tanggal">
+            </div>
+            <button class="submit-button" class="block mb-2">Submit</button>
         </div>
-        <div class="input-field mb-4">
-            <label for="start-date" class="block mb-2">Tanggal Awal</label>
-            <input type="text" id="start-date" placeholder="Input Tanggal">
-        </div>
-        <div class="input-field mb-4">
-            <label for="end-date" class="block mb-2">Tanggal Akhir</label>
-            <input type="text" id="end-date" placeholder="Input Tanggal">
-        </div>
-        <button class="submit-button" class="block mb-2">Submit</button>
     </div>
     <div class="card-container1">
         <div class="card2" style="width: 18rem;">

@@ -444,6 +444,22 @@
         .btn:hover {
             background-color: rgba(0, 0, 0, 0.1);
         }
+
+        .custom-button {
+            display: inline-block;
+            padding: 4px 7px;
+            color: #000;
+            text-align: center;
+            text-decoration: none;
+            border: 1px solid orange;
+            border-radius: 1px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .custom-button:hover {
+            background-color: orange;
+            color: #fff;
+        }
     </style>
 </head>
 
@@ -498,7 +514,6 @@
 
     <div class="container conten">
         <div class="box-title1">Info Terkini </div>
-
     </div>
     </div>
     <div class="container content">
@@ -534,7 +549,8 @@
             <p class="nav-item"
                 data-text="Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.">
                 Perusahaan keamanan siber tersebut mengidentifikasi adanya kelemahan keamanan setelah.</p>
-            <a class="read-more" href="#">SELENGKAPNYA</a>
+            <span class="nav-item custom-button" onclick="navigate('selengkapnya4')"
+                data-text="Selengkapnya">SELENGKAPNYA</span>
         </div>
     </div>
     &nbsp;
@@ -563,11 +579,8 @@
                     BitRAT merupakan jenis malware yang diklasifikasikan sebagai Remote Access Trojan
                     (RAT). Kampanye malware BitRAT secara aktif menargetkan pengguna yang mencari aktivator lisensi
                     Windows tidak resmi. Aktivator lisensi tersebut dimaksudkan untuk men</p>
-                <nav class="space-x-4 navbar">
-                    <ul>
-                        <li class="btn nav-item" onclick="navigate('selengkpanya1')" data-text="Selengkapnya">
-                            Selengkapnya</li>
-                    </ul>
+                    <span class="nav-item custom-button" onclick="navigate('selengkapnya4')"
+                    data-text="Selengkapnya">SELENGKAPNYA</span>
                 </nav>
             </div>
         </div>
@@ -584,11 +597,8 @@
                     Zimbra Collaboration, sebelumnya dikenal sebagai Zimbra Collaboration Suite
                     (ZCS), adalah rangkaian koloborasi perangkat lunak yang mencakup server email dan klien web milik
                     perusahaan Synacor. Pada tanggal 20 April 2022, National Vulnerabilit</p>
-                <nav class="space-x-4">
-                    <ul>
-                        <li class="nav-item" onclick="Selengkapnya()" data-text="Selengkapnya">SELENGKAPNYA</li>
-                    </ul>
-                </nav>
+                    <span class="nav-item custom-button" onclick="navigate('selengkapnya4')"
+                    data-text="Selengkapnya">SELENGKAPNYA</span>
             </div>
         </div>
         <div class="card" style="width: 22rem;">
@@ -604,7 +614,8 @@
                     Pada 12 April 2022, Microsoft mengeluarkan himbauan beserta patch mengenai
                     kerentanan Remote Procedure Call Runtime Remote Code Execution. Kerentanan ini mengeksploitasi suatu
                     integer overflow pada Microsoft Remote Procedure Call (MS-RPC). Kerenta</p>
-                <span class="btn nav-item" data-text="Selengkapnya">SELENGKAPNYA</span>
+                    <span class="nav-item custom-button" onclick="navigate('selengkapnya4')"
+                    data-text="Selengkapnya">SELENGKAPNYA</span>
             </div>
         </div>
     </div>
@@ -623,12 +634,8 @@
                     BitRAT merupakan jenis malware yang diklasifikasikan sebagai Remote Access Trojan
                     (RAT). Kampanye malware BitRAT secara aktif menargetkan pengguna yang mencari aktivator lisensi
                     Windows tidak resmi. Aktivator lisensi tersebut dimaksudkan untuk men</p>
-                <nav class="space-x-4 navbar">
-                    <ul>
-                        <li class="btn nav-item" onclick="navigate('selengkpanya1')" data-text="Selengkapnya">
-                            Selengkapnya</li>
-                    </ul>
-                </nav>
+                    <span class="nav-item custom-button" onclick="navigate('selengkapnya4')"
+                    data-text="Selengkapnya">SELENGKAPNYA</span>
             </div>
         </div>
         <div class="card" style="width: 22rem;">
@@ -644,11 +651,8 @@
                     Zimbra Collaboration, sebelumnya dikenal sebagai Zimbra Collaboration Suite
                     (ZCS), adalah rangkaian koloborasi perangkat lunak yang mencakup server email dan klien web milik
                     perusahaan Synacor. Pada tanggal 20 April 2022, National Vulnerabilit</p>
-                <nav class="space-x-4">
-                    <ul>
-                        <li class="btn nav-item" onclick="Selengkapnya()" data-text="Selengkapnya">SELENGKAPNYA</li>
-                    </ul>
-                </nav>
+                    <span class="nav-item custom-button" onclick="navigate('selengkapnya4')"
+                    data-text="Selengkapnya">SELENGKAPNYA</span>
             </div>
         </div>
         <div class="card" style="width: 22rem;">
@@ -664,7 +668,8 @@
                     Pada 12 April 2022, Microsoft mengeluarkan himbauan beserta patch mengenai
                     kerentanan Remote Procedure Call Runtime Remote Code Execution. Kerentanan ini mengeksploitasi suatu
                     integer overflow pada Microsoft Remote Procedure Call (MS-RPC). Kerenta</p>
-                <span class="btn nav-item" data-text="Selengkapnya">SELENGKAPNYA</span>
+                    <span class="nav-item custom-button" onclick="navigate('selengkapnya4')"
+                    data-text="Selengkapnya">SELENGKAPNYA</span>
             </div>
         </div>
     </div>
@@ -794,6 +799,9 @@
                     break;
                 case 'Gallery':
                     window.location.href = '{{ route('gallery') }}';
+                    break;
+                case 'selengkapnya4':
+                    window.location.href = '{{ route('selengkapnya4') }}';
                     break;
                 default:
                     console.log('No route defined for: ' + page);
