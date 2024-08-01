@@ -376,12 +376,14 @@
         }
     </style>
 </head>
-
+{{-- Header --}}
 <body class=" text-black">
     <div class="header">
         <header class="bg-orange-800 py-4">
+            {{-- Logo CSIRT --}}
             <div class="container mx-auto flex justify-between items-center">
                 <img src="/img/Logo.png" alt="Logo" class="h-10">
+                 {{-- Navbar disertai menu (HOME, PROFIL, EVENT, PUBLIKASI,PERINGATAN KEAMANAN, DST) --}}
                 <nav class="space-x-4 navbar">
                     <ul>
                         <li class="btn nav-item" onclick="navigate('home')" data-text="Home">Home</li>
@@ -412,19 +414,21 @@
                             data-text="Lapor Insiden Siber">Lapor Insiden Siber</li>
                         <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">Kontak Kami
                         </li>
+                        {{-- Tombol Pencarian di Header --}}
                         <li><input type="text" class="search-box" placeholder="Search..."></li>
                     </ul>
                 </nav>
             </div>
     </div>
-
     </div>
     </header>
     </div>
+    {{-- Konten ke 1 bawah header--}}
     <div class="carousel-item active">
         <img src="/img/23.png" class="d-block w-100" alt="gambar 1">
     </div>
     &nbsp;
+    {{--Konten ke 2 berisi tombol pencarian, dropdown untuk memilih tipe peraturan dan tahun--}}
     <div class="max-w-6xl mx-auto">
         <div class="bg-white p-6 rounded-lg shadow-lg mb-6">
             <h2 class="text-lg font-semibold mb-4">Pencarian Peraturan Kebijakan:</h2>
@@ -439,8 +443,9 @@
             </div>
             <button class="bg-yellow-500 text-white rounded-lg px-6 py-2">Cari Peraturan</button>
         </div>
-
+        {{-- Konten ke 3 berisi semua tampilan Peraturan Kebijakan--}}
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {{-- Peraturan Kebijakan ke 1 --}}
             <div class="bg-white p-4 rounded-lg shadow-md">
                 <h5 class="nav-item"
                     data-text="Peraturan Kebijakan - Perpres Nomor 47 Tahun 2023 - TENTANG STRATEGI KEAMANAN SIBER NASIONAL DAN MANAJEMEN KRISIS SIBER">
@@ -448,6 +453,7 @@
                 <p class="text-gray-600">TENTANG STRATEGI KEAMANAN SIBER NASIONAL DAN MANAJEMEN KRISIS SIBER</p>
                 <p class="text-gray-500 text-sm">2023-08-14 09:53:13 | 38x diunduh</p>
             </div>
+            {{-- Peraturan Kebijakan ke 2 --}}
             <div class="bg-white p-4 rounded-lg shadow-md">
                 <h5 class="nav-item"
                     data-text="Peraturan Kebijakan - Dokumen PKS BSrE Pemprov DKI 2023 - Pemanfaatan sertifikat elektronik pada sistem elektronik di pemerintah provinsi daerah khusus ibukota jakarta">
@@ -456,6 +462,7 @@
                     DAERAH KHUSUS IBUKOTA JAKARTA</p>
                 <p class="text-gray-500 text-sm">2023-05-11 13:59:30 | 407x diunduh</p>
             </div>
+            {{-- Peraturan Kebijakan ke 3 --}}
             <div class="bg-white p-4 rounded-lg shadow-md">
                 <h5 class="nav-item"
                     data-text="Peraturan Kebijakan - INGUB Nomor 1 Tahun 2013 Tentang penggunaan perangkat lunak dan perangkat keras berlisensi - Instruksi gubernur provinsi daerah khusus ibukota jakarta Nomor 1 tahun 2013 tentang penggunaan perangkat lunak dan perangkat keras berlisensi">
@@ -465,6 +472,7 @@
                     Tentang Penggunaan Perangkat Lunak dan Perangkat keras Berlisensi</p>
                 <p class="text-gray-500 text-sm">2023-03-13 11:41:21 | 292x diunduh</p>
             </div>
+            {{-- Kebijakan Peraturan ke 4 --}}
             <div class="bg-white p-4 rounded-lg shadow-md">
                 <h5 class="nav-item"
                     data-text="Peraturan Kebijakan - Pergub 43 Tahun 2022 pembangunan pengembangan aplikasi SPBE - Tentang pembangunan dan pengembangan aplikasi sistem pemerintah berbasis elektronik">
@@ -476,9 +484,11 @@
         </div>
     </div>
     &nbsp;
+    {{-- Tampilan bagian Footer --}}
     <section class="footer-section">
         <div class="container">
             <div class="footer-column">
+                {{-- Logo CSIRT bagian kiri atas --}}
                 <img src="/img/Logo.png" alt="CSIRT Logo">
                 <p>Tim Tanggap Insiden Siber (Computer Security Incident Response Team) Pemerintah Provinsi DKI Jakarta
                     yang selanjutnya disebut dengan JakartaProv-CSIRT merupakan CSIRT Pemprov DKI Jakarta.</p>
@@ -486,6 +496,7 @@
                     Sekretaris Daerah DKI Jakarta Nomor: 41 Tahun 2020 Tentang Compu</p>
                 <button>SELENGKAPNYA</button>
             </div>
+            {{-- Footer bagian Visitor --}}
             <div class="footer-column">
                 <h3>Visitor</h3>
                 <p>Pengunjung Online: 4</p>
@@ -493,6 +504,7 @@
                 <p>Tanggal: 24-07-2024</p>
                 <p>Total Pengunjung: 47322</p>
             </div>
+            {{-- Footer bagian Link --}}
             <div class="footer-column">
                 <h3>Link</h3>
                 <ul>
@@ -502,6 +514,7 @@
                     <li><a href="#">Kontak Kami</a></li>
                 </ul>
             </div>
+            {{-- Footer bagian alamat dan Media Sosial --}}
             <div class="footer-column">
                 <h3>JakartaProv-CSIRT</h3>
                 <p> Siber, Sandi dan Aplikasi Diskominfotik Provinsi DKI Jakarta Balaikota Blok H Lantai 13, JL Merdeka
@@ -513,25 +526,27 @@
             </div>
         </div>
     </section>
-
+    {{-- Tampilan tombol play dan mute untuk suara --}}
     <button id="audioButton" class="btn btn-primary side-button">
         <img id="audioIcon" src="/img/mute.png" alt="Play" />
     </button>
-
+    {{-- Proses penerjemahan suara --}}
     <script>
+        // Mendapatkan status audio dari localStorage
         let isPlaying = localStorage.getItem('audioStatus') === 'true';
-
+        // Fungsi untuk mengucapkan teks menggunakan responsiveVoice
         function speakText(text) {
             if (isPlaying) {
                 console.log('Speaking: ', text);
                 responsiveVoice.speak(text, 'Indonesian Female');
             }
         }
-
+        // Menambahkan event listener untuk tombol audio
         document.getElementById('audioButton').addEventListener('click', function() {
             const button = this;
             const icon = document.getElementById('audioIcon');
             if (isPlaying) {
+                // Jika audio sedang diputar, hentikan dan ubah ikon menjadi mute
                 responsiveVoice.cancel();
                 icon.src = '/img/mute.png'; // Gambar untuk mode Play
                 icon.alt = 'Play';
@@ -539,6 +554,7 @@
                 localStorage.setItem('audioStatus', 'false');
                 responsiveVoice.speak('Mode Suara of', 'Indonesian Female');
             } else {
+                // Jika audio tidak diputar, mulai dan ubah ikon menjadi play
                 icon.src = '/img/play.png'; // Gambar untuk mode Mute
                 icon.alt = 'Mute';
                 isPlaying = true;
@@ -546,7 +562,7 @@
                 responsiveVoice.speak('Selamat Datang di Jakarta Prov CSIRT', 'Indonesian Female');
             }
         });
-
+        // Menambahkan event listener untuk item navigasi agar mengucapkan teks saat di-hover
         document.querySelectorAll('.nav-item').forEach(item => {
             item.addEventListener('mouseover', function(event) {
                 const text = item.getAttribute('data-text') || event.target.getAttribute('data-text');
@@ -555,12 +571,12 @@
                 }
             });
         });
-
-        // Set initial icon based on the saved status
+         // Mengatur ikon audio berdasarkan status isPlaying saat halaman dimuat
         document.getElementById('audioIcon').src = isPlaying ? '/img/play.png' : '/img/mute.png';
         document.getElementById('audioIcon').alt = isPlaying ? 'Mute' : 'Play';
     </script>
     <script>
+        // Fungsi untuk menavigasi ke halaman yang berbeda berdasarkan parameter
         function navigate(page) {
             switch (page) {
                 case 'Peringatan_Keamanan':
@@ -607,7 +623,7 @@
             }
         }
     </script>
+    {{-- Fitur Ubah Tampilan, seperti Contrast, Higtlight Link, Bigger Teks (otomatis menggunakan API)--}}
     <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
 </body>
-
 </html>

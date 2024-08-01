@@ -551,8 +551,6 @@
             background-color: rgba(0, 0, 0, 0.1);
         }
 
-
-        /* Default styles */
         body {
             background-color: white;
             color: black;
@@ -576,7 +574,6 @@
             cursor: pointer;
         }
 
-        /* High contrast styles */
         .high-contrast {
             background-color: black !important;
             color: white !important;
@@ -600,8 +597,6 @@
             color: black !important;
         }
 
-
-
         .custom-button {
             display: inline-block;
             padding: 4px 7px;
@@ -619,19 +614,21 @@
         }
     </style>
 </head>
-
+{{-- Header --}}
 <body class=" text-black">
     <div class="header">
         <header class="bg-orange-800 py-4">
+            {{-- Logo CSIRT --}}
             <div class="container mx-auto flex justify-between items-center">
-                <img src="/img/Logo.png" alt="Logo" class="h-10">
+                <img src="/img/Logo.png" alt="Logo CSIRT" class="h-10">
+                {{-- Navbar disertai menu (HOME, PROFIL, EVENT, PUBLIKASI,PERINGATAN KEAMANAN, DST) --}}
                 <nav class="space-x-4 navbar">
                     <ul>
                         <li class="btn nav-item" onclick="navigate('home')" data-text="Home">Home</li>
                         <li class="btn nav-item" onclick="navigate('profil')" data-text="Profil">Profil</li>
                         <li class="btn nav-item" onclick="navigate('event')" data-text="Event">Event</li>
                         <li class="btn nav-item dropdown">
-                            <span class="dropbtn" data-text="home">Publikasi</span>
+                            <span class="dropbtn" data-text="publikasi">Publikasi</span>
                             <div class="dropdown-content">
                                 <span class="btn nav-item" onclick="navigate('Peringatan_Keamanan')"
                                     data-text="Peringatan Keamanan">Peringatan Keamanan</span>
@@ -655,20 +652,22 @@
                             data-text="Lapor Insiden Siber">Lapor Insiden Siber</li>
                         <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">Kontak Kami
                         </li>
+                        {{-- Tombol Pencarian di Header --}}
                         <li><input type="text" class="search-box" placeholder="Search..."></li>
                     </ul>
                 </nav>
             </div>
         </header>
     </div>
+    {{-- Konten ke 1 bawah header--}}
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-header">
             <div class="carousel-item active">
                 <img src="/img/1.png" class="d-block w-100" alt="gambar 1">
             </div>
         </div>
-
         &nbsp;
+        {{-- Konten ke 2 untuk melihat berita lebih banyak dan mengarahkan ke halaman Berita Siber --}}
         <section class="page-section portofolio">
             <div class="container conten">
                 <div class="box-title1">Berita Tekrini </div>
@@ -680,11 +679,11 @@
             </div>
             <div class="container content">
                 <div class="line"></div>
-                </diiv>
             </div>
-    </div>
-    </section>
+            </div>
+        </section>
     &nbsp;
+    {{-- Konten ke 3 berisi Berita Siber terkini --}}
     <div class="card-container">
         <div class="card" style="width: 22rem;">
             <img src="/img/3.png" class="card-img-top" alt="Berita 1">
@@ -707,7 +706,6 @@
                     data-text="Selengkapnya">SELENGKAPNYA</span>
             </div>
         </div>
-
         <div class="card" style="width: 22rem;">
             <img src="/img/11.jpg" class="card-img-top" alt="Berita 2">
             <div class="card-body">
@@ -759,12 +757,13 @@
             </div>
         </div>
     </div>
+    {{--Konten ke 4 untuk melihat Gallery lebih banyak dan mengarahkan ke halaman Gallery --}}
     <div class="container conten">
         <div class="box-title1">Gallery Kegiatan </div>
         <div class="box-title2">
             <span class="nav-item " onclick="navigate('Gallery')" data-text="Index Gallery" style="color: black;">
                 Index Gallery ></a>
-                </p>
+            </span>
         </div>
     </div>
     <div class="container content">
@@ -773,6 +772,7 @@
     </div>
     </div>
     &nbsp;
+    {{-- Konten ke 5 menampilkan Gallery Terkini --}}
     <div class="card-container1">
         <div class="card2" style="width: 16rem;">
             <img src="/img/16.png" class="card-img-top" alt="Berita 1">
@@ -846,24 +846,27 @@
             </div>
         </div>
     </div>
+    {{-- Tampilan tombol play dan mute untuk suara --}}
     <button id="audioButton" class="btn btn-primary side-button">
         <img id="audioIcon" src="/img/mute.png" alt="Play" />
     </button>
-
+    {{-- Proses penerjemahan suara --}}
     <script>
+        // Mendapatkan status audio dari localStorage
         let isPlaying = localStorage.getItem('audioStatus') === 'true';
-
+        // Fungsi untuk mengucapkan teks menggunakan responsiveVoice
         function speakText(text) {
             if (isPlaying) {
                 console.log('Speaking: ', text);
                 responsiveVoice.speak(text, 'Indonesian Female');
             }
         }
-
+        // Menambahkan event listener untuk tombol audio
         document.getElementById('audioButton').addEventListener('click', function() {
             const button = this;
             const icon = document.getElementById('audioIcon');
             if (isPlaying) {
+                // Jika audio sedang diputar, hentikan dan ubah ikon menjadi mute
                 responsiveVoice.cancel();
                 icon.src = '/img/mute.png'; // Gambar untuk mode Play
                 icon.alt = 'Play';
@@ -871,6 +874,7 @@
                 localStorage.setItem('audioStatus', 'false');
                 responsiveVoice.speak('Mode Suara of', 'Indonesian Female');
             } else {
+                // Jika audio tidak diputar, mulai dan ubah ikon menjadi play
                 icon.src = '/img/play.png'; // Gambar untuk mode Mute
                 icon.alt = 'Mute';
                 isPlaying = true;
@@ -878,7 +882,7 @@
                 responsiveVoice.speak('Selamat Datang di Jakarta Prov CSIRT', 'Indonesian Female');
             }
         });
-
+        // Menambahkan event listener untuk item navigasi agar mengucapkan teks saat di-hover
         document.querySelectorAll('.nav-item').forEach(item => {
             item.addEventListener('mouseover', function(event) {
                 const text = item.getAttribute('data-text') || event.target.getAttribute('data-text');
@@ -887,11 +891,12 @@
                 }
             });
         });
-
+        // Mengatur ikon audio berdasarkan status isPlaying saat halaman dimuat
         document.getElementById('audioIcon').src = isPlaying ? '/img/play.png' : '/img/mute.png';
         document.getElementById('audioIcon').alt = isPlaying ? 'Mute' : 'Play';
     </script>
     <script>
+        // Fungsi untuk menavigasi ke halaman yang berbeda berdasarkan parameter
         function navigate(page) {
             switch (page) {
                 case 'Peringatan_Keamanan':
@@ -947,23 +952,12 @@
             }
         }
     </script>
-
-    {{-- <div class="accessibility-toolbar">
-        <button class="accessibility-button" id="contrast">Contrast +</button>
-    </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('contrast').addEventListener('click', function() {
-                document.body.classList.toggle('high-contrast');
-            });
-        });
-    </script>
-    <script src="{{ asset('js/app.js') }}" defer></script>
- --}}
     &nbsp;
+    {{-- Tampilan bagian Footer --}}
     <section class="footer-section">
         <div class="container">
             <div class="footer-column">
+                {{-- Logo CSIRT bagian kiri atas --}}
                 <img src="/img/Logo.png" alt="CSIRT Logo">
                 <p>Tim Tanggap Insiden Siber (Computer Security Incident Response Team) Pemerintah Provinsi DKI Jakarta
                     yang selanjutnya disebut dengan JakartaProv-CSIRT merupakan CSIRT Pemprov DKI Jakarta.</p>
@@ -971,6 +965,7 @@
                     Sekretaris Daerah DKI Jakarta Nomor: 41 Tahun 2020 Tentang Compu</p>
                 <button>SELENGKAPNYA</button>
             </div>
+            {{-- Footer bagian Visitor --}}
             <div class="footer-column">
                 <h3>Visitor</h3>
                 <p>Pengunjung Online: 4</p>
@@ -978,6 +973,7 @@
                 <p>Tanggal: 24-07-2024</p>
                 <p>Total Pengunjung: 47322</p>
             </div>
+            {{-- Footer bagian Link --}}
             <div class="footer-column">
                 <h3>Link</h3>
                 <ul>
@@ -987,6 +983,7 @@
                     <li><a href="#">Kontak Kami</a></li>
                 </ul>
             </div>
+            {{-- Footer bagian alamat dan Media Sosial --}}
             <div class="footer-column">
                 <h3>JakartaProv-CSIRT</h3>
                 <p> Siber, Sandi dan Aplikasi Diskominfotik Provinsi DKI Jakarta Balaikota Blok H Lantai 13, JL Merdeka
@@ -998,12 +995,7 @@
             </div>
         </div>
     </section>
-
-
-
-
-
+    {{-- Fitur Ubah Tampilan, seperti Contrast, Higtlight Link, Bigger Teks (otomatis menggunakan API)--}}
     <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
 </body>
-
 </html>

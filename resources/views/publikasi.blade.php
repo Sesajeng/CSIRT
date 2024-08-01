@@ -299,12 +299,14 @@
         }
     </style>
 </head>
-
+{{-- Header --}}
 <body class=" text-black">
     <div class="header">
         <header class="bg-orange-800 py-4">
+            {{-- Logo CSIRT --}}
             <div class="container mx-auto flex justify-between items-center">
                 <img src="/img/Logo.png" alt="Logo" class="h-10">
+                 {{-- Navbar disertai menu (HOME, PROFIL, EVENT, PUBLIKASI,PERINGATAN KEAMANAN, DST) --}}
                 <nav class="space-x-4 navbar">
                     <ul>
                         <li class="btn nav-item" onclick="navigate('home')" data-text="Home">Home</li>
@@ -335,21 +337,24 @@
                             data-text="Lapor Insiden Siber">Lapor Insiden Siber</li>
                         <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">Kontak Kami
                         </li>
+                        {{-- Tombol Pencarian di Header --}}
                         <li><input type="text" class="search-box" placeholder="Search..."></li>
                     </ul>
                 </nav>
             </div>
     </div>
-
     </div>
     </header>
     </div>
+    {{-- Konten ke 1 bawah header--}}
     <div class="carousel-item active">
         <img src="/img/5.png" class="d-block w-100" alt="gambar 1">
     </div>
+    {{-- Tombol pencarian--}}
     <div class="search-container">
         <input type="text" class="search-box" placeholder="Search...">
     </div>
+    
     <footer class="footer">
         <div class="container">
         </div>

@@ -48,7 +48,6 @@
             box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
         }
 
-
         .search-box {
             width: 200px;
             height: 30px;
@@ -371,7 +370,6 @@
             border: 1px solid #ccc;
             justify-content: center;
             max-width: 1200px;
-
         }
 
         .image img {
@@ -428,12 +426,14 @@
         }
     </style>
 </head>
-
+{{-- Header --}}
 <body class=" text-black">
     <div class="header">
         <header class="bg-orange-800 py-4">
+            {{-- Logo CSIRT --}}
             <div class="container mx-auto flex justify-between items-center">
                 <img src="/img/Logo.png" alt="Logo" class="h-10">
+                {{-- Navbar disertai menu (HOME, PROFIL, EVENT, PUBLIKASI,PERINGATAN KEAMANAN, DST) --}}
                 <nav class="space-x-4 navbar">
                     <ul>
                         <li class="btn nav-item" onclick="navigate('home')" data-text="Home">Home</li>
@@ -463,6 +463,7 @@
                         <li class="btn nav-item" onclick="navigate('lapor_insiden_siber')"
                             data-text="Lapor Insiden Siber">Lapor Insiden Siber</li>
                         <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">Kontak Kami
+                           {{-- Tombol Pencarian di Header --}}
                         </li>
                         <li><input type="text" class="search-box" placeholder="Search..."></li>
                     </ul>
@@ -472,9 +473,11 @@
     </div>
     </header>
     </div>
+    {{-- Konten ke 1 bawah header--}}
     <div class="carousel-item active">
         <img src="/img/24.png" class="d-block w-100" alt="gambar 1">
     </div>
+    {{-- Tampilan tombol pencarian, input tanggal awal, input tanggal akhir dan submit --}}
     <div class="content1 flex justify-center">
         <div class="space ">
             <div class="container mx-auto p-4">
@@ -487,6 +490,7 @@
             </div>
         </div>
     </div>
+    {{-- Konten ke 2 Berita Siber disertai judul, deskripsi dan tombol selengkapnya untuk mengarahkan ke halaman berita tersebut --}}
     <div class="container3 flex items-center justify-center mx-auto my-8">
         <div class="image">
             <img src="/img/28.png" alt="Telegram Logo">
@@ -589,9 +593,11 @@
     </div>
     </div>
     &nbsp;
+        {{-- Tampilan bagian Footer --}}
     <section class="footer-section">
         <div class="container">
             <div class="footer-column">
+                 {{-- Logo CSIRT bagian kiri atas --}}
                 <img src="/img/Logo.png" alt="CSIRT Logo">
                 <p>Tim Tanggap Insiden Siber (Computer Security Incident Response Team) Pemerintah Provinsi DKI
                     Jakarta
@@ -601,6 +607,7 @@
                     Sekretaris Daerah DKI Jakarta Nomor: 41 Tahun 2020 Tentang Compu</p>
                 <button>SELENGKAPNYA</button>
             </div>
+            {{-- Footer bagian Visitor --}}
             <div class="footer-column">
                 <h3>Visitor</h3>
                 <p>Pengunjung Online: 4</p>
@@ -608,6 +615,7 @@
                 <p>Tanggal: 24-07-2024</p>
                 <p>Total Pengunjung: 47322</p>
             </div>
+            {{-- Footer bagian Link --}}
             <div class="footer-column">
                 <h3>Link</h3>
                 <ul>
@@ -617,6 +625,7 @@
                     <li><a href="#">Kontak Kami</a></li>
                 </ul>
             </div>
+            {{-- Footer bagian alamat dan Media Sosial --}}
             <div class="footer-column">
                 <h3>JakartaProv-CSIRT</h3>
                 <p> Siber, Sandi dan Aplikasi Diskominfotik Provinsi DKI Jakarta Balaikota Blok H Lantai 13, JL
@@ -629,25 +638,27 @@
             </div>
         </div>
     </section>
-
+    {{-- Tampilan tombol play dan mute untuk suara --}}
     <button id="audioButton" class="btn btn-primary side-button">
         <img id="audioIcon" src="/img/mute.png" alt="Play" />
     </button>
-
+    {{-- Proses penerjemahan suara --}}
     <script>
+        // Mendapatkan status audio dari localStorage
         let isPlaying = localStorage.getItem('audioStatus') === 'true';
-
+        // Fungsi untuk mengucapkan teks menggunakan responsiveVoice
         function speakText(text) {
             if (isPlaying) {
                 console.log('Speaking: ', text);
                 responsiveVoice.speak(text, 'Indonesian Female');
             }
         }
-
+        // Menambahkan event listener untuk tombol audio
         document.getElementById('audioButton').addEventListener('click', function() {
             const button = this;
             const icon = document.getElementById('audioIcon');
             if (isPlaying) {
+                // Jika audio sedang diputar, hentikan dan ubah ikon menjadi mute
                 responsiveVoice.cancel();
                 icon.src = '/img/mute.png'; // Gambar untuk mode Play
                 icon.alt = 'Play';
@@ -655,6 +666,7 @@
                 localStorage.setItem('audioStatus', 'false');
                 responsiveVoice.speak('Mode Suara of', 'Indonesian Female');
             } else {
+                // Jika audio tidak diputar, mulai dan ubah ikon menjadi play
                 icon.src = '/img/play.png'; // Gambar untuk mode Mute
                 icon.alt = 'Mute';
                 isPlaying = true;
@@ -662,7 +674,7 @@
                 responsiveVoice.speak('Selamat Datang di Jakarta Prov CSIRT', 'Indonesian Female');
             }
         });
-
+        // Menambahkan event listener untuk item navigasi agar mengucapkan teks saat di-hover
         document.querySelectorAll('.nav-item').forEach(item => {
             item.addEventListener('mouseover', function(event) {
                 const text = item.getAttribute('data-text') || event.target.getAttribute('data-text');
@@ -671,12 +683,12 @@
                 }
             });
         });
-
-        // Set initial icon based on the saved status
+        // Mengatur ikon audio berdasarkan status isPlaying saat halaman dimuat
         document.getElementById('audioIcon').src = isPlaying ? '/img/play.png' : '/img/mute.png';
         document.getElementById('audioIcon').alt = isPlaying ? 'Mute' : 'Play';
     </script>
     <script>
+        // Fungsi untuk menavigasi ke halaman yang berbeda berdasarkan parameter
         function navigate(page) {
             switch (page) {
                 case 'Peringatan_Keamanan':
@@ -732,7 +744,7 @@
             }
         }
     </script>
+    {{-- Fitur Ubah Tampilan, seperti Contrast, Higtlight Link, Bigger Teks (otomatis menggunakan API)--}}
     <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
 </body>
-
 </html>
