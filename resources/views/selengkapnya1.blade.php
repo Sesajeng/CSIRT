@@ -690,6 +690,7 @@ NCC Group melaporkan adanya peningkatan serangan ransomware pada November 2023 s
         }
     </script>
      {{-- Fitur Ubah Tampilan, seperti Contrast, Higtlight Link, Bigger Teks (otomatis menggunakan API)--}}
-    <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
+    {{-- <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script> --}}
+
 </body>
 </html>

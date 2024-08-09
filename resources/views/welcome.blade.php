@@ -757,6 +757,7 @@
             </div>
         </div>
     </div>
+    &nbsp;
     {{--Konten ke 4 untuk melihat Gallery lebih banyak dan mengarahkan ke halaman Gallery --}}
     <div class="container conten">
         <div class="box-title1">Gallery Kegiatan </div>
@@ -996,6 +997,7 @@
         </div>
     </section>
     {{-- Fitur Ubah Tampilan, seperti Contrast, Higtlight Link, Bigger Teks (otomatis menggunakan API)--}}
-    <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script>
+    {{-- <script src="https://cdn.userway.org/widget.js" data-account="qTYTjlI1Es"></script> --}}
+
 </body>
 </html>
