@@ -287,12 +287,19 @@
             border-color: #de8300;
         }
 
-        .line {
+        .garis {
             width: 100%;
             height: 5px;
             background-color: #de8300;
             display: flex;
             margin-top: -13px;
+        }
+        .line {
+            width: 100%;
+            height: 5px;
+            background-color: #de8300;
+            display: flex;
+            margin-top:px;
         }
 
         .container.conten {
@@ -644,12 +651,9 @@
                                     data-text="Statistik (Honeypot)">Statistik (Honeypot)</span>
                                 <span class="btn nav-item" onclick="navigate('Panduan_Teknis')"
                                     data-text="Panduan Teknis">Panduan Teknis</span>
-                                <span class="btn nav-item" onclick="navigate('rfc2350')"
-                                    data-text="RFC2350">RFC2350</span>
+                
                             </div>
                         </li>
-                        <li class="btn nav-item" onclick="navigate('lapor_insiden_siber')"
-                            data-text="Lapor Insiden Siber">Lapor Insiden Siber</li>
                         <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">Kontak Kami
                         </li>
                         {{-- Tombol Pencarian di Header --}}
@@ -678,7 +682,7 @@
                 </div>
             </div>
             <div class="container content">
-                <div class="line"></div>
+                <div class="garis"></div>
             </div>
             </div>
         </section>
@@ -917,9 +921,6 @@
                     break;
                 case 'Panduan_Teknis':
                     window.location.href = '{{ route('panduan_teknis') }}';
-                    break;
-                case 'rfc2350':
-                    window.location.href = '{{ route('rfc2350') }}';
                     break;
                 case 'home':
                     window.location.href = '{{ route('welcome') }}';

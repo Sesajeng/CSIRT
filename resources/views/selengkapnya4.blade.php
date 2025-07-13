@@ -480,12 +480,8 @@
                                     (Honeypot)</span>
                                 <span class="btn nav-item" onclick="navigate('Panduan_Teknis')"
                                     data-text="Panduan Teknis">Panduan Teknis</span>
-                                <span class="btn nav-item" onclick="navigate('rfc2350')"
-                                    data-text="RFC2350">RFC2350</span>
                             </div>
                         </li>
-                        <li class="btn nav-item" onclick="navigate('lapor_insiden_siber')"
-                            data-text="Lapor Insiden Siber">Lapor Insiden Siber</li>
                         <li class="btn nav-item" onclick="navigate('kontak_kami')" data-text="Kontak Kami">Kontak Kami
                         </li>
                         {{-- Tombol Pencarian di Header --}}
@@ -739,9 +735,6 @@ So.., segera update versi Telegram anda, agar tetap bisa menggunakannya dengan a
                     break;
                 case 'Panduan_Teknis':
                     window.location.href = '{{ route('panduan_teknis') }}';
-                    break;
-                case 'rfc2350':
-                    window.location.href = '{{ route('rfc2350') }}';
                     break;
                 case 'home':
                     window.location.href = '{{ route('welcome') }}';
